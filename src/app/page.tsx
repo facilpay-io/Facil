@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
     <main className="bg-white flex min-h-screen flex-col items-center justify-between p-5">
-  <div className="navbarHome flex justify-between items-center w-full">
+  <div className="navbarHome p-0 lg:p-3 md:p-3 flex justify-between items-center w-full">
     <div className="flex items-center">
       <Image className="mr-24 ml-8 mt-1" src="/logov1.png" alt="Description" width={81} height={64} />
       <div className="flex space-x-14 text-white pt-1 ml-28 hidden lg:flex md:flex">
