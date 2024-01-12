@@ -2,6 +2,112 @@
 @tailwind components;
 @tailwind utilities;
 
+.navText {
+  color: #077ACE;
+}
+
+.demoButton {
+box-sizing: border-box;
+justify-content: center;
+align-items: center;
+padding: 16px 32px;
+gap: 10px;
+width: 112px;
+height: 46px;
+border: 1px solid #FFFFFF;
+border-radius: 1000px;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: -0.02em;
+color: #FFFFFF;
+text-fill-color: transparent;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.demoServicesButton {
+border: 1px solid #046CF1;
+box-sizing: border-box;
+justify-content: center;
+align-items: center;
+padding: 16px 32px;
+gap: 10px;
+width: 112px;
+height: 46px;
+border-radius: 1000px;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: -0.02em;
+background: linear-gradient(180deg, #14B3FC 0%, #1857F8 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+flex: none;
+order: 0;
+flex-grow: 0;
+  }
+
+.butWrapHome {
+  width: 115px;
+  height: 45px;
+  background: #FFFFFF;
+  backdrop-filter: blur(2px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 28px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.butWrapServices {
+  width: 115px;
+  height: 45px;
+  background: linear-gradient(270.1deg, #19A1FC 0.09%, #046CF1 98.4%);
+  box-shadow: 0px 4px 23px rgba(59, 158, 255, 0.34);
+  border-radius: 28px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  position: absolute;
+left: 424px;
+top: 35px;
+  
+}
+
+.buttonSer {
+  background-color: #2600e6;
+  border-radius: 33px;
+}
+.buttonHome {
+  background: linear-gradient(180deg, #19A1FC 0%, #046CF1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.buttonService {
+color:#fff;
+}
+
+
+.navbarHome {
+  background-color: #19A1FC;
+  width: 100%;
+  border-radius: 33px;
+  padding: 10px;
+}
+.navbarServices {
+  background-color: #eff3f6;
+  width: 100%;
+  border-radius: 33px;
+  padding: 10px;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
