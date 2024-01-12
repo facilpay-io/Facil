@@ -1,5 +1,8 @@
+"use client";
+
 import Link from 'next/link';
 import Image from 'next/image';
+import Hamburger from '../components/hamburger'
 
 export default function Services() {
     return (
@@ -17,8 +20,9 @@ export default function Services() {
             </div>
           </div>
           <div>
-            <Link className="demoServicesButton mt-1" href="/services">Try Demo</Link>
+            <Link className="demoServicesButton mt-1 hidden lg:inline md:inline" href="/services">Try Demo</Link>
           </div>
+          <div className="mr-6 flex lg:hidden md:hidden"><Hamburger /></div>
         </div>
       </main>
     )

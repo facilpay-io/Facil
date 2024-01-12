@@ -1,8 +1,12 @@
+"use client";
+
 import Link from 'next/link';
 import Image from 'next/image';
+import Hamburger from './components/hamburger'
 
 export default function Home() {
   return (
+    <>
     <main className="bg-white flex min-h-screen flex-col items-center justify-between p-5">
   <div className="navbarHome flex justify-between items-center w-full">
     <div className="flex items-center">
@@ -15,10 +19,13 @@ export default function Home() {
       </div>
     </div>
     <div>
-      <Link className="demoButton mt-1" href="/services">Try Demo</Link>
+      <Link className="demoButton mt-1 hidden lg:inline md:inline" href="/services">Try Demo</Link>
+      
     </div>
+    <div className="mr-6 flex lg:hidden md:hidden"><Hamburger /></div>
   </div>
 </main>
+</>
 
   )
 }
