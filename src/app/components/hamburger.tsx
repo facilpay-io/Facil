@@ -57,19 +57,21 @@ export default function Hamburger() {
         display: none;
       }
       .showMenuNav {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        top: 0;
-        left: 0;
-        background: white;
-        z-index: 10;
         display: flex;
+        position: absolute;
+        width: calc(100% - 20px);
+        height: calc(100vh - 20px);
+        top: 10px; /* Adjusted for margin */
+        left: 10px; /* Adjusted for margin */
+        background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+        z-index: 10;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-      }
+        padding: 10px;
+        margin: 10px;
+    }
+    
     `}</style>
     </div>
   );
