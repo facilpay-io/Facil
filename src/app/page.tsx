@@ -11,7 +11,7 @@ export default function Home() {
   const navbarHomeClass = isHomeSelected ? "bg-blue-500" : "bg-slate-200"; // Grey for non-home, blue for home
   const menuItemClass = "rounded-full w-24 p-2 flex justify-center items-center";
   const textClass = isHomeSelected ? "text-white" : "text-blue-500"; // Blue text for non-home, white for home
-  const selectedClass = isHomeSelected ? "bg-white text-black" : "bg-blue-500 text-white"; // Blue bubble for non-home
+  const selectedClass = isHomeSelected ? "bg-white shadow-sm shadow-white text-blue-500" : "bg-blue-500 shadow-md shadow-blue-300 text-white"; // Blue bubble for non-home
   const demoLinkClass = selectedMenuItem === 'Home' ? "text-white border-white" : "text-blue-500 border-blue-500";
   const logoImage = selectedMenuItem === 'Home' ? "/logov1.png" : "/logoblue.png";
 
@@ -43,8 +43,8 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-end items-center flex-1">
-          <Link className={`font-medium border border-solid p-3 mr-4 rounded-full flex hidden lg:inline ${demoLinkClass}`} href="#">Try Demo</Link>
-            <div className="mr-6 flex lg:hidden"><Hamburger /></div>
+          <Link className={`font-medium border border-solid p-3 mr-5 rounded-full flex hidden lg:inline ${demoLinkClass}`} href="#">Try Demo</Link>
+            <div className="mr-8 flex lg:hidden"><Hamburger /></div>
           </div>
         </div>
       </main>
