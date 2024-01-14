@@ -10,7 +10,8 @@
 box-sizing: border-box;
 justify-content: center;
 align-items: center;
-padding: 16px 32px;
+padding-left: 18px;
+padding-top: 12px;
 gap: 10px;
 width: 112px;
 height: 46px;
@@ -21,10 +22,6 @@ font-size: 16px;
 line-height: 19px;
 letter-spacing: -0.02em;
 color: #FFFFFF;
-text-fill-color: transparent;
-flex: none;
-order: 0;
-flex-grow: 0;
 }
 .demoServicesButton {
 border: 1px solid #046CF1;

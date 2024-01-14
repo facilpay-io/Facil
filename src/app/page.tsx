@@ -3,29 +3,54 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Hamburger from './components/hamburger'
+import { useState } from 'react';
 
 export default function Home() {
+  const [selectedMenuItem, setSelectedMenuItem] = useState('Home');
+  const isHomeSelected = selectedMenuItem === 'Home';
+  const navbarHomeClass = isHomeSelected ? "bg-blue-500" : "bg-slate-200"; // Grey for non-home, blue for home
+  const menuItemClass = "rounded-full w-24 p-2 flex justify-center items-center";
+  const textClass = isHomeSelected ? "text-white" : "text-blue-500"; // Blue text for non-home, white for home
+  const selectedClass = isHomeSelected ? "bg-white text-black" : "bg-blue-500 text-white"; // Blue bubble for non-home
+  const demoLinkClass = selectedMenuItem === 'Home' ? "text-white border-white" : "text-blue-500 border-blue-500";
+  const logoImage = selectedMenuItem === 'Home' ? "/logov1.png" : "/logoblue.png";
+
   return (
     <>
-    <main className="bg-white flex min-h-screen flex-col items-center justify-between p-5">
-  <div className="navbarHome p-0 lg:p-3 md:p-3 flex justify-between items-center w-full">
-    <div className="flex items-center">
-      <Image className="mr-24 ml-8 mt-1" src="/logov1.png" alt="Description" width={81} height={64} />
-      <div className="flex space-x-14 text-white pt-1 ml-28 hidden lg:flex">
-        <div className="butWrapHome absolute z-0 top-9 ml-4 "></div>
-        <Link className="buttonHome z-10" href="/">Home</Link>
-        <Link href="/services">Services</Link>
-        <Link href="/services">About Us</Link>
-      </div>
-    </div>
-    <div>
-      <Link className="demoButton mt-1 hidden lg:inline" href="/services">Try Demo</Link>
-      
-    </div>
-    <div className="mr-6 flex lg:hidden"><Hamburger /></div>
-  </div>
-</main>
-</>
-
+      <main className="flex bg-white min-h-screen flex-col items-center justify-between p-5">
+        <div className={`navbarHome1 rounded-full p-0 lg:p-3 md:p-0 flex justify-between items-center w-full ${navbarHomeClass}`}>
+          <div className="flex justify-start items-center flex-1">
+          <Image className="mr-24 ml-8 mt-0" src={logoImage} alt="Description" width={81} height={64} />
+          </div>
+          <div className={`mainMenu flex justify-center items-center flex-1 space-x-4 pt-0 hidden lg:flex ${textClass}`}>
+            <div
+              className={`${menuItemClass} ${selectedMenuItem === 'Home' ? selectedClass : ''}`}
+              onClick={() => setSelectedMenuItem('Home')}
+            >
+              <Link href="/">Home</Link>
+            </div>
+            <div
+              className={`${menuItemClass} ${selectedMenuItem === 'Services' ? selectedClass : ''}`}
+              onClick={() => setSelectedMenuItem('Services')}
+            >
+              <Link href="/">Services</Link>
+            </div>
+            <div
+              className={`${menuItemClass} ${selectedMenuItem === 'AboutUs' ? selectedClass : ''}`}
+              onClick={() => setSelectedMenuItem('AboutUs')}
+            >
+              <Link href="/">About Us</Link>
+            </div>
+          </div>
+          <div className="flex justify-end items-center flex-1">
+          <Link className={`font-medium border border-solid p-3 mr-4 rounded-full flex hidden lg:inline ${demoLinkClass}`} href="#">Try Demo</Link>
+            <div className="mr-6 flex lg:hidden"><Hamburger /></div>
+          </div>
+        </div>
+      </main>
+    </>
   )
 }
+
+
+
