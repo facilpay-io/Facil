@@ -15,14 +15,18 @@ const urbanistone = Urbanist({
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
-  const leftImageRef = useRef();
-  const rightImageRef = useRef();
+  const leftImageRef = useRef(null);
+  const rightImageRef = useRef(null);
 
   useEffect(() => {
+    if (!leftImageRef.current || !rightImageRef.current) {
+      console.error("Refs not attached");
+      return;
+    }
+
     // Apply initial state immediately
     gsap.set(leftImageRef.current, { y: 600, opacity: 0 });
-    gsap.set(rightImageRef.current, { x: 600, opacity: 1 });
-
+    gsap.set(rightImageRef.current, { x: 600, opacity: 0 });
     // ScrollTrigger animations
     ScrollTrigger.create({
       trigger: ".hero",
@@ -34,7 +38,7 @@ export default function Home() {
       },
       onLeave: () => {
         gsap.to(leftImageRef.current, { y: 600, opacity: 0, duration: 1 });
-        gsap.to(rightImageRef.current, { x: 600, opacity: 1, duration: 1 });
+        gsap.to(rightImageRef.current, { x: 600, opacity: 0, duration: 1 });
       },
       onEnterBack: () => {
         gsap.to(leftImageRef.current, { y: 0, opacity: 1, duration: 1 });
@@ -42,9 +46,9 @@ export default function Home() {
       },
       onLeaveBack: () => {
         gsap.to(leftImageRef.current, { y: 600, opacity: 0, duration: 1 });
-        gsap.to(rightImageRef.current, { x: 600, opacity: 1, duration: 1 });
+        gsap.to(rightImageRef.current, { x: 600, opacity: 0, duration: 1 });
       },
-    });
+  });
   }, []);
 
 
