@@ -2,6 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600&display=swap');
+
+.HomeTitle {
+  background: -webkit-linear-gradient(#1d75f3, #12bcf9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.NavBarWrapper {
+  max-width: 1408px;
+  margin: auto;
+}
+.PageWrapper {
+  max-width: 1408px;
+  margin: auto;
+}
+.componentWrapper {
+  max-width: 1408px;
+  margin: auto;
+  margin-top: 40px;
+}
+.container {
+ margin-top: 67px;
+ margin-left: -40px;
+}
+.rightPhone {
+padding-left: 400px;
+padding-top: 108px;
+border-radius: 50px;
+top: 40;
+width: 740px;
+}
+
+.hero {
+  background: linear-gradient(180deg, #19A1FC 0%, #046CF1 100%);
+  border-radius: 50px;
+  height: 600px;
+}
+.heroText {
+  font-family: 'Urbanist';
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.mobileNav {
+  width: 94%;
+}
+
 .navText {
   color: #077ACE;
 }
@@ -60,50 +107,15 @@ flex-grow: 0;
   order: 0;
   flex-grow: 0;
 }
-.butWrapServices {
-  width: 115px;
-  height: 45px;
+.homeNavBar {
+background-color: #19A1FC;
+}
+
+.buttonBubbleBlue {
   background: linear-gradient(270.1deg, #19A1FC 0.09%, #046CF1 98.4%);
   box-shadow: 0px 4px 23px rgba(59, 158, 255, 0.34);
-  border-radius: 28px;
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  position: absolute;
-left: 424px;
-top: 35px;
-  
 }
 
-.buttonSer {
-  background-color: #2600e6;
-  border-radius: 33px;
-}
-.buttonHome {
-  background: linear-gradient(180deg, #19A1FC 0%, #046CF1 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-.buttonService {
-color:#fff;
-}
-
-
-.navbarHome {
-  background-color: #19A1FC;
-  width: 100%;
-  border-radius: 33px;
-  
-}
-.navbarServices {
-  background-color: #eff3f6;
-  width: 100%;
-  border-radius: 33px;
-  
-}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -120,11 +132,5 @@ color:#fff;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+ 
 }
