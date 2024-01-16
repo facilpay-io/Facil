@@ -9,7 +9,7 @@ import Image from 'next/image';
 
 const urbanistone = Urbanist({
   subsets: ['latin'],
-  weight: ['400', '600', '700'],
+  weight: ['400', '500', '600', '700'],
 });
 
 gsap.registerPlugin(ScrollTrigger);
@@ -81,13 +81,31 @@ export default function Home() {
 </div>
 <div className="flex flex-col lg:flex-row componentWrapper">
   <div className="w-1/4">
-  <Image className="m-auto pt-10 hidden lg:block " src="/logoblue.png" alt="Logo" width={160} height={97} />
+  <Image className="logoAnimation m-auto pt-10 hidden lg:block " src="/logoblue.png" alt="Logo" width={160} height={97} />
   </div>
 <div className="p-10 w-3/4">
   <h2 className="HomeTitle text-6xl font-bold pb-4">Introducing Facil</h2>
 <span className="text-xl font-normal">A Cutting-Edge Web 3.0 Messaging and Payment Platform. Facil seamlessly integrates with blockchain-based decentralized applications, offering secure peer-to-peer messaging and global cryptocurrency payments at your fingertips. Send funds worldwide to friends, contacts, or merchants using Facil.</span>
 </div>
 </div>
+
+<div className="flex flex-col lg:flex-row componentWrapper pt-16">
+  <div className="w-1/2 pl-20">
+  <h2 className="text-4xl font-semibold pb-4 pt-24"> Facil, Simple, and Secure Intuitive Messaging Meets Web3</h2>
+<span className="text-xl font-medium">Facilpay app move beyond the limitation of Web2 and take advantage of all Web3 has to offer yet, enjoy the Speed, Reliability, and Security.</span>
+ <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Secured Peer-to-Peer Messaging</p>
+ <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />A.I. Instant Message & Voice Translation</p>
+ <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />NFT Emoticons & Sticker</p>
+ <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Group Chat & Group Calls</p>
+ <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />File transfers, Calls, and HD Video conferences</p>
+  
+  </div>
+<div className="p-10 w-1/2">
+  
+<Image className="logoAnimation m-auto pt-10 hidden lg:block " src="/bodyphone.webp" alt="phone" width={556} height={568} />
+</div>
+</div>
+
 </main>
 </>
 );
