@@ -144,8 +144,8 @@ export default function Home() {
   
   </div>
 <div className="p-0 w-1/2">
-<h2 className="text-4xl font-semibold pb-0 pt-0"> Your unified facil messaging to the future of payments</h2>
-<span className="text-xl font-medium">Crypto-Enabled and Fiat Ready</span>
+<h2 className="text-4xl font-semibold pb-10 pt-0 pb-2"> Your unified facil messaging to the future of payments</h2>
+<span className="text-xl font-medium ">Crypto-Enabled and Fiat Ready</span>
  <p className="p-4 mt-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Secured Mobile Wallet</p>
  <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Multi-Chain Network</p>
  <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Peer-to-Peer Payments</p>
@@ -156,7 +156,7 @@ export default function Home() {
 
 </div>
 </div>
-
+<div className="h-1/2 mt-20"><p></p></div>
 </main>
 </>
 );
