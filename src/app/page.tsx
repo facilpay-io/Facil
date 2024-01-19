@@ -6,6 +6,34 @@ import gsap from "gsap";
 import { useEffect, useRef } from 'react';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import Image from 'next/image';
+import React from "react";
+import Lottie from "lottie-react";
+import animatePhone from "./components/animatephone.json";
+
+const style = {
+  height: 559,
+};
+
+const interactivity = {
+  mode: "scroll",
+  actions: [
+    {
+      visibility: [0.2, 0.2],
+      type: "stop",
+      frames: [0],
+    },
+    {
+      visibility: [0.2, 0.45],
+      type: "seek",
+      frames: [0, 45],
+    },
+    {
+      visibility: [0.45, 1.0],
+      type: "loop",
+      frames: [45, 60],
+    },
+  ],
+};
 
 const urbanistone = Urbanist({
   subsets: ['latin'],
@@ -93,7 +121,7 @@ export default function Home() {
   <div className="w-1/2 pl-20">
   <h2 className="text-4xl font-semibold pb-4 pt-24"> Facil, Simple, and Secure Intuitive Messaging Meets Web3</h2>
 <span className="text-xl font-medium">Facilpay app move beyond the limitation of Web2 and take advantage of all Web3 has to offer yet, enjoy the Speed, Reliability, and Security.</span>
- <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Secured Peer-to-Peer Messaging</p>
+ <p className="p-4 mt-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Secured Peer-to-Peer Messaging</p>
  <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />A.I. Instant Message & Voice Translation</p>
  <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />NFT Emoticons & Sticker</p>
  <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Group Chat & Group Calls</p>
@@ -103,6 +131,31 @@ export default function Home() {
 <div className="p-10 w-1/2">
   
 <Image className="logoAnimation m-auto pt-10 hidden lg:block " src="/bodyphone.webp" alt="phone" width={556} height={568} />
+</div>
+</div>
+
+<div className="flex flex-col lg:flex-row componentWrapper pt-16">
+  <div className="w-1/2 ">
+  <div className="lottieWrap"><Lottie
+      animationData={animatePhone}
+      style={style}
+      interactivity={interactivity}
+    /></div>
+
+  
+  
+  </div>
+<div className="p-0 w-1/2">
+<h2 className="text-4xl font-semibold pb-0 pt-0"> Your unified facil messaging to the future of payments</h2>
+<span className="text-xl font-medium">Crypto-Enabled and Fiat Ready</span>
+ <p className="p-4 mt-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Secured Mobile Wallet</p>
+ <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Multi-Chain Network</p>
+ <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Peer-to-Peer Payments</p>
+ <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Flexible Crypto Transactions</p>
+ <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Crypto Debit & Prepaid Card</p>
+ <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Facil Swap & Facil Bridge</p>
+ <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Web 3.0 DeFi Solutions</p>
+
 </div>
 </div>
 
