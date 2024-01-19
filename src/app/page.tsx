@@ -7,33 +7,31 @@ import { useEffect, useRef } from 'react';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import Image from 'next/image';
 import React from "react";
-import Lottie from "lottie-react";
+import Lottie, {Action} from 'lottie-react'
 import animatePhone from "./components/animatephone.json";
 
 const style = {
   height: 559,
 };
 
-const interactivity = {
-  mode: "scroll",
+interface Interactivity {
+  mode: 'scroll' | 'cursor'
+  actions: Action[]
+}
+
+const interactivity: Interactivity = {
+  mode: 'scroll',
   actions: [
-    {
-      visibility: [0.2, 0.2],
-      type: "stop",
-      frames: [0],
-    },
+    {visibility: [0.2, 0.2], type: 'stop', frames: [0]},
     {
       visibility: [0.2, 0.45],
-      type: "seek",
+      type: 'seek',
       frames: [0, 45],
     },
-    {
-      visibility: [0.45, 1.0],
-      type: "loop",
-      frames: [45, 60],
-    },
+    {visibility: [0.45, 1.0], type: 'loop', frames: [45, 60]},
   ],
-};
+}
+
 
 const urbanistone = Urbanist({
   subsets: ['latin'],
