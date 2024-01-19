@@ -156,7 +156,7 @@ export default function Home() {
 
 </div>
 </div>
-<div className="h-1/2 mt-20"><p></p></div>
+<div className="h-1/2 mt-60"><p></p></div>
 </main>
 </>
 );
