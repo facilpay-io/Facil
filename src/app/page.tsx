@@ -9,6 +9,7 @@ import Image from 'next/image';
 import React from "react";
 import Lottie, {Action} from 'lottie-react'
 import animatePhone from "./components/animatephone.json";
+import animatePhone2 from "./components/animatephone2.json";
 
 const style = {
   height: 559,
@@ -75,7 +76,42 @@ export default function Home() {
         gsap.to(rightImageRef.current, { x: 600, opacity: 0, duration: 1 });
       },
   });
-  }, []);
+
+// Intersection Observer options for text fade-in
+const textFadeOptions = {
+  threshold: 0.2, // Adjust this threshold as needed
+};
+
+const textFadeObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      // Add the fade-in animation when the text is in view
+      gsap.fromTo(
+        entry.target,
+        { opacity: 0, x: 0 }, // Initial state
+        { opacity: 1, x: 0, duration: 1 } // Target state
+      );
+    }
+  });
+}, textFadeOptions);
+
+// Select all elements with the "textFade" class that you want to animate
+const textFadeElements = document.querySelectorAll(".textFade");
+
+// Start observing the text elements
+textFadeElements.forEach((element) => {
+  textFadeObserver.observe(element);
+});
+
+// Clean up the observer when the component unmounts
+return () => {
+  textFadeElements.forEach((element) => {
+    textFadeObserver.unobserve(element);
+  });
+};
+}, []);
+
+  
 
 
   return (
@@ -116,7 +152,7 @@ export default function Home() {
 </div>
 
 <div className="flex flex-col lg:flex-row componentWrapper pt-16">
-  <div className="w-1/2 pl-20">
+  <div className="textFade fadeInLeft w-1/2 pl-20" data-animation="fadeInLeft">
   <h2 className="text-4xl font-semibold pb-4 pt-24"> Facil, Simple, and Secure Intuitive Messaging Meets Web3</h2>
 <span className="text-xl font-medium">Facilpay app move beyond the limitation of Web2 and take advantage of all Web3 has to offer yet, enjoy the Speed, Reliability, and Security.</span>
  <p className="p-4 mt-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Secured Peer-to-Peer Messaging</p>
@@ -143,7 +179,7 @@ export default function Home() {
   
   
   </div>
-<div className="p-0 w-1/2">
+<div className="p-0 w-1/2 textFade fadeInRight">
 <h2 className="text-4xl font-semibold pb-10 pt-0 pb-2"> Your unified facil messaging to the future of payments</h2>
 <span className="text-xl font-medium ">Crypto-Enabled and Fiat Ready</span>
  <p className="p-4 mt-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Secured Mobile Wallet</p>
@@ -156,7 +192,31 @@ export default function Home() {
 
 </div>
 </div>
-<div className="h-1/2 mt-60"><p></p></div>
+
+<div className="flex flex-col lg:flex-row componentWrapper pt-16">
+  <div className="textFade fadeInLeft w-1/2 pl-20 ">
+  <h2 className="text-4xl font-semibold pb-4 pt-12"> Facil - Bridging the Gap Between Traditional and DeFi Banking</h2>
+<span className="text-xl font-medium">We provide every user with a Web3 wallet, creating a user-friendly, accessible, and secure ecosystem tailored to meet the unique needs of each individual.</span>
+ <p className="p-4 mt-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Facilitating Blockchain Banking</p>
+ <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Fiat Transfer Retail Services</p>
+ <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Money Transfer API</p>
+ <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Cost-effectiveness & Fast Network</p>
+ <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Global Compliance & Operations</p>
+ <p className="mt-2 ml-4 pt-3 pb-3 pl-5 border rounded-full w-28 text-sm">Learn More</p>
+  
+  </div>
+<div className="p-10 w-1/2">
+  
+<div className="lottieWrap"><Lottie
+      animationData={animatePhone2}
+      style={style}
+      interactivity={interactivity}
+    /></div>
+</div>
+</div>
+
+
+<div className="h-1/2 mt-60"><p className="test"></p></div>
 </main>
 </>
 );
