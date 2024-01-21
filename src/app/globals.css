@@ -10,40 +10,36 @@
 
 .textFade {
   opacity: 0;
-  transform: translateX(0px); /* Adjust the initial position as needed */
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: translateX(-140px); /* Adjust the initial position as needed */
+ 
 }
 
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(0px) translateX(-140px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0) translateX(0);
-  }
+.textFadeRight {
+  opacity: 0;
+  transform: translateX(140px); /* Initial state with x = 40 */
+
+}
+
+.textFadeRight.active {
+  opacity: 1;
+  transform: translateX(0); /* Target state when in view */
+}
+
+.textFade2 {
+  animation: fadeInRight 2s both;
 }
 
 @keyframes fadeInRight {
   0% {
     opacity: 0;
-    transform: translateY(0px) translateX(140px);
+    transform: translateX(140px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0) translateX(0);
+    transform: translateX(0);
   }
 }
 
-/* Use the data attribute to apply the correct animation */
-.textFade[data-animation="fadeInLeft"] {
-  animation: fadeInLeft 1s ease;
-}
-
-.textFade[data-animation="fadeInRight"] {
-  animation: fadeInRight 1s ease;
-}
 
 .lottieWrap {
 background: linear-gradient(180deg, #19A1FC 0%, #046CF1 100%);

@@ -77,6 +77,7 @@ export default function Home() {
       },
   });
 
+
 // Intersection Observer options for text fade-in
 const textFadeOptions = {
   threshold: 0.2, // Adjust this threshold as needed
@@ -85,18 +86,31 @@ const textFadeOptions = {
 const textFadeObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      // Add the fade-in animation when the text is in view
-      gsap.fromTo(
-        entry.target,
-        { opacity: 0, x: 0 }, // Initial state
-        { opacity: 1, x: 0, duration: 1 } // Target state
-      );
+      const targetElement = entry.target;
+      if (targetElement.classList.contains('textFadeRight')) {
+        // Add the fade-in animation with an x value of 40px when the text is in view
+        gsap.fromTo(
+          targetElement,
+          { opacity: 0, x: 140 }, // Initial state with x = 40
+          { opacity: 1, x: 0, duration: 1 } // Target state when in view
+        );
+      } else {
+        // Add the default text fade-in animation with x = -40
+        gsap.fromTo(
+          targetElement,
+          { opacity: 0, x: -140 }, // Initial state
+          { opacity: 1, x: 0, duration: 1 } // Target state when in view
+        );
+      }
+
+      // Stop observing the element after animation
+      textFadeObserver.unobserve(targetElement);
     }
   });
 }, textFadeOptions);
 
 // Select all elements with the "textFade" class that you want to animate
-const textFadeElements = document.querySelectorAll(".textFade");
+const textFadeElements = document.querySelectorAll(".textFade, .textFadeRight");
 
 // Start observing the text elements
 textFadeElements.forEach((element) => {
@@ -109,6 +123,7 @@ return () => {
     textFadeObserver.unobserve(element);
   });
 };
+
 }, []);
 
   
@@ -152,7 +167,7 @@ return () => {
 </div>
 
 <div className="flex flex-col lg:flex-row componentWrapper pt-16">
-  <div className="textFade fadeInLeft w-1/2 pl-20" data-animation="fadeInLeft">
+  <div className="textFade lg:w-1/2 w-full pl-20">
   <h2 className="text-4xl font-semibold pb-4 pt-24"> Facil, Simple, and Secure Intuitive Messaging Meets Web3</h2>
 <span className="text-xl font-medium">Facilpay app move beyond the limitation of Web2 and take advantage of all Web3 has to offer yet, enjoy the Speed, Reliability, and Security.</span>
  <p className="p-4 mt-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Secured Peer-to-Peer Messaging</p>
@@ -160,16 +175,16 @@ return () => {
  <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />NFT Emoticons & Sticker</p>
  <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Group Chat & Group Calls</p>
  <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />File transfers, Calls, and HD Video conferences</p>
-  
+ <p className="mt-2 ml-4 pt-3 pb-3 pl-5 border rounded-full w-28 text-sm">Learn More</p>
   </div>
-<div className="p-10 w-1/2">
+<div className="textFadeRight p-10 lg:w-1/2 w-full">
   
 <Image className="logoAnimation m-auto pt-10 hidden lg:block " src="/bodyphone.webp" alt="phone" width={556} height={568} />
 </div>
 </div>
 
 <div className="flex flex-col lg:flex-row componentWrapper pt-16">
-  <div className="w-1/2 ">
+  <div className="textFade lg:w-1/2 w-full ">
   <div className="lottieWrap"><Lottie
       animationData={animatePhone}
       style={style}
@@ -179,7 +194,7 @@ return () => {
   
   
   </div>
-<div className="p-0 w-1/2 textFade fadeInRight">
+<div className="p-0 textFadeRight lg:w-1/2 w-full">
 <h2 className="text-4xl font-semibold pb-10 pt-0 pb-2"> Your unified facil messaging to the future of payments</h2>
 <span className="text-xl font-medium ">Crypto-Enabled and Fiat Ready</span>
  <p className="p-4 mt-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Secured Mobile Wallet</p>
@@ -189,12 +204,12 @@ return () => {
  <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Crypto Debit & Prepaid Card</p>
  <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Facil Swap & Facil Bridge</p>
  <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Web 3.0 DeFi Solutions</p>
-
+ <p className="mt-2 ml-4 pt-3 pb-3 pl-5 border rounded-full w-28 text-sm">Learn More</p>
 </div>
 </div>
 
 <div className="flex flex-col lg:flex-row componentWrapper pt-16">
-  <div className="textFade fadeInLeft w-1/2 pl-20 ">
+  <div className="textFade lg:w-1/2 w-full pl-20 ">
   <h2 className="text-4xl font-semibold pb-4 pt-12"> Facil - Bridging the Gap Between Traditional and DeFi Banking</h2>
 <span className="text-xl font-medium">We provide every user with a Web3 wallet, creating a user-friendly, accessible, and secure ecosystem tailored to meet the unique needs of each individual.</span>
  <p className="p-4 mt-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Facilitating Blockchain Banking</p>
@@ -205,7 +220,7 @@ return () => {
  <p className="mt-2 ml-4 pt-3 pb-3 pl-5 border rounded-full w-28 text-sm">Learn More</p>
   
   </div>
-<div className="p-10 w-1/2">
+<div className="textFadeRight p-10 lg:w-1/2 w-full">
   
 <div className="lottieWrap"><Lottie
       animationData={animatePhone2}
