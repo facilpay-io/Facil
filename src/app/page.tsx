@@ -298,6 +298,55 @@ return () => {
       </div>
     </section>
 </div>
+<div className=" mt-0 m-auto">
+<section className="flex flex-col items-center justify-start py-0 px-5 box-border gap-[56px] min-h-[1010px] max-w-full text-center text-22xl font-label-md mq825:gap-[28px]">
+      <div className="flex flex-col items-center justify-start gap-[7px] max-w-full">
+        <div className="flex flex-row items-start justify-start py-0 pr-0 pl-[21px] box-border max-w-full">
+          <h1 className="m-0 relative text-inherit leading-[41px] capitalize font-semibold font-inherit z-[1] mq450:text-6xl mq450:leading-[42px] mq825:text-14xl mq825:leading-[56px]">
+            app screenshots
+          </h1>
+        </div>
+        <div className="relative text-xl leading-[30px] capitalize font-medium text-left mq450:text-base mq450:leading-[24px]">
+          Facil App delivered blazing fast performance, striking word solution
+        </div>
+      </div>
+      <div className="self-stretch flex flex-row flex-wrap items-start justify-center gap-[20px] max-w-full">
+        <div className="h-[546px] w-[180px] flex flex-col items-start justify-start pt-[173px] px-0 pb-0 box-border mq825:pt-28 mq825:box-border">
+          <img
+            className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
+            alt=""
+            src="/left1.png"
+          />
+        </div>
+        <div className="h-[620px] w-[252px] flex flex-col items-start justify-start pt-[98px] px-0 pb-0 box-border mq825:pt-16 mq825:box-border">
+          <img
+            className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
+            alt=""
+            src="/left2.png"
+          />
+        </div>
+        <img
+          className="h-[694px] w-[335px] overflow-hidden "
+          alt=""
+          src="/centeriphone.png"
+        />
+        <div className="h-[620px] w-[252px] flex flex-col items-start justify-start pt-[98px] px-0 pb-0 box-border mq825:pt-16 mq825:box-border">
+          <img
+            className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
+            alt=""
+            src="/right2.png"
+          />
+        </div>
+        <div className="h-[546px] w-[180px] flex flex-col items-start justify-start pt-[173px] px-0 pb-0 box-border mq825:pt-28 mq825:box-border">
+          <img
+            className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
+            alt=""
+            src="/right1.png"
+          />
+        </div>
+      </div>
+    </section>
+</div>
 </main>
 </>
 );
