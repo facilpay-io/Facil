@@ -231,7 +231,73 @@ return () => {
 </div>
 
 
-<div className="h-1/2 mt-60"><p className="test"></p></div>
+<div className=" mt-20 m-auto">
+<section className=" flex flex-col items-center justify-start py-0 px-5 box-border gap-[47px] min-h-[803px] max-w-full text-left text-22xl font-label-md mq825:gap-[23px]">
+      <h1 className="m-0 relative text-xl md:text-2xl lg:text-4xl leading-[73px] font-semibold font-inherit inline-block max-w-full  mq825:leading-[58px]">
+        A Blockchain-powered Messaging and Payment platform
+      </h1>
+      <div className="self-stretch flex flex-row flex-wrap items-start justify-center gap-[33px] min-h-[483px] mq825:gap-[16px]">
+        <img
+          className="h-[220px] w-[241px] relative"
+          loading="eager"
+          alt=""
+          src="/card1.svg"
+        />
+        <img
+          className="h-[220px] w-[241px] relative"
+          loading="eager"
+          alt=""
+          src="/card2.svg"
+        />
+        <div className="w-[241px] flex flex-row items-center justify-center">
+          <div className="self-stretch w-[241px] relative hidden" />
+          <img
+            className="h-[220px] flex-1 relative max-w-full overflow-hidden z-[1]"
+            alt=""
+            src="/card3.svg"
+          />
+        </div>
+        <img
+          className="h-[220px] w-[241px] relative"
+          alt=""
+          src="/card4.svg"
+        />
+        <img
+          className="h-[220px] w-[241px] relative"
+          loading="eager"
+          alt=""
+          src="/card5.svg"
+        />
+        <img
+          className="h-[220px] w-[241px] relative"
+          loading="eager"
+          alt=""
+          src="/card6.svg"
+        />
+        <img
+          className="h-[220px] w-[241px] relative"
+          alt=""
+          src="/card7.svg"
+        />
+        <img
+          className="h-[220px] w-[241px] relative"
+          alt=""
+          src="/card8.svg"
+        />
+        <img
+          className="h-[220px] w-[241px] relative"
+          loading="eager"
+          alt=""
+          src="/card9.svg"
+        />
+        <img
+          className="h-[220px] w-[241px] relative"
+          alt=""
+          src="/card10.svg"
+        />
+      </div>
+    </section>
+</div>
 </main>
 </>
 );
