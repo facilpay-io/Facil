@@ -232,8 +232,8 @@ return () => {
 
 
 <div className=" mt-20 m-auto">
-<section className=" flex flex-col items-center justify-start py-0 px-5 box-border gap-[47px] min-h-[803px] max-w-full text-left text-22xl font-label-md mq825:gap-[23px]">
-      <h1 className="m-0 relative text-xl md:text-2xl lg:text-4xl leading-[73px] font-semibold font-inherit inline-block max-w-full  mq825:leading-[58px]">
+<section className=" flex flex-col items-center justify-start py-0 px-5 box-border gap-[47px] min-h-[803px] text-left text-22xl font-label-md mq825:gap-[23px]">
+      <h1 className="m-0 relative text-xl md:text-2xl lg:text-4xl leading-[73px] font-semibold font-inherit inline-block  mq825:leading-[58px]">
         A Blockchain-powered Messaging and Payment platform
       </h1>
       <div className="self-stretch flex flex-row flex-wrap items-start justify-center gap-[33px] min-h-[483px] mq825:gap-[16px]">
@@ -298,8 +298,8 @@ return () => {
       </div>
     </section>
 </div>
-<div className=" mt-0 m-auto">
-<section className="flex flex-col items-center justify-start py-0 px-5 box-border gap-[56px] min-h-[1010px] max-w-full text-center text-22xl font-label-md mq825:gap-[28px]">
+<div className="wrapperCom mt-0 m-auto">
+<section className="wrapperCom flex flex-col items-center justify-start py-0 px-5 box-border gap-[56px] min-h-[1010px] max-w-full text-center text-22xl font-label-md mq825:gap-[28px]">
       <div className="flex flex-col items-center justify-start gap-[7px] max-w-full">
         <div className="flex flex-row items-start justify-start py-0 pr-0 pl-[21px] box-border max-w-full">
           <h1 className="m-0 relative text-inherit leading-[41px] capitalize font-semibold font-inherit z-[1] mq450:text-6xl mq450:leading-[42px] mq825:text-14xl mq825:leading-[56px]">
@@ -347,6 +347,26 @@ return () => {
       </div>
     </section>
 </div>
+
+<div className="flex flex-col lg:flex-row componentWrapper pt-16">
+  <div className="textFade lg:w-1/2 w-full ">
+  <div className="pl-10">
+  <img className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
+        alt=""
+        src="/miccard.webp" width="70%"
+          />
+    </div>
+
+  
+  
+  </div>
+<div className="p-0 textFadeRight lg:w-1/2 w-full">
+
+<span className="text-xl font-medium ">AI Chatbot Integration for Facil App:</span>
+
+</div>
+</div>
+
 </main>
 </>
 );
