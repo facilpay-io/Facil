@@ -348,10 +348,10 @@ return () => {
     </section>
 </div>
 
-<div className="flex flex-col lg:flex-row componentWrapper pt-16">
+<div className="flex flex-col lg:flex-row componentWrapper pt-0">
   <div className="textFade lg:w-1/2 w-full ">
   <div className="pl-10">
-  <img className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
+  <img className="m-auto "
         alt=""
         src="/miccard.webp" width="70%"
           />
@@ -361,8 +361,11 @@ return () => {
   
   </div>
 <div className="p-0 textFadeRight lg:w-1/2 w-full">
-
-<span className="text-xl font-medium ">AI Chatbot Integration for Facil App:</span>
+<img className="pt-10 pb-4"
+        alt=""
+        src="/appicon.svg" width="10%"
+          />
+<span className="text-xl font-medium ">AI Chatbot Integration for Facil App: Enhancing User Experience with Advanced Conversational Technology</span>
 
 </div>
 </div>
