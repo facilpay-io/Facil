@@ -4,8 +4,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600&display=swap');
 
+.backimage {
+  margin-left: -110px;
+}
+.backimageRight {
+  margin-right: -110px;
+}
 .appbuttons{
-  margin-top: -160px;
+  margin-top: -120px;
 }
 .wrapperCom {
   max-width: 1408px;
