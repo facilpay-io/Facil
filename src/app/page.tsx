@@ -414,9 +414,9 @@ return () => {
     </div>
     <div className="position-relative">
       <div id="appbox" className="inline-flex align-bottom justify-center items-center relative z-10">
-        <img className="flex w-[342px] pt-20" alt="" src="/centerappl1.png" />
+        <img className="flex w-[341px] phonepad" alt="" src="/centerappl1.png" />
         <img className="flex w-[400px]" alt="" src="/centerapp1.png" />
-        <img className="flex w-[342px] pt-20" alt="" src="/centerappr1.png" />
+        <img className="phonepad flex w-[341px] " alt="" src="/centerappr1.png" />
       </div>
       <img
         className="backimage absolute bottom-0  z-0"
@@ -434,7 +434,33 @@ return () => {
   </div>
 </section>
 
-
+<section className="max-w-[1080px] m-auto pt-40">
+<div className="flex flex-wrap">
+      {/* Create five columns */}
+      <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
+        {/* Column content */}
+        <img
+        className=""
+        alt=""
+        src="/footerlogo.svg"
+        style={{ width: '40%', height: 'auto' }}
+      />
+        <div className=" pt-4">facilpay.Io@gmail.com</div>
+      </div>
+      <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
+        <div className=" p-4">Column 2</div>
+      </div>
+      <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
+        <div className=" p-4">Column 3</div>
+      </div>
+      <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
+        <div className=" p-4">Column 4</div>
+      </div>
+      <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
+        <div className=" p-4">Column 5</div>
+      </div>
+    </div>
+</section>
 
 
 
