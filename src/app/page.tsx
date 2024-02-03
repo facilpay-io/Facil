@@ -390,7 +390,7 @@ return () => {
 </div>
 </div>
 
-<section className="max-w-[1080px] m-auto pt-40 mb-20">
+<section className="max-w-[780px] m-auto pt-40 mb-20">
 <div className="text-center"><h1 className="text-4xl font-semibold mb-0">Got questions?</h1>
 <p className="mb-14">Get the answers to your questions about FastFinance.</p></div>
       <Accordion items={items} />

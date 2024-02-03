@@ -21,9 +21,9 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
   return (
     <div className="space-y-2">
       {items.map((item, index) => (
-        <div key={index}>
+        <div className="border-b border-slate-100" key={index}>
           <button
-            className="w-full font-semibold text-left p-2 hover:bg-slate-50 rounded transition duration-300 relative"
+            className="w-full font-semibold text-left p-2  rounded transition duration-300 relative"
             onClick={() => toggleItem(index)}
           >
             {item.title}
