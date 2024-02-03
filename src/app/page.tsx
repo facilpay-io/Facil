@@ -445,19 +445,63 @@ return () => {
         src="/footerlogo.svg"
         style={{ width: '40%', height: 'auto' }}
       />
-        <div className=" pt-4">facilpay.Io@gmail.com</div>
+        <div className=" pt-4">
+        <p><img
+        className="inline-flex mb-1 mr-1 "
+        alt=""
+        src="/envelope.svg"
+        style={{ width: '10%', height: 'auto' }}
+      />
+          facilpay.Io@gmail.com
+          </p>
+          <p className="pt-4"><img
+        className="inline-flex mb-1 mr-1 "
+        alt=""
+        src="/phoneicon.svg"
+        style={{ width: '10%', height: 'auto' }}
+      />+1 234 456 678 89</p>
+          </div>
+
       </div>
       <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
-        <div className=" p-4">Column 2</div>
+        <div className=" p-0 pl-4 pr-4"><h1 className="font-semibold text-2xl pb-4">Links</h1>
+        <p>Home</p>
+        <p className="pt-2">About Us</p>
+        <p className="pt-2">Services</p>
+        </div>
       </div>
       <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
-        <div className=" p-4">Column 3</div>
+      <div className=" p-0 pl-4 pr-4"><h1 className="font-semibold text-2xl pb-4">Legal</h1>
+        <p>Terms of Use</p>
+        <p className="pt-2">Privacy Policy</p>
+        <p className="pt-2">Cookie Policy</p>
+        </div>
       </div>
       <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
-        <div className=" p-4">Column 4</div>
+      <div className=" p-0 pl-4 pr-4"><h1 className="font-semibold text-2xl pb-4">Product</h1>
+        <p>Take Tour</p>
+        <p className="pt-2">Live Chat</p>
+        <p className="pt-2">Reviews</p>
+        </div>
       </div>
       <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
-        <div className=" p-4">Column 5</div>
+      <div className=" p-0 pl-4 pr-4"><h1 className="font-semibold text-2xl pb-4">Newsletter</h1>
+        <p>Stay Up To Date</p>
+       
+        </div>
+        <div className="flex items-center pt-4">
+      <input
+        type="text"
+        className="px-4 py-2 bg-slate-50 rounded-l-md  outline-none flex-grow"
+        placeholder="Enter text..."
+      />
+      <button
+        type="submit"
+        className="px-4 py-2 bg-blue-500 text-white rounded-r-md hover:bg-blue-600"
+      >
+        Submit
+      </button>
+    </div>
       </div>
     </div>
 </section>
