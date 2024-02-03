@@ -11,6 +11,8 @@ import Lottie, {Action} from 'lottie-react'
 import animatePhone from "./components/animatephone.json";
 import animatePhone2 from "./components/animatephone2.json";
 import Accordion from "./components/Accordian";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faApple, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
 
 const items = [
   {
@@ -390,11 +392,34 @@ return () => {
 </div>
 </div>
 
-<section className="max-w-[780px] m-auto pt-32 mb-20">
+<section className="max-w-[780px] m-auto pt-32 mb-30">
 <div className="text-center"><h1 className="text-4xl font-semibold mb-0">Got questions?</h1>
 <p className="mb-14">Get the answers to your questions about FastFinance.</p></div>
       <Accordion items={items} />
 </section>
+
+<section className="flex justify-center items-center pt-40">
+  <div className="AppContainer w-[1408px] h-[1050.3px] overflow-hidden text-center text-45xl text-white font-inter flex flex-col justify-between">
+    <div>
+      <h1 className="text-5xl font-semibold pt-40">Get the facil pay Mobile app</h1>
+      <p>With this platform, you can access your account anywhere, <br />anytime for balance and so much more</p>
+    </div>
+    <div className="appbuttons flex inline-block justify-center items-center ">
+      <button className="bg-white rounded-full p-3 m-8 text-black font-medium">
+        <FontAwesomeIcon icon={faApple} className="mr-2" />Download Now
+      </button>
+      <button className="bg-white rounded-full p-3 m-8 text-black font-medium">
+        <FontAwesomeIcon icon={faGooglePlay} className="mr-2" />Download Now
+      </button>
+    </div>
+    <div id="appbox" className="inline-flex align-bottom justify-center items-center">
+      <img className="flex w-[369px] pt-20" alt="" src="/centerappl1.png" />
+      <img className="flex w-[427px] " alt="" src="/centerapp1.png" />
+      <img className="flex w-[369px] pt-20" alt="" src="/centerappr1.png" />
+    </div>
+  </div>
+</section>
+
 
 </main>
 </>
