@@ -10,6 +10,26 @@ import React from "react";
 import Lottie, {Action} from 'lottie-react'
 import animatePhone from "./components/animatephone.json";
 import animatePhone2 from "./components/animatephone2.json";
+import Accordion from "./components/Accordian";
+
+const items = [
+  {
+    title: 'How does Facil App work?',
+    content: 'Facil App is a platform that allows you to transfer money to anywhere in the world with confidence and ease. Simply create an account, add your recipients information, and make a transfer. Our platform handles the rest.',
+  },
+  {
+    title: 'Is it safe to use Facil App?',
+    content: 'Placeholder text for Question 2 body.',
+  },
+  {
+    title: 'Can I track my transfer?',
+    content: 'Placeholder text for Question 3 body.',
+  },
+  {
+    title: 'Are there any hidden fees with Facil App?',
+    content: 'Placeholder text for Question 4 body.',
+  },
+];
 
 const style = {
   height: 559,
@@ -252,7 +272,7 @@ return () => {
         <div className="w-[241px] flex flex-row items-center justify-center">
           <div className="self-stretch w-[241px] relative hidden" />
           <img
-            className="h-[220px] flex-1 relative max-w-full overflow-hidden z-[1]"
+            className="h-[220px] flex-1 relative ç overflow-hidden z-[1]"
             alt=""
             src="/card3.svg"
           />
@@ -369,6 +389,12 @@ return () => {
 
 </div>
 </div>
+
+<section className="max-w-[1080px] m-auto pt-40 mb-20">
+<div className="text-center"><h1 className="text-4xl font-semibold mb-0">Got questions?</h1>
+<p className="mb-14">Get the answers to your questions about FastFinance.</p></div>
+      <Accordion items={items} />
+</section>
 
 </main>
 </>
