@@ -318,7 +318,7 @@ return () => {
       </div>
     </section>
 </div>
-<div className="wrapperCom mt-0 m-auto">
+<div className="wrapperCom  m-auto">
 <section className="wrapperCom flex flex-col items-center justify-start py-0 px-5 box-border gap-[56px] min-h-[1010px] max-w-full text-center text-22xl font-label-md mq825:gap-[28px]">
       <div className="flex flex-col items-center justify-start gap-[7px] max-w-full">
         <div className="flex flex-row items-start justify-start py-0 pr-0 pl-[21px] box-border max-w-full">
@@ -390,7 +390,7 @@ return () => {
 </div>
 </div>
 
-<section className="max-w-[780px] m-auto pt-40 mb-20">
+<section className="max-w-[780px] m-auto pt-32 mb-20">
 <div className="text-center"><h1 className="text-4xl font-semibold mb-0">Got questions?</h1>
 <p className="mb-14">Get the answers to your questions about FastFinance.</p></div>
       <Accordion items={items} />
