@@ -138,6 +138,7 @@ width: 740px;
   background: linear-gradient(180deg, #19A1FC 0%, #046CF1 100%);
   border-radius: 50px;
   height: 600px;
+  overflow: hidden;
 }
 .heroText {
   font-family: 'Urbanist';
