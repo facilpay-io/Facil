@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 
+
 export default function Home() {
   const [selectedMenuItem, setSelectedMenuItem] = useState('Home');
   const isHomeSelected = selectedMenuItem === 'Home';
@@ -18,14 +19,14 @@ export default function Home() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const iconSrc = isMenuOpen ? './close.svg' : './burger.svg'; // Change icon based on menu state
   const iconAlt = isMenuOpen ? 'Close' : 'Menu';
-  
+
   const hamburgerIconColor = selectedMenuItem === 'Home' ? 'white' : 'blue-500';
   const mobileNavClass = isMenuOpen ? 'open' : 'closed'; // Classes to control the drawer open/close
 
 
   return (
     <>
-      
+      <div className="stickyWrapper">
         <div className={`NavBarWrapper rounded-3xl p-0 lg:p-4 lg:flex hidden md:p-0 flex justify-between items-center w-full ${navbarHomeClass}`}>
           <div className="flex justify-start items-center flex-1">
           <Image className="mr-24 ml-8 mt-0" src={logoImage} alt="Description" width={81} height={64} />
@@ -57,7 +58,7 @@ export default function Home() {
 
     {/* Hamburger Menu Icon */}
     
-    <div className={`p-4 mobileNav flex justify-between items-center absolute rounded-3xl ${navbarHomeClass} z-20 lg:hidden`} onClick={toggleMenu}>
+    <div className={`p-4 mobileNav flex justify-between items-center  rounded-3xl ${navbarHomeClass} z-20 lg:hidden`} onClick={toggleMenu}>
           <Image className="ml-2" src={logoImage} alt="Description" width={81} height={64} />
           <Image className="mr-5" 
          src={isMenuOpen ? (selectedMenuItem === 'Home' ? './close.svg' : './close-blue.svg') : (selectedMenuItem === 'Home' ? './burger.svg' : './burger-blue.svg')} 
@@ -67,7 +68,7 @@ export default function Home() {
         </div>
 
              {/* Mobile Nav Drawer */}
-             <div className={`mobileNav rounded-b-3xl absolute top-14 w-11/12 pt-10 pl-5 pb-10 justify-between items-center  ${selectedMenuItem === 'Home' ? 'homeNavBar' : 'bg-slate-200'} transition-transform transform ${isMenuOpen ? 'scale-y-100' : 'scale-y-0'} origin-top lg:hidden z-10`}>
+             <div className={`mobileNavDrawer rounded-b-3xl top-14 w-11/12 pt-10 pl-5 pb-10 justify-between items-center ${selectedMenuItem === 'Home' ? 'homeNavBar' : 'bg-slate-200'} transition-transform transform ${isMenuOpen ? 'scale-y-100' : 'scale-y-0'} origin-top lg:hidden z-10 absolute left-0 right-0`}>
                 {/* Menu items */}
                 <div className={`pl-2 pt-6 ${selectedMenuItem === 'Home' ? 'text-white' : 'text-blue-500'}`}>
                     <Link href="/" onClick={() => setSelectedMenuItem('Home')}>Home</Link>
@@ -82,7 +83,7 @@ export default function Home() {
               <Link className={`font-medium border border-solid p-3 mr-5 rounded-full flex lg:hidden ${demoLinkClass}`} href="#">Try Demo</Link>               
             </div>
              </div>
-     
+             </div>
     </>
   )
 }

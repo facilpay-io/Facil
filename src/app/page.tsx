@@ -158,11 +158,11 @@ return () => {
     <main className={urbanistone.className}>
       <div className="bg-white h-1/4 flex mt-24 lg:hidden"></div>
       <div className="PageWrapper hero mt-3 lg:mt-3 flex flex-col lg:flex-row w-full items-center justify-center">
-  <div className="lg:w-1/2 text-left text-white lg:text-6xl text-3xl font-semibold">
-  <p className="pl-12 pb-6">A Blockchain-powered</p>
-  <p className="pl-12 pb-6">AI-integrated</p> 
-  <p className="pl-12 pb-6">Messaging and</p> 
-  <p className="pl-12 pb-6">Payment Platform</p>
+  <div className="lg:w-1/2 text-left text-white lg:text-6xl text-2xl font-semibold">
+  <p className="pl-12 pb-2 lg:pb-6 md:pb-6">A Blockchain-powered</p>
+  <p className="pl-12 pb-2 lg:pb-6 md:pb-6">AI-integrated</p> 
+  <p className="pl-12 pb-2 lg:pb-6 md:pb-6">Messaging and</p> 
+  <p className="pl-12 pb-2 lg:pb-6 md:pb-6">Payment Platform</p>
   <p className="text-base lg:text-xl pl-12 font-normal">Revolutionizing Web3 Chat, Payment, and DeFi Banking</p>
   <Link className="ml-12 mt-6 border border-solid pt-5 pl-9 pr-7 pb-5 rounded-full flex w-40 text-xl" href="#">Try Demo</Link>
   </div>

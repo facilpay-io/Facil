@@ -149,8 +149,23 @@ width: 740px;
   border-radius: 50px;
 }
 
+.stickyWrapper {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
 .mobileNav {
-  width: 94%;
+  max-width: 1408px;
+  margin: auto;
+ width: 100%;
+
+}
+.mobileNavDrawer {
+  max-width: 1408px;
+  margin: auto;
+  width: 100%;
+  margin-top: 3px;
 }
 
 .navText {
