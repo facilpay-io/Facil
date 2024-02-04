@@ -4,6 +4,46 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600&display=swap');
 
+.newsInput {
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.newsButton {
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    #0467F1,
+    #05CAFB
+  );
+  z-index: 1;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.newsButton::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to bottom,
+    #0467F1,
+    #0467F1
+  );
+  z-index: -1;
+  transition: opacity 0.3s linear;
+  opacity: 0;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.newsButton:hover::before {
+  opacity: 1;
+}
+
 .phonepad {
   padding-top: 81px;
 }

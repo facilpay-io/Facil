@@ -14,6 +14,8 @@ import Accordion from "./components/Accordian";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faApple, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
 
+const currentYear = new Date().getFullYear();
+
 const items = [
   {
     title: 'How does Facil App work?',
@@ -434,8 +436,8 @@ return () => {
   </div>
 </section>
 
-<section className="max-w-[1080px] m-auto pt-40">
-<div className="flex flex-wrap">
+<section className="max-w-[1080px] m-auto pt-40 border-b border-slate-200">
+<div className="flex flex-wrap pb-16">
       {/* Create five columns */}
       <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
         {/* Column content */}
@@ -492,12 +494,12 @@ return () => {
         <div className="flex items-center pt-4">
       <input
         type="text"
-        className="px-4 py-2 bg-slate-50 rounded-l-md  outline-none flex-grow"
-        placeholder="Enter text..."
+        className="newsInput px-4 py-2 bg-slate-50 outline-none flex-grow"
+        placeholder="Your Email..."
       />
       <button
         type="submit"
-        className="px-4 py-2 bg-blue-500 text-white rounded-r-md hover:bg-blue-600"
+        className="newsButton px-4 py-2 bg-blue-500 text-white text-md"
       >
         Submit
       </button>
@@ -505,6 +507,8 @@ return () => {
       </div>
     </div>
 </section>
+
+<div className="text-center pt-8 text-xs text-slate-500">Ⓒ Copyright {currentYear} Facil Pay inc. all rights reserved</div>
 
 
 
