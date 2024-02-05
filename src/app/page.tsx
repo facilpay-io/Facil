@@ -166,14 +166,14 @@ return () => {
   <p className="text-base lg:text-xl pl-4 lg:pl-12 font-normal">Revolutionizing Web3 Chat, Payment, and DeFi Banking</p>
   <Link className="ml-4 lg:ml-12 mt-6 border border-solid lg:pt-5 pt-5 pl-9 pr-2 lg:pr-7 pb-5 rounded-full flex w-36 lg:w-40 text-base lg:text-xl" href="#">Try Demo</Link>
   </div>
-  <div className="container lg:w-1/2 flex justify-center items-center">
+  <div className="mt-20 lg:mt-16 lg:w-1/2 w-full flex justify-center items-center overflow-hidden">
             <div ref={leftImageRef} style={{ opacity: 0 }}>
-              <img className="lg:w-[312px] lg:h-[533px] lg:block md:hidden hidden w-[202px] h-[auto]" src="/leftphone.png" alt="Description"  />
-              <img className="lg:w-[312px] lg:h-[533px] lg:hidden w-[300px] h-[auto] ml-8 lg:ml-0" src="/leftphoneNRight.png" alt="Description"  />
+              <img className="lg:w-[312px] lg:h-[533px] lg:block md:hidden ml-4 w-[202px] h-[auto] mt-4" src="/leftphone.png" alt="Description"  />
+              
             </div>
-            <div className="absolute rightPhone overflow-hidden hidden lg:block">
+            <div className="ml-[-80px] mt-20 lg:mt-28">
     <div ref={rightImageRef} style={{ opacity: 0 }}>
-    <img className="lg:w-[312px] lg:h-[425px] w-[202px] h-[315px] hidden lg:block md:hidden" src="/rightphone.png" alt="Description"  />
+    <img className="lg:w-[312px] lg:h-[425px] w-[202px] h-[auto]  lg:block md:hidden" src="/rightphone.png" alt="Description"  />
     </div>
     </div>
     </div>
