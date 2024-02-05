@@ -215,7 +215,7 @@ return () => {
 
 <div className="flex flex-col lg:flex-row componentWrapper pt-0 lg:pt-16">
   <div className="textFade lg:w-1/2 w-full pb-4 lg:pb-0">
-  <div className="lottieWrap h-[385px] lg:h-[auto]"><Lottie
+  <div className="lottieWrap w-[100%] h-auto"><Lottie
       animationData={animatePhone}
       style={style}
       interactivity={interactivity}
