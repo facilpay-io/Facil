@@ -215,7 +215,7 @@ return () => {
 
 <div className="flex flex-col lg:flex-row componentWrapper pt-0 lg:pt-16">
   <div className="textFade lg:w-1/2 w-full pb-4 lg:pb-0">
-  <div className="lottieWrap w-[100%] h-auto"><Lottie
+  <div className="lottieWrap w-[100%] h-auto "><Lottie
       animationData={animatePhone}
       style={style}
       interactivity={interactivity}
@@ -239,18 +239,28 @@ return () => {
 </div>
 
 <div className="flex flex-col lg:flex-row componentWrapper pt-16">
-  <div className="textFade lg:w-1/2 w-full pl-20 ">
-  <h2 className="text-4xl font-semibold pb-4 pt-12"> Facil - Bridging the Gap Between Traditional and DeFi Banking</h2>
+
+<div className="textFadeRight p-0 lg:w-1/2 w-full lg:hidden">
+  
+<div className="lottieWrap w-[100%] h-auto"><Lottie
+      animationData={animatePhone2}
+      style={style}
+      interactivity={interactivity}
+    /></div>
+</div>
+
+  <div className="textFade lg:w-1/2 w-full lg:pl-20 pl-0 ">
+  <h2 className="text-4xl font-semibold pb-4 lg:pt-12 pt-6"> Facil - Bridging the Gap Between Traditional and DeFi Banking</h2>
 <span className="text-xl font-medium">We provide every user with a Web3 wallet, creating a user-friendly, accessible, and secure ecosystem tailored to meet the unique needs of each individual.</span>
- <p className="p-4 mt-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Facilitating Blockchain Banking</p>
- <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Fiat Transfer Retail Services</p>
- <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Money Transfer API</p>
- <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Cost-effectiveness & Fast Network</p>
- <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Global Compliance & Operations</p>
+ <p className="p-2 lg:p-4 mt-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Facilitating Blockchain Banking</p>
+ <p className="p-2 lg:p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Fiat Transfer Retail Services</p>
+ <p className="p-2 lg:p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Money Transfer API</p>
+ <p className="p-2 lg:p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Cost-effectiveness & Fast Network</p>
+ <p className="p-2 lg:p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Global Compliance & Operations</p>
  <p className="mt-2 ml-4 pt-3 pb-3 pl-5 border rounded-full w-28 text-sm">Learn More</p>
   
   </div>
-<div className="textFadeRight p-10 lg:w-1/2 w-full">
+<div className="textFadeRight p-10 lg:w-1/2 w-full hidden lg:block">
   
 <div className="lottieWrap"><Lottie
       animationData={animatePhone2}
