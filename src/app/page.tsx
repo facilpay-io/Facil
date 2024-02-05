@@ -157,21 +157,21 @@ return () => {
     <>
     <main className={urbanistone.className}>
       <div className="bg-white h-1/4 flex mt-4 lg:hidden"></div>
-      <div className="PageWrapper hero mt-3 lg:mt-3 md:mt-3 flex flex-col lg:flex-row w-full items-center justify-center">
-  <div className="mt-40 lg:mt-0 lg:w-1/2 text-left text-white xl:text-5xl lg:text-4xl md:text-4xl pt-20 lg:pt-0 md:pt-20  text-2xl font-semibold">
+      <div className="PageWrapper hero h-[800px] lg:h-[600px] mt-3 lg:mt-3 md:mt-3 flex flex-col lg:flex-row w-full items-center justify-center">
+  <div className="mt-3 lg:w-1/2 text-left text-white xl:text-5xl lg:text-4xl md:text-4xl pt-20 lg:pt-0 md:pt-20  text-2xl font-semibold">
   <p className="pl-4 pb-2 lg:pl-12 lg:pb-6 md:pb-6">A Blockchain-powered</p>
   <p className="pl-4 pb-2 lg:pl-12 lg:pb-6 md:pb-6">AI-integrated</p> 
   <p className="pl-4 pb-2 lg:pl-12 lg:pb-6 md:pb-6">Messaging and</p> 
   <p className="pl-4 pb-2 lg:pl-12 lg:pb-6 md:pb-6">Payment Platform</p>
   <p className="text-base lg:text-xl pl-4 lg:pl-12 font-normal">Revolutionizing Web3 Chat, Payment, and DeFi Banking</p>
-  <Link className="ml-4 lg:ml-12 mt-6 border border-solid lg:pt-5 pt-5 s pl-9 pr-2 lg:pr-7 pb-5 rounded-full flex w-36 lg:w-40 text-base lg:text-xl" href="#">Try Demo</Link>
+  <Link className="ml-4 lg:ml-12 mt-6 border border-solid lg:pt-5 pt-5 pl-9 pr-2 lg:pr-7 pb-5 rounded-full flex w-36 lg:w-40 text-base lg:text-xl" href="#">Try Demo</Link>
   </div>
-  <div className="container lg:w-1/2 flex justify-center items-center mb-20 lg:mb-0">
+  <div className="container lg:w-1/2 flex justify-center items-center">
             <div ref={leftImageRef} style={{ opacity: 0 }}>
               <img className="lg:w-[312px] lg:h-[533px] lg:block md:hidden hidden w-[202px] h-[auto]" src="/leftphone.png" alt="Description"  />
-              <img className="lg:w-[312px] lg:h-[533px] lg:hidden w-[300px] h-[auto]" src="/leftphoneNRight.png" alt="Description"  />
+              <img className="lg:w-[312px] lg:h-[533px] lg:hidden w-[300px] h-[auto] ml-8 lg:ml-0" src="/leftphoneNRight.png" alt="Description"  />
             </div>
-            <div className="absolute rightPhone overflow-hidden">
+            <div className="absolute rightPhone overflow-hidden hidden lg:block">
     <div ref={rightImageRef} style={{ opacity: 0 }}>
     <img className="lg:w-[312px] lg:h-[425px] w-[202px] h-[315px] hidden lg:block md:hidden" src="/rightphone.png" alt="Description"  />
     </div>
@@ -181,25 +181,25 @@ return () => {
     <div>
 {/* Additional content can go here */}
 </div>
-<div className="flex flex-col lg:flex-row componentWrapper">
-  <div className="w-1/4">
-  <Image className="logoAnimation m-auto pt-10 hidden lg:block " src="/logoblue.png" alt="Logo" width={160} height={97} />
+<div className="flex flex-col lg:flex-row componentWrapper pt-0 lg:pt-10">
+  <div className="w-1/4 pt-10">
+  <Image className="logoAnimation m-auto pt-0 lg:pt-10 ml-6 lg:ml-10 " src="/logoblue.png" alt="Logo" width={160} height={97} />
   </div>
-<div className="p-10 w-3/4">
-  <h2 className="HomeTitle text-6xl font-bold pb-4">Introducing Facil</h2>
-<span className="text-xl font-normal">A Cutting-Edge Web 3.0 Messaging and Payment Platform. Facil seamlessly integrates with blockchain-based decentralized applications, offering secure peer-to-peer messaging and global cryptocurrency payments at your fingertips. Send funds worldwide to friends, contacts, or merchants using Facil.</span>
+<div className="p-4 lg:p-10 w-full lg:w-3/4">
+  <h2 className="HomeTitle text-3xl lg:text-6xl font-bold pb-4">Introducing Facil</h2>
+<span className="text-base lg:text-xl font-normal">A Cutting-Edge Web 3.0 Messaging and Payment Platform. Facil seamlessly integrates with blockchain-based decentralized applications, offering secure peer-to-peer messaging and global cryptocurrency payments at your fingertips. Send funds worldwide to friends, contacts, or merchants using Facil.</span>
 </div>
 </div>
 
-<div className="flex flex-col lg:flex-row componentWrapper pt-16">
-  <div className="textFade lg:w-1/2 w-full pl-20">
-  <h2 className="text-4xl font-semibold pb-4 pt-24"> Facil, Simple, and Secure Intuitive Messaging Meets Web3</h2>
+<div className="flex flex-col lg:flex-row componentWrapper pt-0 lg;pt-16">
+  <div className="textFade lg:w-1/2 w-full lg:pl-20 pl-0">
+  <h2 className="text-4xl font-semibold pb-4 lg:pt-24 pt-8"> Facil, Simple, and Secure Intuitive Messaging Meets Web3</h2>
 <span className="text-xl font-medium">Facilpay app move beyond the limitation of Web2 and take advantage of all Web3 has to offer yet, enjoy the Speed, Reliability, and Security.</span>
- <p className="p-4 mt-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Secured Peer-to-Peer Messaging</p>
- <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />A.I. Instant Message & Voice Translation</p>
- <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />NFT Emoticons & Sticker</p>
- <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Group Chat & Group Calls</p>
- <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />File transfers, Calls, and HD Video conferences</p>
+ <p className="lg:p-4 p-2 mt-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Secured Peer-to-Peer Messaging</p>
+ <p className="lg:p-4 p-2"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />A.I. Instant Message & Voice Translation</p>
+ <p className="lg:p-4 p-2"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />NFT Emoticons & Sticker</p>
+ <p className="lg:p-4 p-2"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Group Chat & Group Calls</p>
+ <p className="lg:p-4 p-2"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />File transfers, Calls, and HD Video conferences</p>
  <p className="mt-2 ml-4 pt-3 pb-3 pl-5 border rounded-full w-28 text-sm">Learn More</p>
   </div>
 <div className="textFadeRight p-10 lg:w-1/2 w-full">
