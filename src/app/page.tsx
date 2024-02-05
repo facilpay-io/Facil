@@ -36,7 +36,7 @@ const items = [
 ];
 
 const style = {
-  height: 559,
+  
 };
 
 interface Interactivity {
@@ -213,9 +213,9 @@ return () => {
 </div>
 </div>
 
-<div className="flex flex-col lg:flex-row componentWrapper pt-16">
-  <div className="textFade lg:w-1/2 w-full ">
-  <div className="lottieWrap"><Lottie
+<div className="flex flex-col lg:flex-row componentWrapper pt-0 lg:pt-16">
+  <div className="textFade lg:w-1/2 w-full pb-4 lg:pb-0">
+  <div className="lottieWrap h-[385px] lg:h-[auto]"><Lottie
       animationData={animatePhone}
       style={style}
       interactivity={interactivity}
@@ -225,15 +225,15 @@ return () => {
   
   </div>
 <div className="p-0 textFadeRight lg:w-1/2 w-full">
-<h2 className="text-4xl font-semibold pb-10 pt-0 pb-2"> Your unified facil messaging to the future of payments</h2>
+<h2 className="text-4xl font-semibold pb-10 pt-0 "> Your unified facil messaging to the future of payments</h2>
 <span className="text-xl font-medium ">Crypto-Enabled and Fiat Ready</span>
- <p className="p-4 mt-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Secured Mobile Wallet</p>
- <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Multi-Chain Network</p>
- <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Peer-to-Peer Payments</p>
- <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Flexible Crypto Transactions</p>
- <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Crypto Debit & Prepaid Card</p>
- <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Facil Swap & Facil Bridge</p>
- <p className="p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Web 3.0 DeFi Solutions</p>
+ <p className="p-2 lg:p-4 mt-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Secured Mobile Wallet</p>
+ <p className="p-2 lg:p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Multi-Chain Network</p>
+ <p className="p-2 lg:p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Peer-to-Peer Payments</p>
+ <p className="p-2 lg:p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Flexible Crypto Transactions</p>
+ <p className="p-2 lg:p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Crypto Debit & Prepaid Card</p>
+ <p className="p-2 lg:p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Facil Swap & Facil Bridge</p>
+ <p className="p-2 lg:p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Web 3.0 DeFi Solutions</p>
  <p className="mt-2 ml-4 pt-3 pb-3 pl-5 border rounded-full w-28 text-sm">Learn More</p>
 </div>
 </div>
