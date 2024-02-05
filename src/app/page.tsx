@@ -158,21 +158,21 @@ return () => {
     <main className={urbanistone.className}>
       <div className="bg-white h-1/4 flex mt-4 lg:hidden"></div>
       <div className="PageWrapper hero mt-3 lg:mt-3 md:mt-3 flex flex-col lg:flex-row w-full items-center justify-center">
-  <div className="lg:w-1/2 text-left text-white xl:text-6xl lg:text-5xl md:text-4xl text-2xl font-semibold">
+  <div className="mt-20 lg:mt-0 lg:w-1/2 text-left text-white xl:text-5xl lg:text-4xl md:text-4xl pt-20 lg:pt-0 md:pt-20  text-2xl font-semibold">
   <p className="pl-4 pb-2 lg:pl-12 lg:pb-6 md:pb-6">A Blockchain-powered</p>
   <p className="pl-4 pb-2 lg:pl-12 lg:pb-6 md:pb-6">AI-integrated</p> 
   <p className="pl-4 pb-2 lg:pl-12 lg:pb-6 md:pb-6">Messaging and</p> 
   <p className="pl-4 pb-2 lg:pl-12 lg:pb-6 md:pb-6">Payment Platform</p>
   <p className="text-base lg:text-xl pl-4 lg:pl-12 font-normal">Revolutionizing Web3 Chat, Payment, and DeFi Banking</p>
-  <Link className="ml-4 lg:ml-12 mt-6 border border-solid pt-5 pl-9 pr-2 lg:pr-7 pb-5 rounded-full flex w-36 lg:w-40 text-base lg:text-xl" href="#">Try Demo</Link>
+  <Link className="ml-4 lg:ml-12 mt-6 border border-solid lg:pt-5 pt-0 s pl-9 pr-2 lg:pr-7 pb-5 rounded-full flex w-36 lg:w-40 text-base lg:text-xl" href="#">Try Demo</Link>
   </div>
-  <div className="container lg:w-1/2 flex justify-center items-center overflow-hidden">
+  <div className="container lg:w-1/2 flex justify-center items-center">
             <div ref={leftImageRef} style={{ opacity: 0 }}>
-              <img className="lg:w-[312px] lg:h-[533px] w-[202px] h-[423px]" src="/leftphone.png" alt="Description"  />
+              <img className="lg:w-[312px] lg:h-[533px] w-[202px] h-[auto]" src="/leftphone.png" alt="Description"  />
             </div>
             <div className="absolute rightPhone overflow-hidden">
     <div ref={rightImageRef} style={{ opacity: 0 }}>
-    <img className="lg:w-[312px] lg:h-[425px] w-[202px] h-[315px]" src="/rightphone.png" alt="Description"  />
+    <img className="lg:w-[312px] lg:h-[425px] w-[202px] h-[315px] hidden lg:block md:hidden" src="/rightphone.png" alt="Description"  />
     </div>
     </div>
     </div>
