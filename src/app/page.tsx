@@ -82,7 +82,7 @@ export default function Home() {
     ScrollTrigger.create({
       trigger: ".hero",
       start: "top bottom",
-      end: "15% top",
+      end: "30% top",
       onEnter: () => {
         gsap.to(leftImageRef.current, { y: 0, opacity: 1, duration: 1 });
         gsap.to(rightImageRef.current, { x: 0, opacity: 1, duration: 1 });
