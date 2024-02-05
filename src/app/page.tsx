@@ -192,6 +192,11 @@ return () => {
 </div>
 
 <div className="flex flex-col lg:flex-row componentWrapper pt-0 lg;pt-16">
+
+<div className="textFadeRight p-0 lg:w-1/2 w-full lg:hidden">
+  <Image className="logoAnimation m-auto pt-10 " src="/bodyphone.webp" alt="phone" width={556} height={568} />
+  </div>
+  
   <div className="textFade lg:w-1/2 w-full lg:pl-20 pl-0">
   <h2 className="text-4xl font-semibold pb-4 lg:pt-24 pt-8"> Facil, Simple, and Secure Intuitive Messaging Meets Web3</h2>
 <span className="text-xl font-medium">Facilpay app move beyond the limitation of Web2 and take advantage of all Web3 has to offer yet, enjoy the Speed, Reliability, and Security.</span>
