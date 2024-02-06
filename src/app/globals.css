@@ -96,6 +96,23 @@
   }
 }
 
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
 
 .lottieWrap {
 background: linear-gradient(180deg, #19A1FC 0%, #046CF1 100%);

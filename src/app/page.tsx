@@ -13,6 +13,14 @@ import animatePhone2 from "./components/animatephone2.json";
 import Accordion from "./components/Accordian";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faApple, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+
+
 
 const currentYear = new Date().getFullYear();
 
@@ -260,7 +268,7 @@ return () => {
  <p className="mt-2 ml-4 pt-3 pb-3 pl-5 border rounded-full w-28 text-sm">Learn More</p>
   
   </div>
-<div className="textFadeRight p-10 lg:w-1/2 w-full hidden lg:block">
+<div className="textFadeRight p-10 lg:w-1/2 w-full hidden lg:block overflow-hidden">
   
 <div className="lottieWrap"><Lottie
       animationData={animatePhone2}
@@ -270,13 +278,69 @@ return () => {
 </div>
 </div>
 
+<div className="lg:hidden slider mt-20 m-auto w-auto p-6 overflow-hidden">
+<h1 className="pb-10 lg:hidden m-0 relative text-xl md:text-2xl lg:text-4xl  font-semibold font-inherit inline-block text-center">
+        A Blockchain-powered Messaging and Payment platform
+      </h1>
+<Swiper
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={'3'}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2,
+          slideShadows: true,
+        }}
+        pagination={true}
+        navigation={true}
+        modules={[EffectCoverflow, Pagination, Navigation]}
+        className="mySwiper"
+      >
+         <SwiperSlide>
+          <img src="/card1.svg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/card2.svg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/card3.svg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/card3.svg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/card4.svg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/card5.svg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/card6.svg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/card7.svg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/card8.svg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/card9.svg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/card10.svg" />
+        </SwiperSlide>
+      </Swiper>
+</div>
 
 <div className=" mt-20 m-auto">
 <section className=" flex flex-col items-center justify-start py-0 px-5 box-border gap-[47px] min-h-[803px] text-left text-22xl font-label-md mq825:gap-[23px]">
-      <h1 className="m-0 relative text-xl md:text-2xl lg:text-4xl leading-[73px] font-semibold font-inherit inline-block  mq825:leading-[58px]">
+      <h1 className="hidden lg:flex m-0 relative text-xl md:text-2xl lg:text-4xl leading-[73px] font-semibold font-inherit inline-block  mq825:leading-[58px]">
         A Blockchain-powered Messaging and Payment platform
       </h1>
-      <div className="self-stretch flex flex-row flex-wrap items-start justify-center gap-[33px] min-h-[483px] mq825:gap-[16px]">
+      <div className="hidden lg:flex self-stretch flex flex-row flex-wrap items-start justify-center gap-[33px] min-h-[483px] mq825:gap-[16px]">
         <img
           className="h-[220px] w-[241px] relative"
           loading="eager"
