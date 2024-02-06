@@ -286,7 +286,7 @@ return () => {
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={'3'}
+        slidesPerView={3}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
