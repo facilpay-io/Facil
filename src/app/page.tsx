@@ -206,7 +206,7 @@ return () => {
   </div>
   
   <div className="textFade lg:w-1/2 w-full lg:pl-20 pl-0">
-  <h2 className="text-4xl font-semibold pb-4 lg:pt-24 pt-8"> Facil, Simple, and Secure Intuitive Messaging Meets Web3</h2>
+  <h2 className="text-3xl lg:text-4xl font-semibold pb-4 lg:pt-24 pt-8"> Facil, Simple, and Secure Intuitive Messaging Meets Web3</h2>
 <span className="text-xl font-medium">Facilpay app move beyond the limitation of Web2 and take advantage of all Web3 has to offer yet, enjoy the Speed, Reliability, and Security.</span>
  <p className="lg:p-4 p-2 mt-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Secured Peer-to-Peer Messaging</p>
  <p className="lg:p-4 p-2"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />A.I. Instant Message & Voice Translation</p>
@@ -233,7 +233,7 @@ return () => {
   
   </div>
 <div className="p-0 textFadeRight lg:w-1/2 w-full">
-<h2 className="text-4xl font-semibold pb-10 pt-0 "> Your unified facil messaging to the future of payments</h2>
+<h2 className="text-3xl lg:text-4xl font-semibold pb-10 pt-0 "> Your unified facil messaging to the future of payments</h2>
 <span className="text-xl font-medium ">Crypto-Enabled and Fiat Ready</span>
  <p className="p-2 lg:p-4 mt-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Secured Mobile Wallet</p>
  <p className="p-2 lg:p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Multi-Chain Network</p>
@@ -258,7 +258,7 @@ return () => {
 </div>
 
   <div className="textFade lg:w-1/2 w-full lg:pl-20 pl-0 ">
-  <h2 className="text-4xl font-semibold pb-4 lg:pt-12 pt-6"> Facil - Bridging the Gap Between Traditional and DeFi Banking</h2>
+  <h2 className="text-3xl lg:text-4xl font-semibold pb-4 lg:pt-12 pt-6"> Facil - Bridging the Gap Between Traditional and DeFi Banking</h2>
 <span className="text-xl font-medium">We provide every user with a Web3 wallet, creating a user-friendly, accessible, and secure ecosystem tailored to meet the unique needs of each individual.</span>
  <p className="p-2 lg:p-4 mt-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Facilitating Blockchain Banking</p>
  <p className="p-2 lg:p-4"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={18} height={18} />Fiat Transfer Retail Services</p>
@@ -278,23 +278,24 @@ return () => {
 </div>
 </div>
 
-<div className="lg:hidden slider mt-20 m-auto w-auto p-6 overflow-hidden">
-<h1 className="pb-10 lg:hidden m-0 relative text-xl md:text-2xl lg:text-4xl  font-semibold font-inherit inline-block text-center">
+<div className="lg:hidden slider mt-20 m-auto w-auto p-0 overflow-hidden">
+<h1 className="pb-10 lg:hidden m-0 relative text-2xl md:text-2xl lg:text-4xl  font-semibold font-inherit inline-block text-center">
         A Blockchain-powered Messaging and Payment platform
       </h1>
 <Swiper
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
+        loop={true}
         slidesPerView={3}
         coverflowEffect={{
           rotate: 0,
-          stretch: 0,
+          stretch: 48,
           depth: 100,
-          modifier: 2,
+          modifier: 1,
           slideShadows: true,
         }}
-        pagination={true}
+        pagination={false}
         navigation={true}
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="mySwiper"
@@ -335,7 +336,7 @@ return () => {
       </Swiper>
 </div>
 
-<div className=" mt-20 m-auto">
+<div className="hidden lg:block mt-20 m-auto">
 <section className=" flex flex-col items-center justify-start py-0 px-5 box-border gap-[47px] min-h-[803px] text-left text-22xl font-label-md mq825:gap-[23px]">
       <h1 className="hidden lg:flex m-0 relative text-xl md:text-2xl lg:text-4xl leading-[73px] font-semibold font-inherit inline-block  mq825:leading-[58px]">
         A Blockchain-powered Messaging and Payment platform
@@ -402,59 +403,23 @@ return () => {
       </div>
     </section>
 </div>
-<div className="wrapperCom  m-auto">
-<section className="wrapperCom flex flex-col items-center justify-start py-0 px-5 box-border gap-[56px] min-h-[1010px] max-w-full text-center text-22xl font-label-md mq825:gap-[28px]">
-      <div className="flex flex-col items-center justify-start gap-[7px] max-w-full">
-        <div className="flex flex-row items-start justify-start py-0 pr-0 pl-[21px] box-border max-w-full">
-          <h1 className="m-0 relative text-inherit leading-[41px] capitalize font-semibold font-inherit z-[1] mq450:text-6xl mq450:leading-[42px] mq825:text-14xl mq825:leading-[56px]">
-            app screenshots
-          </h1>
-        </div>
-        <div className="relative text-xl leading-[30px] capitalize font-medium text-left mq450:text-base mq450:leading-[24px]">
-          Facil App delivered blazing fast performance, striking word solution
-        </div>
-      </div>
-      <div className="self-stretch flex flex-row flex-wrap items-start justify-center gap-[20px] max-w-full">
-        <div className="h-[546px] w-[180px] flex flex-col items-start justify-start pt-[173px] px-0 pb-0 box-border mq825:pt-28 mq825:box-border">
-          <img
-            className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
-            alt=""
-            src="/left1.png"
-          />
-        </div>
-        <div className="h-[620px] w-[252px] flex flex-col items-start justify-start pt-[98px] px-0 pb-0 box-border mq825:pt-16 mq825:box-border">
-          <img
-            className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
-            alt=""
-            src="/left2.png"
-          />
-        </div>
-        <img
-          className="h-[694px] w-[335px] overflow-hidden "
-          alt=""
-          src="/centeriphone.png"
-        />
-        <div className="h-[620px] w-[252px] flex flex-col items-start justify-start pt-[98px] px-0 pb-0 box-border mq825:pt-16 mq825:box-border">
-          <img
-            className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
-            alt=""
-            src="/right2.png"
-          />
-        </div>
-        <div className="h-[546px] w-[180px] flex flex-col items-start justify-start pt-[173px] px-0 pb-0 box-border mq825:pt-28 mq825:box-border">
-          <img
-            className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
-            alt=""
-            src="/right1.png"
-          />
-        </div>
-      </div>
-    </section>
-</div>
 
-<div className="flex flex-col lg:flex-row componentWrapper pt-0">
+<section className="wrapperCom m-auto flex flex-col items-center pt-40 lg:pt-8">
+<h1 className="font-semibold text-2xl lg:text-4xl">App screenshots</h1>
+<p className="text-center pb-4 lg:pb-10">Facil App delivered blazing fast performance, striking word solution</p>
+<div className="p-0">
+  <img className="m-auto "
+        alt=""
+        src="/phonegroup1.webp" width="100%"
+          />
+    </div>
+      
+    </section>
+
+
+<div className="flex flex-col lg:flex-row componentWrapper pt-6 lg:pt-0">
   <div className="textFade lg:w-1/2 w-full ">
-  <div className="pl-10">
+  <div className="lg:pl-10 pl-0">
   <img className="m-auto "
         alt=""
         src="/miccard.webp" width="70%"
@@ -475,30 +440,30 @@ return () => {
 </div>
 
 <section className="max-w-[780px] m-auto pt-32 mb-30">
-<div className="text-center"><h1 className="text-4xl font-semibold mb-0">Got questions?</h1>
+<div className="text-center"><h1 className="text-3xl lg:text-4xl font-semibold mb-0">Got questions?</h1>
 <p className="mb-14">Get the answers to your questions about FastFinance.</p></div>
       <Accordion items={items} />
 </section>
 
 <section className="flex justify-center items-center pt-40 relative">
-  <div className="AppContainer w-[1408px] h-[980px] overflow-hidden text-center text-45xl text-white font-inter flex flex-col justify-between relative">
+  <div className="AppContainer w-[1408px] lg:h-[980px] h-[480px] overflow-hidden text-center text-white font-inter flex flex-col justify-between relative">
     <div>
-      <h1 className="text-5xl font-semibold pt-40">Get the facil pay Mobile app</h1>
-      <p>With this platform, you can access your account anywhere, <br />anytime for balance and so much more</p>
+      <h1 className="text-2xl lg:text-6xl font-semibold lg:pt-40 pt-16">Get the facil pay Mobile app</h1>
+      <p className="text-base">With this platform, you can access your account anywhere, anytime for balance and so much more</p>
     </div>
-    <div className="appbuttons flex inline-block justify-center items-center">
+    <div className="appbuttons flex inline-block justify-center items-center pt-20 lg:pt-20">
       <button className="bg-white rounded-full p-3 m-2 text-black font-medium">
         <FontAwesomeIcon icon={faApple} className="mr-2" />Download Now
       </button>
-      <button className="bg-white rounded-full p-3 m-8 text-black font-medium">
+      <button className="bg-white rounded-full p-3 m-2 text-black font-medium">
         <FontAwesomeIcon icon={faGooglePlay} className="mr-2" />Download Now
       </button>
     </div>
     <div className="position-relative">
       <div id="appbox" className="inline-flex align-bottom justify-center items-center relative z-10">
-        <img className="flex w-[341px] phonepad" alt="" src="/centerappl1.png" />
-        <img className="flex w-[400px]" alt="" src="/centerapp1.png" />
-        <img className="phonepad flex w-[341px] " alt="" src="/centerappr1.png" />
+        <img className="flex lg:w-[341px] w-[101px] phonepad" alt="" src="/centerappl1.png" />
+        <img className="flex lg:w-[400px] w-[164px]" alt="" src="/centerapp1.png" />
+        <img className="phonepad flex lg:w-[341px] w-[101px] " alt="" src="/centerappr1.png" />
       </div>
       <img
         className="backimage absolute bottom-0  z-0"
