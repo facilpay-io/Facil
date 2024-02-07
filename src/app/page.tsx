@@ -290,7 +290,7 @@ return () => {
         slidesPerView={3}
         coverflowEffect={{
           rotate: 0,
-          stretch: 48,
+          stretch: 0,
           depth: 100,
           modifier: 1,
           slideShadows: true,
@@ -487,25 +487,23 @@ return () => {
       <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
         {/* Column content */}
         <img
-        className=""
+        className="w-[30%]lg:w-[40%] h-auto "
         alt=""
         src="/footerlogo.svg"
-        style={{ width: '40%', height: 'auto' }}
       />
         <div className=" pt-4">
         <p><img
-        className="inline-flex mb-1 mr-1 "
+        className="inline-flex mb-1 mr-1 lg:w-[10%] w-[%5] h-auto "
         alt=""
         src="/envelope.svg"
-        style={{ width: '10%', height: 'auto' }}
       />
           facilpay.Io@gmail.com
           </p>
           <p className="pt-4"><img
-        className="inline-flex mb-1 mr-1 "
+        className="inline-flex mb-1 mr-1 lg:w-[10%] w-[%5] h-auto"
         alt=""
         src="/phoneicon.svg"
-        style={{ width: '10%', height: 'auto' }}
+       
       />+1 234 456 678 89</p>
           </div>
 
