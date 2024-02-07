@@ -449,7 +449,7 @@ return () => {
   <div className="AppContainer w-[1408px] lg:h-[980px] h-[480px] overflow-hidden text-center text-white font-inter flex flex-col justify-between relative">
     <div>
       <h1 className="text-2xl lg:text-6xl font-semibold lg:pt-40 pt-16">Get the facil pay Mobile app</h1>
-      <p className="text-base">With this platform, you can access your account anywhere, anytime for balance and so much more</p>
+      <p className="text-base p-2">With this platform, you can access your account anywhere, anytime for balance and so much more</p>
     </div>
     <div className="appbuttons flex inline-block justify-center items-center pt-20 lg:pt-20">
       <button className="bg-white rounded-full p-3 m-2 text-black font-medium">
