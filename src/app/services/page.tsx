@@ -1,10 +1,396 @@
-import React from 'react'
+"use client";
+
+import Link from 'next/link';
+import { Urbanist } from '@next/font/google';
+import gsap from "gsap";
+import { useEffect, useRef } from 'react';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import Image from 'next/image';
+import React from "react";
+import Lottie, {Action} from 'lottie-react'
+import animatePhone from "../components/animatephone.json";
+import animatePhone2 from "../components/animatephone2.json";
+import Accordion from "../components/Accordian";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faApple, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import MainNavigation from '../components/NavigationServices'
+
+
+const currentYear = new Date().getFullYear();
+
+const items = [
+  {
+    title: 'How does Facil App work?',
+    content: 'Facil App is a platform that allows you to transfer money to anywhere in the world with confidence and ease. Simply create an account, add your recipients information, and make a transfer. Our platform handles the rest.',
+  },
+  {
+    title: 'Is it safe to use Facil App?',
+    content: 'Placeholder text for Question 2 body.',
+  },
+  {
+    title: 'Can I track my transfer?',
+    content: 'Placeholder text for Question 3 body.',
+  },
+  {
+    title: 'Are there any hidden fees with Facil App?',
+    content: 'Placeholder text for Question 4 body.',
+  },
+];
+
+const style = {
+  
+};
+
+interface Interactivity {
+  mode: 'scroll' | 'cursor'
+  actions: Action[]
+}
+
+const interactivity: Interactivity = {
+  mode: 'scroll',
+  actions: [
+    {visibility: [0.2, 0.2], type: 'stop', frames: [0]},
+    {
+      visibility: [0.2, 0.45],
+      type: 'seek',
+      frames: [0, 45],
+    },
+    {visibility: [0.45, 1.0], type: 'loop', frames: [45, 60]},
+  ],
+}
+
+
+const urbanistone = Urbanist({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+});
+
+gsap.registerPlugin(ScrollTrigger);
+
 
 export default function Services() {
+  const leftImageRef = useRef(null);
+ 
+
+  useEffect(() => {
+    if (!leftImageRef.current) {
+      console.error("Refs not attached");
+      return;
+    }
+
+    // Apply initial state immediately
+    gsap.set(leftImageRef.current, { y: 600, opacity: 0 });
+    
+    // ScrollTrigger animations
+    ScrollTrigger.create({
+      trigger: ".heroServices",
+      start: "top bottom",
+      end: "30% top",
+      onEnter: () => {
+        gsap.to(leftImageRef.current, { y: 0, opacity: 1, duration: 1 });
+        
+      },
+      onLeave: () => {
+        gsap.to(leftImageRef.current, { y: 600, opacity: 0, duration: 1 });
+        
+      },
+      onEnterBack: () => {
+        gsap.to(leftImageRef.current, { y: 0, opacity: 1, duration: 1 });
+        
+      },
+      onLeaveBack: () => {
+        gsap.to(leftImageRef.current, { y: 600, opacity: 0, duration: 1 });
+        
+      },
+  });
+
+
+// Intersection Observer options for text fade-in
+const textFadeOptions = {
+  threshold: 0.2, // Adjust this threshold as needed
+};
+
+const textFadeObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const targetElement = entry.target;
+      if (targetElement.classList.contains('textFadeRight')) {
+        // Add the fade-in animation with an x value of 40px when the text is in view
+        gsap.fromTo(
+          targetElement,
+          { opacity: 0, x: 140 }, // Initial state with x = 40
+          { opacity: 1, x: 0, duration: 1 } // Target state when in view
+        );
+      } else {
+        // Add the default text fade-in animation with x = -40
+        gsap.fromTo(
+          targetElement,
+          { opacity: 0, x: -140 }, // Initial state
+          { opacity: 1, x: 0, duration: 1 } // Target state when in view
+        );
+      }
+
+      // Stop observing the element after animation
+      textFadeObserver.unobserve(targetElement);
+    }
+  });
+}, textFadeOptions);
+
+// Select all elements with the "textFade" class that you want to animate
+const textFadeElements = document.querySelectorAll(".textFade, .textFadeRight");
+
+// Start observing the text elements
+textFadeElements.forEach((element) => {
+  textFadeObserver.observe(element);
+});
+
+// Clean up the observer when the component unmounts
+return () => {
+  textFadeElements.forEach((element) => {
+    textFadeObserver.unobserve(element);
+  });
+};
+
+}, []);
+
+  
+
+
   return (
     <>
-    <div className=" ">
-        <p>Hello page 2</p></div>
-    </>
-  )
+    <div className="stickyWrapper"><MainNavigation /></div>
+    <main className={urbanistone.className}>
+      <div className="bg-white h-1/4 flex mt-4 lg:hidden"></div>
+      <div className="PageWrapper heroServices bg-gray-100 h-[400px] lg:h-[650px] mt-3 lg:mt-3 md:mt-3 flex flex-col lg:flex-col w-full items-center justify-center">
+  <div className="mt-10 lg:w-full text-center text-black  lg:pt-0 pt-0 lg:pt-0 md:pt-0  text-2xl font-semibold">
+  <p className="lg:pt-10 pt-2 pl-2 pr-2 pb-2 lg:pl-12 lg:pb-6 md:pb-6 text-xl xl:text-5xl lg:text-4xl md:text-4xl">Simplifying Blockchain for Everyday Users</p>
+  
+  <p className="text-base lg:text-xl pl-4 lg:pl-12 font-normal">Bridging the Gap Between Traditional and DeFi Banking</p>
+  
+  </div>
+  <div className="mt-8 lg:mt-16 lg:w-full w-full flex justify-center items-center overflow-hidden">
+            <div ref={leftImageRef} style={{ opacity: 0 }}>
+              <img className="lg:w-[700px] lg:h-[auto] lg:block  ml-0 w-[400px] h-[auto] lg:mt-64 mt-40" src="/servicesherophones.webp" alt="Description"  />
+              
+            </div>
+           
+    </div>
+    </div>
+    <div>
+{/* Additional content can go here */}
+</div>
+
+
+<div className="flex flex-col lg:flex-row componentWrapper pt-0 lg:pt-16">
+<div className="textFadeRight p-0 lg:w-1/2 w-full lg:hidden">
+  <Image className="logoAnimation m-auto pt-10 " src="/centeriphone.png" alt="phone" width={166} height={178} />
+  </div>
+  
+  <div className="textFade lg:w-1/2 w-full lg:pl-20 pl-0">
+  <h2 className="text-2xl lg:text-4xl font-semibold pb-4 lg:pt-24 pt-8"> Facil - Free, Simple, and Empowering.</h2>
+<span className="text-base">We provide each user with a Web3 wallet, offering a user-friendly, secure, and accessible peer-to-peer messaging and payment system. This integrated feature allows users to chat and transact with friends, family, or merchants using cryptocurrency, all within the Facil application. </span>
+ <p className=" mt-4"><span className="HomeTitle">Facil represents more than just a service;</span> it signifies a paradigm shift in digital interaction. Our goal is to demystify complex technologies, making blockchain and cryptocurrency a part of daily life. Facil invites you to experience the future of connectivity and commerce, where freedom, simplicity, and empowerment are effortlessly within your reach.</p>
+
+  </div>
+<div className="textFadeRight p-10 lg:w-1/2 w-full">
+  
+<Image className="logoAnimation m-auto pt-0 hidden lg:block " src="/centeriphone.png" alt="phone" width={256} height={268} />
+</div>
+</div>
+
+<div className="flex flex-col lg:flex-row componentWrapper pt-0 lg:pt-16">
+  <div className="textFade lg:w-1/2 w-full pb-4 lg:pb-0">
+  <div className="lottieWrap w-[100%] h-auto "></div>
+  
+  <img className="logoAnimation m-auto pt-0 w-[340px] lg:w-[480px] h-[auto] " loading="eager" alt="" src="/ServiceSec2.webp"/>
+  </div>
+  
+<div className="p-0 textFadeRight lg:w-1/2 w-full">
+<h2 className="text-2xl lg:text-4xl font-semibold pb-0 lg:pt-20 pt-4 "> Chat and Pay with Facil-Ease</h2>
+<p className="text-base pt-4"><span className="HomeTitle">Messaging and Crypto Transactions </span>
+Simplified Chatting with friends, family, or merchants and paying them with cryptocurrency is as easy as sending a text message thats the world Facil creates. Our application allows you to manage communications and transactions simultaneously within a single, intuitive interface
+ </p>
+ <p className="text-base pt-4"><span className="HomeTitle">Facil is more than an app; </span>
+ its a gateway to a new era of digital interaction, where convenience, security, and user empowerment converge. Welcome aboard experience the future of Web3 with Facil. Chat and get paid - Make instant payment during your communication worldwide.
+ </p>
+</div>
+</div>
+
+<div className="flex flex-col lg:flex-row componentWrapper pt-16">
+
+<div className="textFadeRight p-0 lg:w-1/2 w-full lg:hidden">
+  
+<div className=" w-[100%] h-auto">
+<img className="logoAnimation m-auto pt-0 w-[300px] lg:w-[480px] h-[auto] " loading="eager" alt="" src="/servicesSec3.webp"/>
+</div>
+</div>
+
+  <div className="textFade lg:w-1/2 w-full lg:pl-20 pl-0 ">
+  <h2 className="text-2xl lg:text-4xl font-semibold pb-4 lg:pt-28 pt-0">Global Transfers made Facil</h2>
+  <p className="pt-4 text-base">Transfer money instantly with Facil at better rates. Want to send crypto to someone without bank account access? No problem. You can visit a local MoneyGram location and receive money in 182 countries worldwide. The Facil app integrates seamlessly with MoneyGrams extensive global retail network, enabling users to deposit or withdraw cash directly into their wallets. This bypasses the need for a traditional bank account, offering a practical solution for the unbanked.</p>
+ <p className="pt-4"> <span className="HomeTitle">GLOBAL REACH IN OVER 180 COUNTRIES.</span> Through its integration with MoneyGram, the Facil app empowers users to perform cash-out transactions in 182 countries worldwide.</p>
+ 
+  
+  </div>
+<div className="textFadeRight p-10 lg:w-1/2 w-full hidden lg:block overflow-hidden">
+  
+<div className=""><img className="logoAnimation m-auto pt-0  lg:w-[420px] h-[auto] " loading="eager" alt="" src="/servicesSec3.webp"/></div>
+</div>
+</div>
+
+
+
+
+
+
+<div className="flex flex-col lg:flex-row componentWrapper pt-6 lg:pt-0">
+  <div className="textFade lg:w-1/2 w-full ">
+  <div className="lg:pl-10 pl-0">
+  <img className="m-auto "
+        alt=""
+        src="/miccard.webp" width="70%"
+          />
+    </div>
+
+  
+  
+  </div>
+<div className="p-0 textFadeRight lg:w-1/2 w-full">
+<img className="pt-10 pb-4"
+        alt=""
+        src="/appicon.svg" width="10%"
+          />
+<span className="text-xl font-medium ">AI Chatbot Integration for Facil App: Enhancing User Experience with Advanced Conversational Technology</span>
+
+</div>
+</div>
+
+<section className="max-w-[780px] m-auto pt-32 mb-30">
+<div className="text-center"><h1 className="text-3xl lg:text-4xl font-semibold mb-0">Got questions?</h1>
+<p className="mb-14">Get the answers to your questions about FastFinance.</p></div>
+      <Accordion items={items} />
+</section>
+
+<section className="flex justify-center items-center pt-40 relative">
+  <div className="AppContainer w-[1408px] lg:h-[980px] h-[480px] overflow-hidden text-center text-white font-inter flex flex-col justify-between relative">
+    <div>
+      <h1 className="text-2xl lg:text-6xl font-semibold lg:pt-40 pt-16">Get the facil pay Mobile app</h1>
+      <p className="text-base p-2">With this platform, you can access your account anywhere, anytime for balance and so much more</p>
+    </div>
+    <div className="appbuttons flex inline-block justify-center items-center pt-20 lg:pt-20">
+      <button className="bg-white rounded-full p-3 m-2 text-black font-medium">
+        <FontAwesomeIcon icon={faApple} className="mr-2" />Download Now
+      </button>
+      <button className="bg-white rounded-full p-3 m-2 text-black font-medium">
+        <FontAwesomeIcon icon={faGooglePlay} className="mr-2" />Download Now
+      </button>
+    </div>
+    <div className="position-relative">
+      <div id="appbox" className="inline-flex align-bottom justify-center items-center relative z-10">
+        <img className="flex lg:w-[341px] w-[101px] phonepad" alt="" src="/centerappl1.png" />
+        <img className="flex lg:w-[400px] w-[164px]" alt="" src="/centerapp1.png" />
+        <img className="phonepad flex lg:w-[341px] w-[101px] " alt="" src="/centerappr1.png" />
+      </div>
+      <img
+        className="backimage absolute bottom-0  z-0"
+        alt=""
+        src="/vector1.svg"
+        style={{ width: '30%', height: 'auto' }}
+      />
+      <img
+        className="backimageRight absolute bottom-0 right-0 z-0"
+        alt=""
+        src="/vector2.svg"
+        style={{ width: '30%', height: 'auto' }}
+      />
+    </div>
+  </div>
+</section>
+
+<section className="max-w-[1080px] m-auto pt-40 border-b border-slate-200">
+<div className="flex flex-wrap pb-16">
+      {/* Create five columns */}
+      <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
+        {/* Column content */}
+        <img
+        className="w-[30%]lg:w-[40%] h-auto "
+        alt=""
+        src="/footerlogo.svg"
+      />
+        <div className=" pt-4">
+        <p><img
+        className="inline-flex mb-1 mr-1 lg:w-[10%] w-[%5] h-auto "
+        alt=""
+        src="/envelope.svg"
+      />
+          facilpay.Io@gmail.com
+          </p>
+          <p className="pt-4"><img
+        className="inline-flex mb-1 mr-1 lg:w-[10%] w-[%5] h-auto"
+        alt=""
+        src="/phoneicon.svg"
+       
+      />+1 234 456 678 89</p>
+          </div>
+
+      </div>
+      <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
+        <div className=" p-0 pl-4 pr-4"><h1 className="font-semibold text-2xl pb-4">Links</h1>
+        <p>Home</p>
+        <p className="pt-2">About Us</p>
+        <p className="pt-2">Services</p>
+        </div>
+      </div>
+      <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
+      <div className=" p-0 pl-4 pr-4"><h1 className="font-semibold text-2xl pb-4">Legal</h1>
+        <p>Terms of Use</p>
+        <p className="pt-2">Privacy Policy</p>
+        <p className="pt-2">Cookie Policy</p>
+        </div>
+      </div>
+      <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
+      <div className=" p-0 pl-4 pr-4"><h1 className="font-semibold text-2xl pb-4">Product</h1>
+        <p>Take Tour</p>
+        <p className="pt-2">Live Chat</p>
+        <p className="pt-2">Reviews</p>
+        </div>
+      </div>
+      <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
+      <div className=" p-0 pl-4 pr-4"><h1 className="font-semibold text-2xl pb-4">Newsletter</h1>
+        <p>Stay Up To Date</p>
+       
+        </div>
+        <div className="flex items-center pt-4">
+      <input
+        type="text"
+        className="newsInput px-4 py-2 bg-slate-50 outline-none flex-grow"
+        placeholder="Your Email..."
+      />
+      <button
+        type="submit"
+        className="newsButton px-4 py-2 bg-blue-500 text-white text-md"
+      >
+        Submit
+      </button>
+    </div>
+      </div>
+    </div>
+</section>
+
+<div className="text-center pt-8 text-xs text-slate-500">Ⓒ Copyright {currentYear} Facil Pay inc. all rights reserved</div>
+
+
+
+</main>
+</>
+);
 }
+
+
+

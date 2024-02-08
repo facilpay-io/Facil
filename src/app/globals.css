@@ -96,7 +96,6 @@
   }
 }
 .swiper-button-next, .swiper-button-prev {
-  
   position: absolute;
   top: 50%;
   width: calc(var(--swiper-navigation-size)/ 44 * 27);
@@ -178,7 +177,11 @@ width: 740px;
 .hero {
   background: linear-gradient(180deg, #19A1FC 0%, #046CF1 100%);
   border-radius: 50px;
+  overflow: hidden;
+}
+.heroServices {
   
+  border-radius: 50px;
   overflow: hidden;
 }
 .heroText {

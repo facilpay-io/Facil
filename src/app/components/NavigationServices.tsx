@@ -5,8 +5,8 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 
-export default function Navigation() {
-  const [selectedMenuItem, setSelectedMenuItem] = useState('Home');
+export default function NavigationServices() {
+  const [selectedMenuItem, setSelectedMenuItem] = useState('Services');
   const isHomeSelected = selectedMenuItem === 'Home';
   const navbarHomeClass = isHomeSelected ? "homeNavBar" : "bg-gray-100"; // Grey for non-home, blue for home
   const menuItemClass = "rounded-full w-24 p-3 flex justify-center items-center";
@@ -42,13 +42,16 @@ export default function Navigation() {
             >
               <Link href="/">Home</Link>
             </div>
-            <Link href="/services" onClick={() => handleMenuItemClick('Services')}>
-            <div className={`${menuItemClass} ${selectedMenuItem === 'Services' ? selectedClass : ''}`}
-              onClick={() => setSelectedMenuItem('Services')}>Services</div>
-              </Link>
+            <div
+              className={`${menuItemClass} ${selectedMenuItem === 'Services' ? selectedClass : ''}`}
+              onClick={() => setSelectedMenuItem('Services')}
+            >
+              <Link href="/services" onClick={() => handleMenuItemClick('Services')}>Services</Link>
+            </div>
             <div
               className={`${menuItemClass} ${selectedMenuItem === 'AboutUs' ? selectedClass : ''}`}
-              onClick={() => setSelectedMenuItem('AboutUs')}>
+              onClick={() => setSelectedMenuItem('AboutUs')}
+            >
               <Link href="/">About Us</Link>
             </div>
           </div>
@@ -84,7 +87,7 @@ export default function Navigation() {
               <Link className={`font-medium border border-solid p-3 mr-5 rounded-full flex lg:hidden ${demoLinkClass}`} href="#">Try Demo</Link>               
             </div>
              </div>
-             
+            
     </>
   )
 }

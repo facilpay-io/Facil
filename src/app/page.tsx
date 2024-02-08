@@ -19,10 +19,12 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import MainNavigation from './components/Navigation'
 
 
 
 const currentYear = new Date().getFullYear();
+
 
 const items = [
   {
@@ -73,9 +75,11 @@ const urbanistone = Urbanist({
 
 gsap.registerPlugin(ScrollTrigger);
 
+
 export default function Home() {
   const leftImageRef = useRef(null);
   const rightImageRef = useRef(null);
+
 
   useEffect(() => {
     if (!leftImageRef.current || !rightImageRef.current) {
@@ -163,6 +167,7 @@ return () => {
 
   return (
     <>
+   <div className="stickyWrapper"><MainNavigation /></div>
     <main className={urbanistone.className}>
       <div className="bg-white h-1/4 flex mt-4 lg:hidden"></div>
       <div className="PageWrapper hero h-[700px] lg:h-[600px] mt-3 lg:mt-3 md:mt-3 flex flex-col lg:flex-row w-full items-center justify-center">
@@ -556,6 +561,7 @@ return () => {
 
 
 </main>
+
 </>
 );
 }
