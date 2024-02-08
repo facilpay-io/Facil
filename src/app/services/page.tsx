@@ -249,12 +249,12 @@ Simplified Chatting with friends, family, or merchants and paying them with cryp
 
 
 
-<div className="flex flex-col lg:flex-row componentWrapper pt-6 lg:pt-0">
-  <div className="textFade lg:w-1/2 w-full ">
-  <div className="lg:pl-10 pl-0">
+<div className="flex flex-col componentWrapper pt-6 lg:pt-6">
+  <div className="textFade w-full ">
+  <div className="pl-0">
   <img className="m-auto "
         alt=""
-        src="/miccard.webp" width="70%"
+        src="/serviceSec4.webp" width="100%"
           />
     </div>
 
@@ -264,9 +264,8 @@ Simplified Chatting with friends, family, or merchants and paying them with cryp
 <div className="p-0 textFadeRight lg:w-1/2 w-full">
 <img className="pt-10 pb-4"
         alt=""
-        src="/appicon.svg" width="10%"
+        src="" width="10%"
           />
-<span className="text-xl font-medium ">AI Chatbot Integration for Facil App: Enhancing User Experience with Advanced Conversational Technology</span>
 
 </div>
 </div>
