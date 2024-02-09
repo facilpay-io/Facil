@@ -262,7 +262,7 @@ Simplified Chatting with friends, family, or merchants and paying them with cryp
 </div>
 
 <section>
-<div className="adjustsection flex flex-col lg:flex-row ">
+<div className="max-w-[1400px] m-auto adjustsection flex flex-col lg:flex-row ">
 
   <div className="textFade lg:w-1/2 w-full p-10 bg-gray-100 rounded-xl m-2 ">
   <h2 className="text-xl font-semibold"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={24} height={24} />Across your devices</h2>
@@ -280,7 +280,7 @@ Simplified Chatting with friends, family, or merchants and paying them with cryp
 </section>
 
 <section>
-<div className="flex flex-col lg:flex-row ">
+<div className="max-w-[1400px] m-auto flex flex-col lg:flex-row ">
 
   <div className="textFade lg:w-1/2 w-full p-10 bg-gray-100 rounded-xl m-2 ">
   <h2 className="text-xl font-semibold"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={24} height={24} />Crypto-Commerce</h2>
@@ -299,14 +299,14 @@ Simplified Chatting with friends, family, or merchants and paying them with cryp
 
 
 <section>
-<div className="flex flex-col lg:flex-row mt-20 ">
+<div className="max-w-[1400px] m-auto flex flex-col lg:flex-row mt-20 ">
 
 <div className="textFade lg:w-3/4 w-full pt-6 bg-gray-100 rounded-xl m-2">
   <div className="flex">
-    <div className="inline-flex p-8">
-      <p className="pt-10 ">
-        <p className="font-semibold text-2xl">Choose your plan</p>
-        <p className="text-base pt-2">Free or Premium, Unlock your Decentralized Financial: 
+    <div className="inline-flex lg:p-8 pl-4 pb-4 pr-1">
+      <p className="lg:pt-10 pt-0">
+        <p className="font-semibold lg:text-2xl text-xl">Choose your plan</p>
+        <p className="lg:text-base text-sm pt-2">Free or Premium, Unlock your Decentralized Financial: 
 Balancing Accessibility with Enhanced Features</p></p>
     </div>
     <div className="inline-flex ml-0 overflow-hidden"> {/* Added margin-left for spacing */}
@@ -320,9 +320,9 @@ Balancing Accessibility with Enhanced Features</p></p>
 
 <div className="textFadeRight p-10 lg:w-1/4 w-full overflow-hidden bg-gray-100 rounded-xl m-2">
   
-<div className="pt-10">
+<div className="lg:p-10 pt-0">
 <h2 className="text-2xl font-semibold">Standard <span className="HomeTitle"> Free</span></h2>
-  <p className="pt-2 text-base">
+  <p className="pt-2 lg:text-base text-sm">
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>P2P Messaging</p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Voice & HD Video Calls</p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Send Crypto payment</p>
