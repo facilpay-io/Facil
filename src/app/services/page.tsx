@@ -299,7 +299,7 @@ Simplified Chatting with friends, family, or merchants and paying them with cryp
 
 
 <section>
-<div className="max-w-[1400px] m-auto flex flex-col lg:flex-row mt-20 ">
+<div className="max-w-[1400px] m-auto flex flex-col lg:flex-row mt-28 ">
 
 <div className="textFade lg:w-3/4 w-full pt-6 bg-gray-100 rounded-xl m-2">
   <div className="flex">
@@ -335,6 +335,49 @@ Balancing Accessibility with Enhanced Features</p></p>
 </div>
 </section>
 
+<section>
+<div className="max-w-[1400px] m-auto textFade w-full flex flex-col lg:flex-row">
+  <div className="lg:w-1/3 w-full bg-gray-100 rounded-xl m-2 p-8 relative">
+    <h2 className="text-2xl font-semibold">Premium $1</h2>
+    <p className="pt-2 lg:text-base text-sm">
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Standard + Free Limited tim</p>
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>10% Off fees in-app transaction</p>
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>MoneyGram fiat on & off ramp</p>
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Facil Visa & Master Card</p>
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Staking Feature & Air drop</p>
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Premium AI Chatbot Tools</p>
+  <img className="absolute right-0 bottom-0 rounded-br-xl " src="/cardleftcorner.webp" alt="Image" style={{ maxHeight: '60px', maxWidth: '55px' }} />
+    </p>
+  </div>
+  <div className="lg:w-1/3 w-full bg-gray-100 rounded-xl m-2 p-8 relative">
+  <h2 className="text-2xl font-semibold">Platinum $3</h2>
+  <p className="pt-2 lg:text-base text-sm">
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Platinum +</p>
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Metal or Designed Card</p>
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>20% Off fees</p>
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Business Staking Feature</p>
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>B2C & B2B Invoice</p>
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Crypto-commerce</p>
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Facil WebApp POS</p>
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Staking Yield</p>
+  <img className="absolute right-0 bottom-0 rounded-br-xl " src="/cardmiddlecorner.webp" alt="Image" style={{ maxHeight: '60px', maxWidth: '55px' }} />
+    </p>
+  </div>
+  <div className="lg:w-1/3 w-full bg-gray-100 rounded-xl m-2 p-8 relative">
+  <h2 className="text-2xl font-semibold">Black $9</h2>
+  <p className="pt-2 lg:text-base text-sm">
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Platinum +</p>
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>40% Off fees</p>
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Black Metal Card</p>
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Token-Back Reward</p>
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Limited Exclusive Offers</p>
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>DeFi Vaults APY</p>
+    </p>
+    <img className="absolute right-0 bottom-0 rounded-br-xl " src="/cardrightcorner.webp" alt="Image" style={{ maxHeight: '60px', maxWidth: '55px' }} />
+  </div>
+</div>
+
+</section>
 
 <section className="flex justify-center items-center pt-40 relative">
   <div className="AppContainer w-[1408px] lg:h-[980px] h-[480px] overflow-hidden text-center text-white font-inter flex flex-col justify-between relative">
