@@ -4,6 +4,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600&display=swap');
 
+.adjustsection {
+  margin-top: -25px;
+}
 .newsInput {
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;

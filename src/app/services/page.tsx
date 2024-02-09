@@ -246,9 +246,6 @@ Simplified Chatting with friends, family, or merchants and paying them with cryp
 
 
 
-
-
-
 <div className="flex flex-col componentWrapper pt-6 lg:pt-6">
   <div className="textFade w-full ">
   <div className="pl-0">
@@ -258,23 +255,86 @@ Simplified Chatting with friends, family, or merchants and paying them with cryp
           />
     </div>
 
-  
-  
   </div>
 <div className="p-0 textFadeRight lg:w-1/2 w-full">
-<img className="pt-10 pb-4"
-        alt=""
-        src="" width="10%"
-          />
-
+<img className="pt-10 pb-4" alt="" src="" width="10%"/>
 </div>
 </div>
 
-<section className="max-w-[780px] m-auto pt-32 mb-30">
-<div className="text-center"><h1 className="text-3xl lg:text-4xl font-semibold mb-0">Got questions?</h1>
-<p className="mb-14">Get the answers to your questions about FastFinance.</p></div>
-      <Accordion items={items} />
+<section>
+<div className="adjustsection flex flex-col lg:flex-row ">
+
+  <div className="textFade lg:w-1/2 w-full p-10 bg-gray-100 rounded-xl m-2 ">
+  <h2 className="text-xl font-semibold"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={24} height={24} />Across your devices</h2>
+  <p className="pt-4 text-sm">Stay connected with friends and family across your devices, AppStore, Google Play, Microsoft or simply login from webApp</p>
+ 
+  </div>
+<div className="textFadeRight p-10 lg:w-1/2 w-full overflow-hidden bg-gray-100 rounded-xl m-2">
+  
+<div className="">
+<h2 className="text-xl font-semibold"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={24} height={24} />FacilApp Staking</h2>
+  <p className="pt-4 text-sm">Stake Facil token to unlock your Business tools, create your items, and accept crypto payment.</p>
+</div>
+</div>
+</div>
 </section>
+
+<section>
+<div className="flex flex-col lg:flex-row ">
+
+  <div className="textFade lg:w-1/2 w-full p-10 bg-gray-100 rounded-xl m-2 ">
+  <h2 className="text-xl font-semibold"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={24} height={24} />Crypto-Commerce</h2>
+  <p className="pt-4 text-sm">From DeFi banking, Crypto-commerce, POS solution for cryptocurrency and more, FacilApp helps businesses drive limitless results</p>
+ 
+  </div>
+<div className="textFadeRight p-10 lg:w-1/2 w-full overflow-hidden bg-gray-100 rounded-xl m-2">
+  
+<div className="">
+<h2 className="text-xl font-semibold"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={24} height={24} />Transform your business</h2>
+  <p className="pt-4 text-sm">Engage open more audiences, accelerate sales and drive better customer support</p>
+</div>
+</div>
+</div>
+</section>
+
+
+<section>
+<div className="flex flex-col lg:flex-row mt-20 ">
+
+<div className="textFade lg:w-3/4 w-full pt-6 bg-gray-100 rounded-xl m-2">
+  <div className="flex">
+    <div className="inline-flex p-8">
+      <p className="pt-10 ">
+        <p className="font-semibold text-2xl">Choose your plan</p>
+        <p className="text-base pt-2">Free or Premium, Unlock your Decentralized Financial: 
+Balancing Accessibility with Enhanced Features</p></p>
+    </div>
+    <div className="inline-flex ml-0 overflow-hidden"> {/* Added margin-left for spacing */}
+      
+      <img className="h-auto overflow-hidden" alt="" src="/servicecards.webp" width="100%"/>
+    </div>
+  </div>
+</div>
+
+
+
+<div className="textFadeRight p-10 lg:w-1/4 w-full overflow-hidden bg-gray-100 rounded-xl m-2">
+  
+<div className="pt-10">
+<h2 className="text-2xl font-semibold">Standard <span className="HomeTitle"> Free</span></h2>
+  <p className="pt-2 text-base">
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>P2P Messaging</p>
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Voice & HD Video Calls</p>
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Send Crypto payment</p>
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Web3 Wallet</p>
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>FacilSwap & FacilBridge</p>
+  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Standard AI Chatbot</p>
+    </p>
+</div>
+</div>
+</div>
+</section>
+
 
 <section className="flex justify-center items-center pt-40 relative">
   <div className="AppContainer w-[1408px] lg:h-[980px] h-[480px] overflow-hidden text-center text-white font-inter flex flex-col justify-between relative">
