@@ -376,7 +376,35 @@ Balancing Accessibility with Enhanced Features</p></p>
     <img className="absolute right-0 bottom-0 rounded-br-xl " src="/cardrightcorner.webp" alt="Image" style={{ maxHeight: '60px', maxWidth: '55px' }} />
   </div>
 </div>
+</section>
 
+<section>
+<div className="max-w-[1400px] m-auto flex flex-col lg:flex-row mt-0 ">
+
+<div className="textFade lg:w-1/4 w-full pt-6 bg-gray-100 rounded-xl m-2">
+  <div className="flex">
+    <div className="inline-flex lg:p-8 pl-4 pb-4 pr-1">
+      <p className="lg:pt-10 pt-0">
+        <p className="font-semibold lg:text-2xl text-xl">2 -5% Crypto Rewards</p>
+        <p className="lg:text-base text-sm pt-2">Best debit card for spending your crypto and get your rewards in crypto that you want.</p></p>
+    </div>
+    
+  </div>
+</div>
+
+
+
+<div className="textFadeRight p-10 lg:w-3/4 w-full overflow-hidden bg-gray-100 rounded-xl m-2">
+  
+<div className="lg:p-10 pt-0">
+<h2 className="text-2xl font-semibold">Experience Top-Tier Rates and World-Class Services</h2>
+  <p className="pt-2 lg:text-base text-sm">
+  <p className="pt-2">Per World Bank data, immigrants and expatriates in the U.S. transferred around $700 billion to their home countries in 2020. Facil offers a revolution in this process, cutting costs significantly. With DeFi technology, Facil slashes cross-border payment fees by 30% to 50%, offering a much more affordable alternative and facil.</p>
+
+    </p>
+</div>
+</div>
+</div>
 </section>
 
 <section className="flex justify-center items-center pt-40 relative">
