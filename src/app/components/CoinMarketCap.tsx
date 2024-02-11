@@ -1,5 +1,3 @@
-// CoinMarketCap.tsx
-
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -8,9 +6,35 @@ const CoinMarketCap: React.FC = () => {
 
   useEffect(() => {
     const fetchData = async () => {
+      const cachedData = localStorage.getItem('coinMarketCapData');
+      const cachedTimestamp = localStorage.getItem('coinMarketCapTimestamp');
+
+      if (cachedData && cachedTimestamp) {
+        const parsedData = JSON.parse(cachedData);
+        const timestamp = parseInt(cachedTimestamp, 10);
+
+        // Check if cached data is not older than 5 minutes
+        if (Date.now() - timestamp < 5 * 60 * 1000) {
+          setTotalMarketCap(parsedData.quote.USD.total_market_cap);
+          console.log('Using cached data');
+          return;
+        }
+      }
+
       try {
-        const response = await axios.get('/api/coinmarketcap');
-        const totalMarketCapUSD = response.data.data.quote.USD.total_market_cap;
+        const response = await axios.get('https://corsproxy-rho.vercel.app/api?url=https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest', {
+          headers: {
+            'X-CMC_PRO_API_KEY': process.env.CMC_API_KEY,
+          },
+        });
+
+        const json = response.data;
+        const totalMarketCapUSD = json.data.quote.USD.total_market_cap;
+
+        // Cache the data and timestamp
+        localStorage.setItem('coinMarketCapData', JSON.stringify(json.data));
+        localStorage.setItem('coinMarketCapTimestamp', Date.now().toString());
+
         setTotalMarketCap(totalMarketCapUSD);
       } catch (ex) {
         console.error('Error fetching data:', ex);
@@ -47,3 +71,4 @@ function abbreviateNumber(value: number) {
 }
 
 export default CoinMarketCap;
+
