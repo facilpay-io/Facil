@@ -264,12 +264,12 @@ Simplified Chatting with friends, family, or merchants and paying them with cryp
 <section>
 <div className="max-w-[1400px] m-auto adjustsection flex flex-col lg:flex-row ">
 
-  <div className="textFade lg:w-1/2 w-full p-10 bg-gray-100 rounded-xl m-2 ">
+  <div className="textFade lg:w-1/2 w-full p-10 bg-gray-100 rounded-3xl m-2 ">
   <h2 className="text-xl font-semibold"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={24} height={24} />Across your devices</h2>
   <p className="pt-4 text-sm">Stay connected with friends and family across your devices, AppStore, Google Play, Microsoft or simply login from webApp</p>
  
   </div>
-<div className="textFadeRight p-10 lg:w-1/2 w-full overflow-hidden bg-gray-100 rounded-xl m-2">
+<div className="textFadeRight p-10 lg:w-1/2 w-full overflow-hidden bg-gray-100 rounded-3xl m-2">
   
 <div className="">
 <h2 className="text-xl font-semibold"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={24} height={24} />FacilApp Staking</h2>
@@ -282,12 +282,12 @@ Simplified Chatting with friends, family, or merchants and paying them with cryp
 <section>
 <div className="max-w-[1400px] m-auto flex flex-col lg:flex-row ">
 
-  <div className="textFade lg:w-1/2 w-full p-10 bg-gray-100 rounded-xl m-2 ">
+  <div className="textFade lg:w-1/2 w-full p-10 bg-gray-100 rounded-3xl m-2 ">
   <h2 className="text-xl font-semibold"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={24} height={24} />Crypto-Commerce</h2>
   <p className="pt-4 text-sm">From DeFi banking, Crypto-commerce, POS solution for cryptocurrency and more, FacilApp helps businesses drive limitless results</p>
  
   </div>
-<div className="textFadeRight p-10 lg:w-1/2 w-full overflow-hidden bg-gray-100 rounded-xl m-2">
+<div className="textFadeRight p-10 lg:w-1/2 w-full overflow-hidden bg-gray-100 rounded-3xl m-2">
   
 <div className="">
 <h2 className="text-xl font-semibold"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={24} height={24} />Transform your business</h2>
@@ -301,7 +301,7 @@ Simplified Chatting with friends, family, or merchants and paying them with cryp
 <section>
 <div className="max-w-[1400px] m-auto flex flex-col lg:flex-row mt-28 ">
 
-<div className="textFade lg:w-3/4 w-full pt-6 bg-gray-100 rounded-xl m-2">
+<div className="textFade lg:w-3/4 w-full pt-6 bg-gray-100 rounded-3xl m-2">
   <div className="flex">
     <div className="inline-flex lg:p-8 pl-4 pb-4 pr-1">
       <p className="lg:pt-10 pt-0">
@@ -318,7 +318,7 @@ Balancing Accessibility with Enhanced Features</p></p>
 
 
 
-<div className="textFadeRight p-10 lg:w-1/4 w-full overflow-hidden bg-gray-100 rounded-xl m-2">
+<div className="textFadeRight p-10 lg:w-1/4 w-full overflow-hidden bg-gray-100 rounded-3xl m-2">
   
 <div className="lg:p-10 pt-0">
 <h2 className="text-2xl font-semibold">Standard <span className="HomeTitle"> Free</span></h2>
@@ -337,7 +337,7 @@ Balancing Accessibility with Enhanced Features</p></p>
 
 <section>
 <div className="max-w-[1400px] m-auto textFade w-full flex flex-col lg:flex-row">
-  <div className="lg:w-1/3 w-full bg-gray-100 rounded-xl m-2 p-8 relative">
+  <div className="lg:w-1/3 w-full bg-gray-100 rounded-3xl m-2 p-8 relative">
     <h2 className="text-2xl font-semibold">Premium $1</h2>
     <p className="pt-2 lg:text-base text-sm">
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Standard + Free Limited tim</p>
@@ -346,10 +346,10 @@ Balancing Accessibility with Enhanced Features</p></p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Facil Visa & Master Card</p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Staking Feature & Air drop</p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Premium AI Chatbot Tools</p>
-  <img className="absolute right-0 bottom-0 rounded-br-xl " src="/cardleftcorner.webp" alt="Image" style={{ maxHeight: '60px', maxWidth: '55px' }} />
+  <img className="absolute right-0 bottom-0 rounded-br-3xl " src="/cardleftcorner.webp" alt="Image" style={{ maxHeight: '60px', maxWidth: '55px' }} />
     </p>
   </div>
-  <div className="lg:w-1/3 w-full bg-gray-100 rounded-xl m-2 p-8 relative">
+  <div className="lg:w-1/3 w-full bg-gray-100 rounded-3xl m-2 p-8 relative">
   <h2 className="text-2xl font-semibold">Platinum $3</h2>
   <p className="pt-2 lg:text-base text-sm">
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Platinum +</p>
@@ -360,10 +360,10 @@ Balancing Accessibility with Enhanced Features</p></p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Crypto-commerce</p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Facil WebApp POS</p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Staking Yield</p>
-  <img className="absolute right-0 bottom-0 rounded-br-xl " src="/cardmiddlecorner.webp" alt="Image" style={{ maxHeight: '60px', maxWidth: '55px' }} />
+  <img className="absolute right-0 bottom-0 rounded-br-3xl " src="/cardmiddlecorner.webp" alt="Image" style={{ maxHeight: '60px', maxWidth: '55px' }} />
     </p>
   </div>
-  <div className="lg:w-1/3 w-full bg-gray-100 rounded-xl m-2 p-8 relative">
+  <div className="lg:w-1/3 w-full bg-gray-100 rounded-3xl m-2 p-8 relative">
   <h2 className="text-2xl font-semibold">Black $9</h2>
   <p className="pt-2 lg:text-base text-sm">
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Platinum +</p>
@@ -373,7 +373,7 @@ Balancing Accessibility with Enhanced Features</p></p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Limited Exclusive Offers</p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>DeFi Vaults APY</p>
     </p>
-    <img className="absolute right-0 bottom-0 rounded-br-xl " src="/cardrightcorner.webp" alt="Image" style={{ maxHeight: '60px', maxWidth: '55px' }} />
+    <img className="absolute right-0 bottom-0 rounded-br-3xl " src="/cardrightcorner.webp" alt="Image" style={{ maxHeight: '60px', maxWidth: '55px' }} />
   </div>
 </div>
 </section>
@@ -381,7 +381,7 @@ Balancing Accessibility with Enhanced Features</p></p>
 <section>
 <div className="max-w-[1400px] m-auto flex flex-col lg:flex-row mt-0 ">
 
-<div className="textFade lg:w-1/4 w-full pt-6 bg-gray-100 rounded-xl m-2">
+<div className="textFade lg:w-1/4 w-full pt-6 bg-gray-100 rounded-3xl m-2">
   <div className="flex">
     <div className="inline-flex lg:p-8 pl-4 pb-4 pr-1">
       <p className="lg:pt-10 pt-0">
@@ -394,7 +394,7 @@ Balancing Accessibility with Enhanced Features</p></p>
 
 
 
-<div className="textFadeRight p-10 lg:w-3/4 w-full overflow-hidden bg-gray-100 rounded-xl m-2">
+<div className="textFadeRight p-10 lg:w-3/4 w-full overflow-hidden bg-gray-100 rounded-3xl m-2">
   
 <div className="lg:p-10 pt-0">
 <h2 className="text-2xl font-semibold">Experience Top-Tier Rates and World-Class Services</h2>
