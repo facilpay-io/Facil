@@ -24,7 +24,7 @@ const CoinMarketCap: React.FC = () => {
       try {
         const response = await axios.get('https://corsproxy.io/?https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest', {
           headers: {
-            'X-CMC_PRO_API_KEY': process.env.CMC_API_KEY,
+            'X-CMC_PRO_API_KEY': process.env.NEXT_PUBLIC_CMC_API_KEY,
           },
         });
 
@@ -51,7 +51,7 @@ const CoinMarketCap: React.FC = () => {
   return (
     <div>
       {totalMarketCap !== null ? (
-        <div>{abbreviateNumber(totalMarketCap)}</div>
+        <div>${abbreviateNumber(totalMarketCap)}</div>
       ) : (
         <div>Loading...</div>
       )}
@@ -62,13 +62,15 @@ const CoinMarketCap: React.FC = () => {
 // Function to abbreviate large numbers
 function abbreviateNumber(value: number) {
   const suffixes = ['', 'K', 'M', 'B', 'T'];
-  const suffixNum = Math.floor(('' + value).length / 3);
-  let shortValue: string | number = parseFloat((suffixNum !== 0 ? (value / Math.pow(1000, suffixNum)) : value).toPrecision(2));
-  if (shortValue % 1 !== 0) {
-    shortValue = shortValue.toFixed(1);
-  }
-  return shortValue + suffixes[suffixNum];
+  const num = Math.abs(value);
+  const suffixNum = Math.floor(Math.log10(num) / 3);
+  const shortValue = parseFloat((num / Math.pow(10, suffixNum * 3)).toPrecision(2));
+  const suffix = suffixes[suffixNum];
+  const completeName = suffix === '' ? '' : suffix === 'K' ? 'Thousand' : suffix === 'M' ? 'Million' : suffix === 'B' ? 'Billion' : 'Trillion';
+  return (value < 0 ? '-' : '') + shortValue + ' ' + completeName;
 }
+
+
 
 export default CoinMarketCap;
 
