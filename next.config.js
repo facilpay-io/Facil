@@ -1,12 +1,4 @@
-const { parsed: localEnv } = require('dotenv').config();
+/** @type {import('next').NextConfig} */
+const nextConfig = {}
 
-const webpack = require('webpack');
-
-const nextConfig = {
-  webpack(config) {
-    config.plugins.push(new webpack.EnvironmentPlugin(localEnv));
-    return config;
-  },
-};
-
-module.exports = nextConfig;
+module.exports = nextConfig
