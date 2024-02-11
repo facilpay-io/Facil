@@ -1,38 +1,74 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const CoinMarketCap: React.FC = () => {
+  const [totalMarketCap, setTotalMarketCap] = useState<number | null>(null);
+
   useEffect(() => {
     const fetchData = async () => {
-      let response = null;
+      const cachedData = localStorage.getItem('coinMarketCapData');
+      const cachedTimestamp = localStorage.getItem('coinMarketCapTimestamp');
+
+      if (cachedData && cachedTimestamp) {
+        const parsedData = JSON.parse(cachedData);
+        const timestamp = parseInt(cachedTimestamp, 10);
+
+        // Check if cached data is not older than 5 minutes
+        if (Date.now() - timestamp < 5 * 60 * 1000) {
+          setTotalMarketCap(parsedData.quote.USD.total_market_cap);
+          console.log('Using cached data');
+          return;
+        }
+      }
+
       try {
-        response = await axios.get('https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest', {
+        const response = await axios.get('https://corsproxy-rho.vercel.app/api?url=https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest', {
           headers: {
             'X-CMC_PRO_API_KEY': process.env.CMC_API_KEY,
           },
         });
-        // success
+
         const json = response.data;
-        console.log(json);
+        const totalMarketCapUSD = json.data.quote.USD.total_market_cap;
+
+        // Cache the data and timestamp
+        localStorage.setItem('coinMarketCapData', JSON.stringify(json.data));
+        localStorage.setItem('coinMarketCapTimestamp', Date.now().toString());
+
+        setTotalMarketCap(totalMarketCapUSD);
       } catch (ex) {
-        // error
-        console.log(ex);
+        console.error('Error fetching data:', ex);
       }
     };
 
     fetchData();
 
-    // Cleanup function if needed
     return () => {
-      // Cleanup code here
+      // Cleanup function if needed
     };
   }, []);
 
   return (
     <div>
-     $1.5 Trillion
+      {totalMarketCap !== null ? (
+        <div>{abbreviateNumber(totalMarketCap)}</div>
+      ) : (
+        <div>Loading...</div>
+      )}
     </div>
   );
 };
 
+// Function to abbreviate large numbers
+function abbreviateNumber(value: number) {
+  const suffixes = ['', 'K', 'M', 'B', 'T'];
+  const suffixNum = Math.floor(('' + value).length / 3);
+  let shortValue: string | number = parseFloat((suffixNum !== 0 ? (value / Math.pow(1000, suffixNum)) : value).toPrecision(2));
+  if (shortValue % 1 !== 0) {
+    shortValue = shortValue.toFixed(1);
+  }
+  return shortValue + suffixes[suffixNum];
+}
+
 export default CoinMarketCap;
+

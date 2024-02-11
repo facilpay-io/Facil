@@ -98,7 +98,6 @@ export default function Services() {
   }, []);
 
  
-
   useEffect(() => {
     if (!leftImageRef.current) {
       console.error("Refs not attached");
