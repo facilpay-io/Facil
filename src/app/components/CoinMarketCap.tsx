@@ -44,7 +44,7 @@ const CoinMarketCap: React.FC = () => {
     fetchData();
 
     return () => {
-      // Cleanup function if needed
+    
     };
   }, []);
 
