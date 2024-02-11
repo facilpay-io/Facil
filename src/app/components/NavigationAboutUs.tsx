@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 
 export default function NavigationServices() {
-  const [selectedMenuItem, setSelectedMenuItem] = useState('Services');
+  const [selectedMenuItem, setSelectedMenuItem] = useState('AboutUs');
   const isHomeSelected = selectedMenuItem === 'Home';
   const navbarHomeClass = isHomeSelected ? "homeNavBar" : "bg-gray-100"; // Grey for non-home, blue for home
   const menuItemClass = "rounded-full w-24 p-3 flex justify-center items-center";
@@ -52,7 +52,7 @@ export default function NavigationServices() {
               className={`${menuItemClass} ${selectedMenuItem === 'AboutUs' ? selectedClass : ''}`}
               onClick={() => setSelectedMenuItem('AboutUs')}
             >
-              <Link href="aboutus">About Us</Link>
+              <Link href="/aboutus">About Us</Link>
             </div>
           </div>
           <div className="flex justify-end items-center flex-1">

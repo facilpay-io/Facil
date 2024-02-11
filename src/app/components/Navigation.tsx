@@ -49,7 +49,7 @@ export default function Navigation() {
             <div
               className={`${menuItemClass} ${selectedMenuItem === 'AboutUs' ? selectedClass : ''}`}
               onClick={() => setSelectedMenuItem('AboutUs')}>
-              <Link href="/">About Us</Link>
+              <Link href="/aboutus">About Us</Link>
             </div>
           </div>
           <div className="flex justify-end items-center flex-1">
@@ -78,7 +78,7 @@ export default function Navigation() {
                 <Link href="/services" onClick={() => handleMenuItemClick('Services')}>Services</Link>
                 </div>
                 <div className={`pl-2 pt-6 ${selectedMenuItem === 'Home' ? 'text-white' : 'text-blue-500'}`}>
-                <Link href="/" onClick={() => handleMenuItemClick('AboutUs')}>About Us</Link>
+                <Link href="/aboutus" onClick={() => handleMenuItemClick('AboutUs')}>About Us</Link>
                 </div>
                 <div className="flex pt-8 justify-start items-center flex-1">
               <Link className={`font-medium border border-solid p-3 mr-5 rounded-full flex lg:hidden ${demoLinkClass}`} href="#">Try Demo</Link>               

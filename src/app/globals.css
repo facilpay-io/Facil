@@ -4,6 +4,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600&display=swap');
 
+.bordercolor {
+border: solid 1px #046CF1;
+}
+.aboutbutton {
+  background: linear-gradient(180deg, #19A1FC 0%, #046CF1 100%);
+  overflow: hidden;
+}
+.aboutbutton:hover {
+  box-shadow: 0px 4px 23px rgba(59, 158, 255, 0.34);
+}
+.bordercolor:hover {
+  box-shadow: 0px 4px 23px rgba(59, 158, 255, 0.34);
+}
 .adjustsection {
   margin-top: -25px;
 }
