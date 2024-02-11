@@ -22,7 +22,7 @@ const CoinMarketCap: React.FC = () => {
       }
 
       try {
-        const response = await axios.get('https://corsproxy-rho.vercel.app/api?url=https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest', {
+        const response = await axios.get('https://corsproxy.io/?https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest', {
           headers: {
             'X-CMC_PRO_API_KEY': process.env.CMC_API_KEY,
           },
