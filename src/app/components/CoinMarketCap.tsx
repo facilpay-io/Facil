@@ -27,7 +27,7 @@ const CoinMarketCap: React.FC = () => {
             const difference = totalMarketCapUSD - totalMarketCapYesterdayUSD;
             const percentage = (difference / totalMarketCapYesterdayUSD) * 100;
             setPercentageChange(percentage);
-            console.log('Percentage Change:', percentage);
+            // console.log('Percentage Change:', percentage);
           }
           
           console.log('Using cached data');
@@ -61,9 +61,9 @@ const CoinMarketCap: React.FC = () => {
           console.log('Percentage Change:', percentage);
         }
 
-        console.log('New data fetched:', totalMarketCapUSD);
-        console.log('MC Yesterday fetched:', totalMarketCapYesterdayUSD);
-        console.log(response.data);
+        // console.log('New data fetched:', totalMarketCapUSD);
+        // console.log('MC Yesterday fetched:', totalMarketCapYesterdayUSD);
+        // console.log(response.data);
       } catch (ex) {
         console.error('Error fetching data:', ex);
 
