@@ -3,6 +3,8 @@ import axios from 'axios';
 
 const CoinMarketCap: React.FC = () => {
   const [totalMarketCap, setTotalMarketCap] = useState<number | null>(null);
+  const [totalMarketCapYesterday, setTotalMarketCapYesterday] = useState<number | null>(null);
+  const [percentageChange, setPercentageChange] = useState<number | null>(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -16,6 +18,8 @@ const CoinMarketCap: React.FC = () => {
         // Check if cached data is not older than 1 minute
         if (Date.now() - timestamp < 5 * 60 * 1000) {
           setTotalMarketCap(parsedData.quote.USD.total_market_cap);
+          setTotalMarketCapYesterday(parsedData.quote.USD.total_market_cap_yesterday);
+          
           console.log('Using cached data');
           return;
         }
@@ -30,14 +34,25 @@ const CoinMarketCap: React.FC = () => {
 
         const json = response.data;
         const totalMarketCapUSD = json.data.quote.USD.total_market_cap;
+        const totalMarketCapYesterdayUSD = json.data.quote.USD.total_market_cap_yesterday;
 
         // Cache the data and timestamp
         localStorage.setItem('coinMarketCapData', JSON.stringify(json.data));
         localStorage.setItem('coinMarketCapTimestamp', Date.now().toString());
 
         setTotalMarketCap(totalMarketCapUSD);
+        setTotalMarketCapYesterday(totalMarketCapYesterdayUSD);
+
+        // Calculate percentage change
+        if (totalMarketCapYesterdayUSD) {
+          const difference = totalMarketCapUSD - totalMarketCapYesterdayUSD;
+          const percentage = (difference / totalMarketCapYesterdayUSD) * 100;
+          setPercentageChange(percentage);
+          console.log('Percentage Change:', percentage);
+        }
 
         console.log('New data fetched:', totalMarketCapUSD);
+        console.log('MC Yesterday fetched:', totalMarketCapYesterdayUSD);
         console.log(response.data);
       } catch (ex) {
         console.error('Error fetching data:', ex);
@@ -58,8 +73,20 @@ const CoinMarketCap: React.FC = () => {
 
   return (
     <div>
-      {totalMarketCap !== null ? (
-        <div>${abbreviateNumber(totalMarketCap)}</div>
+      {totalMarketCap !== null && totalMarketCapYesterday !== null ? (
+        <div className="flex inline-flex">
+          <div>${abbreviateNumber(totalMarketCap)}</div>
+          <div className="pl-2 text-xs">
+            <span style={{ color: percentageChange !== null ? (percentageChange >= 0 ? 'green' : 'red') : 'black' }}>
+              {percentageChange !== null ? (
+                <>
+                  {percentageChange >= 0 ? '↑' : '↓'}
+                  {Math.abs(percentageChange).toFixed(2)}% 24h
+                </>
+              ) : 'N/A'}
+            </span>
+          </div>
+        </div>
       ) : (
         <div>Loading...</div>
       )}
@@ -79,3 +106,4 @@ function abbreviateNumber(value: number) {
 }
 
 export default CoinMarketCap;
+

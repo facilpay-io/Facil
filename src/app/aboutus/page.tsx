@@ -212,23 +212,23 @@ return () => {
 
 <section>
 <div className="max-w-[1400px] m-auto pt-10 w-full flex flex-col lg:flex-row">
-  <div className="lg:w-1/3 w-full bg-gray-100 rounded-3xl m-2 p-8 relative">
+  <div className="lg:w-1/3 w-full bg-gray-100 rounded-3xl m-2 pl-6 pr-6 pt-8 pb-8 relative">
     <h2 className="text-2xl font-semibold">$10 Billion</h2>
     <p className="pt-2 lg:text-base text-sm">Global Messaging Market Volume</p>
   </div>
-  <div className="lg:w-1/3 w-full bg-gray-100 rounded-3xl m-2 p-8 relative">
+  <div className="lg:w-1/3 w-full bg-gray-100 rounded-3xl m-2 pl-6 pr-6 pt-8 pb-8 relative">
   <h2 className="text-2xl font-semibold">${counter.toFixed(1)} Billion</h2>
   <p className="pt-2 lg:text-base text-sm">
   Global Payment Market Volume</p>
   </div>
-  <div className="lg:w-1/3 w-full bg-gray-100 rounded-3xl m-2 p-8 relative">
+  <div className="lg:w-1/3 w-full bg-gray-100 rounded-3xl m-2 pl-6 pr-6 pt-8 pb-8 relative">
   <h2 className="counterUp text-2xl font-semibold"><CoinMarketCap /></h2>
   <p className="pt-2 lg:text-base text-sm">
   Cryptocurrency Market Cap
     </p>
    
   </div>
-  <div className="lg:w-1/3 w-full bg-gray-100 rounded-3xl m-2 p-8 relative">
+  <div className="lg:w-1/3 w-full bg-gray-100 rounded-3xl m-2 pl-6 pr-6 pt-8 pb-8 relative">
   <h2 className="text-2xl font-semibold">$3 Billion</h2>
   <p className="pt-2 lg:text-base text-sm">
   Global Mobile Messaging Users
