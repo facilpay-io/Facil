@@ -15,10 +15,20 @@ const CoinMarketCap: React.FC = () => {
         const parsedData = JSON.parse(cachedData);
         const timestamp = parseInt(cachedTimestamp, 10);
 
-        // Check if cached data is not older than 1 minute
+        // Check if cached data is not older than 5 minutes
         if (Date.now() - timestamp < 5 * 60 * 1000) {
-          setTotalMarketCap(parsedData.quote.USD.total_market_cap);
-          setTotalMarketCapYesterday(parsedData.quote.USD.total_market_cap_yesterday);
+          const totalMarketCapUSD = parsedData.quote.USD.total_market_cap;
+          const totalMarketCapYesterdayUSD = parsedData.quote.USD.total_market_cap_yesterday;
+          setTotalMarketCap(totalMarketCapUSD);
+          setTotalMarketCapYesterday(totalMarketCapYesterdayUSD);
+          
+          // Calculate percentage change
+          if (totalMarketCapYesterdayUSD) {
+            const difference = totalMarketCapUSD - totalMarketCapYesterdayUSD;
+            const percentage = (difference / totalMarketCapYesterdayUSD) * 100;
+            setPercentageChange(percentage);
+            console.log('Percentage Change:', percentage);
+          }
           
           console.log('Using cached data');
           return;
@@ -106,4 +116,3 @@ function abbreviateNumber(value: number) {
 }
 
 export default CoinMarketCap;
-
