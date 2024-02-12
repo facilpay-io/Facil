@@ -8,7 +8,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 import Image from 'next/image';
 import React from "react";
 import Lottie, {Action} from 'lottie-react'
-import Accordion from "../components/Accordian";
+import AccordionRoadMap from "../components/AccordianRoadMap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faApple, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
 import 'swiper/css';
@@ -25,20 +25,20 @@ const currentYear = new Date().getFullYear();
 
 const items = [
   {
-    title: 'How does Facil App work?',
-    content: 'Facil App is a platform that allows you to transfer money to anywhere in the world with confidence and ease. Simply create an account, add your recipients information, and make a transfer. Our platform handles the rest.',
+    title: 'Q1. 2024',
+    content: 'Placeholder text.',
   },
   {
-    title: 'Is it safe to use Facil App?',
-    content: 'Placeholder text for Question 2 body.',
+    title: 'Q2. 2024',
+    content: 'Placeholder text.',
   },
   {
-    title: 'Can I track my transfer?',
-    content: 'Placeholder text for Question 3 body.',
+    title: 'Q3. 2024',
+    content: 'Placeholder text.',
   },
   {
-    title: 'Are there any hidden fees with Facil App?',
-    content: 'Placeholder text for Question 4 body.',
+    title: 'Q4. 2024',
+    content: 'Placeholder text.',
   },
 ];
 
@@ -238,42 +238,55 @@ return () => {
 </div>
 </section>
 
-<div className="flex flex-col lg:flex-row componentWrapper pt-0 lg:pt-16">
-<div className="textFadeRight p-0 lg:w-1/2 w-full lg:hidden">
-  <Image className="logoAnimation m-auto pt-10 " src="/centeriphone.png" alt="phone" width={166} height={178} />
-  </div>
-  
-  <div className="textFade lg:w-1/2 w-full lg:pl-20 pl-0">
-  <h2 className="text-2xl lg:text-4xl font-semibold pb-4 lg:pt-24 pt-8"> Facil - Free, Simple, and Empowering.</h2>
-<span className="text-base">We provide each user with a Web3 wallet, offering a user-friendly, secure, and accessible peer-to-peer messaging and payment system. This integrated feature allows users to chat and transact with friends, family, or merchants using cryptocurrency, all within the Facil application. </span>
- <p className=" mt-4"><span className="HomeTitle">Facil represents more than just a service;</span> it signifies a paradigm shift in digital interaction. Our goal is to demystify complex technologies, making blockchain and cryptocurrency a part of daily life. Facil invites you to experience the future of connectivity and commerce, where freedom, simplicity, and empowerment are effortlessly within your reach.</p>
 
-  </div>
-<div className="textFadeRight p-10 lg:w-1/2 w-full">
-  
-<Image className="logoAnimation m-auto pt-0 hidden lg:block " src="/centeriphone.png" alt="phone" width={256} height={268} />
-</div>
-</div>
 
-<div className="flex flex-col lg:flex-row componentWrapper pt-0 lg:pt-16">
-  <div className="textFade lg:w-1/2 w-full pb-4 lg:pb-0">
-  <div className="lottieWrap w-[100%] h-auto "></div>
+<section>
+<h1 className="lg:mt-32 mt-20 lg:mb-[-20px] text-center m-auto items-center lg:text-4xl text-2xl font-semibold">Simplifying Blockchain for Everyday Users</h1>
+<div className="max-w-[1400px] m-auto  w-full flex flex-col lg:flex-row">
   
-  <img className="logoAnimation m-auto pt-0 w-[340px] lg:w-[480px] h-[auto] " loading="eager" alt="" src="/ServiceSec2.webp"/>
+  <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-20 m-2 pl-6 pr-6 pt-8 pb-8 relative">
+    <h2 className="text-base font-semibold text-rose-500">Complexity:</h2>
+    <p className="pt-2 lg:text-base text-sm">Many Web3 Social platforms often claim to be user-friendly but are <span className="text-rose-500">overwhelmingly complicated</span> for those accustomed to Web2 interfaces.</p>
   </div>
-  
-<div className="p-0 textFadeRight lg:w-1/2 w-full">
-<h2 className="text-2xl lg:text-4xl font-semibold pb-0 lg:pt-20 pt-4 "> Chat and Pay with Facil-Ease</h2>
-<p className="text-base pt-4"><span className="HomeTitle">Messaging and Crypto Transactions </span>
-Simplified Chatting with friends, family, or merchants and paying them with cryptocurrency is as easy as sending a text message thats the world Facil creates. Our application allows you to manage communications and transactions simultaneously within a single, intuitive interface
- </p>
- <p className="text-base pt-4"><span className="HomeTitle">Facil is more than an app; </span>
- its a gateway to a new era of digital interaction, where convenience, security, and user empowerment converge. Welcome aboard experience the future of Web3 with Facil. Chat and get paid - Make instant payment during your communication worldwide.
- </p>
+  <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-20 m-2 pl-6 pr-6 pt-8 pb-8 relative">
+  <h2 className="text-base font-semibold text-sky-500">1. Simplicity Redefined:</h2>
+  <p className="pt-2 lg:text-base text-sm">
+  Our platform reimagines the Web3 experience with <span className="text-sky-500">simplicity</span>simplicity at its core, making it as easy to use as any Web2 application.</p>
+  </div>
 </div>
-</div>
+</section>
 
-<div className="flex flex-col lg:flex-row componentWrapper pt-16">
+<section>
+<div className="max-w-[1400px] lg:mt-[-90px] m-auto  w-full flex flex-col lg:flex-row">
+  <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-20 m-2 pl-6 pr-6 pt-8 pb-8 relative">
+    <h2 className="text-base font-semibold text-rose-500">Accessibility:</h2>
+    <p className="pt-2 lg:text-base text-sm">The advanced nature of these platforms creates a barrier to widespread adoption, especially among <span className="text-rose-500">non-tech-savvy users.</span></p>
+  </div>
+  <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-20 m-2 pl-6 pr-6 pt-8 pb-8 relative">
+  <h2 className="text-base font-semibold text-sky-500">2. Universal Usability:</h2>
+  <p className="pt-2 lg:text-base text-sm">
+  Designed with clarity and ease of use, our solution is so <span className="text-sky-500">straightforward </span>that even our grandparents can navigate blockchain technology effortlessly.</p>
+  </div>
+</div>
+</section>
+
+<section>
+<div className="max-w-[1400px] lg:mt-[-90px] m-auto  w-full flex flex-col lg:flex-row">
+  <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-20 m-2 pl-6 pr-6 pt-8 pb-8 relative">
+    <h2 className="text-base font-semibold text-rose-500">Limited Access for the Unbanked:</h2>
+    <p className="pt-2 lg:text-base text-sm">A substantial portion of the population remains <span className="text-rose-500">excluded from modern financial services,</span> highlighting the urgent need for inclusive financial technology solutions.</p>
+  </div>
+  <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-20 m-2 pl-6 pr-6 pt-8 pb-8 relative">
+  <h2 className="text-base font-semibold text-sky-500">3. DeFi Accessibility for the Unbanked:</h2>
+  <p className="pt-2 lg:text-base text-sm">
+  We are creating accessible financial services within our app that do not require traditional banking infrastructure, thus <span className="text-sky-500">extending financial inclusion to the unbanked population.</span></p>
+  </div>
+</div>
+</section>
+
+<section>
+  <h1 className="text-center m-auto items-center lg:text-4xl text-2xl font-semibold pt-16">Experience Global Freedom: Pay and Get Paid <p>with <span className="HomeTitle">Facil,</span> Anywhere in the World</p></h1>
+<div className="flex flex-col lg:flex-row componentWrapper ">
 
 <div className="textFadeRight p-0 lg:w-1/2 w-full lg:hidden">
   
@@ -283,180 +296,26 @@ Simplified Chatting with friends, family, or merchants and paying them with cryp
 </div>
 
   <div className="textFade lg:w-1/2 w-full lg:pl-20 pl-0 ">
-  <h2 className="text-2xl lg:text-4xl font-semibold pb-4 lg:pt-28 pt-0">Global Transfers made Facil</h2>
-  <p className="pt-4 text-base">Transfer money instantly with Facil at better rates. Want to send crypto to someone without bank account access? No problem. You can visit a local MoneyGram location and receive money in 182 countries worldwide. The Facil app integrates seamlessly with MoneyGrams extensive global retail network, enabling users to deposit or withdraw cash directly into their wallets. This bypasses the need for a traditional bank account, offering a practical solution for the unbanked.</p>
- <p className="pt-4"> <span className="HomeTitle">GLOBAL REACH IN OVER 180 COUNTRIES.</span> Through its integration with MoneyGram, the Facil app empowers users to perform cash-out transactions in 182 countries worldwide.</p>
- 
-  
+  <h2 className="text-2xl lg:text-4xl font-semibold pb-4 lg:pt-20 pt-0">OUR MISSION: Simplifying Blockchain for Everyday Users</h2>
+  <p className="pt-4 text-base"><span className="HomeTitle">Revolutionizing Web3 Chat, Payment, and DeFi Banking</span></p>
+ <p className="text-sm">In the complex decentralized finance (DeFi) world, our mission stands clear: to revolutionize how individuals and businesses interact with DeFi platforms easily. We aim to demystify DeFi transactions, making them as straightforward and user-friendly. Our focus is on creating a seamless, intuitive experience that brings the power of DeFi to your fingertips, breaking down barriers and fostering accessibility for all.</p>
+  <p className="text-sm pt-4">We are dedicated to forging connections encompassing lives, businesses, and aspirations, unifying an entire world, especially in developing countries. Our vision is anchored in the belief that peer-to-peer (P2P) marketplaces represent the future of payment solutions in emerging markets. Our goal is to become a fundamental component of the digital lifestyle for Latin American consumers, seamlessly integrating into their everyday digital interactions in one platform.</p>
   </div>
-<div className="textFadeRight p-10 lg:w-1/2 w-full hidden lg:block overflow-hidden">
+
+<div className="textFadeRight p-10 lg:w-1/2 w-full  overflow-hidden">
   
-<div className=""><img className="logoAnimation m-auto pt-0  lg:w-[420px] h-[auto] " loading="eager" alt="" src="/servicesSec3.webp"/></div>
-</div>
-</div>
-
-
-
-<div className="flex flex-col componentWrapper pt-6 lg:pt-6">
-  <div className="textFade w-full ">
-  <div className="pl-0">
-  <img className="m-auto "
-        alt=""
-        src="/serviceSec4.webp" width="100%"
-          />
-    </div>
-
-  </div>
-<div className="p-0 textFadeRight lg:w-1/2 w-full">
-<img className="pt-10 pb-4" alt="" src="" width="10%"/>
-</div>
-</div>
-
-<section>
-<div className="max-w-[1400px] m-auto adjustsection flex flex-col lg:flex-row ">
-
-  <div className="textFade lg:w-1/2 w-full p-10 bg-gray-100 rounded-xl m-2 ">
-  <h2 className="text-xl font-semibold"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={24} height={24} />Across your devices</h2>
-  <p className="pt-4 text-sm">Stay connected with friends and family across your devices, AppStore, Google Play, Microsoft or simply login from webApp</p>
- 
-  </div>
-<div className="textFadeRight p-10 lg:w-1/2 w-full overflow-hidden bg-gray-100 rounded-xl m-2">
-  
-<div className="">
-<h2 className="text-xl font-semibold"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={24} height={24} />FacilApp Staking</h2>
-  <p className="pt-4 text-sm">Stake Facil token to unlock your Business tools, create your items, and accept crypto payment.</p>
-</div>
-</div>
-</div>
-</section>
-
-<section>
-<div className="max-w-[1400px] m-auto flex flex-col lg:flex-row ">
-
-  <div className="textFade lg:w-1/2 w-full p-10 bg-gray-100 rounded-xl m-2 ">
-  <h2 className="text-xl font-semibold"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={24} height={24} />Crypto-Commerce</h2>
-  <p className="pt-4 text-sm">From DeFi banking, Crypto-commerce, POS solution for cryptocurrency and more, FacilApp helps businesses drive limitless results</p>
- 
-  </div>
-<div className="textFadeRight p-10 lg:w-1/2 w-full overflow-hidden bg-gray-100 rounded-xl m-2">
-  
-<div className="">
-<h2 className="text-xl font-semibold"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={24} height={24} />Transform your business</h2>
-  <p className="pt-4 text-sm">Engage open more audiences, accelerate sales and drive better customer support</p>
-</div>
+<div className=""><img className=" m-auto pt-0  lg:w-[420px] h-[auto] " loading="eager" alt="" src="/aboutussec2.webp"/></div>
 </div>
 </div>
 </section>
 
 
-<section>
-<div className="max-w-[1400px] m-auto flex flex-col lg:flex-row mt-28 ">
-
-<div className="textFade lg:w-3/4 w-full pt-6 bg-gray-100 rounded-xl m-2">
-  <div className="flex">
-    <div className="inline-flex lg:p-8 pl-4 pb-4 pr-1">
-      <p className="lg:pt-10 pt-0">
-        <p className="font-semibold lg:text-2xl text-xl">Choose your plan</p>
-        <p className="lg:text-base text-sm pt-2">Free or Premium, Unlock your Decentralized Financial: 
-Balancing Accessibility with Enhanced Features</p></p>
-    </div>
-    <div className="inline-flex ml-0 overflow-hidden"> {/* Added margin-left for spacing */}
-      
-      <img className="h-auto overflow-hidden" alt="" src="/servicecards.webp" width="100%"/>
-    </div>
-  </div>
+<section className="max-w-[780px] m-auto pt-32 mb-30">
+<div className="text-center"><h1 className="text-3xl lg:text-4xl font-semibold mb-8">Our Roadmap</h1>
 </div>
-
-
-
-<div className="textFadeRight p-10 lg:w-1/4 w-full overflow-hidden bg-gray-100 rounded-xl m-2">
-  
-<div className="lg:p-10 pt-0">
-<h2 className="text-2xl font-semibold">Standard <span className="HomeTitle"> Free</span></h2>
-  <p className="pt-2 lg:text-base text-sm">
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>P2P Messaging</p>
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Voice & HD Video Calls</p>
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Send Crypto payment</p>
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Web3 Wallet</p>
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>FacilSwap & FacilBridge</p>
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Standard AI Chatbot</p>
-    </p>
-</div>
-</div>
-</div>
+      <AccordionRoadMap items={items} />
 </section>
 
-<section>
-<div className="max-w-[1400px] m-auto textFade w-full flex flex-col lg:flex-row">
-  <div className="lg:w-1/3 w-full bg-gray-100 rounded-xl m-2 p-8 relative">
-    <h2 className="text-2xl font-semibold">Premium $1</h2>
-    <p className="pt-2 lg:text-base text-sm">
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Standard + Free Limited tim</p>
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>10% Off fees in-app transaction</p>
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>MoneyGram fiat on & off ramp</p>
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Facil Visa & Master Card</p>
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Staking Feature & Air drop</p>
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Premium AI Chatbot Tools</p>
-  <img className="absolute right-0 bottom-0 rounded-br-xl " src="/cardleftcorner.webp" alt="Image" style={{ maxHeight: '60px', maxWidth: '55px' }} />
-    </p>
-  </div>
-  <div className="lg:w-1/3 w-full bg-gray-100 rounded-xl m-2 p-8 relative">
-  <h2 className="text-2xl font-semibold">Platinum $3</h2>
-  <p className="pt-2 lg:text-base text-sm">
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Platinum +</p>
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Metal or Designed Card</p>
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>20% Off fees</p>
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Business Staking Feature</p>
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>B2C & B2B Invoice</p>
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Crypto-commerce</p>
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Facil WebApp POS</p>
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Staking Yield</p>
-  <img className="absolute right-0 bottom-0 rounded-br-xl " src="/cardmiddlecorner.webp" alt="Image" style={{ maxHeight: '60px', maxWidth: '55px' }} />
-    </p>
-  </div>
-  <div className="lg:w-1/3 w-full bg-gray-100 rounded-xl m-2 p-8 relative">
-  <h2 className="text-2xl font-semibold">Black $9</h2>
-  <p className="pt-2 lg:text-base text-sm">
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Platinum +</p>
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>40% Off fees</p>
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Black Metal Card</p>
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Token-Back Reward</p>
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Limited Exclusive Offers</p>
-  <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>DeFi Vaults APY</p>
-    </p>
-    <img className="absolute right-0 bottom-0 rounded-br-xl " src="/cardrightcorner.webp" alt="Image" style={{ maxHeight: '60px', maxWidth: '55px' }} />
-  </div>
-</div>
-</section>
-
-<section>
-<div className="max-w-[1400px] m-auto flex flex-col lg:flex-row mt-0 ">
-
-<div className="textFade lg:w-1/4 w-full pt-6 bg-gray-100 rounded-xl m-2">
-  <div className="flex">
-    <div className="inline-flex lg:p-8 pl-4 pb-4 pr-1">
-      <p className="lg:pt-10 pt-0">
-        <p className="font-semibold lg:text-2xl text-xl">2 -5% Crypto Rewards</p>
-        <p className="lg:text-base text-sm pt-2">Best debit card for spending your crypto and get your rewards in crypto that you want.</p></p>
-    </div>
-    
-  </div>
-</div>
-
-
-
-<div className="textFadeRight p-10 lg:w-3/4 w-full overflow-hidden bg-gray-100 rounded-xl m-2">
-  
-<div className="lg:p-10 pt-0">
-<h2 className="text-2xl font-semibold">Experience Top-Tier Rates and World-Class Services</h2>
-  <p className="pt-2 lg:text-base text-sm">
-  <p className="pt-2">Per World Bank data, immigrants and expatriates in the U.S. transferred around $700 billion to their home countries in 2020. Facil offers a revolution in this process, cutting costs significantly. With DeFi technology, Facil slashes cross-border payment fees by 30% to 50%, offering a much more affordable alternative and facil.</p>
-
-    </p>
-</div>
-</div>
-</div>
-</section>
 
 <section className="flex justify-center items-center pt-40 relative">
   <div className="AppContainer w-[1408px] lg:h-[980px] h-[480px] overflow-hidden text-center text-white font-inter flex flex-col justify-between relative">
