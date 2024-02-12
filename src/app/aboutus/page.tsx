@@ -288,13 +288,6 @@ return () => {
   <h1 className="text-center m-auto items-center lg:text-4xl text-2xl font-semibold pt-16">Experience Global Freedom: Pay and Get Paid <p>with <span className="HomeTitle">Facil,</span> Anywhere in the World</p></h1>
 <div className="flex flex-col lg:flex-row componentWrapper ">
 
-<div className="textFadeRight p-0 lg:w-1/2 w-full lg:hidden">
-  
-<div className=" w-[100%] h-auto">
-<img className="logoAnimation m-auto pt-0 w-[300px] lg:w-[480px] h-[auto] " loading="eager" alt="" src="/servicesSec3.webp"/>
-</div>
-</div>
-
   <div className="textFade lg:w-1/2 w-full lg:pl-20 pl-0 ">
   <h2 className="text-2xl lg:text-4xl font-semibold pb-4 lg:pt-20 pt-0">OUR MISSION: Simplifying Blockchain for Everyday Users</h2>
   <p className="pt-4 text-base"><span className="HomeTitle">Revolutionizing Web3 Chat, Payment, and DeFi Banking</span></p>
