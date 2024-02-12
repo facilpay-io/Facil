@@ -193,8 +193,8 @@ return () => {
   
   <p className="text-base lg:text-xl font-normal text-left">Messaging Market: Capturing the Trillion-Dollar Crypto & Payment Industry</p>
   <div className="flex flex-row inline-block relative">
-  <Link className="lg:mt-10 mt-6 mr-1 border HomeTitle bordercolor lg:pt-5 pt-5 pb-4 text-center lg:pr-7 lg:pb-5 rounded-full flex w-[155px] lg:w-[180px] text-sm lg:text-xl justify-center" href="#">White Paper</Link>
-  <Link className="lg:mt-10 mt-6 ml-1 border aboutbutton text-white  lg:pt-5 pt-5 text-center  lg:pr-7 pb-5 rounded-full flex w-[180px] lg:w-[210px] text-sm lg:text-xl justify-center" href="#">Facil Pitch Deck</Link>
+  <Link className="lg:mt-10 mt-6 mr-1 border HomeTitle bordercolor lg:pt-5 pt-5 pb-4 text-center lg:pb-5 rounded-full flex w-[155px] lg:w-[180px] text-sm lg:text-xl justify-center" href="#">White Paper</Link>
+  <Link className="lg:mt-10 mt-6 ml-1 border aboutbutton text-white  lg:pt-5 pt-5 text-center pb-5 rounded-full flex w-[180px] lg:w-[210px] text-sm lg:text-xl justify-center" href="#">Facil Pitch Deck</Link>
 </div>
 
   </div>

@@ -309,7 +309,7 @@ Simplified Chatting with friends, family, or merchants and paying them with cryp
         <p className="lg:text-base text-sm pt-2">Free or Premium, Unlock your Decentralized Financial: 
 Balancing Accessibility with Enhanced Features</p></p>
     </div>
-    <div className="inline-flex ml-0 overflow-hidden"> {/* Added margin-left for spacing */}
+    <div className="inline-flex ml-0 overflow-hidden rounded-br-3xl"> {/* Added margin-left for spacing */}
       
       <img className="h-auto overflow-hidden" alt="" src="/servicecards.webp" width="100%"/>
     </div>
