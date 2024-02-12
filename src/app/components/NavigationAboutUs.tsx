@@ -64,7 +64,7 @@ export default function NavigationServices() {
     
     <div className={`p-4 mobileNav flex justify-between items-center  rounded-3xl ${navbarHomeClass} z-20 lg:hidden`} onClick={toggleMenu}>
           <Image className="ml-2" src={logoImage} alt="Description" width={81} height={64} />
-          <Image className="mr-5 mt-[-15px] w-[38px] h-auto" 
+          <Image className="mr-3 mt-[-15px] w-[38px] h-auto" 
          src={isMenuOpen ? (selectedMenuItem === 'Home' ? './close.svg' : './close-blue.svg') : (selectedMenuItem === 'Home' ? './burger.svg' : './burger-blue.svg')} 
          alt={iconAlt} 
          width={25} 
