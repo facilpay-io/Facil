@@ -13,7 +13,7 @@ const CoinMarketCap: React.FC = () => {
         const parsedData = JSON.parse(cachedData);
         const timestamp = parseInt(cachedTimestamp, 10);
 
-        // Check if cached data is not older than 5 minutes
+        // Check if cached data is not older than 1 minute
         if (Date.now() - timestamp < 5 * 60 * 1000) {
           setTotalMarketCap(parsedData.quote.USD.total_market_cap);
           console.log('Using cached data');
@@ -36,15 +36,23 @@ const CoinMarketCap: React.FC = () => {
         localStorage.setItem('coinMarketCapTimestamp', Date.now().toString());
 
         setTotalMarketCap(totalMarketCapUSD);
+
+        console.log('New data fetched:', totalMarketCapUSD);
+        console.log(response.data);
       } catch (ex) {
         console.error('Error fetching data:', ex);
+
+        // Set a timer to refetch data after 1 minute
+        setTimeout(() => {
+          fetchData();
+        }, 1 * 60 * 1000);
       }
     };
 
     fetchData();
 
     return () => {
-    
+      // Cleanup function if needed
     };
   }, []);
 
@@ -70,7 +78,4 @@ function abbreviateNumber(value: number) {
   return (value < 0 ? '-' : '') + shortValue + ' ' + completeName;
 }
 
-
-
 export default CoinMarketCap;
-
