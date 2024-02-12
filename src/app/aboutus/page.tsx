@@ -189,7 +189,7 @@ return () => {
       <div className="bg-white h-1/4 flex mt-4 lg:hidden"></div>
       <div className="PageWrapper heroServices bg-gray-100 h-[630px] lg:h-[650px] mt-3 lg:mt-3 md:mt-3 flex flex-col lg:flex-row w-full items-center justify-center">
   <div className="lg:w-1/2 w-full text-center text-black lg:p-20 p-6 pt-10 lg:pt-0  md:pt-0  text-2xl font-semibold">
-  <p className="pb-10 text-3xl lg:text-6xl md:text-4xl text-left">Beyond the <p>Billion-Dollar</p> </p>
+  <p className="lg:pb-10 pb-4 text-3xl lg:text-6xl md:text-4xl text-left">Beyond the <p>Billion-Dollar</p> </p>
   
   <p className="text-base lg:text-xl font-normal text-left">Messaging Market: Capturing the Trillion-Dollar Crypto & Payment Industry</p>
   <div className="flex flex-row inline-block relative">
