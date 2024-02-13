@@ -189,7 +189,10 @@ return () => {
       <div className="bg-white h-1/4 flex mt-4 lg:hidden"></div>
       <div className="PageWrapper heroServices bg-gray-100 h-[630px] lg:h-[650px] mt-3 lg:mt-3 md:mt-3 flex flex-col lg:flex-row w-full items-center justify-center">
   <div className="lg:w-1/2 w-full text-center text-black lg:p-20 p-6 pt-10 lg:pt-0  md:pt-0  text-2xl font-semibold">
-  <p className="lg:pb-10 pb-4 text-3xl lg:text-6xl md:text-4xl text-left">Beyond the <p>Billion-Dollar</p> </p>
+  <div className="lg:pb-10 pb-4 text-3xl lg:text-6xl md:text-4xl text-left">
+  Beyond the <br />
+  <span className="lg:text-6xl md:text-4xl">Billion-Dollar</span>
+</div>
   
   <p className="text-base lg:text-xl font-normal text-left">Messaging Market: Capturing the Trillion-Dollar Crypto & Payment Industry</p>
   <div className="flex flex-row inline-block relative">
@@ -241,14 +244,14 @@ return () => {
 
 
 <section>
-<h1 className="lg:mt-32 mt-20 lg:mb-[-20px] text-center m-auto items-center lg:text-4xl text-2xl font-semibold">Simplifying Blockchain for Everyday Users</h1>
-<div className="max-w-[1400px] m-auto  w-full flex flex-col lg:flex-row">
+<h1 className="lg:mt-32 mt-20 mb-4 text-center m-auto items-center lg:text-4xl text-2xl font-semibold">Simplifying Blockchain for Everyday Users</h1>
+<div className="max-w-[1100px] m-auto  w-full flex flex-col lg:flex-row">
   
-  <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-20 m-2 pl-6 pr-6 pt-8 pb-8 relative">
+  <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-6 mb-2  pl-6 pr-6 pt-8 pb-8 relative">
     <h2 className="text-base font-semibold text-rose-500">Complexity:</h2>
     <p className="pt-2 lg:text-base text-sm">Many Web3 Social platforms often claim to be user-friendly but are <span className="text-rose-500">overwhelmingly complicated</span> for those accustomed to Web2 interfaces.</p>
   </div>
-  <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-20 m-2 pl-6 pr-6 pt-8 pb-8 relative">
+  <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-6 mb-2 m-0 pl-6 pr-6 pt-8 pb-8 relative">
   <h2 className="text-base font-semibold text-sky-500"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={22} height={22} />1. Simplicity Redefined:</h2>
   <p className="pt-2 lg:text-base text-sm">
   Our platform reimagines the Web3 experience with <span className="text-sky-500">simplicity</span>simplicity at its core, making it as easy to use as any Web2 application.</p>
@@ -257,12 +260,12 @@ return () => {
 </section>
 
 <section>
-<div className="max-w-[1400px] lg:mt-[-90px] m-auto  w-full flex flex-col lg:flex-row">
-  <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-20 m-2 pl-6 pr-6 pt-8 pb-8 relative">
+<div className="max-w-[1100px] m-auto  w-full flex flex-col lg:flex-row">
+  <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-6 mb-2 m-0 pl-6 pr-6 pt-8 pb-8 relative">
     <h2 className="text-base font-semibold text-rose-500">Accessibility:</h2>
     <p className="pt-2 lg:text-base text-sm">The advanced nature of these platforms creates a barrier to widespread adoption, especially among <span className="text-rose-500">non-tech-savvy users.</span></p>
   </div>
-  <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-20 m-2 pl-6 pr-6 pt-8 pb-8 relative">
+  <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-6 mb-2 m-0 pl-6 pr-6 pt-8 pb-8 relative">
   <h2 className="text-base font-semibold text-sky-500"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={22} height={22} />2. Universal Usability:</h2>
   <p className="pt-2 lg:text-base text-sm">
   Designed with clarity and ease of use, our solution is so <span className="text-sky-500">straightforward </span>that even our grandparents can navigate blockchain technology effortlessly.</p>
@@ -271,12 +274,12 @@ return () => {
 </section>
 
 <section>
-<div className="max-w-[1400px] lg:mt-[-90px] m-auto  w-full flex flex-col lg:flex-row">
-  <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-20 m-2 pl-6 pr-6 pt-8 pb-8 relative">
+<div className="max-w-[1100px] m-auto w-full flex flex-col lg:flex-row">
+  <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-6 mb-2 m-0 pl-6 pr-6 pt-8 pb-8 relative">
     <h2 className="text-base font-semibold text-rose-500">Limited Access for the Unbanked:</h2>
     <p className="pt-2 lg:text-base text-sm">A substantial portion of the population remains <span className="text-rose-500">excluded from modern financial services,</span> highlighting the urgent need for inclusive financial technology solutions.</p>
   </div>
-  <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-20 m-2 pl-6 pr-6 pt-8 pb-8 relative">
+  <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-6 mb-2 m-0 pl-6 pr-6 pt-8 pb-8 relative">
   <h2 className="text-base font-semibold text-sky-500"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={22} height={22} />3. DeFi Accessibility for the Unbanked:</h2>
   <p className="pt-2 lg:text-base text-sm">
   We are creating accessible financial services within our app that do not require traditional banking infrastructure, thus <span className="text-sky-500">extending financial inclusion to the unbanked population.</span></p>
@@ -285,7 +288,7 @@ return () => {
 </section>
 
 <section>
-  <h1 className="text-center m-auto items-center lg:text-4xl text-2xl font-semibold pt-16">Experience Global Freedom: Pay and Get Paid <p>with <span className="HomeTitle">Facil,</span> Anywhere in the World</p></h1>
+  <h1 className="text-center m-auto items-center lg:text-4xl text-2xl font-semibold lg:pt-24 pt-20 max-w-[750px]">Experience Global Freedom: Pay and Get Paid with <span className="HomeTitle">Facil,</span> Anywhere in the World</h1>
 <div className="flex flex-col lg:flex-row componentWrapper ">
 
   <div className="textFade lg:w-1/2 w-full lg:pl-20 pl-0 ">
@@ -303,7 +306,7 @@ return () => {
 </section>
 
 
-<section className="max-w-[780px] m-auto pt-32 mb-30">
+<section className="max-w-[780px] m-auto lg:pt-32 pt-20 mb-30">
 <div className="text-center"><h1 className="text-3xl lg:text-4xl font-semibold mb-8">Our Roadmap</h1>
 </div>
       <AccordionRoadMap items={items} />
