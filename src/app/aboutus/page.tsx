@@ -249,7 +249,7 @@ return () => {
     <p className="pt-2 lg:text-base text-sm">Many Web3 Social platforms often claim to be user-friendly but are <span className="text-rose-500">overwhelmingly complicated</span> for those accustomed to Web2 interfaces.</p>
   </div>
   <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-20 m-2 pl-6 pr-6 pt-8 pb-8 relative">
-  <h2 className="text-base font-semibold text-sky-500">1. Simplicity Redefined:</h2>
+  <h2 className="text-base font-semibold text-sky-500"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={22} height={22} />1. Simplicity Redefined:</h2>
   <p className="pt-2 lg:text-base text-sm">
   Our platform reimagines the Web3 experience with <span className="text-sky-500">simplicity</span>simplicity at its core, making it as easy to use as any Web2 application.</p>
   </div>
@@ -263,7 +263,7 @@ return () => {
     <p className="pt-2 lg:text-base text-sm">The advanced nature of these platforms creates a barrier to widespread adoption, especially among <span className="text-rose-500">non-tech-savvy users.</span></p>
   </div>
   <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-20 m-2 pl-6 pr-6 pt-8 pb-8 relative">
-  <h2 className="text-base font-semibold text-sky-500">2. Universal Usability:</h2>
+  <h2 className="text-base font-semibold text-sky-500"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={22} height={22} />2. Universal Usability:</h2>
   <p className="pt-2 lg:text-base text-sm">
   Designed with clarity and ease of use, our solution is so <span className="text-sky-500">straightforward </span>that even our grandparents can navigate blockchain technology effortlessly.</p>
   </div>
@@ -277,7 +277,7 @@ return () => {
     <p className="pt-2 lg:text-base text-sm">A substantial portion of the population remains <span className="text-rose-500">excluded from modern financial services,</span> highlighting the urgent need for inclusive financial technology solutions.</p>
   </div>
   <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-20 m-2 pl-6 pr-6 pt-8 pb-8 relative">
-  <h2 className="text-base font-semibold text-sky-500">3. DeFi Accessibility for the Unbanked:</h2>
+  <h2 className="text-base font-semibold text-sky-500"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={22} height={22} />3. DeFi Accessibility for the Unbanked:</h2>
   <p className="pt-2 lg:text-base text-sm">
   We are creating accessible financial services within our app that do not require traditional banking infrastructure, thus <span className="text-sky-500">extending financial inclusion to the unbanked population.</span></p>
   </div>
