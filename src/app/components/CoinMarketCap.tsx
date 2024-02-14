@@ -61,7 +61,7 @@ const CoinMarketCap: React.FC = () => {
           console.log('Percentage Change:', percentage);
         }
 
-        // console.log('New data fetched:', totalMarketCapUSD);
+        console.log('New data fetched:', totalMarketCapUSD);
         // console.log('MC Yesterday fetched:', totalMarketCapYesterdayUSD);
         // console.log(response.data);
       } catch (ex) {
@@ -70,7 +70,7 @@ const CoinMarketCap: React.FC = () => {
         // Set a timer to refetch data after 1 minute
         setTimeout(() => {
           fetchData();
-        }, 1 * 60 * 1000);
+        }, 5 * 60 * 1000);
       }
     };
 
