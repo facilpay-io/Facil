@@ -222,6 +222,7 @@ width: 740px;
   margin: auto;
  width: 100%;
  border-radius: 40px;
+ z-index: 20;
 }
 .mobileNavDrawer {
   max-width: 1408px;
