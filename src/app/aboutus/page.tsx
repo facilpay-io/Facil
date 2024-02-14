@@ -215,23 +215,23 @@ return () => {
 
 <section>
 <div className="max-w-[1400px] m-auto pt-10 w-full flex flex-col lg:flex-row">
-  <div className="lg:w-1/3 w-full bg-gray-100 rounded-3xl m-2 pl-6 pr-6 pt-8 pb-8 relative">
+  <div className="lg:w-1/3 w-full bg-gray-100 rounded-3xl lg:m-2 mb-4 pl-6 pr-6 pt-8 pb-8 relative">
     <h2 className="text-2xl font-semibold">$10 Billion</h2>
     <p className="pt-2 lg:text-base text-sm">Global Messaging Market Volume</p>
   </div>
-  <div className="lg:w-1/3 w-full bg-gray-100 rounded-3xl m-2 pl-6 pr-6 pt-8 pb-8 relative">
+  <div className="lg:w-1/3 w-full bg-gray-100 rounded-3xl lg:m-2 mb-4 pl-6 pr-6 pt-8 pb-8 relative">
   <h2 className="text-2xl font-semibold">${Math.round(counter).toLocaleString()} Billion</h2>
   <p className="pt-2 lg:text-base text-sm">
   Global Payment Market Volume</p>
   </div>
-  <div className="lg:w-1/3 w-full bg-gray-100 rounded-3xl m-2 pl-6 pr-6 pt-8 pb-8 relative">
+  <div className="lg:w-1/3 w-full bg-gray-100 rounded-3xl lg:m-2 mb-4 pl-6 pr-6 pt-8 pb-8 relative">
   <h2 className="counterUp text-2xl font-semibold"><CoinMarketCap /></h2>
   <p className="pt-2 lg:text-base text-sm">
   Cryptocurrency Market Cap
     </p>
    
   </div>
-  <div className="lg:w-1/3 w-full bg-gray-100 rounded-3xl m-2 pl-6 pr-6 pt-8 pb-8 relative">
+  <div className="lg:w-1/3 w-full bg-gray-100 rounded-3xl lg:m-2 mb-4 pl-6 pr-6 pt-8 pb-8 relative">
   <h2 className="text-2xl font-semibold">$3 Billion</h2>
   <p className="pt-2 lg:text-base text-sm">
   Global Mobile Messaging Users
@@ -247,7 +247,7 @@ return () => {
 <h1 className="lg:mt-32 mt-20 mb-4 text-center m-auto items-center lg:text-4xl text-2xl font-semibold">Simplifying Blockchain for Everyday Users</h1>
 <div className="max-w-[1100px] m-auto  w-full flex flex-col lg:flex-row">
   
-  <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-6 mb-2  pl-6 pr-6 pt-8 pb-8 relative">
+  <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-6 mb-2 pl-6 pr-6 pt-8 pb-8 relative">
     <h2 className="text-base font-semibold text-rose-500">Complexity:</h2>
     <p className="pt-2 lg:text-base text-sm">Many Web3 Social platforms often claim to be user-friendly but are <span className="text-rose-500">overwhelmingly complicated</span> for those accustomed to Web2 interfaces.</p>
   </div>
