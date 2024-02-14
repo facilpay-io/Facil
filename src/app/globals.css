@@ -168,6 +168,7 @@ max-width: 559px;
 .NavBarWrapper {
   max-width: 1408px;
   margin: auto;
+  border-radius: 40px;
 }
 .PageWrapper {
   max-width: 1408px;
@@ -220,7 +221,6 @@ width: 740px;
   max-width: 1408px;
   margin: auto;
  width: 100%;
-
 }
 .mobileNavDrawer {
   max-width: 1408px;

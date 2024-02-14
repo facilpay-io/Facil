@@ -93,8 +93,7 @@ export default function Services() {
       start: "top bottom",
       end: "30% top",
       onEnter: () => {
-        gsap.to(leftImageRef.current, { y: 0, opacity: 1, duration: 1 });
-        
+        gsap.to(leftImageRef.current, { y: 0, opacity: 1, duration: 1 });      
       },
       onLeave: () => {
         gsap.to(leftImageRef.current, { y: 600, opacity: 0, duration: 1 });
@@ -194,8 +193,8 @@ return () => {
   
   <div className="textFade lg:w-1/2 w-full lg:pl-20 pl-0">
   <h2 className="text-2xl lg:text-4xl font-semibold pb-4 lg:pt-24 pt-8"> Facil - Free, Simple, and Empowering.</h2>
-<span className="text-base">We provide each user with a Web3 wallet, offering a user-friendly, secure, and accessible peer-to-peer messaging and payment system. This integrated feature allows users to chat and transact with friends, family, or merchants using cryptocurrency, all within the Facil application. </span>
- <p className=" mt-4"><span className="HomeTitle">Facil represents more than just a service;</span> it signifies a paradigm shift in digital interaction. Our goal is to demystify complex technologies, making blockchain and cryptocurrency a part of daily life. Facil invites you to experience the future of connectivity and commerce, where freedom, simplicity, and empowerment are effortlessly within your reach.</p>
+<span className="text-base">Every user is provided with a Web3 wallet integrated into their profile. Paired with <span className="HomeTitle">our peer-to-peer messaging system,</span> this setup allows users to chat and transact directly with friends, family, or merchants, all within the Facil App. </span>
+ <p className=" mt-4"><span className="HomeTitle">Facil represents a paradigm shift in digital interaction.</span> By demystifying blockchain technology and making cryptocurrencies a part of daily life, we invite you to experience the future of connectivity and commerce</p>
 
   </div>
 <div className="textFadeRight p-10 lg:w-1/2 w-full">
@@ -304,10 +303,10 @@ Simplified Chatting with friends, family, or merchants and paying them with cryp
 <div className="textFade lg:w-3/4 w-full pt-6 bg-gray-100 rounded-3xl m-2">
   <div className="flex">
     <div className="inline-flex lg:p-8 pl-4 pb-4 pr-1">
-      <p className="lg:pt-10 pt-0">
+      <div className="lg:pt-10 pt-0">
         <p className="font-semibold lg:text-2xl text-xl">Choose your plan</p>
         <p className="lg:text-base text-sm pt-2">Free or Premium, Unlock your Decentralized Financial: 
-Balancing Accessibility with Enhanced Features</p></p>
+Balancing Accessibility with Enhanced Features</p></div>
     </div>
     <div className="inline-flex ml-0 overflow-hidden rounded-br-3xl"> {/* Added margin-left for spacing */}
       
@@ -322,14 +321,14 @@ Balancing Accessibility with Enhanced Features</p></p>
   
 <div className="lg:p-10 pt-0">
 <h2 className="text-2xl font-semibold">Standard <span className="HomeTitle"> Free</span></h2>
-  <p className="pt-2 lg:text-base text-sm">
+  <div className="pt-2 lg:text-base text-sm">
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>P2P Messaging</p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Voice & HD Video Calls</p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Send Crypto payment</p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Web3 Wallet</p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>FacilSwap & FacilBridge</p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Standard AI Chatbot</p>
-    </p>
+    </div>
 </div>
 </div>
 </div>
@@ -339,7 +338,7 @@ Balancing Accessibility with Enhanced Features</p></p>
 <div className="max-w-[1400px] m-auto textFade w-full flex flex-col lg:flex-row">
   <div className="lg:w-1/3 w-full bg-gray-100 rounded-3xl m-2 p-8 relative">
     <h2 className="text-2xl font-semibold">Premium $1</h2>
-    <p className="pt-2 lg:text-base text-sm">
+    <div className="pt-2 lg:text-base text-sm">
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Standard + Free Limited tim</p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>10% Off fees in-app transaction</p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>MoneyGram fiat on & off ramp</p>
@@ -347,11 +346,11 @@ Balancing Accessibility with Enhanced Features</p></p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Staking Feature & Air drop</p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Premium AI Chatbot Tools</p>
   <img className="absolute right-0 bottom-0 rounded-br-3xl " src="/cardleftcorner.webp" alt="Image" style={{ maxHeight: '60px', maxWidth: '55px' }} />
-    </p>
+    </div>
   </div>
   <div className="lg:w-1/3 w-full bg-gray-100 rounded-3xl m-2 p-8 relative">
   <h2 className="text-2xl font-semibold">Platinum $3</h2>
-  <p className="pt-2 lg:text-base text-sm">
+  <div className="pt-2 lg:text-base text-sm">
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Platinum +</p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Metal or Designed Card</p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>20% Off fees</p>
@@ -361,18 +360,18 @@ Balancing Accessibility with Enhanced Features</p></p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Facil WebApp POS</p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Staking Yield</p>
   <img className="absolute right-0 bottom-0 rounded-br-3xl " src="/cardmiddlecorner.webp" alt="Image" style={{ maxHeight: '60px', maxWidth: '55px' }} />
-    </p>
+    </div>
   </div>
   <div className="lg:w-1/3 w-full bg-gray-100 rounded-3xl m-2 p-8 relative">
   <h2 className="text-2xl font-semibold">Black $9</h2>
-  <p className="pt-2 lg:text-base text-sm">
+  <div className="pt-2 lg:text-base text-sm">
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Platinum +</p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>40% Off fees</p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Black Metal Card</p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Token-Back Reward</p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>Limited Exclusive Offers</p>
   <p className="pt-2"><img className="h-auto w-[10px] inline-flex mr-1" alt="" src="/bullet.svg"/>DeFi Vaults APY</p>
-    </p>
+    </div>
     <img className="absolute right-0 bottom-0 rounded-br-3xl " src="/cardrightcorner.webp" alt="Image" style={{ maxHeight: '60px', maxWidth: '55px' }} />
   </div>
 </div>
@@ -384,9 +383,9 @@ Balancing Accessibility with Enhanced Features</p></p>
 <div className="textFade lg:w-1/4 w-full pt-6 bg-gray-100 rounded-3xl m-2">
   <div className="flex">
     <div className="inline-flex lg:p-8 pl-4 pb-4 pr-1">
-      <p className="lg:pt-10 pt-0">
+      <div className="lg:pt-10 pt-0">
         <p className="font-semibold lg:text-2xl text-xl">2 -5% Crypto Rewards</p>
-        <p className="lg:text-base text-sm pt-2">Best debit card for spending your crypto and get your rewards in crypto that you want.</p></p>
+        <p className="lg:text-base text-sm pt-2">Best debit card for spending your crypto and get your rewards in crypto that you want.</p></div>
     </div>
     
   </div>
@@ -398,10 +397,10 @@ Balancing Accessibility with Enhanced Features</p></p>
   
 <div className="lg:p-10 pt-0">
 <h2 className="text-2xl font-semibold">Experience Top-Tier Rates and World-Class Services</h2>
-  <p className="pt-2 lg:text-base text-sm">
+  <div className="pt-2 lg:text-base text-sm">
   <p className="pt-2">Per World Bank data, immigrants and expatriates in the U.S. transferred around $700 billion to their home countries in 2020. Facil offers a revolution in this process, cutting costs significantly. With DeFi technology, Facil slashes cross-border payment fees by 30% to 50%, offering a much more affordable alternative and facil.</p>
 
-    </p>
+    </div>
 </div>
 </div>
 </div>

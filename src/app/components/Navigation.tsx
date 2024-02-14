@@ -31,7 +31,7 @@ export default function Navigation() {
   return (
     <>
       
-        <div className={`NavBarWrapper rounded-3xl p-0 lg:p-4 lg:flex hidden md:p-0 flex justify-between items-center w-full ${navbarHomeClass}`}>
+        <div className={`NavBarWrapper p-0 lg:p-4 lg:flex hidden md:p-0 flex justify-between items-center w-full ${navbarHomeClass}`}>
           <div className="flex justify-start items-center flex-1">
           <Image className="mr-24 ml-8 mt-0" src={logoImage} alt="Description" width={81} height={64} />
           </div>
