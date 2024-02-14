@@ -62,7 +62,7 @@ export default function NavigationServices() {
 
     {/* Hamburger Menu Icon */}
     
-    <div className={`p-4 mobileNav flex justify-between items-center  rounded-3xl ${navbarHomeClass} z-20 lg:hidden`} onClick={toggleMenu}>
+    <div className={`p-4 mobileNav flex justify-between items-center ${navbarHomeClass} z-20 lg:hidden`} onClick={toggleMenu}>
           <Image className="ml-2" src={logoImage} alt="Description" width={81} height={64} />
           <Image className="mr-3 mt-[-15px] w-[38px] h-auto" 
          src={isMenuOpen ? (selectedMenuItem === 'Home' ? './close.svg' : './close-blue.svg') : (selectedMenuItem === 'Home' ? './burger.svg' : './burger-blue.svg')} 
@@ -72,7 +72,7 @@ export default function NavigationServices() {
         </div>
 
              {/* Mobile Nav Drawer */}
-             <div className={`mobileNavDrawer rounded-b-3xl top-14 w-11/12 pt-10 pl-5 pb-10 justify-between items-center ${selectedMenuItem === 'Home' ? 'homeNavBar' : 'bg-gray-100'} transition-transform transform ${isMenuOpen ? 'scale-y-100' : 'scale-y-0'} origin-top lg:hidden z-10 absolute left-0 right-0`}>
+             <div className={`mobileNavDrawer  top-14 w-11/12 pt-10 pl-5 pb-10 justify-between items-center ${selectedMenuItem === 'Home' ? 'homeNavBar' : 'bg-gray-100'} transition-transform transform ${isMenuOpen ? 'scale-y-100' : 'scale-y-0'} origin-top lg:hidden z-10 absolute left-0 right-0`}>
                 {/* Menu items */}
                 <div className={`pl-2 pt-6 ${selectedMenuItem === 'Home' ? 'text-white' : 'text-blue-500'}`}>
                     <Link href="/" onClick={() => handleMenuItemClick('Home')}>Home</Link>

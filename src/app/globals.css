@@ -221,12 +221,16 @@ width: 740px;
   max-width: 1408px;
   margin: auto;
  width: 100%;
+ border-radius: 40px;
 }
 .mobileNavDrawer {
   max-width: 1408px;
   margin: auto;
   width: 100%;
-  margin-top: 3px;
+  margin-top: -7px;
+  z-index: -2;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
 }
 
 .navText {
