@@ -232,8 +232,8 @@ Simplified Chatting with friends, family, or merchants and paying them with cryp
 
   <div className="textFade lg:w-1/2 w-full lg:pl-20 pl-0 ">
   <h2 className="text-2xl lg:text-4xl font-semibold pb-4 lg:pt-28 pt-0">Global Transfers made Facil</h2>
-  <p className="pt-4 text-base">Transfer money instantly with Facil at better rates. Want to send crypto to someone without bank account access? No problem. You can visit a local MoneyGram location and receive money in 182 countries worldwide. The Facil app integrates seamlessly with MoneyGrams extensive global retail network, enabling users to deposit or withdraw cash directly into their wallets. This bypasses the need for a traditional bank account, offering a practical solution for the unbanked.</p>
- <p className="pt-4"> <span className="HomeTitle">GLOBAL REACH IN OVER 180 COUNTRIES.</span> Through its integration with MoneyGram, the Facil app empowers users to perform cash-out transactions in 182 countries worldwide.</p>
+  <p className="pt-4 text-base"><span className="text-rose-500">GLOBAL REACH IN OVER 182 COUNTRIES</span>: Need to convert crypto to fiat without a bank account? We’ve got you covered! Through our integration with MoneyGram, the Facil Pay app allows users to perform cash-out transactions in 182 countries worldwide, offering a practical solution to the unbanked.</p>
+ <p className="pt-2 ml-[-7px]"> <img className=" w-[280px] h-[auto] " loading="eager" alt="" src="/poweredby.svg"/></p>
  
   
   </div>
@@ -265,14 +265,14 @@ Simplified Chatting with friends, family, or merchants and paying them with cryp
 
   <div className="textFade lg:w-1/2 w-full p-10 bg-gray-100 rounded-3xl m-2 ">
   <h2 className="text-xl font-semibold"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={24} height={24} />Across your devices</h2>
-  <p className="pt-4 text-sm">Stay connected with friends and family across your devices, AppStore, Google Play, Microsoft or simply login from webApp</p>
+  <p className="pt-4 text-sm">Stay connected with friends and family across your devices. You can access Facil from the AppStore, Google Play, Microsoft or simply login from the webApp.</p>
  
   </div>
 <div className="textFadeRight p-10 lg:w-1/2 w-full overflow-hidden bg-gray-100 rounded-3xl m-2">
   
 <div className="">
 <h2 className="text-xl font-semibold"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={24} height={24} />FacilApp Staking</h2>
-  <p className="pt-4 text-sm">Stake Facil token to unlock your Business tools, create your items, and accept crypto payment.</p>
+  <p className="pt-4 text-sm">Stake Facil tokens to unlock business tools to create B2B or B2C crypto invoices, sell your products, and accept crypto payments.</p>
 </div>
 </div>
 </div>
@@ -283,14 +283,14 @@ Simplified Chatting with friends, family, or merchants and paying them with cryp
 
   <div className="textFade lg:w-1/2 w-full p-10 bg-gray-100 rounded-3xl m-2 ">
   <h2 className="text-xl font-semibold"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={24} height={24} />Crypto-Commerce</h2>
-  <p className="pt-4 text-sm">From DeFi banking, Crypto-commerce, POS solution for cryptocurrency and more, FacilApp helps businesses drive limitless results</p>
+  <p className="pt-4 text-sm">A tailored point-of-service (POS) solution allows businesses access to DeFi banking and other crypto-commerce solution.</p>
  
   </div>
 <div className="textFadeRight p-10 lg:w-1/2 w-full overflow-hidden bg-gray-100 rounded-3xl m-2">
   
 <div className="">
 <h2 className="text-xl font-semibold"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={24} height={24} />Transform your business</h2>
-  <p className="pt-4 text-sm">Engage open more audiences, accelerate sales and drive better customer support</p>
+  <p className="pt-4 text-sm">Engage more audiences, boost sales and drive better customer support.</p>
 </div>
 </div>
 </div>

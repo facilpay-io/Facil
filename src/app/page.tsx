@@ -427,7 +427,7 @@ return () => {
   <div className="lg:pl-10 pl-0">
   <img className="m-auto "
         alt=""
-        src="/miccard.webp" width="70%"
+        src="/miccardwebp.webp" width="70%"
           />
     </div>
 
