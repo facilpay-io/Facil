@@ -166,16 +166,22 @@ return () => {
     <div className="stickyWrapper"><MainNavigation /></div>
     <main className={urbanistone.className}>
       <div className="bg-white h-1/4 flex mt-4 lg:hidden"></div>
-      <div className="PageWrapper heroServices bg-gray-100 h-[400px] lg:h-[650px] mt-3 lg:mt-3 md:mt-3 flex flex-col lg:flex-col w-full items-center justify-center">
+      <div className="PageWrapper heroServices bg-gray-100 h-[600px] lg:h-[650px] mt-3 lg:mt-3 md:mt-3 flex flex-col lg:flex-col w-full items-center justify-center">
   <div className="mt-10 lg:w-full text-center text-black  lg:pt-0 pt-0 lg:pt-0 md:pt-0  text-2xl font-semibold">
-  <p className="lg:pt-10 pt-2 pl-2 pr-2 pb-2 lg:pl-12 lg:pb-6 md:pb-6 text-xl xl:text-5xl lg:text-4xl md:text-4xl">Simplifying Blockchain for Everyday Users</p>
+  <p className="lg:pt-10 pt-2 pl-2 pr-2 pb-2 lg:pl-12 lg:pb-6 md:pb-6 text-2xl xl:text-5xl lg:text-4xl md:text-4xl">Simplifying Blockchain for Everyday Users</p>
   
   <p className="text-base lg:text-xl pl-4 lg:pl-12 font-normal">Bridging the Gap Between Traditional and DeFi Banking</p>
   
   </div>
-  <div className="mt-8 lg:mt-16 lg:w-full w-full flex justify-center items-center overflow-hidden">
+  {/* <div className="mt-8 lg:mt-16 lg:w-full w-full flex justify-center items-center overflow-hidden">
             <div ref={leftImageRef} style={{ opacity: 0 }}>
-              <img className="lg:w-[700px] lg:h-[auto] lg:block  ml-0 w-[400px] h-[auto] lg:mt-64 mt-40" src="/servicesherophones.webp" alt="Description"  />
+              <img className="lg:w-[700px] lg:h-[auto] lg:block  ml-0 w-[400px] h-[auto] lg:mt-64 mt-6" src="/servicesherophones.webp" alt="Description"  />
+              
+            </div> */}
+
+            <div className="mt-4 h-full lg:mt-0 lg:w-1/2 w-full flex justify-center items-center overflow-hidden">
+            <div ref={leftImageRef} style={{ opacity: 0 }}>
+              <img className="lg:w-[700px] lg:h-[auto] lg:block  ml-0 w-[360px] h-[auto] lg:mt-64 mt-0" src="/servicesherophones.webp" alt="Description"  />
               
             </div>
            
