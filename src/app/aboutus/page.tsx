@@ -268,7 +268,7 @@ return () => {
   <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-6 mb-2 m-0 pl-6 pr-6 pt-8 pb-8 relative">
   <h2 className="text-base font-semibold text-sky-500"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={22} height={22} />2. Universal Usability:</h2>
   <p className="pt-2 lg:text-base text-sm">
-  Designed with clarity and ease of use, our solution is so <span className="text-sky-500">straightforward </span>that even our grandparents can navigate blockchain technology effortlessly.</p>
+  Designed with clarity and ease of use, our solution is so <span className="text-sky-500">straight forward </span>that even our grandparents can navigate blockchain technology effortlessly.</p>
   </div>
 </div>
 </section>
