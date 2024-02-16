@@ -12,7 +12,7 @@ import animatePhone from "../components/animatephone.json";
 import animatePhone2 from "../components/animatephone2.json";
 import Accordion from "../components/Accordian";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faApple, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
+import { faApple, faGooglePlay, faTwitter, faInstagram, faFacebook, faLinkedin, faDiscord, faMedium } from '@fortawesome/free-brands-svg-icons';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -472,6 +472,14 @@ Balancing Accessibility with Enhanced Features</p></div>
         src="/phoneicon.svg"
        
       />+1 234 456 678 89</p>
+      <p className="pt-4 text-blue-500">
+        <FontAwesomeIcon icon={faTwitter} className="mr-3" />
+        <FontAwesomeIcon icon={faInstagram} className="mr-3" />
+        <FontAwesomeIcon icon={faFacebook} className="mr-3" />
+        <FontAwesomeIcon icon={faLinkedin} className="mr-3" />
+        <FontAwesomeIcon icon={faDiscord} className="mr-3" />
+        <FontAwesomeIcon icon={faMedium} className="mr-3" />
+        </p>
           </div>
 
       </div>

@@ -10,7 +10,7 @@ import React from "react";
 import Lottie, {Action} from 'lottie-react'
 import AccordionRoadMap from "../components/AccordianRoadMap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faApple, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
+import { faApple, faGooglePlay, faTwitter, faInstagram, faFacebook, faLinkedin, faDiscord, faMedium } from '@fortawesome/free-brands-svg-icons';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -25,20 +25,81 @@ const currentYear = new Date().getFullYear();
 
 const items = [
   {
+    title: (
+      <div className="flex items-center"> {/* Ensures flex container alignment */}
+        <img src="/checkmark.webp" alt="Check" style={{ width: '20px', marginRight: '8px' }} />
+        <span>Q4. 2023</span>
+      </div>
+    ),
+    content: `<p>• Team formation </p>
+    <ul>
+      <li>• Onboarding Devs</li>
+      <li>• Legal Consultation</li>
+      <li>• Tokenomics Prepared</li>
+      <li>• Advisor meetings</li> 
+      <li>• Deploying Technology Stack</li>
+      <li>• Multi-chain Implementation</li>
+      <li>• UI/UX Design – Website</li>
+      <li>• Social Media & Community</li>
+      <li>• Whitepaper v1.8</li>
+      <li>• Pitch-deck & One pager</li>
+      <li>• Moon-Sheet</li>
+      <li>• GTM SEED STAGE 1</li>
+      <li>• PR Prepared</li> 
+      <li>• Pitch Deck Release</li>
+    </ul>`,
+  },
+  {
     title: 'Q1. 2024',
-    content: 'Placeholder text.',
+    content: `<p>• PRIVATE VC STAGE 1 & 2 </p>
+    <ul>
+      <li>• GTM SEED STAGE 2</li>
+      <li>• IDO Platform Partnership</li>
+      <li>• IDO & ICO Launch </li>
+      <li>• DEX Uniswap Listing</li> 
+      <li>• LATAM CEX Exchange Listing</li>
+      <li>• UI/UX Figma Prototype</li>
+      <li>• AMA Multiple outlets</li>
+      <li>• KOL’s Promotion & Event</li>
+      <li>• Android Mobile Application</li>
+      <li>• IOS Mobile Application</li>
+      <li>• Audit Prepared</li>
+      <li>• Whitepaper Release V2.2</li>
+      <li>• CoinGecko Listing</li> 
+      <li>• CoinMarketCap Listing</li>
+    </ul>`,
   },
   {
     title: 'Q2. 2024',
-    content: 'Placeholder text.',
+    content: `<p>• FacilSwap & Bridge </p>
+    <ul>
+      <li>• MoneyGram PR</li>
+      <li>• Staking feature</li>
+      <li>• CEX Exchange Listing </li>
+      <li>• Platform Promotion</li> 
+      <li>• KOL’s Promotion 2</li>
+      <li>• Soft Launch Event</li>
+      <li>• BETA Platform V1.2</li>
+      <li>• WEB Platform Launch</li>
+      <li>• Android Mobile App V1.5</li>
+      <li>• IOS Mobile App V1.5</li>
+      <li>• PR Top tier 1 & 2 </li>
+    </ul>`,
   },
   {
     title: 'Q3. 2024',
-    content: 'Placeholder text.',
-  },
-  {
-    title: 'Q4. 2024',
-    content: 'Placeholder text.',
+    content: `<p>• CEX Exchange Listing </p>
+    <ul>
+      <li>• New Market Launch</li>
+      <li>• KOL’s Promotion 3</li>
+      <li>• Promotion Event  </li>
+      <li>• Platform V2</li> 
+      <li>• New Market Expansion</li>
+      <li>• Facil POS Implementation</li>
+      <li>• Facil POS WebApp Beta V1</li>
+      <li>• Community Allocation</li>
+      <li>• User Adoption Partnership</li>
+    </ul>`,
   },
 ];
 
@@ -373,6 +434,15 @@ return () => {
         src="/phoneicon.svg"
        
       />+1 234 456 678 89</p>
+       <p className="pt-4 text-blue-500">
+        <FontAwesomeIcon icon={faTwitter} className="mr-3" />
+        <FontAwesomeIcon icon={faInstagram} className="mr-3" />
+        <FontAwesomeIcon icon={faFacebook} className="mr-3" />
+        <FontAwesomeIcon icon={faLinkedin} className="mr-3" />
+        <FontAwesomeIcon icon={faDiscord} className="mr-3" />
+        <FontAwesomeIcon icon={faMedium} className="mr-3" />
+        </p>
+        
           </div>
 
       </div>
