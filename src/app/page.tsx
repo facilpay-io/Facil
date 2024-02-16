@@ -12,7 +12,7 @@ import animatePhone from "./components/animatephone.json";
 import animatePhone2 from "./components/animatephone2.json";
 import Accordion from "./components/Accordian";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faApple, faGooglePlay, faTwitter, faInstagram, faFacebook, faLinkedin, faDiscord, faMedium } from '@fortawesome/free-brands-svg-icons';
+import { faApple, faGooglePlay, faTwitter, faInstagram, faFacebook, faLinkedin, faDiscord, faTelegram, faMedium } from '@fortawesome/free-brands-svg-icons';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -511,12 +511,13 @@ return () => {
        
       />+1 234 456 678 89</p>
       <p className="pt-4 text-blue-500">
-        <FontAwesomeIcon icon={faTwitter} className="mr-3" />
-        <FontAwesomeIcon icon={faInstagram} className="mr-3" />
-        <FontAwesomeIcon icon={faFacebook} className="mr-3" />
-        <FontAwesomeIcon icon={faLinkedin} className="mr-3" />
-        <FontAwesomeIcon icon={faDiscord} className="mr-3" />
-        <FontAwesomeIcon icon={faMedium} className="mr-3" />
+        <a href="https://twitter.com/facil_pay" target="_blank"><FontAwesomeIcon icon={faTwitter} className="mr-2" /></a>
+        <a href="https://www.instagram.com/facilpay.io?igsh=MzRlODBiNWFlZA==" target="_blank"><FontAwesomeIcon icon={faInstagram} className="mr-2" /></a>
+        <a href="https://www.instagram.com/facilpay.io?igsh=MzRlODBiNWFlZA==" target="_blank"><FontAwesomeIcon icon={faFacebook} className="mr-2" /></a>
+        <a href="https://www.linkedin.com/company/facilbank/" target="_blank"><FontAwesomeIcon icon={faLinkedin} className="mr-2" /></a>
+        <a href="https://discord.com/invite/A63GHnPzpj" target="_blank"><FontAwesomeIcon icon={faDiscord} className="mr-2" /></a>
+        <a href="https://medium.com/@facilpay.io" target="_blank"><FontAwesomeIcon icon={faMedium} className="mr-2" /></a>
+        <a href="https://t.me/+A5BpRNiCsVA4MmY5" target="_blank"><FontAwesomeIcon icon={faTelegram} className="mr-0" /></a>
         </p>
 
           </div>
