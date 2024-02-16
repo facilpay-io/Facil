@@ -310,12 +310,12 @@ return () => {
   
   <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-6 mb-2 pl-6 pr-6 pt-8 pb-8 relative">
     <h2 className="text-base font-semibold text-rose-500">Complexity:</h2>
-    <p className="pt-2 lg:text-base text-sm">Many Web3 Social platforms often claim to be user-friendly but are <span className="text-rose-500">overwhelmingly complicated</span> for those accustomed to Web2 interfaces.</p>
+    <p className="pt-2 lg:text-base text-sm">Web3 platforms claim to be user-friendly, but are <span className="text-rose-500">overwhelmingly complicated</span> for traditional Web2 users.</p>
   </div>
   <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-6 mb-2 m-0 pl-6 pr-6 pt-8 pb-8 relative">
   <h2 className="text-base font-semibold text-sky-500"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={22} height={22} />1. Simplicity Redefined:</h2>
   <p className="pt-2 lg:text-base text-sm">
-  Our platform reimagines the Web3 experience with <span className="text-sky-500">simplicity</span>simplicity at its core, making it as easy to use as any Web2 application.</p>
+  Facil Pay reimagines the Web3 experience with<span className="text-sky-500">simplicity</span>at its core, making it as user-friendly as prominent Web2 platforms.</p>
   </div>
 </div>
 </section>
@@ -324,7 +324,7 @@ return () => {
 <div className="max-w-[1100px] m-auto  w-full flex flex-col lg:flex-row">
   <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-6 mb-2 m-0 pl-6 pr-6 pt-8 pb-8 relative">
     <h2 className="text-base font-semibold text-rose-500">Accessibility:</h2>
-    <p className="pt-2 lg:text-base text-sm">The advanced nature of these platforms creates a barrier to widespread adoption, especially among <span className="text-rose-500">non-tech-savvy users.</span></p>
+    <p className="pt-2 lg:text-base text-sm">The advanced complexity presents a barrier to widespread adoption, especially among <span className="text-rose-500">users who may not be tech savvy.</span></p>
   </div>
   <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-6 mb-2 m-0 pl-6 pr-6 pt-8 pb-8 relative">
   <h2 className="text-base font-semibold text-sky-500"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={22} height={22} />2. Universal Usability:</h2>
@@ -343,7 +343,7 @@ return () => {
   <div className="lg:w-1/2 w-full bg-gray-100 rounded-3xl lg:m-6 mb-2 m-0 pl-6 pr-6 pt-8 pb-8 relative">
   <h2 className="text-base font-semibold text-sky-500"><Image className="inline mr-2 mb-1" src="/checkmark.webp" alt="phone" width={22} height={22} />3. DeFi Accessibility for the Unbanked:</h2>
   <p className="pt-2 lg:text-base text-sm">
-  We are creating accessible financial services within our app that do not require traditional banking infrastructure, thus <span className="text-sky-500">extending financial inclusion to the unbanked population.</span></p>
+  Our financial services do not require traditional banking infrastructure, extending financial inclusion to the <span className="text-sky-500">unbanked population.</span></p>
   </div>
 </div>
 </section>

@@ -36,23 +36,16 @@ export default function NavigationServices() {
           <Image className="mr-24 ml-8 mt-0" src={logoImage} alt="Description" width={81} height={64} />
           </div>
           <div className={`mainMenu flex justify-center text-md items-center flex-1 space-x-4 hidden lg:flex ${textClass}`}>
-            <div
-              className={`${menuItemClass} ${selectedMenuItem === 'Home' ? selectedClass : ''}`}
-              onClick={() => setSelectedMenuItem('Home')}
-            >
-              <Link href="/">Home</Link>
+            <div>
+              <Link href="/" className={`${menuItemClass} ${selectedMenuItem === 'Home' ? selectedClass : ''}`}
+              onClick={() => setSelectedMenuItem('Home')}>Home</Link>
             </div>
-            <div
-              className={`${menuItemClass} ${selectedMenuItem === 'Services' ? selectedClass : ''}`}
-              onClick={() => setSelectedMenuItem('Services')}
-            >
-              <Link href="/services" onClick={() => handleMenuItemClick('Services')}>Services</Link>
-            </div>
-            <div
-              className={`${menuItemClass} ${selectedMenuItem === 'AboutUs' ? selectedClass : ''}`}
-              onClick={() => setSelectedMenuItem('AboutUs')}
-            >
-              <Link href="/aboutus">About Us</Link>
+            <div>
+            <Link href="/services" className={`${menuItemClass} ${selectedMenuItem === 'Services' ? selectedClass : ''}`}
+              onClick={() => setSelectedMenuItem('Services')}>Services</Link></div>
+            <div>
+              <Link href="/aboutus" className={`${menuItemClass} ${selectedMenuItem === 'AboutUs' ? selectedClass : ''}`}
+              onClick={() => setSelectedMenuItem('AboutUs')}>About Us</Link>
             </div>
           </div>
           <div className="flex justify-end items-center flex-1">
