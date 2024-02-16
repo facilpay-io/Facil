@@ -423,7 +423,7 @@ Balancing Accessibility with Enhanced Features</p></div>
         <FontAwesomeIcon icon={faApple} className="mr-2" />Download Now
       </button>
       <button className="bg-white rounded-full p-3 m-2 text-black font-medium">
-        <FontAwesomeIcon icon={faGooglePlay} className="mr-2" />Download Now
+        <FontAwesomeIcon icon={faGooglePlay} className="mr-2" />Coming Soon
       </button>
     </div>
     <div className="position-relative">
@@ -471,7 +471,7 @@ Balancing Accessibility with Enhanced Features</p></div>
         alt=""
         src="/phoneicon.svg"
        
-      />+1 234 456 678 89</p>
+      /><a href="tel:7035947188">703.594.7188</a></p>
       <p className="pt-4 text-blue-500">
         <a href="https://twitter.com/facil_pay" target="_blank"><FontAwesomeIcon icon={faTwitter} className="mr-2" /></a>
         <a href="https://www.instagram.com/facilpay.io?igsh=MzRlODBiNWFlZA==" target="_blank"><FontAwesomeIcon icon={faInstagram} className="mr-2" /></a>

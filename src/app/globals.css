@@ -10,10 +10,16 @@ border: solid 1px #046CF1;
 .aboutbutton {
   background: linear-gradient(180deg, #19A1FC 0%, #046CF1 100%);
   overflow: hidden;
+  transition: box-shadow 0.3s ease; /* Add transition for the box-shadow property */
 }
+
 .aboutbutton:hover {
   box-shadow: 0px 4px 23px rgba(59, 158, 255, 0.34);
 }
+.bordercolor {
+  transition: box-shadow 0.3s ease; /* Add transition for the box-shadow property */
+}
+
 .bordercolor:hover {
   box-shadow: 0px 4px 23px rgba(59, 158, 255, 0.34);
 }
