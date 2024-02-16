@@ -502,7 +502,7 @@ return () => {
         alt=""
         src="/envelope.svg"
       />
-          facilpay.Io@gmail.com
+          <a href="mailto:info@facilpay.io" target="_blank">info@facilpay.io</a>
           </p>
           <p className="pt-4"><img
         className="inline-flex mb-1 mr-1 lg:w-[10%] w-[%5] h-auto"
