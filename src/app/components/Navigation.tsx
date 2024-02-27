@@ -43,8 +43,7 @@ export default function Navigation() {
             <div>
             <Link href="/services" className={`${menuItemClass} ${selectedMenuItem === 'Services' ? selectedClass : ''}`}
               onClick={() => setSelectedMenuItem('Services')}>Services</Link></div>
-            <div
-              >
+            <div>
               <Link href="/aboutus" className={`${menuItemClass} ${selectedMenuItem === 'AboutUs' ? selectedClass : ''}`}
               onClick={() => setSelectedMenuItem('AboutUs')}>About Us</Link>
             </div>
