@@ -449,9 +449,9 @@ return () => {
       </div>
       <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
         <div className=" p-0 pl-4 pr-4"><h1 className="font-semibold text-2xl pb-4">Links</h1>
-        <p>Home</p>
-        <p className="pt-2">About Us</p>
-        <p className="pt-2">Services</p>
+        <p><a href="/">Home</a></p>
+        <p className="pt-2"><a href="/aboutus">About Us</a></p>
+        <p className="pt-2"><a href="/services">Services</a></p>
         </div>
       </div>
       <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
