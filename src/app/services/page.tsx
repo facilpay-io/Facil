@@ -902,6 +902,10 @@ export default function Services() {
                 >
                   Cookie Policy
                 </a>
+                <br />
+                <a href="https://app.termly.io/document/disclaimer/5f9f09ae-2de7-4968-8e0c-f12dbe33064a">
+                  Disclaimer
+                </a>
               </div>
             </div>
             <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">

@@ -814,8 +814,8 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
-              <div className=" p-0 pl-4 pr-4">
+            <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
+              <div>
                 <h1 className="pb-4 text-2xl font-semibold">Legal</h1>
                 <a href="https://app.termly.io/document/terms-of-service/964d7f6d-5ef6-4a94-8e98-996d7e80eddc">
                   Terms and Conditions
@@ -834,6 +834,11 @@ export default function Home() {
                 >
                   Cookie Policy
                 </a>
+                <br />
+                <a href="https://app.termly.io/document/disclaimer/5f9f09ae-2de7-4968-8e0c-f12dbe33064a">
+                  Disclaimer
+                </a>
+
                 {/* <a href="https://app.termly.io/document/disclaimer/5f9f09ae-2de7-4968-8e0c-f12dbe33064a">Disclaimer</a> */}
                 {/* <p className="pt-2">Privacy Policy</p>
         <p className="pt-2">Cookie Policy</p> */}
