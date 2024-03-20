@@ -510,8 +510,9 @@ return () => {
         src="/phoneicon.svg"
        
       /><a href="tel:7035947188">703.594.7188</a></p>
-      <p className="pt-4 text-blue-500">
-        <a href="https://twitter.com/facil_pay" target="_blank"><FontAwesomeIcon icon={faTwitter} className="mr-2" /></a>
+      <p className="pt-4 text-blue-500 inline-flex">
+       
+        <a href="https://twitter.com/facil_pay" target="_blank"><img className="socialicon w-[15px] h-[auto] mt-1  mr-2" src="/twitter.svg" alt="Description"  /></a>
         <a href="https://www.instagram.com/facilpay.io?igsh=MzRlODBiNWFlZA==" target="_blank"><FontAwesomeIcon icon={faInstagram} className="mr-2" /></a>
         <a href="https://www.instagram.com/facilpay.io?igsh=MzRlODBiNWFlZA==" target="_blank"><FontAwesomeIcon icon={faFacebook} className="mr-2" /></a>
         <a href="https://www.linkedin.com/company/facilbank/" target="_blank"><FontAwesomeIcon icon={faLinkedin} className="mr-2" /></a>
