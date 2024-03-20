@@ -160,11 +160,23 @@ export default function Services() {
     };
   }, []);
 
+  const termlyRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://app.termly.io/embed-policy.min.js";
-    script.async = true;
-    document.body.appendChild(script);
+    if (termlyRef.current) {
+      termlyRef.current.setAttribute('name', 'termly-embed');
+      termlyRef.current.setAttribute('data-id', '5f9f09ae-2de7-4968-8e0c-f12dbe33064a');
+      termlyRef.current.setAttribute('data-type', 'iframe');
+      
+      const script = document.createElement('script');
+      script.src = 'https://app.termly.io/embed-policy.min.js';
+      script.async = true;
+      document.body.appendChild(script);
+      
+      return () => {
+        document.body.removeChild(script);
+      };
+    }
   }, []);
 
   return (
@@ -179,11 +191,7 @@ export default function Services() {
        
       
 
-      <div className="w-full lg:w-[1080px] md:w-[600px] mt-10"
-      name="termly-embed"
-      data-id="5f9f09ae-2de7-4968-8e0c-f12dbe33064a"
-      data-type="iframe"
-    ></div>
+      <div ref={termlyRef} className="w-full lg:w-[1080px] md:w-[600px] mt-10"></div>
 </div>
         <section className="m-auto max-w-[1080px] border-b border-slate-200 pt-40">
           <div className="flex flex-wrap pb-16">

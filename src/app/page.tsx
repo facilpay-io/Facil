@@ -182,7 +182,7 @@ export default function Home() {
             </p>
 
             <p className="pl-4 text-base font-normal lg:pl-12 lg:text-xl">
-              Powered by blockchain technology and integrated AI
+            Powered by AI and user-intent blockchain technology
             </p>
             <Link
               className="ml-4 mt-6 flex w-36 rounded-full border border-solid pb-5 pl-9 pr-2 pt-5 text-base lg:ml-12 lg:w-40 lg:pr-7 lg:pt-5 lg:text-xl"
