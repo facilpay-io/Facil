@@ -820,12 +820,14 @@ export default function Home() {
                 <a href="https://app.termly.io/document/terms-of-service/964d7f6d-5ef6-4a94-8e98-996d7e80eddc">
                   Terms and Conditions
                 </a>
+                <br />
                 <a
                   className="pt-2"
                   href="https://app.termly.io/document/privacy-policy/828c3ae9-b4d9-496e-81b1-87590dc1459f"
                 >
                   Privacy Policy
                 </a>
+                <br />
                 <a
                   className="pt-2"
                   href="https://app.termly.io/document/cookie-policy/e290686d-7365-48c4-aad4-ba3ec7801ceb"
