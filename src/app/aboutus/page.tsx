@@ -29,6 +29,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 import MainNavigation from "../components/NavigationAboutUs";
 import CoinMarketCap from "../components/CoinMarketCap";
+import TermlyEmbed from "../components/TermlyEmbed"; // Importing the TermlyEmbed component
 
 const currentYear = new Date().getFullYear();
 
@@ -648,6 +649,9 @@ export default function Services() {
                 >
                   Cookie Policy
                 </a>
+                <TermlyEmbed dataId="964d7f6d-5ef6-4a94-8e98-996d7e80eddc" />
+                <TermlyEmbed dataId="964d7f6d-5ef6-4a94-8e98-996d7e80eddc" />
+                <TermlyEmbed dataId="964d7f6d-5ef6-4a94-8e98-996d7e80eddc" />
               </div>
             </div>
             <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">

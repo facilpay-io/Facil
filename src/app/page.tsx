@@ -838,10 +838,6 @@ export default function Home() {
                 <a href="https://app.termly.io/document/disclaimer/5f9f09ae-2de7-4968-8e0c-f12dbe33064a">
                   Disclaimer
                 </a>
-
-                {/* <a href="https://app.termly.io/document/disclaimer/5f9f09ae-2de7-4968-8e0c-f12dbe33064a">Disclaimer</a> */}
-                {/* <p className="pt-2">Privacy Policy</p>
-        <p className="pt-2">Cookie Policy</p> */}
               </div>
             </div>
             <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
