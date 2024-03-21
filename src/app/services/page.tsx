@@ -883,30 +883,28 @@ export default function Services() {
               </div>
             </div>
             <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
-              <div className=" p-0 pl-4 pr-4">
-              <div>
+            <div className=" p-0 pl-4 pr-4">
               <h1 className="pb-4 text-2xl font-semibold">Legal</h1>
+              <p>
                 <a href="https://www.facilpay.io/terms">
                   Terms and Conditions
                 </a>
-                <br />
-                <a
-                  className="pt-2"
-                  href="https://www.facilpay.io/privacy"
+                </p>
+                <p className="pt-2">
+                <a href="https://www.facilpay.io/privacy"
                 >
                   Privacy Policy
                 </a>
-                <br />
-                <a
-                  className="pt-2"
-                  href="https://www.facilpay.io/cookies"
+                </p>
+                <p className="pt-2">
+                <a href="https://www.facilpay.io/cookies"
                 >
                   Cookie Policy
-                </a>
-                <br />
+                </a></p>
+                <p className="pt-2">
                 <a href="https://www.facilpay.io/disclaimer">
                   Disclaimer
-                </a>
+                </a></p>
               </div>
             </div>
             <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
