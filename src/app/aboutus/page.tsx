@@ -269,6 +269,7 @@ export default function Services() {
               <Link
                 className="HomeTitle bordercolor mr-1 mt-6 flex w-[155px] justify-center rounded-full border pb-4 pt-5 text-center text-sm lg:mt-10 lg:w-[180px] lg:pb-5 lg:pt-5 lg:text-xl"
                 href="https://facil-team.gitbook.io/facilpay"
+                target="_blank"
               >
                 White Paper
               </Link>
