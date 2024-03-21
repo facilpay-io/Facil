@@ -268,7 +268,7 @@ export default function Services() {
             <div className="relative inline-block flex flex-row">
               <Link
                 className="HomeTitle bordercolor mr-1 mt-6 flex w-[155px] justify-center rounded-full border pb-4 pt-5 text-center text-sm lg:mt-10 lg:w-[180px] lg:pb-5 lg:pt-5 lg:text-xl"
-                href="#"
+                href="https://facil-team.gitbook.io/facilpay"
               >
                 White Paper
               </Link>
@@ -631,27 +631,28 @@ export default function Services() {
             </div>
             <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
               <div className=" p-0 pl-4 pr-4">
-                <h1 className="pb-4 text-2xl font-semibold">Legal</h1>
-                <a href="https://app.termly.io/document/terms-of-service/964d7f6d-5ef6-4a94-8e98-996d7e80eddc">
+              <h1 className="pb-4 text-2xl font-semibold">Legal</h1>
+                <a href="https://www.facilpay.io/terms">
                   Terms and Conditions
                 </a>
                 <br />
                 <a
                   className="pt-2"
-                  href="https://app.termly.io/document/privacy-policy/828c3ae9-b4d9-496e-81b1-87590dc1459f"
+                  href="https://www.facilpay.io/privacy"
                 >
                   Privacy Policy
                 </a>
                 <br />
                 <a
                   className="pt-2"
-                  href="https://app.termly.io/document/cookie-policy/e290686d-7365-48c4-aad4-ba3ec7801ceb"
+                  href="https://www.facilpay.io/cookies"
                 >
                   Cookie Policy
                 </a>
-                {/* <TermlyEmbed dataId="964d7f6d-5ef6-4a94-8e98-996d7e80eddc" />
-                <TermlyEmbed dataId="964d7f6d-5ef6-4a94-8e98-996d7e80eddc" />
-                <TermlyEmbed dataId="964d7f6d-5ef6-4a94-8e98-996d7e80eddc" /> */}
+                <br />
+                <a href="https://www.facilpay.io/disclaimer">
+                  Disclaimer
+                </a>
               </div>
             </div>
             <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">

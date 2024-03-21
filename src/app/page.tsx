@@ -817,25 +817,25 @@ export default function Home() {
             <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
               <div>
                 <h1 className="pb-4 text-2xl font-semibold">Legal</h1>
-                <a href="https://app.termly.io/document/terms-of-service/964d7f6d-5ef6-4a94-8e98-996d7e80eddc">
+                <a href="https://www.facilpay.io/terms">
                   Terms and Conditions
                 </a>
                 <br />
                 <a
                   className="pt-2"
-                  href="https://app.termly.io/document/privacy-policy/828c3ae9-b4d9-496e-81b1-87590dc1459f"
+                  href="https://www.facilpay.io/privacy"
                 >
                   Privacy Policy
                 </a>
                 <br />
                 <a
                   className="pt-2"
-                  href="https://app.termly.io/document/cookie-policy/e290686d-7365-48c4-aad4-ba3ec7801ceb"
+                  href="https://www.facilpay.io/cookies"
                 >
                   Cookie Policy
                 </a>
                 <br />
-                <a href="https://app.termly.io/document/disclaimer/5f9f09ae-2de7-4968-8e0c-f12dbe33064a">
+                <a href="https://www.facilpay.io/disclaimer">
                   Disclaimer
                 </a>
               </div>
