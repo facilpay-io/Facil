@@ -274,28 +274,28 @@ export default function Services() {
               </div>
             </div>
             <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
-              <div className=" p-0 pl-4 pr-4">
-                <h1 className="pb-4 text-2xl font-semibold">Legal</h1>
-                <a href="https://app.termly.io/document/terms-of-service/964d7f6d-5ef6-4a94-8e98-996d7e80eddc">
+            <div className=" p-0 pl-4 pr-4">
+              <h1 className="pb-4 text-2xl font-semibold">Legal</h1>
+              <p>
+                <a href="https://www.facilpay.io/terms">
                   Terms and Conditions
                 </a>
-                <br />
-                <a
-                  className="pt-2"
-                  href="https://app.termly.io/document/privacy-policy/828c3ae9-b4d9-496e-81b1-87590dc1459f"
+                </p>
+                <p className="pt-2">
+                <a href="https://www.facilpay.io/privacy"
                 >
                   Privacy Policy
                 </a>
-                <br />
-                <a
-                  className="pt-2"
-                  href="https://app.termly.io/document/cookie-policy/e290686d-7365-48c4-aad4-ba3ec7801ceb"
+                </p>
+                <p className="pt-2">
+                <a href="https://www.facilpay.io/cookies"
                 >
                   Cookie Policy
-                </a>
-                {/* <TermlyEmbed dataId="964d7f6d-5ef6-4a94-8e98-996d7e80eddc" />
-                <TermlyEmbed dataId="964d7f6d-5ef6-4a94-8e98-996d7e80eddc" />
-                <TermlyEmbed dataId="964d7f6d-5ef6-4a94-8e98-996d7e80eddc" /> */}
+                </a></p>
+                <p className="pt-2">
+                <a href="https://www.facilpay.io/disclaimer">
+                  Disclaimer
+                </a></p>
               </div>
             </div>
             <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
