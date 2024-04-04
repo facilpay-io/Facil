@@ -496,11 +496,10 @@ export default function Services() {
           <div className="AppContainer font-inter relative flex h-[480px] w-[1408px] flex-col justify-between overflow-hidden text-center text-white lg:h-[980px]">
             <div>
               <h1 className="pt-16 text-2xl font-semibold lg:pt-40 lg:text-6xl">
-                Get the facil pay Mobile app
+                Get the FacilPay mobile app now
               </h1>
               <p className="p-2 text-base">
-                With this platform, you can access your account anywhere,
-                anytime for balance and so much more
+                Simplifying payments with blockchain technology and AI-enhanced user intent messaging
               </p>
             </div>
             <div className="appbuttons inline-block flex items-center justify-center pt-20 lg:pt-20">
@@ -632,27 +631,27 @@ export default function Services() {
             </div>
             <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
               <div className=" p-0 pl-4 pr-4">
-              <h1 className="pb-4 text-2xl font-semibold">Legal</h1>
-              <p>
-                <a href="https://www.facilpay.io/terms">
-                  Terms and Conditions
-                </a>
+                <h1 className="pb-4 text-2xl font-semibold">Legal</h1>
+                <p>
+                  <a href="https://www.facilpay.io/terms">
+                    Terms and Conditions
+                  </a>
                 </p>
                 <p className="pt-2">
-                <a href="https://www.facilpay.io/privacy"
-                >
-                  Privacy Policy
-                </a>
+                  <a href="https://www.facilpay.io/privacy"
+                  >
+                    Privacy Policy
+                  </a>
                 </p>
                 <p className="pt-2">
-                <a href="https://www.facilpay.io/cookies"
-                >
-                  Cookie Policy
-                </a></p>
+                  <a href="https://www.facilpay.io/cookies"
+                  >
+                    Cookie Policy
+                  </a></p>
                 <p className="pt-2">
-                <a href="https://www.facilpay.io/disclaimer">
-                  Disclaimer
-                </a></p>
+                  <a href="https://www.facilpay.io/disclaimer">
+                    Disclaimer
+                  </a></p>
               </div>
             </div>
             <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">

@@ -35,25 +35,26 @@ const currentYear = new Date().getFullYear();
 
 const items = [
   {
-    title: "How does Facil App work?",
-    content:
-      "Facil App is a platform that allows you to transfer money to anywhere in the world with confidence and ease. Simply create an account, add your recipients information, and make a transfer. Our platform handles the rest.",
+    title: 'In simpler terms, what is FacilPay and how does FacilPay work?',
+    content: "In simple terms, FacilPay is a platform that allows you to transfer money across the world from one form to another in a process that's as easy as sending a chat on your phone. You create an account, log in, click on the individual you want to pay, type your payment instructions, and FacilPay does the rest. Sending $100 from your bedroom in Mexico City to your Uncle Timothy in Hong Kong can be as simple as typing the following message on the app “Send $100 worth of Ethereum to Uncle Timothy”. The platform does the rest of the work and quickly presents you with the best option with which to accomplish your intention. There's also some cutting-edge AI features that will help you carry out this task. Oh. Before, during or after payment, you can use the FacilPay app to communicate and exchange files with friends and family.",
   },
   {
-    title: "Is it safe to use Facil App?",
-    content: "Placeholder text for Question 2 body.",
+    title: 'What ideologies, technologies and architectures is FacilPay based on?',
+    content: '“Message-centric”, “user-intent”, “blockchain-powered”, and “AI-enhanced.” These above are some of the best technologies and concepts we assembled to make payments easy for you.',
   },
   {
-    title: "Can I track my transfer?",
-    content: "Placeholder text for Question 3 body.",
+    title: 'Could you explain these ideologies and how they improve my experience as a user?',
+    content: "Message-centric: First, it means that the process of sending money on FacilPay is as simple and as familiar as sending a message on a messaging app like WhatsApp or WeChat. Second, it means that you can low-key chat and share files with friends, customers and family too.\nUser-intent: This means you can simply chat with our machines, giving it an instruction of what you want to do. It will then provide you the best option for doing that. With this concept, your intentions and desires are priority.\nAI-enhanced: Whether trying to make payments or message someone, you can enjoy AI support, prompts, autosuggestions and more when using FacilPay. So, you'll never get stuck.\nBlockchain-powered: Now, while this platform is made to look like a familiar social media app on the surface, deep underneath, FacilPay is built on powerful blockchain technology. These infrastructures, such as the AVAX network we use,  ensure premium speed, affordability, reliability, efficiency and affordability.",
   },
   {
-    title: "Are there any hidden fees with Facil App?",
-    content: "Placeholder text for Question 4 body.",
+    title: 'On what devices can I use FacilPay?',
+    content: 'FacilPay is available on mobile and web. Click here to download for Android and here for iOS. You can also use the webapp here.',
   },
 ];
 
-const style = {};
+const style = {
+
+};
 
 interface Interactivity {
   mode: "scroll" | "cursor";
@@ -226,98 +227,8 @@ export default function Home() {
               Introducing Facil
             </h2>
             <span className="text-base font-normal lg:text-xl">
-              A Cutting-Edge Web 3.0 Messaging and Payment Platform. Facil
-              seamlessly integrates with blockchain-based decentralized
-              applications, offering secure peer-to-peer messaging and global
-              cryptocurrency payments at your fingertips. Send funds worldwide
-              to friends, contacts, or merchants using Facil.
+              FacilPay is a message-centric payment platform built on user-intent blockchain technology. It offers secure peer-to-peer messaging and global cryptocurrency payments at your fingertips. Sending and receiving funds worldwide to friends, contacts, or merchants, whether crypto or fiat, is now as easy as sending or receiving a text on your FacilPay app.
             </span>
-          </div>
-        </div>
-
-        <div className="componentWrapper lg;pt-16 flex flex-col pt-0 lg:flex-row">
-          <div className="textFadeRight w-full p-0 lg:hidden lg:w-1/2">
-            <Image
-              className="logoAnimation m-auto pt-10 "
-              src="/bodyphone.webp"
-              alt="phone"
-              width={556}
-              height={568}
-            />
-          </div>
-
-          <div className="textFade w-full pl-0 lg:w-1/2 lg:pl-20">
-            <h2 className="pb-4 pt-8 text-3xl font-semibold lg:pt-24 lg:text-4xl">
-              {" "}
-              Facil, Simple, and Secure Intuitive Messaging Meets Web3
-            </h2>
-            <span className="text-xl font-medium">
-              Facilpay app move beyond the limitation of Web2 and take advantage
-              of all Web3 has to offer yet, enjoy the Speed, Reliability, and
-              Security.
-            </span>
-            <p className="mt-4 p-2 lg:p-4">
-              <Image
-                className="mb-1 mr-2 inline"
-                src="/checkmark.webp"
-                alt="phone"
-                width={18}
-                height={18}
-              />
-              Secured Peer-to-Peer Messaging
-            </p>
-            <p className="p-2 lg:p-4">
-              <Image
-                className="mb-1 mr-2 inline"
-                src="/checkmark.webp"
-                alt="phone"
-                width={18}
-                height={18}
-              />
-              A.I. Instant Message & Voice Translation
-            </p>
-            <p className="p-2 lg:p-4">
-              <Image
-                className="mb-1 mr-2 inline"
-                src="/checkmark.webp"
-                alt="phone"
-                width={18}
-                height={18}
-              />
-              NFT Emoticons & Sticker
-            </p>
-            <p className="p-2 lg:p-4">
-              <Image
-                className="mb-1 mr-2 inline"
-                src="/checkmark.webp"
-                alt="phone"
-                width={18}
-                height={18}
-              />
-              Group Chat & Group Calls
-            </p>
-            <p className="p-2 lg:p-4">
-              <Image
-                className="mb-1 mr-2 inline"
-                src="/checkmark.webp"
-                alt="phone"
-                width={18}
-                height={18}
-              />
-              File transfers, Calls, and HD Video conferences
-            </p>
-            <p className="ml-4 mt-2 w-28 rounded-full border pb-3 pl-5 pt-3 text-sm">
-              Learn More
-            </p>
-          </div>
-          <div className="textFadeRight w-full p-10 lg:w-1/2">
-            <Image
-              className="logoAnimation m-auto hidden pt-10 lg:block "
-              src="/bodyphone.webp"
-              alt="phone"
-              width={556}
-              height={568}
-            />
           </div>
         </div>
 
@@ -501,9 +412,95 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="componentWrapper lg;pt-16 flex flex-col pt-0 lg:flex-row">
+          <div className="textFadeRight w-full p-0 lg:hidden lg:w-1/2">
+            <Image
+              className="logoAnimation m-auto pt-10 "
+              src="/bodyphone.webp"
+              alt="phone"
+              width={556}
+              height={568}
+            />
+          </div>
+
+          <div className="textFade w-full pl-0 lg:w-1/2 lg:pl-20">
+            <h2 className="pb-4 pt-8 text-3xl font-semibold lg:pt-24 lg:text-4xl">
+              {" "}
+              Facil, Simple, and Secure Intuitive Messaging Meets Web3
+            </h2>
+            <span className="text-xl font-medium">
+              Facilpay app move beyond the limitation of Web2 and take advantage
+              of all Web3 has to offer yet, enjoy the Speed, Reliability, and
+              Security.
+            </span>
+            <p className="mt-4 p-2 lg:p-4">
+              <Image
+                className="mb-1 mr-2 inline"
+                src="/checkmark.webp"
+                alt="phone"
+                width={18}
+                height={18}
+              />
+              Secured Peer-to-Peer Messaging
+            </p>
+            <p className="p-2 lg:p-4">
+              <Image
+                className="mb-1 mr-2 inline"
+                src="/checkmark.webp"
+                alt="phone"
+                width={18}
+                height={18}
+              />
+              A.I. Instant Message & Voice Translation
+            </p>
+            <p className="p-2 lg:p-4">
+              <Image
+                className="mb-1 mr-2 inline"
+                src="/checkmark.webp"
+                alt="phone"
+                width={18}
+                height={18}
+              />
+              NFT Emoticons & Sticker
+            </p>
+            <p className="p-2 lg:p-4">
+              <Image
+                className="mb-1 mr-2 inline"
+                src="/checkmark.webp"
+                alt="phone"
+                width={18}
+                height={18}
+              />
+              Group Chat & Group Calls
+            </p>
+            <p className="p-2 lg:p-4">
+              <Image
+                className="mb-1 mr-2 inline"
+                src="/checkmark.webp"
+                alt="phone"
+                width={18}
+                height={18}
+              />
+              File transfers, Calls, and HD Video conferences
+            </p>
+            <p className="ml-4 mt-2 w-28 rounded-full border pb-3 pl-5 pt-3 text-sm">
+              Learn More
+            </p>
+          </div>
+          <div className="textFadeRight w-full p-10 lg:w-1/2">
+            <Image
+              className="logoAnimation m-auto hidden pt-10 lg:block "
+              src="/bodyphone.webp"
+              alt="phone"
+              width={556}
+              height={568}
+            />
+          </div>
+        </div>
+
         <div className="slider m-auto mt-20 w-auto overflow-hidden p-0 lg:hidden">
           <h1 className="font-inherit relative m-0 inline-block pb-10 text-center text-2xl  font-semibold md:text-2xl lg:hidden lg:text-4xl">
-            A Blockchain-powered Messaging and Payment platform
+            Message-centric Payment Platform Governed by User-intent Web3 Technology
           </h1>
           <Swiper
             effect={"coverflow"}
@@ -562,7 +559,7 @@ export default function Home() {
         <div className="m-auto mt-20 hidden lg:block">
           <section className=" text-22xl font-label-md mq825:gap-[23px] box-border flex min-h-[803px] flex-col items-center justify-start gap-[47px] px-5 py-0 text-left">
             <h1 className="font-inherit mq825:leading-[58px] relative m-0 inline-block hidden text-xl font-semibold leading-[73px] md:text-2xl lg:flex  lg:text-4xl">
-              A Blockchain-powered Messaging and Payment platform
+              Message-centric Payment Platform Governed by User-intent Web3 Technology
             </h1>
             <div className="mq825:gap-[16px] flex hidden min-h-[483px] flex-row flex-wrap items-start justify-center gap-[33px] self-stretch lg:flex">
               <img
@@ -670,7 +667,7 @@ export default function Home() {
               Got questions?
             </h1>
             <p className="mb-14">
-              Get the answers to your questions about FastFinance.
+              Get the answers to your questions about FacilPay.
             </p>
           </div>
           <Accordion items={items} />
@@ -680,11 +677,10 @@ export default function Home() {
           <div className="AppContainer font-inter relative flex h-[480px] w-[1408px] flex-col justify-between overflow-hidden text-center text-white lg:h-[980px]">
             <div>
               <h1 className="pt-16 text-2xl font-semibold lg:pt-40 lg:text-6xl">
-                Get the facil pay Mobile app
+                Get the FacilPay mobile app now
               </h1>
               <p className="p-2 text-base">
-                With this platform, you can access your account anywhere,
-                anytime for balance and so much more
+                Use everything FacilPay offers from one simple app
               </p>
             </div>
             <div className="appbuttons inline-block flex items-center justify-center pt-20 lg:pt-20">
@@ -815,28 +811,28 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
-            <div className=" p-0 pl-4 pr-4">
-              <h1 className="pb-4 text-2xl font-semibold">Legal</h1>
-              <p>
-                <a href="https://www.facilpay.io/terms">
-                  Terms and Conditions
-                </a>
+              <div className=" p-0 pl-4 pr-4">
+                <h1 className="pb-4 text-2xl font-semibold">Legal</h1>
+                <p>
+                  <a href="https://www.facilpay.io/terms">
+                    Terms and Conditions
+                  </a>
                 </p>
                 <p className="pt-2">
-                <a href="https://www.facilpay.io/privacy"
-                >
-                  Privacy Policy
-                </a>
+                  <a href="https://www.facilpay.io/privacy"
+                  >
+                    Privacy Policy
+                  </a>
                 </p>
                 <p className="pt-2">
-                <a href="https://www.facilpay.io/cookies"
-                >
-                  Cookie Policy
-                </a></p>
+                  <a href="https://www.facilpay.io/cookies"
+                  >
+                    Cookie Policy
+                  </a></p>
                 <p className="pt-2">
-                <a href="https://www.facilpay.io/disclaimer">
-                  Disclaimer
-                </a></p>
+                  <a href="https://www.facilpay.io/disclaimer">
+                    Disclaimer
+                  </a></p>
               </div>
             </div>
             <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">

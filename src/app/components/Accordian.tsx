@@ -3,13 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 interface AccordionItem {
-    title: string;
-    content: string;
-  }
-  
-  interface AccordionProps {
-    items: AccordionItem[];
-  }
+  title: string;
+  content: string;
+}
+
+interface AccordionProps {
+  items: AccordionItem[];
+}
 
 const Accordion: React.FC<AccordionProps> = ({ items }) => {
   const [openItemIndex, setOpenItemIndex] = useState<number | null>(0);
@@ -33,7 +33,7 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
             />
           </button>
           {openItemIndex === index && (
-            <div className="p-4 bg-slate-50 rounded text-sm">{item.content}</div>
+            <div className="p-4 bg-slate-50 rounded text-sm whitespace-pre-wrap">{item.content}</div>
           )}
         </div>
       ))}
