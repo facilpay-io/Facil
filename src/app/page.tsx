@@ -183,7 +183,7 @@ export default function Home() {
             </p>
 
             <p className="pl-4 text-base font-normal lg:pl-12 lg:text-xl">
-              Powered by blockchain technology and integrated AI
+              Powered by AI and user-intent blockchain technology
             </p>
             <Link
               className="ml-4 mt-6 flex w-36 rounded-full border border-solid pb-5 pl-9 pr-2 pt-5 text-base lg:ml-12 lg:w-40 lg:pr-7 lg:pt-5 lg:text-xl"
@@ -245,7 +245,7 @@ export default function Home() {
           <div className="textFadeRight w-full p-0 lg:w-1/2">
             <h2 className="pb-10 pt-0 text-3xl font-semibold lg:text-4xl ">
               {" "}
-              Your unified facil messaging to the future of payments
+              Your unified facil messaging<br />to the future of payments
             </h2>
             <span className="text-xl font-medium ">
               Crypto-Enabled and Fiat Ready
@@ -558,8 +558,8 @@ export default function Home() {
 
         <div className="m-auto mt-20 hidden lg:block">
           <section className=" text-22xl font-label-md mq825:gap-[23px] box-border flex min-h-[803px] flex-col items-center justify-start gap-[47px] px-5 py-0 text-left">
-            <h1 className="font-inherit mq825:leading-[58px] relative m-0 inline-block hidden text-xl font-semibold leading-[73px] md:text-2xl lg:flex  lg:text-4xl">
-              Message-centric Payment Platform Governed by User-intent Web3 Technology
+            <h1 className="font-inherit mq825:leading-[58px] relative m-0 inline-block hidden text-xl font-semibold leading-[73px] md:text-2xl lg:flex  lg:text-4xl text-center">
+              Message-centric Payment Platform<br />Governed by User-intent Web3 Technology
             </h1>
             <div className="mq825:gap-[16px] flex hidden min-h-[483px] flex-row flex-wrap items-start justify-center gap-[33px] self-stretch lg:flex">
               <img
