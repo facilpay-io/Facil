@@ -1,0 +1,46 @@
+{
+	"footer": {
+		"allRightsReserved": "Todos los derechos reservados",
+		"legal": {
+			"cookiePolicy": "Política de cookies",
+			"disclaimer": "Renuncia",
+			"privacyPolicy": "Política de privacidad",
+			"t&c": "Términos y condiciones",
+			"title": "Legal"
+		},
+		"links": {
+			"aboutus": "Sobre nosotros",
+			"home": "Casa",
+			"services": "Servicios",
+			"title": "Campo de golf"
+		},
+		"newsletter": {
+			"emailInput": {
+				"placeholder": "Tu correo electrónico...",
+				"submitText": "Enviar"
+			},
+			"title": "Hoja informativa",
+			"updates": "Estar al día"
+		},
+		"product": {
+			"liveChat": "Chat en vivo",
+			"reviews": "Opiniones",
+			"title": "Producto",
+			"tour": "Toma un tour"
+		}
+	},
+	"getApp": {
+		"comingSoon": "Próximamente",
+		"downloadNow": "Descargar ahora",
+		"subtitle": "Utilice todo lo que ofrece FacilPay desde una sencilla aplicación",
+		"subtitle2": "Simplificando los pagos con tecnología blockchain y mensajes de intención de usuario mejorados con IA",
+		"title": "Obtenga la aplicación móvil FacilPay ahora"
+	},
+	"learnMore": "Aprende más",
+	"navigation": {
+		"aboutus": "Sobre nosotros",
+		"home": "Casa",
+		"services": "Servicios",
+		"tryDemo": "Probar demo"
+	}
+}

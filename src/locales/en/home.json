@@ -1,0 +1,70 @@
+{
+	"appScreenshots": {
+		"featureDescription": "AI Chatbot Integration for Facil App: Enhancing User Experience with Advanced Conversational Technology",
+		"subtitle": "Facil App delivered blazing fast performance, striking word solution",
+		"title": "App Screenshots"
+	},
+	"banner": {
+		"subtitle": "Powered by AI and user-intent blockchain technology",
+		"title": "A Revolutionary Messaging<br/>  and Payment Platform"
+	},
+	"faqs": {
+		"faq1": {
+			"answer": "n simple terms, FacilPay is a platform that allows you to transfer money across the world from one form to another in a process that's as easy as sending a chat on your phone. You create an account, log in, click on the individual you want to pay, type your payment instructions, and FacilPay does the rest. Sending $100 from your bedroom in Mexico City to your Uncle Timothy in Hong Kong can be as simple as typing the following message on the app “Send $100 worth of Ethereum to Uncle Timothy”. The platform does the rest of the work and quickly presents you with the best option with which to accomplish your intention. There's also some cutting-edge AI features that will help you carry out this task. Oh. Before, during or after payment, you can use the FacilPay app to communicate and exchange files with friends and family.",
+			"question": "In simpler terms, what is FacilPay and how does FacilPay work?"
+		},
+		"faq2": {
+			"answer": "“Message-centric”, “user-intent”, “blockchain-powered”, and “AI-enhanced.” These above are some of the best technologies and concepts we assembled to make payments easy for you.",
+			"question": "What ideologies, technologies and architectures is FacilPay based on?"
+		},
+		"faq3": {
+			"answer": "Message-centric: First, it means that the process of sending money on FacilPay is as simple and as familiar as sending a message on a messaging app like WhatsApp or WeChat. Second, it means that you can low-key chat and share files with friends, customers and family too.\nUser-intent: This means you can simply chat with our machines, giving it an instruction of what you want to do. It will then provide you the best option for doing that. With this concept, your intentions and desires are priority.\nAI-enhanced: Whether trying to make payments or message someone, you can enjoy AI support, prompts, autosuggestions and more when using FacilPay. So, you'll never get stuck.\nBlockchain-powered: Now, while this platform is made to look like a familiar social media app on the surface, deep underneath, FacilPay is built on powerful blockchain technology. These infrastructures, such as the AVAX network we use,  ensure premium speed, affordability, reliability, efficiency and affordability.",
+			"question": "Could you explain these ideologies and how they improve my experience as a user?"
+		},
+		"faq4": {
+			"answer": "FacilPay is available on mobile and web. Click here to download for Android and here for iOS. You can also use the webapp here.",
+			"question": "On what devices can I use FacilPay?"
+		},
+		"subtitle": "Get the answers to your questions about FacilPay.",
+		"title": "Got Questions?"
+	},
+	"featureSection1": {
+		"features": {
+			"cryptoDebitPrepaid": "Crypto Debit & Prepaid Cards",
+			"facilSwapBridge": "Facil Swap & Facil Bridge",
+			"flexibleCryptoTrans": "Flexible Crypto Transactions",
+			"multiChainNetwork": "Multi-Chain Network",
+			"p2pPayments": "Peer-to-Peer Payments",
+			"securedMobileWallets": "Secured Mobile Wallet",
+			"web3DefiSol": "Web 3.0 DeFi Solutions"
+		},
+		"subtitle": "Crypto-Enabled and Fiat Ready",
+		"title": "Your unified facil messaging<br/>\nto the future of payments"
+	},
+	"featureSection2": {
+		"features": {
+			"blockChainBanking": "Facilitating Blockchain Banking",
+			"costEffectiveFastNetwork": "Cost-effectiveness & Fast Network",
+			"fiatRetailServices": "Fiat Transfer Retail Services",
+			"globalCompliance": "Global Compliance & Operations",
+			"moneyTransferApi": "Money Transfer API"
+		},
+		"subtitle": "We provide every user with a Web3 wallet, creating a user-friendly, accessible, and secure ecosystem tailored to meet the unique needs of each individual.",
+		"title": "Facil - Bridging the Gap Between Traditional and DeFi Banking"
+	},
+	"featureSection3": {
+		"features": {
+			"aiMessageVoiceTranslation": "A.I. Instant Message & Voice Translation",
+			"fileTransferCallsHDVideo": "File transfers, Calls, and HD Video conferences",
+			"groupChatCall": "Group Chat and Group Calls",
+			"nftEmoticonsStickers": "NFT Emoticons & Stickers",
+			"securedP2PMessaging": "Secured Peer-to-Peer Messaging"
+		},
+		"subtitle": "Facilpay app move beyond the limitation of Web2 and take advantage of all Web3 has to offer yet, enjoy the Speed, Reliability, and Security.",
+		"title": "Facil, Simple, and Secure Intuitive Messaging Meets Web3"
+	},
+	"introduction": {
+		"body": "FacilPay is a message-centric payment platform built on user-intent blockchain technology. It offers secure peer-to-peer messaging and global cryptocurrency payments at your fingertips. Sending and receiving funds worldwide to friends, contacts, or merchants, whether crypto or fiat, is now as easy as sending or receiving a text on your FacilPay app.",
+		"title": "Introducing Facil"
+	}
+}

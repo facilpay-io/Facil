@@ -1,0 +1,70 @@
+{
+	"appScreenshots": {
+		"featureDescription": "Integración de AI Chatbot para la aplicación Facil: mejora de la experiencia del usuario con tecnología conversacional avanzada",
+		"subtitle": "La aplicación Facil ofrece un rendimiento increíblemente rápido y una sorprendente solución de palabras",
+		"title": "Capturas de pantalla de la aplicación"
+	},
+	"banner": {
+		"subtitle": "Desarrollado por IA y tecnología blockchain basada en la intención del usuario.",
+		"title": "Una revolucionaria plataforma de mensajería<br/> y pago"
+	},
+	"faqs": {
+		"faq1": {
+			"answer": "En términos simples, FacilPay es una plataforma que te permite transferir dinero en todo el mundo de un formulario a otro en un proceso tan fácil como enviar un chat en tu teléfono. Usted crea una cuenta, inicia sesión, hace clic en la persona a la que desea pagar, escribe sus instrucciones de pago y FacilPay hace el resto. Enviar $100 desde tu habitación en la Ciudad de México a tu tío Timothy en Hong Kong puede ser tan simple como escribir el siguiente mensaje en la aplicación “Envía $100 en Ethereum al tío Timothy”. La plataforma hace el resto del trabajo y le presenta rápidamente la mejor opción para lograr su intención. También hay algunas funciones de inteligencia artificial de vanguardia que lo ayudarán a realizar esta tarea. Oh. Antes, durante o después del pago, puedes utilizar la aplicación FacilPay para comunicarte e intercambiar archivos con amigos y familiares.",
+			"question": "En términos más simples, ¿qué es FacilPay y cómo funciona FacilPay?"
+		},
+		"faq2": {
+			"answer": "\"Centrado en mensajes\", \"intención del usuario\", \"impulsado por blockchain\" y \"mejorado por IA\". Las anteriores son algunas de las mejores tecnologías y conceptos que reunimos para facilitarle los pagos.",
+			"question": "¿En qué ideologías, tecnologías y arquitecturas se basa FacilPay?"
+		},
+		"faq3": {
+			"answer": "Centrado en mensajes: En primer lugar, significa que el proceso de enviar dinero en FacilPay es tan simple y familiar como enviar un mensaje en una aplicación de mensajería como WhatsApp o WeChat. En segundo lugar, significa que puedes chatear discretamente y compartir archivos con amigos, clientes y familiares también.\nIntención del usuario: esto significa que puede simplemente chatear con nuestras máquinas y darle instrucciones de lo que desea hacer. Luego le proporcionará la mejor opción para hacerlo. Con este concepto, tus intenciones y deseos son prioridad.\nMejorado con IA: ya sea que intente realizar pagos o enviar un mensaje a alguien, puede disfrutar de soporte de IA, indicaciones, sugerencias automáticas y más cuando usa FacilPay. Así nunca te quedarás estancado.\nImpulsado por blockchain: ahora, si bien esta plataforma está diseñada para parecerse a una aplicación de redes sociales familiar en la superficie, en el fondo, FacilPay se basa en una poderosa tecnología blockchain. Estas infraestructuras, como la red AVAX que utilizamos, garantizan velocidad, asequibilidad, confiabilidad, eficiencia y asequibilidad superiores.",
+			"question": "¿Podrías explicar estas ideologías y cómo mejoran mi experiencia como usuario?"
+		},
+		"faq4": {
+			"answer": "FacilPay está disponible en dispositivos móviles y web. Haga clic aquí para descargar para Android y aquí para iOS. También puedes utilizar la aplicación web aquí.",
+			"question": "¿En qué dispositivos puedo utilizar FacilPay?"
+		},
+		"subtitle": "Obtenga las respuestas a sus preguntas sobre FacilPay.",
+		"title": "Tienes preguntas?"
+	},
+	"featureSection1": {
+		"features": {
+			"cryptoDebitPrepaid": "Tarjetas criptográficas de débito y prepago",
+			"facilSwapBridge": "Intercambio Fácil y Puente Fácil",
+			"flexibleCryptoTrans": "Transacciones criptográficas flexibles",
+			"multiChainNetwork": "Red multicadena",
+			"p2pPayments": "Pagos entre pares",
+			"securedMobileWallets": "Billetera móvil segura",
+			"web3DefiSol": "Soluciones Web 3.0 DeFi"
+		},
+		"subtitle": "Habilitado para criptomonedas y listo para fiat",
+		"title": "Su de mensajería de fácil unificación<br/> \nhacia el futuro de los pagos"
+	},
+	"featureSection2": {
+		"features": {
+			"blockChainBanking": "Facilitando la banca blockchain",
+			"costEffectiveFastNetwork": "Rentabilidad y red rápida",
+			"fiatRetailServices": "Servicios minoristas de transferencia Fiat",
+			"globalCompliance": "Cumplimiento y operaciones globales",
+			"moneyTransferApi": "API de transferencia de dinero"
+		},
+		"subtitle": "Proporcionamos a cada usuario una billetera Web3, creando un ecosistema fácil de usar, accesible y seguro diseñado para satisfacer las necesidades únicas de cada individuo.",
+		"title": "Facil: cerrando la brecha entre la banca tradicional y la DeFi"
+	},
+	"featureSection3": {
+		"features": {
+			"aiMessageVoiceTranslation": "AI. Mensaje instantáneo y traducción de voz",
+			"fileTransferCallsHDVideo": "Transferencias de archivos, llamadas y videoconferencias HD",
+			"groupChatCall": "Chat grupal y llamadas grupales",
+			"nftEmoticonsStickers": "Emoticones y pegatinas NFT",
+			"securedP2PMessaging": "Mensajería segura de igual a igual"
+		},
+		"subtitle": "La aplicación Facilpay va más allá de las limitaciones de Web2 y aprovecha todo lo que Web3 tiene para ofrecer hasta el momento, disfruta de la velocidad, la confiabilidad y la seguridad.",
+		"title": "La mensajería intuitiva fácil, sencilla y segura se une a Web3"
+	},
+	"introduction": {
+		"body": "FacilPay es una plataforma de pago centrada en mensajes construida sobre la tecnología blockchain según la intención del usuario. Ofrece mensajería segura de igual a igual y pagos globales en criptomonedas al alcance de su mano. Enviar y recibir fondos en todo el mundo a amigos, contactos o comerciantes, ya sean criptográficos o fiduciarios, ahora es tan fácil como enviar o recibir un mensaje de texto en su aplicación FacilPay.",
+		"title": "Presentando fácil"
+	}
+}

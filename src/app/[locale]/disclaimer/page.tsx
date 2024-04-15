@@ -87,7 +87,7 @@ export default function Services() {
       return;
     }
 
-    
+
 
     // Apply initial state immediately
     gsap.set(leftImageRef.current, { y: 600, opacity: 0 });
@@ -165,14 +165,14 @@ export default function Services() {
   useEffect(() => {
     if (termlyRef.current) {
       termlyRef.current.setAttribute('name', 'termly-embed');
-      termlyRef.current.setAttribute('data-id', '964d7f6d-5ef6-4a94-8e98-996d7e80eddc');
+      termlyRef.current.setAttribute('data-id', '5f9f09ae-2de7-4968-8e0c-f12dbe33064a');
       termlyRef.current.setAttribute('data-type', 'iframe');
-      
+
       const script = document.createElement('script');
       script.src = 'https://app.termly.io/embed-policy.min.js';
       script.async = true;
       document.body.appendChild(script);
-      
+
       return () => {
         document.body.removeChild(script);
       };
@@ -185,14 +185,14 @@ export default function Services() {
         <MainNavigation />
       </div>
       <main className={`${urbanistone.className} flex flex-col items-center justify-center min-h-screen`}>
-    
-    
-      <div className="termsbox m-auto items-center justify-center">
-       
-      
 
-      <div ref={termlyRef} className="w-full lg:w-[1080px] md:w-[600px] mt-10"></div>
-</div>
+
+        <div className="termsbox m-auto items-center justify-center">
+
+
+
+          <div ref={termlyRef} className="w-full lg:w-[1080px] md:w-[600px] mt-10"></div>
+        </div>
         <section className="m-auto max-w-[1080px] border-b border-slate-200 pt-40">
           <div className="flex flex-wrap pb-16">
             {/* Create five columns */}
@@ -274,28 +274,28 @@ export default function Services() {
               </div>
             </div>
             <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
-            <div className=" p-0 pl-4 pr-4">
-              <h1 className="pb-4 text-2xl font-semibold">Legal</h1>
-              <p>
-                <a href="https://www.facilpay.io/terms">
-                  Terms and Conditions
-                </a>
+              <div className=" p-0 pl-4 pr-4">
+                <h1 className="pb-4 text-2xl font-semibold">Legal</h1>
+                <p>
+                  <a href="https://www.facilpay.io/terms">
+                    Terms and Conditions
+                  </a>
                 </p>
                 <p className="pt-2">
-                <a href="https://www.facilpay.io/privacy"
-                >
-                  Privacy Policy
-                </a>
+                  <a href="https://www.facilpay.io/privacy"
+                  >
+                    Privacy Policy
+                  </a>
                 </p>
                 <p className="pt-2">
-                <a href="https://www.facilpay.io/cookies"
-                >
-                  Cookie Policy
-                </a></p>
+                  <a href="https://www.facilpay.io/cookies"
+                  >
+                    Cookie Policy
+                  </a></p>
                 <p className="pt-2">
-                <a href="https://www.facilpay.io/disclaimer">
-                  Disclaimer
-                </a></p>
+                  <a href="https://www.facilpay.io/disclaimer">
+                    Disclaimer
+                  </a></p>
               </div>
             </div>
             <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">

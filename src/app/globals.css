@@ -6,27 +6,33 @@
 
 
 .bordercolor {
-border: solid 1px #046CF1;
+  border: solid 1px #046CF1;
 }
+
 .aboutbutton {
   background: linear-gradient(180deg, #19A1FC 0%, #046CF1 100%);
   overflow: hidden;
-  transition: box-shadow 0.3s ease; /* Add transition for the box-shadow property */
+  transition: box-shadow 0.3s ease;
+  /* Add transition for the box-shadow property */
 }
 
 .aboutbutton:hover {
   box-shadow: 0px 4px 23px rgba(59, 158, 255, 0.34);
 }
+
 .bordercolor {
-  transition: box-shadow 0.3s ease; /* Add transition for the box-shadow property */
+  transition: box-shadow 0.3s ease;
+  /* Add transition for the box-shadow property */
 }
 
 .bordercolor:hover {
   box-shadow: 0px 4px 23px rgba(59, 158, 255, 0.34);
 }
+
 .adjustsection {
   margin-top: -25px;
 }
+
 .newsInput {
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
@@ -34,11 +40,9 @@ border: solid 1px #046CF1;
 
 .newsButton {
   position: relative;
-  background-image: linear-gradient(
-    to right,
-    #0467F1,
-    #05CAFB
-  );
+  background-image: linear-gradient(to right,
+      #0467F1,
+      #05CAFB);
   z-index: 1;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
@@ -51,11 +55,9 @@ border: solid 1px #046CF1;
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(
-    to bottom,
-    #0467F1,
-    #0467F1
-  );
+  background-image: linear-gradient(to bottom,
+      #0467F1,
+      #0467F1);
   z-index: -1;
   transition: opacity 0.3s linear;
   opacity: 0;
@@ -70,38 +72,46 @@ border: solid 1px #046CF1;
 .phonepad {
   padding-top: 81px;
 }
+
 .backimage {
   margin-left: -110px;
 }
+
 .backimageRight {
   margin-right: -110px;
 }
-.appbuttons{
+
+.appbuttons {
   margin-top: -120px;
 }
+
 .wrapperCom {
   max-width: 1408px;
   margin-top: -80px;
 }
+
 .test {
   height: 800px;
 }
 
 .textFade {
   opacity: 0;
-  transform: translateX(-140px); /* Adjust the initial position as needed */
- 
+  transform: translateX(-140px);
+  /* Adjust the initial position as needed */
+
 }
 
 .textFadeRight {
   opacity: 0;
-  transform: translateX(140px); /* Initial state with x = 40 */
+  transform: translateX(140px);
+  /* Initial state with x = 40 */
 
 }
 
 .textFadeRight.active {
   opacity: 1;
-  transform: translateX(0); /* Target state when in view */
+  transform: translateX(0);
+  /* Target state when in view */
 }
 
 .textFade2 {
@@ -113,12 +123,15 @@ border: solid 1px #046CF1;
     opacity: 0;
     transform: translateX(140px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
-.swiper-button-next, .swiper-button-prev {
+
+.swiper-button-next,
+.swiper-button-prev {
   position: absolute;
   top: 50%;
   width: calc(var(--swiper-navigation-size)/ 44 * 27);
@@ -129,7 +142,7 @@ border: solid 1px #046CF1;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--swiper-navigation-color,var(--swiper-theme-color));
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
 }
 
 :root {
@@ -140,7 +153,7 @@ border: solid 1px #046CF1;
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
-  
+
 }
 
 .swiper-wrapper {
@@ -152,7 +165,7 @@ border: solid 1px #046CF1;
   background-size: cover;
   width: 300px;
   height: 300px;
- 
+
 }
 
 .swiper-slide img {
@@ -161,10 +174,10 @@ border: solid 1px #046CF1;
 }
 
 .lottieWrap {
-background: linear-gradient(180deg, #19A1FC 0%, #046CF1 100%);
-border-radius: 50px;
-overflow: hidden;
-max-width: 559px;
+  background: linear-gradient(180deg, #19A1FC 0%, #046CF1 100%);
+  border-radius: 50px;
+  overflow: hidden;
+  max-width: 559px;
 }
 
 .HomeTitle {
@@ -172,30 +185,35 @@ max-width: 559px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .NavBarWrapper {
   max-width: 1408px;
   margin: auto;
   border-radius: 40px;
 }
+
 .PageWrapper {
   max-width: 1408px;
   margin: auto;
 }
+
 .componentWrapper {
   max-width: 1408px;
   margin: auto;
   margin-top: 40px;
 }
+
 .container {
- margin-top: 67px;
- margin-left: -40px;
+  margin-top: 67px;
+  margin-left: -40px;
 }
+
 .rightPhone {
-padding-left: 400px;
-padding-top: 108px;
-border-radius: 50px;
-top: 40;
-width: 740px;
+  padding-left: 400px;
+  padding-top: 108px;
+  border-radius: 50px;
+  top: 40;
+  width: 740px;
 }
 
 .hero {
@@ -203,34 +221,40 @@ width: 740px;
   border-radius: 50px;
   overflow: hidden;
 }
+
 .heroServices {
-  
+
   border-radius: 50px;
   overflow: hidden;
 }
+
 .heroText {
   font-family: 'Urbanist';
   font-weight: 600;
   font-size: 48px;
 }
+
 .AppContainer {
   background: linear-gradient(180deg, #19A1FC 0%, #046CF1 100%);
   border-radius: 50px;
 }
 
 .stickyWrapper {
-  position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky;
+  /* Safari */
   position: sticky;
   top: 0;
   z-index: 99;
 }
+
 .mobileNav {
   max-width: 1408px;
   margin: auto;
- width: 100%;
- border-radius: 40px;
- z-index: 20;
+  width: 100%;
+  border-radius: 40px;
+  z-index: 20;
 }
+
 .mobileNavDrawer {
   max-width: 1408px;
   margin: auto;
@@ -246,46 +270,47 @@ width: 740px;
 }
 
 .demoButton {
-box-sizing: border-box;
-justify-content: center;
-align-items: center;
-padding-left: 18px;
-padding-top: 12px;
-gap: 10px;
-width: 112px;
-height: 46px;
-border: 1px solid #FFFFFF;
-border-radius: 1000px;
-font-weight: 600;
-font-size: 16px;
-line-height: 19px;
-letter-spacing: -0.02em;
-color: #FFFFFF;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  padding-left: 18px;
+  padding-top: 12px;
+  gap: 10px;
+  width: 112px;
+  height: 46px;
+  border: 1px solid #FFFFFF;
+  border-radius: 1000px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
 }
+
 .demoServicesButton {
-border: 1px solid #046CF1;
-box-sizing: border-box;
-justify-content: center;
-align-items: center;
-padding: 16px 32px;
-gap: 10px;
-width: 112px;
-height: 46px;
-border-radius: 1000px;
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 19px;
-letter-spacing: -0.02em;
-background: linear-gradient(180deg, #14B3FC 0%, #1857F8 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
-flex: none;
-order: 0;
-flex-grow: 0;
-  }
+  border: 1px solid #046CF1;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  gap: 10px;
+  width: 112px;
+  height: 46px;
+  border-radius: 1000px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+  background: linear-gradient(180deg, #14B3FC 0%, #1857F8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
 
 .butWrapHome {
   width: 115px;
@@ -299,8 +324,9 @@ flex-grow: 0;
   order: 0;
   flex-grow: 0;
 }
+
 .homeNavBar {
-background-color: #19A1FC;
+  background-color: #19A1FC;
 }
 
 .buttonBubbleBlue {
@@ -323,6 +349,4 @@ background-color: #19A1FC;
   }
 }
 
-body {
- 
-}
+body {}
