@@ -22,7 +22,7 @@ import {
   faMedium,
 } from "@fortawesome/free-brands-svg-icons";
 
-import MainNavigation from "../components/NavigationAboutUs";
+import MainNavigation from "../components/Navigation";
 
 // import TermlyEmbed from "../components/TermlyEmbed"; // Importing the TermlyEmbed component
 
