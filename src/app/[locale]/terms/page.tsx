@@ -28,8 +28,6 @@ import MainNavigation from "../components/Navigation";
 
 const currentYear = new Date().getFullYear();
 
-
-
 const style = {};
 
 interface Interactivity {
