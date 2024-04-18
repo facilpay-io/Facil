@@ -29,7 +29,10 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
-import MainNavigation from "../components/NavigationServices";
+import MainNavigation from "../components/Navigation";
+import { Trans, useTranslation } from "react-i18next";
+import Footer from "../components/Footer";
+import GetApp from "../components/GetApp";
 
 const currentYear = new Date().getFullYear();
 
@@ -81,6 +84,8 @@ const urbanistone = Urbanist({
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Services() {
+  const { t } = useTranslation('services');
+
   const leftImageRef = useRef(null);
 
   useEffect(() => {
@@ -170,11 +175,11 @@ export default function Services() {
         <div className="PageWrapper heroServices mt-3 flex h-[600px] w-full flex-col items-center justify-center bg-gray-100 md:mt-3 lg:mt-3 lg:h-[650px] lg:flex-col">
           <div className="mt-10 pt-0 text-center text-2xl  font-semibold text-black md:pt-0 lg:w-full  lg:pt-0 lg:pt-0">
             <p className="pb-2 pl-2 pr-2 pt-2 text-2xl md:pb-6 md:text-4xl lg:pb-6 lg:pl-12 lg:pt-10 lg:text-4xl xl:text-5xl">
-              Simplifying Blockchain for Everyday Users
+              {t('services:banner.title')}
             </p>
 
             <p className="pl-4 text-base font-normal lg:pl-12 lg:text-xl">
-              Bridging the Gap Between Traditional and DeFi Banking
+              {t('services:banner.subtitle')}
             </p>
           </div>
           {/* <div className="mt-8 lg:mt-16 lg:w-full w-full flex justify-center items-center overflow-hidden">
@@ -209,25 +214,31 @@ export default function Services() {
           <div className="textFade w-full pl-0 lg:w-1/2 lg:pl-20">
             <h2 className="pb-4 pt-8 text-2xl font-semibold lg:pt-24 lg:text-4xl">
               {" "}
-              Facil - Free, Simple, and Empowering.
+              {t('services:featureSection1.title')}
             </h2>
-            <span className="text-base">
-              Every user is provided with a Web3 wallet integrated into their
-              profile. Paired with{" "}
-              <span className="HomeTitle">
-                our peer-to-peer messaging system,
-              </span>{" "}
-              this setup allows users to chat and transact directly with
-              friends, family, or merchants, all within the Facil App.{" "}
-            </span>
-            <p className=" mt-4">
-              <span className="HomeTitle">
-                Facil represents a paradigm shift in digital interaction.
-              </span>{" "}
-              By demystifying blockchain technology and making cryptocurrencies
-              a part of daily life, we invite you to experience the future of
-              connectivity and commerce
-            </p>
+            <Trans i18nKey="services:featureSection1.body"
+              components={{ highlight: <span className='HomeTitle' /> }}
+            >
+              <p>
+                <span className="text-base">
+                  Every user is provided with a Web3 wallet integrated into their
+                  profile. Paired with{" "}
+                  <span className="HomeTitle">
+                    our peer-to-peer messaging system,
+                  </span>{" "}
+                  this setup allows users to chat and transact directly with
+                  friends, family, or merchants, all within the Facil App.{" "}
+                </span>
+              </p><br />
+              <p className=" mt-4">
+                <span className="HomeTitle">
+                  Facil represents a paradigm shift in digital interaction.
+                </span>{" "}
+                By demystifying blockchain technology and making cryptocurrencies
+                a part of daily life, we invite you to experience the future of
+                connectivity and commerce
+              </p>
+            </Trans>
           </div>
           <div className="textFadeRight w-full p-10 lg:w-1/2">
             <Image
@@ -255,21 +266,25 @@ export default function Services() {
           <div className="textFadeRight w-full p-0 lg:w-1/2">
             <h2 className="pb-0 pt-4 text-2xl font-semibold lg:pt-20 lg:text-4xl ">
               {" "}
-              Paying and Getting Paid is as Easy as Chatting
+              {t('services:featureSection2.title')}
             </h2>
-            <p className="pt-4 text-base">
-              <span className="HomeTitle">
-                Crypto and Fiat Transactions Simplified{" "}
-              </span>
-              With FacilPay, receiving and sending money to your friends, family, or merchants is literally the same as sending them a text message or voice recording. Our AI-enhanced platform understands your intentions when you give the prompt through writing or voice, then proceeds with the execution of your payment. Our application not only finds the easiest and cheapest way to send that money to who you want, but does so at super fast. You don’t need to deal with tons of technicalities. Just talk and click, and payment is done. Even your mother or grandmother could easily do this. Now that’s the world FacilPay provides.
-            </p>
-            <p className="pt-4 text-base">
-              <span className="HomeTitle">Facil is more than an app; </span>
-              its a gateway to a new era of digital interaction, where
-              convenience, security, and user empowerment converge. Welcome
-              aboard experience the future of Web3 with Facil. Chat and get paid
-              - Make instant payment during your communication worldwide.
-            </p>
+            <Trans i18nKey="services:featureSection2.body"
+              components={{ highlight: <span className='HomeTitle' /> }}
+            >
+              <p className="pt-4 text-base">
+                <span className="HomeTitle">
+                  Crypto and Fiat Transactions Simplified{" "}
+                </span>
+                With FacilPay, receiving and sending money to your friends, family, or merchants is literally the same as sending them a text message or voice recording. Our AI-enhanced platform understands your intentions when you give the prompt through writing or voice, then proceeds with the execution of your payment. Our application not only finds the easiest and cheapest way to send that money to who you want, but does so at super fast. You don’t need to deal with tons of technicalities. Just talk and click, and payment is done. Even your mother or grandmother could easily do this. Now that’s the world FacilPay provides.
+              </p>
+              <p className="pt-4 text-base">
+                <span className="HomeTitle">Facil is more than an app; </span>
+                its a gateway to a new era of digital interaction, where
+                convenience, security, and user empowerment converge. Welcome
+                aboard experience the future of Web3 with Facil. Chat and get paid
+                - Make instant payment during your communication worldwide.
+              </p>
+            </Trans>
           </div>
         </div>
 
@@ -287,17 +302,21 @@ export default function Services() {
 
           <div className="textFade w-full pl-0 lg:w-1/2 lg:pl-20 ">
             <h2 className="pb-4 pt-0 text-2xl font-semibold lg:pt-28 lg:text-4xl">
-              Global Transfers made Facil
+              {t('services:featureSection3.title')}
             </h2>
-            <p className="pt-4 text-base">
-              <span className="text-rose-500">
-                GLOBAL REACH IN OVER 182 COUNTRIES
-              </span>
-              : Need to convert crypto to fiat without a bank account? We’ve got
-              you covered! Through our integration with MoneyGram, the Facil Pay
-              app allows users to perform cash-out transactions in 182 countries
-              worldwide, offering a practical solution to the unbanked.
-            </p>
+            <Trans i18nKey="services:featureSection3.body"
+              components={{ highlight: <span className='text-rose-500' /> }}
+            >
+              <p className="pt-4 text-base">
+                <span className="text-rose-500">
+                  GLOBAL REACH IN OVER 182 COUNTRIES
+                </span>
+                : Need to convert crypto to fiat without a bank account? We’ve got
+                you covered! Through our integration with MoneyGram, the Facil Pay
+                app allows users to perform cash-out transactions in 182 countries
+                worldwide, offering a practical solution to the unbanked.
+              </p>
+            </Trans>
             <p className="ml-[-7px] pt-2">
               {" "}
               <img
@@ -347,12 +366,10 @@ export default function Services() {
                   width={24}
                   height={24}
                 />
-                Across your devices
+                {t('services:servicesFeatures.feature1.title')}
               </h2>
               <p className="pt-4 text-sm">
-                Stay connected with friends and family across your devices. You
-                can access Facil from the AppStore, Google Play, Microsoft or
-                simply login from the webApp.
+                {t('services:servicesFeatures.feature1.body')}
               </p>
             </div>
             <div className="textFadeRight mb-4 w-full overflow-hidden rounded-3xl bg-gray-100 p-10 lg:m-2 lg:w-1/2">
@@ -365,12 +382,10 @@ export default function Services() {
                     width={24}
                     height={24}
                   />
-                  FacilApp Staking
+                  {t('services:servicesFeatures.feature2.title')}
                 </h2>
                 <p className="pt-4 text-sm">
-                  Stake Facil tokens to unlock business tools to create B2B or
-                  B2C crypto invoices, sell your products, and accept crypto
-                  payments.
+                  {t('services:servicesFeatures.feature2.body')}
                 </p>
               </div>
             </div>
@@ -388,11 +403,10 @@ export default function Services() {
                   width={24}
                   height={24}
                 />
-                Crypto-Commerce
+                {t('services:servicesFeatures.feature3.title')}
               </h2>
               <p className="pt-4 text-sm">
-                A tailored point-of-service (POS) solution allows businesses
-                access to DeFi banking and other crypto-commerce solution.
+                {t('services:servicesFeatures.feature3.body')}
               </p>
             </div>
             <div className="textFadeRight mb-4 w-full overflow-hidden rounded-3xl bg-gray-100 p-10 lg:m-2 lg:w-1/2">
@@ -405,11 +419,10 @@ export default function Services() {
                     width={24}
                     height={24}
                   />
-                  Transform your business
+                  {t('services:servicesFeatures.feature4.title')}
                 </h2>
                 <p className="pt-4 text-sm">
-                  Engage more audiences, boost sales and drive better customer
-                  support.
+                  {t('services:servicesFeatures.feature4.body')}
                 </p>
               </div>
             </div>
@@ -423,11 +436,10 @@ export default function Services() {
                 <div className="inline-flex pb-4 pl-4 pr-1 lg:p-8">
                   <div className="pt-0 lg:pt-10">
                     <p className="text-xl font-semibold lg:text-2xl">
-                      Choose your plan
+                      {t('services:plans.title')}
                     </p>
                     <p className="pt-2 text-sm lg:text-base">
-                      Free or Premium, Unlock your Decentralized Financial:
-                      Balancing Accessibility with Enhanced Features
+                      {t('services:plans.subtitle')}
                     </p>
                   </div>
                 </div>
@@ -447,7 +459,9 @@ export default function Services() {
             <div className="textFadeRight mb-4 w-full overflow-hidden rounded-3xl bg-gray-100 p-10 lg:m-2 lg:w-1/4">
               <div className="pt-0 lg:p-10">
                 <h2 className="text-2xl font-semibold">
-                  Standard <span className="HomeTitle"> Free</span>
+                  <Trans i18nKey="services:plans.standard.title" components={{ highlight: <span className="HomeTitle" /> }}>
+                    Standard <span className="HomeTitle"> Free</span>
+                  </Trans>
                 </h2>
                 <div className="pt-2 text-sm lg:text-base">
                   <p className="pt-2">
@@ -456,7 +470,7 @@ export default function Services() {
                       alt=""
                       src="/bullet.svg"
                     />
-                    P2P Messaging
+                    {t('services:plans.standard.p2pMessaging')}
                   </p>
                   <p className="pt-2">
                     <img
@@ -464,7 +478,7 @@ export default function Services() {
                       alt=""
                       src="/bullet.svg"
                     />
-                    Voice & HD Video Calls
+                    {t('services:plans.standard.voiceVideoCalls')}
                   </p>
                   <p className="pt-2">
                     <img
@@ -472,7 +486,7 @@ export default function Services() {
                       alt=""
                       src="/bullet.svg"
                     />
-                    Send Crypto payment
+                    {t('services:plans.standard.sendCryptoPayment')}
                   </p>
                   <p className="pt-2">
                     <img
@@ -480,7 +494,7 @@ export default function Services() {
                       alt=""
                       src="/bullet.svg"
                     />
-                    Web3 Wallet
+                    {t('services:plans.standard.web3Wallet')}
                   </p>
                   <p className="pt-2">
                     <img
@@ -488,7 +502,7 @@ export default function Services() {
                       alt=""
                       src="/bullet.svg"
                     />
-                    FacilSwap & FacilBridge
+                    {t('services:plans.standard.facilSwapBridge')}
                   </p>
                   <p className="pt-2">
                     <img
@@ -496,7 +510,7 @@ export default function Services() {
                       alt=""
                       src="/bullet.svg"
                     />
-                    Standard AI Chatbot
+                    {t('services:plans.standard.aiChatbot')}
                   </p>
                 </div>
               </div>
@@ -507,7 +521,7 @@ export default function Services() {
         <section>
           <div className="textFade m-auto flex w-full max-w-[1400px] flex-col lg:flex-row">
             <div className="relative mb-4 w-full rounded-3xl bg-gray-100 p-8 lg:m-2 lg:w-1/3">
-              <h2 className="text-2xl font-semibold">Premium $1</h2>
+              <h2 className="text-2xl font-semibold">{t('services:plans.premium.title')}</h2>
               <div className="pt-2 text-sm lg:text-base">
                 <p className="pt-2">
                   <img
@@ -515,7 +529,7 @@ export default function Services() {
                     alt=""
                     src="/bullet.svg"
                   />
-                  Standard + Free Limited tim
+                  {t('services:plans.premium.standardPlusFree')}
                 </p>
                 <p className="pt-2">
                   <img
@@ -523,7 +537,7 @@ export default function Services() {
                     alt=""
                     src="/bullet.svg"
                   />
-                  10% Off fees in-app transaction
+                  {t('services:plans.premium.transactionFeeDiscount')}
                 </p>
                 <p className="pt-2">
                   <img
@@ -531,7 +545,7 @@ export default function Services() {
                     alt=""
                     src="/bullet.svg"
                   />
-                  MoneyGram fiat on & off ramp
+                  {t('services:plans.premium.moneygramFiat')}
                 </p>
                 <p className="pt-2">
                   <img
@@ -539,7 +553,7 @@ export default function Services() {
                     alt=""
                     src="/bullet.svg"
                   />
-                  Facil Visa & Master Card
+                  {t('services:plans.premium.facilVisaMasterCard')}
                 </p>
                 <p className="pt-2">
                   <img
@@ -547,7 +561,7 @@ export default function Services() {
                     alt=""
                     src="/bullet.svg"
                   />
-                  Staking Feature & Air drop
+                  {t('services:plans.premium.stakeAirdrop')}
                 </p>
                 <p className="pt-2">
                   <img
@@ -555,7 +569,7 @@ export default function Services() {
                     alt=""
                     src="/bullet.svg"
                   />
-                  Premium AI Chatbot Tools
+                  {t('services:plans.premium.premiumAIChatbot')}
                 </p>
                 <img
                   className="absolute bottom-0 right-0 rounded-br-3xl "
@@ -566,7 +580,7 @@ export default function Services() {
               </div>
             </div>
             <div className="relative mb-4 w-full rounded-3xl bg-gray-100 p-8 lg:m-2 lg:w-1/3">
-              <h2 className="text-2xl font-semibold">Platinum $3</h2>
+              <h2 className="text-2xl font-semibold">{t('services:plans.platinum.title')}</h2>
               <div className="pt-2 text-sm lg:text-base">
                 <p className="pt-2">
                   <img
@@ -574,7 +588,7 @@ export default function Services() {
                     alt=""
                     src="/bullet.svg"
                   />
-                  Platinum +
+                  {t('services:plans.platinum.premium+')}
                 </p>
                 <p className="pt-2">
                   <img
@@ -582,7 +596,7 @@ export default function Services() {
                     alt=""
                     src="/bullet.svg"
                   />
-                  Metal or Designed Card
+                  {t('services:plans.platinum.metalDesignedCard')}
                 </p>
                 <p className="pt-2">
                   <img
@@ -590,7 +604,7 @@ export default function Services() {
                     alt=""
                     src="/bullet.svg"
                   />
-                  20% Off fees
+                  {t('services:plans.platinum.transactionFeeDiscount')}
                 </p>
                 <p className="pt-2">
                   <img
@@ -598,7 +612,7 @@ export default function Services() {
                     alt=""
                     src="/bullet.svg"
                   />
-                  Business Staking Feature
+                  {t('services:plans.platinum.businessStaking')}
                 </p>
                 <p className="pt-2">
                   <img
@@ -606,7 +620,7 @@ export default function Services() {
                     alt=""
                     src="/bullet.svg"
                   />
-                  B2C & B2B Invoice
+                  {t('services:plans.platinum.b2bcInvoice')}
                 </p>
                 <p className="pt-2">
                   <img
@@ -614,7 +628,7 @@ export default function Services() {
                     alt=""
                     src="/bullet.svg"
                   />
-                  Crypto-commerce
+                  {t('services:plans.platinum.cryptoCommerce')}
                 </p>
                 <p className="pt-2">
                   <img
@@ -622,7 +636,7 @@ export default function Services() {
                     alt=""
                     src="/bullet.svg"
                   />
-                  Facil WebApp POS
+                  {t('services:plans.platinum.webAppPOS')}
                 </p>
                 <p className="pt-2">
                   <img
@@ -630,7 +644,7 @@ export default function Services() {
                     alt=""
                     src="/bullet.svg"
                   />
-                  Staking Yield
+                  {t('services:plans.platinum.stakingYield')}
                 </p>
                 <img
                   className="absolute bottom-0 right-0 rounded-br-3xl "
@@ -641,7 +655,7 @@ export default function Services() {
               </div>
             </div>
             <div className="relative mb-4 w-full rounded-3xl bg-gray-100 p-8 lg:m-2 lg:w-1/3">
-              <h2 className="text-2xl font-semibold">Black $9</h2>
+              <h2 className="text-2xl font-semibold">{t('services:plans.black.title')}</h2>
               <div className="pt-2 text-sm lg:text-base">
                 <p className="pt-2">
                   <img
@@ -649,7 +663,7 @@ export default function Services() {
                     alt=""
                     src="/bullet.svg"
                   />
-                  Platinum +
+                  {t('services:plans.black.platinum+')}
                 </p>
                 <p className="pt-2">
                   <img
@@ -657,7 +671,7 @@ export default function Services() {
                     alt=""
                     src="/bullet.svg"
                   />
-                  40% Off fees
+                  {t('services:plans.black.transactionFeeDiscount')}
                 </p>
                 <p className="pt-2">
                   <img
@@ -665,7 +679,7 @@ export default function Services() {
                     alt=""
                     src="/bullet.svg"
                   />
-                  Black Metal Card
+                  {t('services:plans.black.blackMetalCard')}
                 </p>
                 <p className="pt-2">
                   <img
@@ -673,7 +687,7 @@ export default function Services() {
                     alt=""
                     src="/bullet.svg"
                   />
-                  Token-Back Reward
+                  {t('services:plans.black.tokenRewards')}
                 </p>
                 <p className="pt-2">
                   <img
@@ -681,7 +695,7 @@ export default function Services() {
                     alt=""
                     src="/bullet.svg"
                   />
-                  Limited Exclusive Offers
+                  {t('services:plans.black.exclusiveOffers')}
                 </p>
                 <p className="pt-2">
                   <img
@@ -689,7 +703,7 @@ export default function Services() {
                     alt=""
                     src="/bullet.svg"
                   />
-                  DeFi Vaults APY
+                  {t('services:plans.black.defiVaults')}
                 </p>
               </div>
               <img
@@ -709,11 +723,10 @@ export default function Services() {
                 <div className="inline-flex pb-4 pl-4 pr-1 lg:p-8">
                   <div className="pt-0 lg:pt-10">
                     <p className="text-xl font-semibold lg:text-2xl">
-                      2 -5% Crypto Rewards
+                      {t('services:plans.cryptoRewards.title')}
                     </p>
                     <p className="pt-2 text-sm lg:text-base">
-                      Best debit card for spending your crypto and get your
-                      rewards in crypto that you want.
+                      {t('services:plans.cryptoRewards.body')}
                     </p>
                   </div>
                 </div>
@@ -723,16 +736,11 @@ export default function Services() {
             <div className="textFadeRight mb-4 w-full overflow-hidden rounded-3xl bg-gray-100 p-10 lg:m-2 lg:w-3/4">
               <div className="pt-0 lg:p-10">
                 <h2 className="text-2xl font-semibold">
-                  Experience Top-Tier Rates and World-Class Services
+                  {t('services:plans.topServices.title')}
                 </h2>
                 <div className="pt-2 text-sm lg:text-base">
                   <p className="pt-2">
-                    Per World Bank data, immigrants and expatriates in the U.S.
-                    transferred around $700 billion to their home countries in
-                    2020. Facil offers a revolution in this process, cutting
-                    costs significantly. With DeFi technology, Facil slashes
-                    cross-border payment fees by 30% to 50%, offering a much
-                    more affordable alternative and facil.
+                    {t('services:plans.topServices.body')}
                   </p>
                 </div>
               </div>
@@ -741,200 +749,12 @@ export default function Services() {
         </section>
 
         <section className="relative flex items-center justify-center pt-40">
-          <div className="AppContainer font-inter relative flex h-[480px] w-[1408px] flex-col justify-between overflow-hidden text-center text-white lg:h-[980px]">
-            <div>
-              <h1 className="pt-16 text-2xl font-semibold lg:pt-40 lg:text-6xl">
-                Get the FacilPay mobile app now
-              </h1>
-              <p className="p-2 text-base">
-                Simplifying payments with blockchain technology and AI-enhanced user intent messaging
-              </p>
-            </div>
-            <div className="appbuttons inline-block flex items-center justify-center pt-20 lg:pt-20">
-              <button className="m-2 rounded-full bg-white p-3 font-medium text-black">
-                <FontAwesomeIcon icon={faApple} className="mr-2" />
-                Download Now
-              </button>
-              <button className="m-2 rounded-full bg-white p-3 font-medium text-black">
-                <FontAwesomeIcon icon={faGooglePlay} className="mr-2" />
-                Coming Soon
-              </button>
-            </div>
-            <div className="position-relative">
-              <div
-                id="appbox"
-                className="relative z-10 inline-flex items-center justify-center align-bottom"
-              >
-                <img
-                  className="phonepad flex w-[101px] lg:w-[341px]"
-                  alt=""
-                  src="/centerappl1.png"
-                />
-                <img
-                  className="flex w-[164px] lg:w-[400px]"
-                  alt=""
-                  src="/centerapp1.png"
-                />
-                <img
-                  className="phonepad flex w-[101px] lg:w-[341px] "
-                  alt=""
-                  src="/centerappr1.png"
-                />
-              </div>
-              <img
-                className="backimage absolute bottom-0  z-0"
-                alt=""
-                src="/vector1.svg"
-                style={{ width: "30%", height: "auto" }}
-              />
-              <img
-                className="backimageRight absolute bottom-0 right-0 z-0"
-                alt=""
-                src="/vector2.svg"
-                style={{ width: "30%", height: "auto" }}
-              />
-            </div>
-          </div>
+          <GetApp />
         </section>
 
-        <section className="m-auto max-w-[1080px] border-b border-slate-200 pt-40">
-          <div className="flex flex-wrap pb-16">
-            {/* Create five columns */}
-            <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
-              {/* Column content */}
-              <img
-                className="w-[30%]lg:w-[40%] h-auto "
-                alt=""
-                src="/footerlogo.svg"
-              />
-              <div className=" pt-4">
-                <p>
-                  <img
-                    className="mb-1 mr-1 inline-flex h-auto w-[%5] lg:w-[10%] "
-                    alt=""
-                    src="/envelope.svg"
-                  />
-                  <a href="mailto:info@facilpay.io" target="_blank">
-                    info@facilpay.io
-                  </a>
-                </p>
-                <p className="pt-4">
-                  <img
-                    className="mb-1 mr-1 inline-flex h-auto w-[%5] lg:w-[10%]"
-                    alt=""
-                    src="/phoneicon.svg"
-                  />
-                  <a href="tel:7035947188">703.594.7188</a>
-                </p>
-                <p className="pt-4 text-blue-500">
-                  <a href="https://twitter.com/facil_pay" target="_blank">
-                    <FontAwesomeIcon icon={faTwitter} className="mr-2" />
-                  </a>
-                  <a
-                    href="https://www.instagram.com/facilpay.io?igsh=MzRlODBiNWFlZA=="
-                    target="_blank"
-                  >
-                    <FontAwesomeIcon icon={faInstagram} className="mr-2" />
-                  </a>
-                  <a
-                    href="https://www.instagram.com/facilpay.io?igsh=MzRlODBiNWFlZA=="
-                    target="_blank"
-                  >
-                    <FontAwesomeIcon icon={faFacebook} className="mr-2" />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/company/facilbank/"
-                    target="_blank"
-                  >
-                    <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
-                  </a>
-                  <a
-                    href="https://discord.com/invite/A63GHnPzpj"
-                    target="_blank"
-                  >
-                    <FontAwesomeIcon icon={faDiscord} className="mr-2" />
-                  </a>
-                  <a href="https://medium.com/@facilpay.io" target="_blank">
-                    <FontAwesomeIcon icon={faMedium} className="mr-2" />
-                  </a>
-                  <a href="https://t.me/+A5BpRNiCsVA4MmY5" target="_blank">
-                    <FontAwesomeIcon icon={faTelegram} className="mr-0" />
-                  </a>
-                </p>
-              </div>
-            </div>
-            <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
-              <div className=" p-0 pl-4 pr-4">
-                <h1 className="pb-4 text-2xl font-semibold">Links</h1>
-                <p>
-                  <a href="/">Home</a>
-                </p>
-                <p className="pt-2">
-                  <a href="/aboutus">About Us</a>
-                </p>
-                <p className="pt-2">
-                  <a href="/services">Services</a>
-                </p>
-              </div>
-            </div>
-            <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
-              <div className=" p-0 pl-4 pr-4">
-                <h1 className="pb-4 text-2xl font-semibold">Legal</h1>
-                <p>
-                  <a href="https://www.facilpay.io/terms">
-                    Terms and Conditions
-                  </a>
-                </p>
-                <p className="pt-2">
-                  <a href="https://www.facilpay.io/privacy"
-                  >
-                    Privacy Policy
-                  </a>
-                </p>
-                <p className="pt-2">
-                  <a href="https://www.facilpay.io/cookies"
-                  >
-                    Cookie Policy
-                  </a></p>
-                <p className="pt-2">
-                  <a href="https://www.facilpay.io/disclaimer">
-                    Disclaimer
-                  </a></p>
-              </div>
-            </div>
-            <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
-              <div className=" p-0 pl-4 pr-4">
-                <h1 className="pb-4 text-2xl font-semibold">Product</h1>
-                <p>Take Tour</p>
-                <p className="pt-2">Live Chat</p>
-                <p className="pt-2">Reviews</p>
-              </div>
-            </div>
-            <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
-              <div className=" p-0 pl-4 pr-4">
-                <h1 className="pb-4 text-2xl font-semibold">Newsletter</h1>
-                <p>Stay Up To Date</p>
-              </div>
-              <div className="flex items-center pt-4">
-                <input
-                  type="text"
-                  className="newsInput flex-grow bg-slate-50 px-4 py-2 outline-none"
-                  placeholder="Your Email..."
-                />
-                <button
-                  type="submit"
-                  className="newsButton text-md bg-blue-500 px-4 py-2 text-white"
-                >
-                  Submit
-                </button>
-              </div>
-            </div>
-          </div>
+        <section className="m-auto max-w-[1080px]  pt-40">
+          <Footer />
         </section>
-
-        <div className="pt-8 text-center text-xs text-slate-500">
-          Ⓒ Copyright {currentYear} Facil Pay inc. all rights reserved
-        </div>
       </main>
     </>
   );

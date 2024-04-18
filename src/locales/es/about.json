@@ -1,0 +1,75 @@
+{
+	"banner": {
+		"buttons": {
+			"pitchDeck": "Plataforma de presentación fácil",
+			"whitePaper": "Papel blanco"
+		},
+		"subtitle": "Mercado de mensajería: capturando la industria de pagos y criptomonedas de billones de dólares",
+		"title": "Más allá de los<br/>mil millones de dólares"
+	},
+	"missionSection": {
+		"bannerTitle": "Experimente la libertad global: pague y reciba pagos con <highlight>Facil,</highlight> en cualquier parte del mundo",
+		"body": "<highlight>Revolucionando el chat, los pagos y la banca DeFi en Web3</highlight><br/>\nEn el complejo mundo de las finanzas descentralizadas (DeFi), nuestra misión es clara: revolucionar la forma en que las personas y las empresas interactúan fácilmente con las plataformas DeFi. Nuestro objetivo es desmitificar las transacciones DeFi, haciéndolas lo más sencillas y fáciles de usar. Nuestro objetivo es crear una experiencia fluida e intuitiva que ponga el poder de DeFi a su alcance, rompiendo barreras y fomentando la accesibilidad para todos.<br/><br/>\nNos dedicamos a forjar conexiones que abarcan vidas, negocios y aspiraciones, unificando todo un mundo, especialmente en los países en desarrollo. Nuestra visión se basa en la creencia de que los mercados peer-to-peer (P2P) representan el futuro de las soluciones de pago en los mercados emergentes. Nuestro objetivo es convertirnos en un componente fundamental del estilo de vida digital de los consumidores latinoamericanos, integrándonos perfectamente en sus interacciones digitales cotidianas en una sola plataforma.",
+		"title": "NUESTRA MISIÓN: Simplificar Blockchain para los usuarios cotidianos"
+	},
+	"problemStatementSection": {
+		"problem1": {
+			"body": "Las plataformas Web3 afirman ser fáciles de usar, pero son <highlight>abrumadoramente complicadas</highlight> para los usuarios tradicionales de Web2.",
+			"title": "Complejidad:"
+		},
+		"problem2": {
+			"body": "La complejidad avanzada presenta una barrera para la adopción generalizada, especialmente entre <highlight>usuarios que tal vez no sean expertos en tecnología.</highlight>",
+			"title": "Accesibilidad:"
+		},
+		"problem3": {
+			"body": "Una parte sustancial de la población sigue <highlight>excluida de los servicios financieros modernos</highlight>, lo que pone de relieve la necesidad urgente de soluciones de tecnología financiera inclusivas.",
+			"title": "Acceso limitado para personas no bancarizadas:"
+		},
+		"solution1": {
+			"body": "Facil Pay reinventa la experiencia Web3 con la <highlight>simplicidad</highlight> como elemento central, haciéndola tan fácil de usar como las principales plataformas Web2.",
+			"title": "1. Simplicidad redefinida:"
+		},
+		"solution2": {
+			"body": "Diseñada con claridad y facilidad de uso, nuestra solución es tan <highlight>sencilla</highlight> que incluso nuestros abuelos pueden navegar por la tecnología blockchain sin esfuerzo.",
+			"title": "2. Usabilidad universal:"
+		},
+		"solution3": {
+			"body": "Nuestros servicios financieros no requieren infraestructura bancaria tradicional, lo que extiende la inclusión financiera a la <highlight>población no bancarizada.</highlight>",
+			"title": "3. Accesibilidad de DeFi para personas no bancarizadas:"
+		},
+		"title": "Simplificando Blockchain para los usuarios cotidianos"
+	},
+	"roadmapSection": {
+		"roadmap1": {
+			"items": "Formación de equipos, Incorporación de desarrolladores, Consulta legal, Preparación de tokenómica, Reuniones de asesores, Implementación de pila de tecnología, Implementación de cadenas múltiples, Diseño UI/UX: sitio web, Redes sociales y comunidad, Documento técnico v1.8, Presentación y buscapersonas, Moon- Hoja, GTM SEED STAGE 1, PR preparado, Lanzamiento de la plataforma de presentación",
+			"title": "Q4. 2023"
+		},
+		"roadmap2": {
+			"items": "Private VC Stage 1 y 2, GTM Seed Stage 2, Asociación de plataforma IDO, Lanzamiento de IDO e ICO, Listado DEX Uniswap, Listado de Exchange LATAM CEX, Prototipo UI/UX Figma, AMA Múltiples puntos de venta, Promoción y evento de KOL, Aplicación móvil Android, IOS Aplicación móvil, Preparación para auditoría, Publicación del documento técnico V2.2, listado de CoinGecko, Listado de CoinMarketCap",
+			"title": "Q1. 2024"
+		},
+		"roadmap3": {
+			"items": "FacilSwap y Bridge, MoneyGram PR, función de participación, listado de intercambio CEX, Promoción de plataforma, Promoción 2 de KOL, Evento de lanzamiento suave, Plataforma BETA V1.2, Lanzamiento de plataforma WEB, aplicación móvil Android V1.5, Aplicación móvil IOS V1.5, PR Nivel superior 1 y 2",
+			"title": "Q2. 2024"
+		},
+		"roadmap4": {
+			"items": "Cotización en CEX Exchange, Lanzamiento de nuevo mercado, Promoción 3 de KOL, Evento de promoción, plataforma V2, Expansión de nuevo mercado, implementación de Facil POS, Facil POS WebApp Beta V1, Asignación comunitaria, Asociación de adopción de usuarios",
+			"title": "Q3. 2024"
+		},
+		"title": "Nuestra hoja de ruta"
+	},
+	"stats": {
+		"cryptoMarketCap": {
+			"label": "Capitalización de mercado de criptomonedas"
+		},
+		"messagingMarketVolume": {
+			"label": "Volumen del mercado global de mensajería"
+		},
+		"mobileMessagingUser": {
+			"label": "Usuarios globales de mensajería móvil"
+		},
+		"paymentsMarketVolume": {
+			"label": "Volumen del mercado mundial de pagos"
+		}
+	}
+}

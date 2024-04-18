@@ -1,0 +1,89 @@
+{
+	"banner": {
+		"subtitle": "Cerrando la brecha entre la banca tradicional y la DeFi",
+		"title": "Simplificando Blockchain para los usuarios cotidianos"
+	},
+	"featureSection1": {
+		"body": "Cada usuario recibe una billetera Web3 integrada en su perfil. Junto con <highlight>nuestro sistema de mensajería entre pares,</highlight> esta configuración permite a los usuarios chatear y realizar transacciones directamente con amigos, familiares o comerciantes, todo dentro de la aplicación Facil.<br/><br/>\n<highlight>Facil representa un cambio de paradigma en la interacción digital.</highlight> Al desmitificar la tecnología blockchain y hacer de las criptomonedas parte de la vida diaria, lo invitamos a experimentar el futuro de la conectividad y el comercio.",
+		"title": "Facil: gratuito, sencillo y empoderador."
+	},
+	"featureSection2": {
+		"body": "<highlight>Transacciones criptográficas y fiat simplificadas</highlight> Con FacilPay, recibir y enviar dinero a sus amigos, familiares o comerciantes es literalmente lo mismo que enviarles un mensaje de texto o una grabación de voz. Nuestra plataforma mejorada con IA comprende sus intenciones cuando usted da el mensaje por escrito o por voz y luego procede con la ejecución de su pago. Nuestra aplicación no sólo encuentra la forma más fácil y económica de enviar ese dinero a quien quieras, sino que lo hace súper rápido. No es necesario lidiar con toneladas de tecnicismos. Simplemente hable y haga clic y el pago estará realizado. Incluso tu madre o tu abuela podrían hacer esto fácilmente. Ese es el mundo que ofrece FacilPay.<br/><br/>\n<highlight>Facil es más que una aplicación;</highlight> es una puerta de entrada a una nueva era de interacción digital, donde convergen la conveniencia, la seguridad y el empoderamiento del usuario. Bienvenido a bordo, experimente el futuro de Web3 con Facil. Chatea y recibe pagos: realiza pagos instantáneos durante tus comunicaciones en todo el mundo.",
+		"title": "Pagar y recibir pagos es tan fácil como chatear"
+	},
+	"featureSection3": {
+		"body": "<highlight>ALCANCE GLOBAL EN MÁS DE 182 PAÍSES</highlight>: ¿Necesita convertir criptomonedas a fiat sin una cuenta bancaria? ¡Te tenemos cubierto! A través de nuestra integración con MoneyGram, la aplicación Facil Pay permite a los usuarios realizar transacciones de retiro de efectivo en 182 países en todo el mundo, ofreciendo una solución práctica para quienes no cuentan con servicios bancarios.",
+		"title": "Transferencias Globales Realizadas Fácilmente"
+	},
+	"plans": {
+		"black": {
+			"blackMetalCard": "Tarjeta de metal negro",
+			"defiVaults": "APY de las bóvedas de DeFi",
+			"exclusiveOffers": "Ofertas exclusivas limitadas",
+			"platinum+": "Platino +",
+			"title": "Negro $9",
+			"tokenRewards": "Recompensa respaldada por tokens",
+			"transactionFeeDiscount": "40% de descuento en tarifas"
+		},
+		"cryptoRewards": {
+			"body": "La mejor tarjeta de débito para gastar sus criptomonedas y obtener las recompensas en las criptomonedas que desee.",
+			"title": "2 -5% de recompensas criptográficas"
+		},
+		"platinum": {
+			"b2bcInvoice": "Factura B2C y B2B",
+			"businessStaking": "Función de apuesta empresarial",
+			"cryptoCommerce": "Criptocomercio",
+			"metalDesignedCard": "Tarjeta metálica o diseñada",
+			"premium+": "Premium +",
+			"stakingYield": "Rendimiento de apuesta",
+			"title": "Platino $3",
+			"transactionFeeDiscount": "20% de descuento en tarifas",
+			"webAppPOS": "POS Fácil WebApp"
+		},
+		"premium": {
+			"facilVisaMasterCard": "Visa Fácil y Master Card",
+			"moneygramFiat": "Rampa de entrada y salida fiduciaria de MoneyGram",
+			"premiumAIChatbot": "Herramientas premium de chatbot de IA",
+			"stakeAirdrop": "Función de replanteo y caída aérea",
+			"standardPlusFree": "Estándar + Gratis Por tiempo limitado",
+			"title": "Prima $1",
+			"transactionFeeDiscount": "10% de descuento en tarifas de transacción dentro de la aplicación"
+		},
+		"standard": {
+			"aiChatbot": "Chatbot de IA estándar",
+			"facilSwapBridge": "FacilSwap y FacilBridge",
+			"p2pMessaging": "Mensajería P2P",
+			"sendCryptoPayment": "Enviar pago criptográfico",
+			"title": "Estándar <highlight>Gratis</highlight>",
+			"voiceVideoCalls": "Llamadas de voz y video HD",
+			"web3Wallet": "Cartera Web3"
+		},
+		"subtitle": "Gratis o Premium, desbloquea tus finanzas descentralizadas: equilibrando la accesibilidad con funciones mejoradas",
+		"title": "Elige tu plan",
+		"topServices": {
+			"body": "Según datos del Banco Mundial, los inmigrantes y expatriados en Estados Unidos transfirieron alrededor de 700 mil millones de dólares a sus países de origen en 2020. Facil ofrece una revolución en este proceso, al reducir costos significativamente. Con la tecnología DeFi, Facil reduce drásticamente las tarifas de pago transfronterizo entre un 30% y un 50%, ofreciendo una alternativa mucho más asequible y sencilla.",
+			"title": "Experimente tarifas de primer nivel y servicios de clase mundial"
+		}
+	},
+	"servicesFeatures": {
+		"feature1": {
+			"body": "Manténgase conectado con amigos y familiares a través de sus dispositivos. Puede acceder a Facil desde AppStore, Google Play, Microsoft o simplemente iniciar sesión desde la aplicación web.",
+			"title": "En todos tus dispositivos"
+		},
+		"feature2": {
+			"body": "Apueste tokens Facil para desbloquear herramientas comerciales para crear facturas criptográficas B2B o B2C, vender sus productos y aceptar pagos criptográficos.",
+			"title": "Replanteo FacilApp"
+		},
+		"feature3": {
+			"body": "Una solución de punto de servicio (POS) personalizada permite a las empresas acceder a la banca DeFi y otras soluciones de criptocomercio.",
+			"title": "Criptocomercio"
+		},
+		"feature4": {
+			"body": "Atraiga a más audiencias, aumente las ventas e impulse una mejor atención al cliente.",
+			"title": "Transforma tu negocio"
+		},
+		"premiumBlack": "",
+		"subtitle": "Descargue desde su computadora para chatear<br/> sin esfuerzo, videollamadas e integración con Web3 Wallet",
+		"title": "Conéctese sin problemas entre dispositivos"
+	}
+}

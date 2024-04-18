@@ -1,0 +1,75 @@
+{
+	"banner": {
+		"buttons": {
+			"pitchDeck": "Facil Pitch Deck",
+			"whitePaper": "White Paper"
+		},
+		"subtitle": "Messaging Market: Capturing the Trillion-Dollar Crypto & Payment Industry",
+		"title": "Beyond the<br/>Billion-Dollar"
+	},
+	"missionSection": {
+		"bannerTitle": "Experience Global Freedom: Pay and Get Paid with <highlight>Facil,</highlight> Anywhere in the World",
+		"body": "<highlight>Revolutionizing Web3 Chat, Payment, and DeFi Banking</highlight><br/>\nIn the complex decentralized finance (DeFi) world, our mission stands clear: to revolutionize how individuals and businesses interact with DeFi platforms easily. We aim to demystify DeFi transactions, making them as straightforward and user-friendly. Our focus is on creating a seamless, intuitive experience that brings the power of DeFi to your fingertips, breaking down barriers and fostering accessibility for all.<br/><br/>\nWe are dedicated to forging connections encompassing lives, businesses, and aspirations, unifying an entire world, especially in developing countries. Our vision is anchored in the belief that peer-to-peer (P2P) marketplaces represent the future of payment solutions in emerging markets. Our goal is to become a fundamental component of the digital lifestyle for Latin American consumers, seamlessly integrating into their everyday digital interactions in one platform.",
+		"title": "OUR MISSION: Simplifying Blockchain for Everyday Users"
+	},
+	"problemStatementSection": {
+		"problem1": {
+			"body": "Web3 platforms claim to be user-friendly, but are <highlight>overwhelmingly complicated</highlight> for traditional Web2 users.",
+			"title": "Complexity:"
+		},
+		"problem2": {
+			"body": "The advanced complexity presents a barrier to widespread adoption, especially among <highlight>users who may not be tech savvy.</highlight>",
+			"title": "Accessibility:"
+		},
+		"problem3": {
+			"body": "A substantial portion of the population remains <highlight>excluded from modern financial services</highlight>, highlighting the urgent need for inclusive financial technology solutions.",
+			"title": "Limited Access for the Unbanked:"
+		},
+		"solution1": {
+			"body": "Facil Pay reimagines the Web3 experience with <highlight>simplicity</highlight> at its core, making it as user-friendly as prominent Web2 platforms.",
+			"title": "1. Simplicity Redefined:"
+		},
+		"solution2": {
+			"body": "Designed with clarity and ease of use, our solution is so <highlight>straight forward</highlight> that even our grandparents can navigate blockchain technology effortlessly.",
+			"title": "2. Universal Usability:"
+		},
+		"solution3": {
+			"body": "Our financial services do not require traditional banking infrastructure, extending financial inclusion to the <highlight>unbanked population.</highlight>",
+			"title": "3. DeFi Accessibility for the Unbanked:"
+		},
+		"title": "Simplifying Blockchain for Everyday Users"
+	},
+	"roadmapSection": {
+		"roadmap1": {
+			"items": "Team formation, Onboarding Devs, Legal Consultation, Tokenomics Prepared, Advisor meetings, Deploying Technology Stack, Multi-chain Implementation, UI/UX Design – Website, Social Media & Community, Whitepaper v1.8, Pitch-deck & One pager, Moon-Sheet, GTM SEED STAGE 1, PR Prepared, Pitch Deck Release",
+			"title": "Q4. 2023 "
+		},
+		"roadmap2": {
+			"items": "Private VC Stage 1 & 2, GTM Seed Stage 2, IDO Platform Partnership, IDO & ICO Launch, DEX Uniswap Listing, LATAM CEX Exchange Listing, UI/UX Figma Prototype, AMA Multiple outlets, KOL's Promotion & Event, Android Mobile Application, IOS Mobile Application, Audit Prepared, Whitepaper Release V2.2, CoinGecko Listing, CoinMarketCap Listing",
+			"title": "Q1. 2024"
+		},
+		"roadmap3": {
+			"items": "FacilSwap & Bridge, MoneyGram PR, Staking feature, CEX Exchange Listing, Platform Promotion, KOL's Promotion 2, Soft Launch Event, BETA Platform V1.2, WEB Platform Launch, Android Mobile App V1.5, IOS Mobile App V1.5, PR Top tier 1 & 2",
+			"title": "Q2. 2024"
+		},
+		"roadmap4": {
+			"items": "CEX Exchange Listing, New Market Launch, KOL's Promotion 3, Promotion Event, Platform V2, New Market Expansion, Facil POS Implementation, Facil POS WebApp Beta V1, Community Allocation, User Adoption Partnership",
+			"title": "Q3. 2024"
+		},
+		"title": "Our Roadmap"
+	},
+	"stats": {
+		"cryptoMarketCap": {
+			"label": "Cryptocurrency Market Cap"
+		},
+		"messagingMarketVolume": {
+			"label": "Global Messaging Market Volume"
+		},
+		"mobileMessagingUser": {
+			"label": "Global Mobile Messaging Users"
+		},
+		"paymentsMarketVolume": {
+			"label": "Global Payment Market Volume"
+		}
+	}
+}

@@ -30,6 +30,8 @@ import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 import MainNavigation from "./components/Navigation";
+import { Trans, useTranslation } from "react-i18next";
+import Footer from "./components/Footer";
 
 const currentYear = new Date().getFullYear();
 
@@ -84,6 +86,8 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Home() {
   const leftImageRef = useRef(null);
   const rightImageRef = useRef(null);
+
+  const { t } = useTranslation('home');
 
   useEffect(() => {
     if (!leftImageRef.current || !rightImageRef.current) {
@@ -176,20 +180,23 @@ export default function Home() {
         <div className="PageWrapper hero mt-3 flex h-[600px] w-full flex-col items-center justify-center md:mt-3 lg:mt-3 lg:h-[600px] lg:flex-row">
           <div className=" pl-2 pr-2 pt-10 text-left text-2xl font-semibold text-white md:pt-0 md:text-4xl lg:w-1/2 lg:pt-0 lg:pt-0  lg:text-4xl xl:text-5xl">
             <p className="pb-2 pl-4 md:pb-6 lg:pb-6 lg:pl-12">
-              A Revolutionary Messaging
+              <Trans i18nKey="home:banner.title">
+                <p>
+                  A Revolutionary Messaging
+                </p>
+                <p>
+                  and Payment Platform
+                </p>
+              </Trans>
             </p>
-            <p className="pb-2 pl-4 md:pb-6 lg:pb-6 lg:pl-12">
-              and Payment Platform
-            </p>
-
             <p className="pl-4 text-base font-normal lg:pl-12 lg:text-xl">
-              Powered by AI and user-intent blockchain technology
+              {t('home:banner.subtitle')}
             </p>
             <Link
-              className="ml-4 mt-6 flex w-36 rounded-full border border-solid pb-5 pl-9 pr-2 pt-5 text-base lg:ml-12 lg:w-40 lg:pr-7 lg:pt-5 lg:text-xl"
+              className="ml-4 mt-6 flex w-36 rounded-full border border-solid pb-5 pl-9 pr-2 pt-5 text-base lg:ml-12 lg:w-auto lg:inline-block lg:pr-7 lg:pt-5 lg:text-xl"
               href="#"
             >
-              Try Demo
+              {t('navigation.tryDemo')}
             </Link>
           </div>
           <div className="mt-4 flex w-full items-center justify-center overflow-hidden lg:mt-16 lg:w-1/2">
@@ -224,10 +231,10 @@ export default function Home() {
           </div>
           <div className="w-full p-4 lg:w-3/4 lg:p-10">
             <h2 className="HomeTitle pb-4 text-3xl font-bold lg:text-6xl">
-              Introducing Facil
+              {t('home:introduction.title')}
             </h2>
             <span className="text-base font-normal lg:text-xl">
-              FacilPay is a message-centric payment platform built on user-intent blockchain technology. It offers secure peer-to-peer messaging and global cryptocurrency payments at your fingertips. Sending and receiving funds worldwide to friends, contacts, or merchants, whether crypto or fiat, is now as easy as sending or receiving a text on your FacilPay app.
+              {t('home:introduction.body')}
             </span>
           </div>
         </div>
@@ -243,12 +250,14 @@ export default function Home() {
             </div>
           </div>
           <div className="textFadeRight w-full p-0 lg:w-1/2">
-            <h2 className="pb-10 pt-0 text-3xl font-semibold lg:text-4xl ">
-              {" "}
-              Your unified facil messaging<br />to the future of payments
+            <h2 className="pb-10 pt-0 text-3xl font-semibold lg:text-4xl">
+              <Trans i18nKey="home:featureSection1.title">
+                {" "}
+                Your unified facil messaging<br />to the future of payments
+              </Trans>
             </h2>
             <span className="text-xl font-medium ">
-              Crypto-Enabled and Fiat Ready
+              {t('home:featureSection1.subtitle')}
             </span>
             <p className="mt-4 p-2 lg:p-4">
               <Image
@@ -258,7 +267,7 @@ export default function Home() {
                 width={18}
                 height={18}
               />
-              Secured Mobile Wallet
+              {t('home:featureSection1.features.securedMobileWallets')}
             </p>
             <p className="p-2 lg:p-4">
               <Image
@@ -268,7 +277,7 @@ export default function Home() {
                 width={18}
                 height={18}
               />
-              Multi-Chain Network
+              {t('home:featureSection1.features.multiChainNetwork')}
             </p>
             <p className="p-2 lg:p-4">
               <Image
@@ -278,7 +287,7 @@ export default function Home() {
                 width={18}
                 height={18}
               />
-              Peer-to-Peer Payments
+              {t('home:featureSection1.features.p2pPayments')}
             </p>
             <p className="p-2 lg:p-4">
               <Image
@@ -288,7 +297,7 @@ export default function Home() {
                 width={18}
                 height={18}
               />
-              Flexible Crypto Transactions
+              {t('home:featureSection1.features.flexibleCryptoTrans')}
             </p>
             <p className="p-2 lg:p-4">
               <Image
@@ -298,7 +307,7 @@ export default function Home() {
                 width={18}
                 height={18}
               />
-              Crypto Debit & Prepaid Card
+              {t('home:featureSection1.features.cryptoDebitPrepaid')}
             </p>
             <p className="p-2 lg:p-4">
               <Image
@@ -308,7 +317,7 @@ export default function Home() {
                 width={18}
                 height={18}
               />
-              Facil Swap & Facil Bridge
+              {t('home:featureSection1.features.facilSwapBridge')}
             </p>
             <p className="p-2 lg:p-4">
               <Image
@@ -318,10 +327,10 @@ export default function Home() {
                 width={18}
                 height={18}
               />
-              Web 3.0 DeFi Solutions
+              {t('home:featureSection1.features.web3DefiSol')}
             </p>
             <p className="ml-4 mt-2 w-28 rounded-full border pb-3 pl-5 pt-3 text-sm">
-              Learn More
+              {t('learnMore')}
             </p>
           </div>
         </div>
@@ -340,12 +349,10 @@ export default function Home() {
           <div className="textFade w-full pl-0 lg:w-1/2 lg:pl-20 ">
             <h2 className="pb-4 pt-6 text-3xl font-semibold lg:pt-12 lg:text-4xl">
               {" "}
-              Facil - Bridging the Gap Between Traditional and DeFi Banking
+              {t('home:featureSection2.title')}
             </h2>
             <span className="text-xl font-medium">
-              We provide every user with a Web3 wallet, creating a
-              user-friendly, accessible, and secure ecosystem tailored to meet
-              the unique needs of each individual.
+              {t('home:featureSection2.subtitle')}
             </span>
             <p className="mt-4 p-2 lg:p-4">
               <Image
@@ -355,7 +362,7 @@ export default function Home() {
                 width={18}
                 height={18}
               />
-              Facilitating Blockchain Banking
+              {t('home:featureSection2.features.blockChainBanking')}
             </p>
             <p className="p-2 lg:p-4">
               <Image
@@ -365,7 +372,7 @@ export default function Home() {
                 width={18}
                 height={18}
               />
-              Fiat Transfer Retail Services
+              {t('home:featureSection2.features.fiatRetailServices')}
             </p>
             <p className="p-2 lg:p-4">
               <Image
@@ -375,7 +382,7 @@ export default function Home() {
                 width={18}
                 height={18}
               />
-              Money Transfer API
+              {t('home:featureSection2.features.moneyTransferApi')}
             </p>
             <p className="p-2 lg:p-4">
               <Image
@@ -385,7 +392,7 @@ export default function Home() {
                 width={18}
                 height={18}
               />
-              Cost-effectiveness & Fast Network
+              {t('home:featureSection2.features.costEffectiveFastNetwork')}
             </p>
             <p className="p-2 lg:p-4">
               <Image
@@ -395,10 +402,10 @@ export default function Home() {
                 width={18}
                 height={18}
               />
-              Global Compliance & Operations
+              {t('home:featureSection2.features.globalCompliance')}
             </p>
             <p className="ml-4 mt-2 w-28 rounded-full border pb-3 pl-5 pt-3 text-sm">
-              Learn More
+              {t('learnMore')}
             </p>
           </div>
           <div className="textFadeRight hidden w-full overflow-hidden p-10 lg:block lg:w-1/2">
@@ -426,12 +433,10 @@ export default function Home() {
           <div className="textFade w-full pl-0 lg:w-1/2 lg:pl-20">
             <h2 className="pb-4 pt-8 text-3xl font-semibold lg:pt-24 lg:text-4xl">
               {" "}
-              Facil, Simple, and Secure Intuitive Messaging Meets Web3
+              {t('home:featureSection3.title')}
             </h2>
             <span className="text-xl font-medium">
-              Facilpay app move beyond the limitation of Web2 and take advantage
-              of all Web3 has to offer yet, enjoy the Speed, Reliability, and
-              Security.
+              {t('home:featureSection3.subtitle')}
             </span>
             <p className="mt-4 p-2 lg:p-4">
               <Image
@@ -441,7 +446,7 @@ export default function Home() {
                 width={18}
                 height={18}
               />
-              Secured Peer-to-Peer Messaging
+              {t('home:featureSection3.features.securedP2PMessaging')}
             </p>
             <p className="p-2 lg:p-4">
               <Image
@@ -451,7 +456,7 @@ export default function Home() {
                 width={18}
                 height={18}
               />
-              A.I. Instant Message & Voice Translation
+              {t('home:featureSection3.features.aiMessageVoiceTranslation')}
             </p>
             <p className="p-2 lg:p-4">
               <Image
@@ -461,7 +466,7 @@ export default function Home() {
                 width={18}
                 height={18}
               />
-              NFT Emoticons & Sticker
+              {t('home:featureSection3.features.nftEmoticonsStickers')}
             </p>
             <p className="p-2 lg:p-4">
               <Image
@@ -471,7 +476,7 @@ export default function Home() {
                 width={18}
                 height={18}
               />
-              Group Chat & Group Calls
+              {t('home:featureSection3.features.groupChatCall')}
             </p>
             <p className="p-2 lg:p-4">
               <Image
@@ -481,10 +486,10 @@ export default function Home() {
                 width={18}
                 height={18}
               />
-              File transfers, Calls, and HD Video conferences
+              {t('home:featureSection3.features.fileTransferCallsHDVideo')}
             </p>
             <p className="ml-4 mt-2 w-28 rounded-full border pb-3 pl-5 pt-3 text-sm">
-              Learn More
+              {t('learnMore')}
             </p>
           </div>
           <div className="textFadeRight w-full p-10 lg:w-1/2">
@@ -556,7 +561,7 @@ export default function Home() {
           </Swiper>
         </div>
 
-        <div className="m-auto mt-20 hidden lg:block">
+        <div className="mx-auto mt-20 hidden lg:block">
           <section className=" text-22xl font-label-md mq825:gap-[23px] box-border flex min-h-[803px] flex-col items-center justify-start gap-[47px] px-5 py-0 text-left">
             <h1 className="font-inherit mq825:leading-[58px] relative m-0 inline-block hidden text-xl font-semibold leading-[73px] md:text-2xl lg:flex  lg:text-4xl text-center">
               Message-centric Payment Platform<br />Governed by User-intent Web3 Technology
@@ -624,12 +629,12 @@ export default function Home() {
           </section>
         </div>
 
-        <section className="wrapperCom m-auto flex flex-col items-center pt-40 lg:pt-8">
+        <section className="wrapperCom m-auto flex flex-col items-center mt-40 lg:mt-8">
           <h1 className="text-2xl font-semibold lg:text-4xl">
-            App screenshots
+            {t('home:appScreenshots.title')}
           </h1>
           <p className="pb-4 text-center lg:pb-10">
-            Facil App delivered blazing fast performance, striking word solution
+            {t('home:appScreenshots.subtitle')}
           </p>
           <div className="p-0">
             <img
@@ -655,8 +660,7 @@ export default function Home() {
           <div className="textFadeRight w-full p-0 lg:w-1/2">
             <img className="pb-4 pt-10" alt="" src="/appicon.svg" width="10%" />
             <span className="text-xl font-medium ">
-              AI Chatbot Integration for Facil App: Enhancing User Experience
-              with Advanced Conversational Technology
+              {t('home:appScreenshots.featureDescription')}
             </span>
           </div>
         </div>
@@ -664,33 +668,40 @@ export default function Home() {
         <section className="mb-30 m-auto max-w-[780px] pt-32">
           <div className="text-center">
             <h1 className="mb-0 text-3xl font-semibold lg:text-4xl">
-              Got questions?
+              {t('home:faqs.title')}
             </h1>
             <p className="mb-14">
-              Get the answers to your questions about FacilPay.
+              {t('home:faqs.subtitle')}
             </p>
           </div>
-          <Accordion items={items} />
+          <Accordion items={items.map(
+            (item, index) => {
+              return {
+                title: t(`home:faqs.faq${index + 1}.question`),
+                content: t(`home:faqs.faq${index + 1}.answer`),
+              }
+            }
+          )} />
         </section>
 
         <section className="relative flex items-center justify-center pt-40">
           <div className="AppContainer font-inter relative flex h-[480px] w-[1408px] flex-col justify-between overflow-hidden text-center text-white lg:h-[980px]">
             <div>
               <h1 className="pt-16 text-2xl font-semibold lg:pt-40 lg:text-6xl">
-                Get the FacilPay mobile app now
+                {t('getApp.title')}
               </h1>
               <p className="p-2 text-base">
-                Use everything FacilPay offers from one simple app
+                {t('getApp.subtitle')}
               </p>
             </div>
             <div className="appbuttons inline-block flex items-center justify-center pt-20 lg:pt-20">
               <button className="m-2 rounded-full bg-white p-3 font-medium text-black">
                 <FontAwesomeIcon icon={faApple} className="mr-2" />
-                Download Now
+                {t('getApp.downloadNow')}
               </button>
               <button className="m-2 rounded-full bg-white p-3 font-medium text-black">
                 <FontAwesomeIcon icon={faGooglePlay} className="mr-2" />
-                Coming Soon
+                {t('getApp.comingSoon')}
               </button>
             </div>
             <div className="position-relative">
@@ -730,144 +741,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="m-auto max-w-[1080px] border-b border-slate-200 pt-40">
-          <div className="flex flex-wrap pb-16">
-            {/* Create five columns */}
-            <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
-              {/* Column content */}
-              <img
-                className="w-[30%]lg:w-[40%] h-auto "
-                alt=""
-                src="/footerlogo.svg"
-              />
-              <div className=" pt-4">
-                <p>
-                  <img
-                    className="mb-1 mr-1 inline-flex h-auto w-[%5] lg:w-[10%] "
-                    alt=""
-                    src="/envelope.svg"
-                  />
-                  <a href="mailto:info@facilpay.io" target="_blank">
-                    info@facilpay.io
-                  </a>
-                </p>
-                <p className="pt-4">
-                  <img
-                    className="mb-1 mr-1 inline-flex h-auto w-[%5] lg:w-[10%]"
-                    alt=""
-                    src="/phoneicon.svg"
-                  />
-                  <a href="tel:7035947188">703.594.7188</a>
-                </p>
-                <p className="pt-4 text-blue-500">
-                  <a href="https://twitter.com/facil_pay" target="_blank">
-                    <FontAwesomeIcon icon={faTwitter} className="mr-2" />
-                  </a>
-                  <a
-                    href="https://www.instagram.com/facilpay.io?igsh=MzRlODBiNWFlZA=="
-                    target="_blank"
-                  >
-                    <FontAwesomeIcon icon={faInstagram} className="mr-2" />
-                  </a>
-                  <a
-                    href="https://www.instagram.com/facilpay.io?igsh=MzRlODBiNWFlZA=="
-                    target="_blank"
-                  >
-                    <FontAwesomeIcon icon={faFacebook} className="mr-2" />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/company/facilbank/"
-                    target="_blank"
-                  >
-                    <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
-                  </a>
-                  <a
-                    href="https://discord.com/invite/A63GHnPzpj"
-                    target="_blank"
-                  >
-                    <FontAwesomeIcon icon={faDiscord} className="mr-2" />
-                  </a>
-                  <a href="https://medium.com/@facilpay.io" target="_blank">
-                    <FontAwesomeIcon icon={faMedium} className="mr-2" />
-                  </a>
-                  <a href="https://t.me/+A5BpRNiCsVA4MmY5" target="_blank">
-                    <FontAwesomeIcon icon={faTelegram} className="mr-0" />
-                  </a>
-                </p>
-              </div>
-            </div>
-            <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
-              <div className=" p-0 pl-4 pr-4">
-                <h1 className="pb-4 text-2xl font-semibold">Links</h1>
-                <p>
-                  <a href="/">Home</a>
-                </p>
-                <p className="pt-2">
-                  <a href="/aboutus">About Us</a>
-                </p>
-                <p className="pt-2">
-                  <a href="/services">Services</a>
-                </p>
-              </div>
-            </div>
-            <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
-              <div className=" p-0 pl-4 pr-4">
-                <h1 className="pb-4 text-2xl font-semibold">Legal</h1>
-                <p>
-                  <a href="https://www.facilpay.io/terms">
-                    Terms and Conditions
-                  </a>
-                </p>
-                <p className="pt-2">
-                  <a href="https://www.facilpay.io/privacy"
-                  >
-                    Privacy Policy
-                  </a>
-                </p>
-                <p className="pt-2">
-                  <a href="https://www.facilpay.io/cookies"
-                  >
-                    Cookie Policy
-                  </a></p>
-                <p className="pt-2">
-                  <a href="https://www.facilpay.io/disclaimer">
-                    Disclaimer
-                  </a></p>
-              </div>
-            </div>
-            <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
-              <div className=" p-0 pl-4 pr-4">
-                <h1 className="pb-4 text-2xl font-semibold">Product</h1>
-                <p>Take Tour</p>
-                <p className="pt-2">Live Chat</p>
-                <p className="pt-2">Reviews</p>
-              </div>
-            </div>
-            <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
-              <div className=" p-0 pl-4 pr-4">
-                <h1 className="pb-4 text-2xl font-semibold">Newsletter</h1>
-                <p>Stay Up To Date</p>
-              </div>
-              <div className="flex items-center pt-4">
-                <input
-                  type="text"
-                  className="newsInput flex-grow bg-slate-50 px-4 py-2 outline-none"
-                  placeholder="Your Email..."
-                />
-                <button
-                  type="submit"
-                  className="newsButton text-md bg-blue-500 px-4 py-2 text-white"
-                >
-                  Submit
-                </button>
-              </div>
-            </div>
-          </div>
+        <section className="m-auto max-w-[1080px]  pt-40">
+          <Footer />
         </section>
-
-        <div className="pt-8 text-center text-xs text-slate-500">
-          Ⓒ Copyright {currentYear} Facil Pay inc. all rights reserved
-        </div>
       </main>
     </>
   );

@@ -1,0 +1,89 @@
+{
+	"banner": {
+		"subtitle": "Bridging the Gap Between Traditional and DeFi Banking",
+		"title": "Simplifying Blockchain for Everyday Users"
+	},
+	"featureSection1": {
+		"body": "Every user is provided with a Web3 wallet integrated into their profile. Paired with <highlight>our peer-to-peer messaging system,</highlight> this setup allows users to chat and transact directly with friends, family, or merchants, all within the Facil App.<br/><br/>\n<highlight>Facil represents a paradigm shift in digital interaction.</highlight> By demystifying blockchain technology and making cryptocurrencies a part of daily life, we invite you to experience the future of connectivity and commerce",
+		"title": "Facil - Free, Simple, and Empowering."
+	},
+	"featureSection2": {
+		"body": "<highlight>Crypto and Fiat Transactions Simplified</highlight> With FacilPay, receiving and sending money to your friends, family, or merchants is literally the same as sending them a text message or voice recording. Our AI-enhanced platform understands your intentions when you give the prompt through writing or voice, then proceeds with the execution of your payment. Our application not only finds the easiest and cheapest way to send that money to who you want, but does so at super fast. You don’t need to deal with tons of technicalities. Just talk and click, and payment is done. Even your mother or grandmother could easily do this. Now that’s the world FacilPay provides.<br/><br/>\n<highlight>Facil is more than an app;</highlight> its a gateway to a new era of digital interaction, where convenience, security, and user empowerment converge. Welcome aboard experience the future of Web3 with Facil. Chat and get paid - Make instant payment during your communication worldwide.",
+		"title": "Paying and Getting Paid is as Easy as Chatting"
+	},
+	"featureSection3": {
+		"body": "<highlight>GLOBAL REACH IN OVER 182 COUNTRIES</highlight>: Need to convert crypto to fiat without a bank account? We’ve got you covered! Through our integration with MoneyGram, the Facil Pay app allows users to perform cash-out transactions in 182 countries worldwide, offering a practical solution to the unbanked.",
+		"title": "Global Transfers made Facil"
+	},
+	"plans": {
+		"black": {
+			"blackMetalCard": "Black Metal Card",
+			"defiVaults": "DeFi Vaults APY",
+			"exclusiveOffers": "Limited Exclusive Offers",
+			"platinum+": "Platinum +",
+			"title": "Black $9",
+			"tokenRewards": "Token-Backed Reward",
+			"transactionFeeDiscount": "40% Off fees"
+		},
+		"cryptoRewards": {
+			"body": "Best debit card for spending your crypto and get your rewards in crypto that you want.",
+			"title": "2 -5% Crypto Rewards"
+		},
+		"platinum": {
+			"b2bcInvoice": "B2C & B2B Invoice",
+			"businessStaking": "Business Staking Feature",
+			"cryptoCommerce": "Crypto-commerce",
+			"metalDesignedCard": "Metal or Designed Card",
+			"premium+": "Premium +",
+			"stakingYield": "Staking Yield",
+			"title": "Platinum $3",
+			"transactionFeeDiscount": "20% Off fees",
+			"webAppPOS": "Facil WebApp POS"
+		},
+		"premium": {
+			"facilVisaMasterCard": "Facil Visa & Master Card",
+			"moneygramFiat": "MoneyGram fiat on & off ramp",
+			"premiumAIChatbot": "Premium AI Chatbot Tools",
+			"stakeAirdrop": "Staking Feature & Air drop",
+			"standardPlusFree": "Standard + Free Limited time",
+			"title": "Premium $1",
+			"transactionFeeDiscount": "10% Off fees in-app transaction"
+		},
+		"standard": {
+			"aiChatbot": "Standard AI Chatbot",
+			"facilSwapBridge": "FacilSwap & FacilBridge",
+			"p2pMessaging": "P2P Messaging",
+			"sendCryptoPayment": "Send Crypto Payment",
+			"title": "Standard <highlight>Free</highlight>",
+			"voiceVideoCalls": "Voice & HD Video Calls",
+			"web3Wallet": "Web3 Wallet"
+		},
+		"subtitle": "Free or Premium, Unlock your Decentralized Financial: Balancing Accessibility with Enhanced Features",
+		"title": "Choose your plan",
+		"topServices": {
+			"body": "Per World Bank data, immigrants and expatriates in the U.S. transferred around $700 billion to their home countries in 2020. Facil offers a revolution in this process, cutting costs significantly. With DeFi technology, Facil slashes cross-border payment fees by 30% to 50%, offering a much more affordable alternative and facil.",
+			"title": "Experience Top-Tier Rates and World-Class Services"
+		}
+	},
+	"servicesFeatures": {
+		"feature1": {
+			"body": "Stay connected with friends and family across your devices. You can access Facil from the AppStore, Google Play, Microsoft or simply login from the webApp.",
+			"title": "Across your devices"
+		},
+		"feature2": {
+			"body": "Stake Facil tokens to unlock business tools to create B2B or B2C crypto invoices, sell your products, and accept crypto payments.",
+			"title": "FacilApp Staking"
+		},
+		"feature3": {
+			"body": "A tailored point-of-service (POS) solution allows businesses access to DeFi banking and other crypto-commerce solution.",
+			"title": "Crypto-Commerce"
+		},
+		"feature4": {
+			"body": "Engage more audiences, boost sales and drive better customer support.",
+			"title": "Transform your business"
+		},
+		"premiumBlack": "",
+		"subtitle": "Download from your computed for Effortless<br/> Chat, Video Calls, and Web3 Wallet Integration",
+		"title": "Seamlessly Connect Across Devices"
+	}
+}
