@@ -21,4 +21,5 @@ const TranslationProvider = React.memo<PropsWithChildren<TranslationProviderProp
     },
 );
 
+TranslationProvider.displayName = "TranslationProvider"
 export default TranslationProvider;
