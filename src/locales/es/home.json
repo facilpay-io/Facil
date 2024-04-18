@@ -66,5 +66,8 @@
 	"introduction": {
 		"body": "FacilPay es una plataforma de pago centrada en mensajes construida sobre la tecnología blockchain según la intención del usuario. Ofrece mensajería segura de igual a igual y pagos globales en criptomonedas al alcance de su mano. Enviar y recibir fondos en todo el mundo a amigos, contactos o comerciantes, ya sean criptográficos o fiduciarios, ahora es tan fácil como enviar o recibir un mensaje de texto en su aplicación FacilPay.",
 		"title": "Presentando fácil"
+	},
+	"offerings": {
+		"title": "Plataforma de pago centrada en mensajes<br/>Gobernado por la tecnología Web3 basada en la intención del usuario"
 	}
 }

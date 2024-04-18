@@ -505,7 +505,9 @@ export default function Home() {
 
         <div className="slider m-auto mt-20 w-auto overflow-hidden p-0 lg:hidden">
           <h1 className="font-inherit relative m-0 inline-block pb-10 text-center text-2xl  font-semibold md:text-2xl lg:hidden lg:text-4xl">
-            Message-centric Payment Platform Governed by User-intent Web3 Technology
+            <Trans i18nKey="home:offerings.title">
+              Message-centric Payment Platform Governed by User-intent Web3 Technology
+            </Trans>
           </h1>
           <Swiper
             effect={"coverflow"}
@@ -564,7 +566,9 @@ export default function Home() {
         <div className="mx-auto mt-20 hidden lg:block">
           <section className=" text-22xl font-label-md mq825:gap-[23px] box-border flex min-h-[803px] flex-col items-center justify-start gap-[47px] px-5 py-0 text-left">
             <h1 className="font-inherit mq825:leading-[58px] relative m-0 inline-block hidden text-xl font-semibold leading-[73px] md:text-2xl lg:flex  lg:text-4xl text-center">
-              Message-centric Payment Platform<br />Governed by User-intent Web3 Technology
+              <Trans i18nKey="home:offerings.title">
+                Message-centric Payment Platform<br />Governed by User-intent Web3 Technology
+              </Trans>
             </h1>
             <div className="mq825:gap-[16px] flex hidden min-h-[483px] flex-row flex-wrap items-start justify-center gap-[33px] self-stretch lg:flex">
               <img
