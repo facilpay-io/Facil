@@ -66,5 +66,8 @@
 	"introduction": {
 		"body": "FacilPay is a message-centric payment platform built on user-intent blockchain technology. It offers secure peer-to-peer messaging and global cryptocurrency payments at your fingertips. Sending and receiving funds worldwide to friends, contacts, or merchants, whether crypto or fiat, is now as easy as sending or receiving a text on your FacilPay app.",
 		"title": "Introducing Facil"
+	},
+	"offerings": {
+		"title": "Message-centric Payment Platform<br/>\nGoverned by User-intent Web3 Technology"
 	}
 }
