@@ -97,7 +97,7 @@ export default function Navigation() {
           <Link href="/aboutus" onClick={() => handleMenuItemClick('AboutUs')}>{t('navigation.aboutus')}</Link>
         </div>
         <div className="flex pt-8 justify-start gap-2 items-center flex-1">
-          <LanguageSwitcher className={borderedLinkClass} />
+          <LanguageSwitcher className={`font-medium ${borderedLinkClass}`} />
           <Link className={`font-medium border border-solid p-3 rounded-full flex text-sm lg:text-base lg:hidden ${borderedLinkClass}`} href="#">{t('navigation.tryDemo')}</Link>
         </div>
       </div >
