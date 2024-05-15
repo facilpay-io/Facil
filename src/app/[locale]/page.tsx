@@ -32,6 +32,7 @@ import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 import MainNavigation from "./components/Navigation";
 import { Trans, useTranslation } from "react-i18next";
 import Footer from "./components/Footer";
+import LanguageSwitcher from "./components/LanguageSwitcher";
 
 const currentYear = new Date().getFullYear();
 
@@ -192,14 +193,18 @@ export default function Home() {
             <p className="pl-4 text-base font-normal lg:pl-12 lg:text-xl">
               {t('home:banner.subtitle')}
             </p>
+            <div className="mt-6 lg:ml-12 inline-flex items-center gap-2">
             <Link
-              className="ml-4 mt-6 flex w-36 rounded-full border border-solid pb-5 pl-9 pr-2 pt-5 text-base lg:ml-12 lg:w-auto lg:inline-block lg:pr-7 lg:pt-5 lg:text-xl"
+              className="rounded-full border border-solid text-base p-4 lg:w-auto lg:inline-block lg:text-lg"
               href="#"
             >
               {t('navigation.tryDemo')}
             </Link>
+            <LanguageSwitcher className="rounded-full border border-solid p-1.5 text-base lg:w-auto lg:inline-block lg:text-lg" />
+            </div>
+            
           </div>
-          <div className="mt-4 flex w-full items-center justify-center overflow-hidden lg:mt-16 lg:w-1/2">
+          <div className="pt-10 flex w-full items-center justify-center overflow-hidden lg:pt-16 lg:w-1/2">
             <div ref={leftImageRef} style={{ opacity: 0 }}>
               <img
                 className="ml-4 mt-4 h-[auto] w-[202px] md:hidden lg:block lg:h-[533px] lg:w-[312px]"
@@ -503,12 +508,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="slider m-auto mt-20 w-auto overflow-hidden p-0 lg:hidden">
-          <h1 className="font-inherit relative m-0 inline-block pb-10 text-center text-2xl  font-semibold md:text-2xl lg:hidden lg:text-4xl">
+        <div className="slider mx-auto mt-20 w-auto overflow-hidden p-0 lg:hidden">
+          <h1 className="font-inherit relative mb-8 inline-block text-center text-2xl  font-semibold md:text-2xl lg:hidden lg:text-4xl">
             <Trans i18nKey="home:offerings.title">
               Message-centric Payment Platform Governed by User-intent Web3 Technology
             </Trans>
           </h1>
+          <div>
           <Swiper
             effect={"coverflow"}
             grabCursor={true}
@@ -561,6 +567,7 @@ export default function Home() {
               <img src="/card10.svg" />
             </SwiperSlide>
           </Swiper>
+          </div>
         </div>
 
         <div className="mx-auto mt-20 hidden lg:block">
@@ -633,7 +640,7 @@ export default function Home() {
           </section>
         </div>
 
-        <section className="wrapperCom m-auto flex flex-col items-center mt-40 lg:mt-8">
+        <section className="wrapperCom mx-auto flex flex-col items-center mt-20 lg:mt-8">
           <h1 className="text-2xl font-semibold lg:text-4xl">
             {t('home:appScreenshots.title')}
           </h1>
@@ -688,7 +695,7 @@ export default function Home() {
           )} />
         </section>
 
-        <section className="relative flex items-center justify-center pt-40">
+        <section className="relative flex items-center justify-center mt-20">
           <div className="AppContainer font-inter relative flex h-[480px] w-[1408px] flex-col justify-between overflow-hidden text-center text-white lg:h-[980px]">
             <div>
               <h1 className="pt-16 text-2xl font-semibold lg:pt-40 lg:text-6xl">
@@ -745,7 +752,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="m-auto max-w-[1080px]  pt-40">
+        <section className="m-auto max-w-[1080px]  mt-40">
           <Footer />
         </section>
       </main>

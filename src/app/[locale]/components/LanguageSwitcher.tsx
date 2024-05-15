@@ -78,7 +78,7 @@ export default function LanguageSwitcher({ className }: { className?: string }) 
       <button
         onClick={() => setIsOpen(!isOpen)}
         type="button"
-        className="inline-flex items-center justify-center gap-1 w-full rounded-full border-inherit shadow-sm p-3 lg:p-3 bg-transparent text-sm lg:text-base font-medium focus:outline-none capitalize"
+        className="inline-flex items-center justify-center gap-1 w-full rounded-full border-inherit shadow-sm p-3 lg:p-3 bg-transparent text-sm lg:text-base focus:outline-none capitalize"
         id={LANGUAGE_SELECTOR_ID}
         aria-expanded={isOpen}
       >
@@ -113,7 +113,7 @@ export default function LanguageSwitcher({ className }: { className?: string }) 
                 className={`${selectedLanguage?.code === language.code
                   ? "bg-gray-100 text-gray-900 font-semibold"
                   : "text-gray-700"
-                  } block px-4 py-2 text-sm text-start items-center inline-flex hover:bg-gray-100 ${index % 2 === 0 ? 'rounded-r' : 'rounded-l'}`}
+                  } px-4 py-2 text-sm text-start items-center inline-flex hover:bg-gray-100 ${index % 2 === 0 ? 'rounded-r' : 'rounded-l'}`}
                 role="menuitem"
               >
                 <span className="truncate capitalize">{language.name}</span>

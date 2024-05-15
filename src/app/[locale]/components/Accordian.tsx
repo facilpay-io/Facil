@@ -23,13 +23,14 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
       {items.map((item, index) => (
         <div className="border-b border-slate-100" key={index}>
           <button
-            className="w-full font-semibold text-left p-2  rounded transition duration-300 relative"
+            className="inline-flex items-center gap-[8px] w-full font-semibold text-left p-2 rounded transition duration-300 relative"
             onClick={() => toggleItem(index)}
           >
+            <span className='grow'>
             {item.title}
+            </span>
             <FontAwesomeIcon
               icon={openItemIndex === index ? faAngleUp : faAngleDown}
-              className="absolute right-2 top-2"
             />
           </button>
           {openItemIndex === index && (
