@@ -171,15 +171,27 @@ export default function Home() {
     };
   }, []);
 
+  useEffect(() => {
+    const element = document.querySelector('.wrapfiller');
+    if (element) {
+      setTimeout(() => {
+        element.classList.add('fade-in');
+      }, 100); // Delay before starting the fade-in (optional)
+    }
+  }, []);
+  
+
   return (
     <>
       <div className="stickyWrapper">
         <MainNavigation />
       </div>
       <main className={urbanistone.className}>
-        <div className="mt-4 flex h-1/4 bg-white lg:hidden"></div>
-        <div className="PageWrapper hero mt-3 flex h-[600px] w-full flex-col items-center justify-center md:mt-3 lg:mt-3 lg:h-[600px] lg:flex-row">
-          <div className=" pl-2 pr-2 pt-10 text-left text-2xl font-semibold text-white md:pt-0 md:text-4xl lg:w-1/2 lg:pt-0 lg:pt-0  lg:text-4xl xl:text-5xl">
+       
+        <div className="wrappage mt-0 flex h-[600px] w-full flex-col items-center justify-center lg:h-[600px] lg:flex-row">
+       <img className="wrapfiller absolute" src="/blocks.png"/>
+        <div className="PageWrapper hero z-10">
+          <div className="pl-2 pr-2 pt-10 text-left text-2xl font-semibold text-white md:pt-0 md:text-4xl lg:w-full lg:pt-0 lg:pl-20 lg:text-5xl ">
             <p className="pb-2 pl-4 md:pb-6 lg:pb-6 lg:pl-12">
               <Trans i18nKey="home:banner.title">
                 <p>
@@ -193,18 +205,32 @@ export default function Home() {
             <p className="pl-4 text-base font-normal lg:pl-12 lg:text-xl">
               {t('home:banner.subtitle')}
             </p>
-            <div className="mt-6 lg:ml-12 inline-flex items-center gap-2">
+            <div className="aboutbutton rounded-full mt-8 lg:ml-12 inline-flex items-center gap-2 mb-4 lg:mb-0 mb-20">
             <Link
-              className="rounded-full border border-solid text-base p-4 lg:w-auto lg:inline-block lg:text-lg"
+              className="z-10 inline-flex text-lg p-4"
               href="#"
             >
               {t('navigation.tryDemo')}
+              <svg className="ml-2" width="26" height="26" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1495_758)">
+              <path d="M9 1.5C13.1421 1.5 16.5 4.85786 16.5 9C16.5 13.1421 13.1421 16.5 9 16.5C7.67728 16.5 6.43282 16.157 5.35269 15.5548L5.12378 15.4218L2.84981 16.0907C2.30202 16.2518 1.79117 15.7747 1.8899 15.232L1.90936 15.1501L2.57817 12.8762C1.89379 11.7446 1.5 10.4172 1.5 9C1.5 4.85786 4.85786 1.5 9 1.5ZM9 3C5.68629 3 3 5.68629 3 9C3 10.1827 3.3414 11.2833 3.93074 12.2113C4.07951 12.4457 4.1428 12.7336 4.09239 13.0192L4.06374 13.1413L3.7325 14.2675L4.8587 13.9363C5.18306 13.8409 5.52086 13.8992 5.78863 14.0693C6.71673 14.6586 7.81732 15 9 15C12.3137 15 15 12.3137 15 9C15 5.68629 12.3137 3 9 3ZM7.34467 7.34467C7.61502 7.07431 8.04047 7.05351 8.33467 7.28228L8.40532 7.34467L10.125 9.06435L11.8447 7.34467C12.1376 7.05178 12.6124 7.05178 12.9053 7.34467C13.1757 7.61502 13.1965 8.04047 12.9677 8.33467L12.9053 8.40532L10.6553 10.6553C10.385 10.9257 9.95953 10.9465 9.66533 10.7177L9.59468 10.6553L7.875 8.93565L6.15533 10.6553C5.86244 10.9482 5.38757 10.9482 5.09467 10.6553C4.82431 10.385 4.80351 9.95953 5.03228 9.66533L5.09467 9.59468L7.34467 7.34467Z" fill="white"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_1495_758">
+              <rect width="18" height="18" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+
             </Link>
-            <LanguageSwitcher className="rounded-full border border-solid p-1.5 text-base lg:w-auto lg:inline-block lg:text-lg" />
+            {/* <LanguageSwitcher className="rounded-full border border-solid p-1.5 text-base lg:w-auto lg:inline-block lg:text-lg" /> */}
             </div>
             
           </div>
-          <div className="pt-10 flex w-full items-center justify-center overflow-hidden lg:pt-16 lg:w-1/2">
+          
+          </div>
+         
+          <div className="z-10 pt-10 flex w-full items-center justify-center overflow-hidden lg:pt-16 lg:w-1/2">
             <div ref={leftImageRef} style={{ opacity: 0 }}>
               <img
                 className="ml-4 mt-4 h-[auto] w-[202px] md:hidden lg:block lg:h-[533px] lg:w-[312px]"
@@ -224,7 +250,7 @@ export default function Home() {
           </div>
         </div>
         <div>{/* Additional content can go here */}</div>
-        <div className="componentWrapper flex flex-col pt-0 lg:flex-row lg:pt-10">
+        {/* <div className="componentWrapper flex flex-col pt-0 lg:flex-row lg:pt-10">
           <div className="w-1/4 pt-10">
             <Image
               className="logoAnimation m-auto ml-6 pt-0 lg:ml-10 lg:pt-10 "
@@ -238,12 +264,12 @@ export default function Home() {
             <h2 className="HomeTitle pb-4 text-3xl font-bold lg:text-6xl">
               {t('home:introduction.title')}
             </h2>
-            <span className="text-base font-normal lg:text-xl">
+            <span className="fweight text-base">
               {t('home:introduction.body')}
             </span>
           </div>
-        </div>
-
+        </div> */}
+<div className="lg:pl-0 lg:pr-0 pr-4 pl-4 overflow-hidden">
         <div className="componentWrapper flex flex-col pt-0 lg:flex-row lg:pt-16">
           <div className="textFade w-full pb-4 lg:w-1/2 lg:pb-0">
             <div className="lottieWrap h-auto w-[100%] ">
@@ -255,16 +281,17 @@ export default function Home() {
             </div>
           </div>
           <div className="textFadeRight w-full p-0 lg:w-1/2">
-            <h2 className="pb-10 pt-0 text-3xl font-semibold lg:text-4xl">
+            <h2 className="pb-4 pt-0 text-3xl font-semibold lg:text-4xl">
               <Trans i18nKey="home:featureSection1.title">
                 {" "}
                 Your unified facil messaging<br />to the future of payments
               </Trans>
             </h2>
-            <span className="text-xl font-medium ">
+            <p className="pb-4 text-[#252525]">{t('home:introduction.body')}</p>
+            {/* <span className="text-xl font-medium">
               {t('home:featureSection1.subtitle')}
-            </span>
-            <p className="mt-4 p-2 lg:p-4">
+            </span> */}
+            <p className="font-thin mt-2 ">
               <Image
                 className="mb-1 mr-2 inline"
                 src="/checkmark.webp"
@@ -274,7 +301,7 @@ export default function Home() {
               />
               {t('home:featureSection1.features.securedMobileWallets')}
             </p>
-            <p className="p-2 lg:p-4">
+            <p className="font-thin">
               <Image
                 className="mb-1 mr-2 inline"
                 src="/checkmark.webp"
@@ -284,7 +311,7 @@ export default function Home() {
               />
               {t('home:featureSection1.features.multiChainNetwork')}
             </p>
-            <p className="p-2 lg:p-4">
+            <p className="font-thin">
               <Image
                 className="mb-1 mr-2 inline"
                 src="/checkmark.webp"
@@ -294,7 +321,7 @@ export default function Home() {
               />
               {t('home:featureSection1.features.p2pPayments')}
             </p>
-            <p className="p-2 lg:p-4">
+            <p className="font-thin">
               <Image
                 className="mb-1 mr-2 inline"
                 src="/checkmark.webp"
@@ -304,7 +331,7 @@ export default function Home() {
               />
               {t('home:featureSection1.features.flexibleCryptoTrans')}
             </p>
-            <p className="p-2 lg:p-4">
+            <p className="font-thin">
               <Image
                 className="mb-1 mr-2 inline"
                 src="/checkmark.webp"
@@ -314,7 +341,7 @@ export default function Home() {
               />
               {t('home:featureSection1.features.cryptoDebitPrepaid')}
             </p>
-            <p className="p-2 lg:p-4">
+            <p className="font-thin">
               <Image
                 className="mb-1 mr-2 inline"
                 src="/checkmark.webp"
@@ -324,7 +351,7 @@ export default function Home() {
               />
               {t('home:featureSection1.features.facilSwapBridge')}
             </p>
-            <p className="p-2 lg:p-4">
+            <p className="font-thin">
               <Image
                 className="mb-1 mr-2 inline"
                 src="/checkmark.webp"
@@ -334,7 +361,7 @@ export default function Home() {
               />
               {t('home:featureSection1.features.web3DefiSol')}
             </p>
-            <p className="ml-4 mt-2 w-28 rounded-full border pb-3 pl-5 pt-3 text-sm">
+            <p className="ml-0 mt-4 w-28 rounded-full border border-blue-400 hover:bg-blue-50 cursor-pointer pb-3 pl-5 pt-3 text-sm">
               {t('learnMore')}
             </p>
           </div>
@@ -356,10 +383,10 @@ export default function Home() {
               {" "}
               {t('home:featureSection2.title')}
             </h2>
-            <span className="text-xl font-medium">
+            <span className="text-base text-[#252525]">
               {t('home:featureSection2.subtitle')}
             </span>
-            <p className="mt-4 p-2 lg:p-4">
+            <p className="mt-4 font-thin">
               <Image
                 className="mb-1 mr-2 inline"
                 src="/checkmark.webp"
@@ -369,7 +396,7 @@ export default function Home() {
               />
               {t('home:featureSection2.features.blockChainBanking')}
             </p>
-            <p className="p-2 lg:p-4">
+            <p className=" font-thin">
               <Image
                 className="mb-1 mr-2 inline"
                 src="/checkmark.webp"
@@ -379,7 +406,7 @@ export default function Home() {
               />
               {t('home:featureSection2.features.fiatRetailServices')}
             </p>
-            <p className="p-2 lg:p-4">
+            <p className=" font-thin">
               <Image
                 className="mb-1 mr-2 inline"
                 src="/checkmark.webp"
@@ -389,7 +416,7 @@ export default function Home() {
               />
               {t('home:featureSection2.features.moneyTransferApi')}
             </p>
-            <p className="p-2 lg:p-4">
+            <p className=" font-thin">
               <Image
                 className="mb-1 mr-2 inline"
                 src="/checkmark.webp"
@@ -399,7 +426,7 @@ export default function Home() {
               />
               {t('home:featureSection2.features.costEffectiveFastNetwork')}
             </p>
-            <p className="p-2 lg:p-4">
+            <p className=" font-thin">
               <Image
                 className="mb-1 mr-2 inline"
                 src="/checkmark.webp"
@@ -409,7 +436,7 @@ export default function Home() {
               />
               {t('home:featureSection2.features.globalCompliance')}
             </p>
-            <p className="ml-4 mt-2 w-28 rounded-full border pb-3 pl-5 pt-3 text-sm">
+            <p className="ml-0 mt-4 w-28 rounded-full border border-blue-400 hover:bg-blue-50 cursor-pointer pb-3 pl-5 pt-3 text-sm">
               {t('learnMore')}
             </p>
           </div>
@@ -440,10 +467,10 @@ export default function Home() {
               {" "}
               {t('home:featureSection3.title')}
             </h2>
-            <span className="text-xl font-medium">
+            <span className="text-[#252525] font-thin">
               {t('home:featureSection3.subtitle')}
             </span>
-            <p className="mt-4 p-2 lg:p-4">
+            <p className="mt-4 font-thin">
               <Image
                 className="mb-1 mr-2 inline"
                 src="/checkmark.webp"
@@ -453,7 +480,7 @@ export default function Home() {
               />
               {t('home:featureSection3.features.securedP2PMessaging')}
             </p>
-            <p className="p-2 lg:p-4">
+            <p className="font-thin">
               <Image
                 className="mb-1 mr-2 inline"
                 src="/checkmark.webp"
@@ -463,7 +490,7 @@ export default function Home() {
               />
               {t('home:featureSection3.features.aiMessageVoiceTranslation')}
             </p>
-            <p className="p-2 lg:p-4">
+            <p className="font-thin">
               <Image
                 className="mb-1 mr-2 inline"
                 src="/checkmark.webp"
@@ -473,7 +500,7 @@ export default function Home() {
               />
               {t('home:featureSection3.features.nftEmoticonsStickers')}
             </p>
-            <p className="p-2 lg:p-4">
+            <p className="font-thin">
               <Image
                 className="mb-1 mr-2 inline"
                 src="/checkmark.webp"
@@ -483,7 +510,7 @@ export default function Home() {
               />
               {t('home:featureSection3.features.groupChatCall')}
             </p>
-            <p className="p-2 lg:p-4">
+            <p className="font-thin">
               <Image
                 className="mb-1 mr-2 inline"
                 src="/checkmark.webp"
@@ -493,7 +520,7 @@ export default function Home() {
               />
               {t('home:featureSection3.features.fileTransferCallsHDVideo')}
             </p>
-            <p className="ml-4 mt-2 w-28 rounded-full border pb-3 pl-5 pt-3 text-sm">
+            <p className="ml-0 mt-4 w-28 rounded-full border border-blue-400 hover:bg-blue-50 cursor-pointer pb-3 pl-5 pt-3 text-sm">
               {t('learnMore')}
             </p>
           </div>
@@ -508,7 +535,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="slider mx-auto mt-20 w-auto overflow-hidden p-0 lg:hidden">
+        {/* <div className="slider mx-auto mt-20 w-auto overflow-hidden p-0 lg:hidden">
           <h1 className="font-inherit relative mb-8 inline-block text-center text-2xl  font-semibold md:text-2xl lg:hidden lg:text-4xl">
             <Trans i18nKey="home:offerings.title">
               Message-centric Payment Platform Governed by User-intent Web3 Technology
@@ -568,9 +595,9 @@ export default function Home() {
             </SwiperSlide>
           </Swiper>
           </div>
-        </div>
+        </div> */}
 
-        <div className="mx-auto mt-20 hidden lg:block">
+        {/* <div className="mx-auto mt-20 hidden lg:block">
           <section className=" text-22xl font-label-md mq825:gap-[23px] box-border flex min-h-[803px] flex-col items-center justify-start gap-[47px] px-5 py-0 text-left">
             <h1 className="font-inherit mq825:leading-[58px] relative m-0 inline-block hidden text-xl font-semibold leading-[73px] md:text-2xl lg:flex  lg:text-4xl text-center">
               <Trans i18nKey="home:offerings.title">
@@ -638,7 +665,7 @@ export default function Home() {
               />
             </div>
           </section>
-        </div>
+        </div> */}
 
         <section className="wrapperCom mx-auto flex flex-col items-center mt-20 lg:mt-8">
           <h1 className="text-2xl font-semibold lg:text-4xl">
@@ -657,7 +684,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="componentWrapper flex flex-col pt-6 lg:flex-row lg:pt-0">
+        {/* <div className="componentWrapper flex flex-col pt-6 lg:flex-row lg:pt-0">
           <div className="textFade w-full lg:w-1/2 ">
             <div className="pl-0 lg:pl-10">
               <img
@@ -674,7 +701,7 @@ export default function Home() {
               {t('home:appScreenshots.featureDescription')}
             </span>
           </div>
-        </div>
+        </div> */}
 
         <section className="mb-30 m-auto max-w-[780px] pt-32">
           <div className="text-center">
@@ -751,7 +778,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-
+        </div>
         <section className="m-auto max-w-[1080px]  mt-40">
           <Footer />
         </section>

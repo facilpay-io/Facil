@@ -11,9 +11,9 @@ export default function NavigationServices() {
   const navbarHomeClass = isHomeSelected ? "homeNavBar" : "bg-gray-100"; // Grey for non-home, blue for home
   const menuItemClass = "rounded-full w-24 p-3 flex justify-center items-center";
   const textClass = isHomeSelected ? "text-white" : "navText"; // Blue text for non-home, white for home
-  const selectedClass = isHomeSelected ? "bg-white shadow-sm shadow-white text-blue-500" : "buttonBubbleBlue text-white"; // Blue bubble for non-home
+  const selectedClass = isHomeSelected ? "bg-white shadow-sm shadow-white text-white" : "buttonBubbleBlue text-white"; // Blue bubble for non-home
   const demoLinkClass = selectedMenuItem === 'Home' ? "text-white border-white" : "navText border-blue-500";
-  const logoImage = selectedMenuItem === 'Home' ? "/logov1.png" : "/logoblue.png";
+  const logoImage = selectedMenuItem === 'Home' ? "/logov1.png" : "/logov1.png";
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);

@@ -134,7 +134,7 @@ const interactivity: Interactivity = {
 
 const urbanistone = Urbanist({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
 
 gsap.registerPlugin(ScrollTrigger);
@@ -241,15 +241,32 @@ export default function Services() {
   }, []);
   const { t } = useTranslation('about');
 
+  useEffect(() => {
+    const element = document.querySelector('.wrapfiller');
+    if (element) {
+      // Trigger the fade-in after a short delay
+      setTimeout(() => {
+        element.classList.add('fade-in');
+      }, 100); // Delay for the fade-in (optional)
+  
+      // Trigger the continuous movement after the fade-in completes
+      setTimeout(() => {
+        element.classList.add('move');
+      }, 1100); // Delay after the fade-in (transition time of 1s + small buffer)
+    }
+  }, []);
+
   return (
     <>
       <div className="stickyWrapper">
         <MainNavigation />
       </div>
       <main className={urbanistone.className}>
-        <div className="mt-4 flex h-1/4 bg-white lg:hidden"></div>
-        <div className="PageWrapper heroServices mt-3 flex h-[630px] w-full flex-col items-center justify-center bg-gray-100 md:mt-3 lg:mt-3 lg:h-[650px] lg:flex-row">
-          <div className="w-full p-6 pt-10 text-center text-2xl font-semibold text-black md:pt-0  lg:w-1/2  lg:p-20 lg:pt-0">
+     
+        <div className="wrappageThree mt-0 flex h-[600px] w-full flex-col items-center justify-center lg:h-[600px] lg:flex-row">
+        <img className="wrapfiller absolute" src="/wave2.png"/>
+        <div className="PageWrapper heroServices mt-3 flex h-[630px] w-full flex-col items-center justify-center  md:mt-3 lg:mt-3 lg:h-[650px] lg:flex-row">
+          <div className="w-full p-6 pt-10 text-center text-2xl font-semibold text-white drop-shadow md:pt-0  lg:w-1/2  lg:p-20 lg:pt-0">
             <div className="pb-4 text-left text-3xl md:text-4xl lg:pb-10 lg:text-6xl">
               <Trans i18nKey="about:banner.title">
                 Beyond the <br />
@@ -261,20 +278,29 @@ export default function Services() {
               {t('about:banner.subtitle')}
             </p>
             <div className="relative flex flex-row gap-1">
+              <div className="aboutbutton mt-6 flex justify-center items-center rounded-full pl-4 pr-4 pt-1 pb-1 text-center text-sm lg:mt-10 lg:p-4 lg:text-lg">
               <Link
-                className="HomeTitle bordercolor mt-6 flex justify-center items-center rounded-full border p-3 text-center text-sm lg:mt-10 lg:p-5 lg:text-xl"
+                className="z-10 inline-flex"
                 href="https://facil-team.gitbook.io/facilpay"
                 target="_blank"
               >
                 {t('about:banner.buttons.whitePaper')}
-              </Link>
-              <Link
+                <svg className="ml-1" width="26px" height="26px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.5 7.5H16.1C16.9401 7.5 17.3601 7.5 17.681 7.66349C17.9632 7.8073 18.1927 8.03677 18.3365 8.31901C18.5 8.63988 18.5 9.05992 18.5 9.9V17.5C18.5 18.6046 17.6046 19.5 16.5 19.5V19.5C15.3954 19.5 14.5 18.6046 14.5 17.5V7.7C14.5 6.57989 14.5 6.01984 14.282 5.59202C14.0903 5.21569 13.7843 4.90973 13.408 4.71799C12.9802 4.5 12.4201 4.5 11.3 4.5H7.7C6.57989 4.5 6.01984 4.5 5.59202 4.71799C5.21569 4.90973 4.90973 5.21569 4.71799 5.59202C4.5 6.01984 4.5 6.5799 4.5 7.7V16.3C4.5 17.4201 4.5 17.9802 4.71799 18.408C4.90973 18.7843 5.21569 19.0903 5.59202 19.282C6.01984 19.5 6.5799 19.5 7.7 19.5H16.5" stroke="#ffffff"/>
+              <path d="M11 6.5H8C7.53406 6.5 7.30109 6.5 7.11732 6.57612C6.87229 6.67761 6.67761 6.87229 6.57612 7.11732C6.5 7.30109 6.5 7.53406 6.5 8C6.5 8.46594 6.5 8.69891 6.57612 8.88268C6.67761 9.12771 6.87229 9.32239 7.11732 9.42388C7.30109 9.5 7.53406 9.5 8 9.5H11C11.4659 9.5 11.6989 9.5 11.8827 9.42388C12.1277 9.32239 12.3224 9.12771 12.4239 8.88268C12.5 8.69891 12.5 8.46594 12.5 8C12.5 7.53406 12.5 7.30109 12.4239 7.11732C12.3224 6.87229 12.1277 6.67761 11.8827 6.57612C11.6989 6.5 11.4659 6.5 11 6.5Z" stroke="#ffffff"/>
+              <path d="M6.5 11.5H12.5" stroke="#ffffff" stroke-linecap="round"/>
+              <path d="M6.5 13.5H12.5" stroke="#ffffff" stroke-linecap="round"/>
+              <path d="M6.5 15.5H12.5" stroke="#ffffff" stroke-linecap="round"/>
+              <path d="M6.5 17.5H10.5" stroke="#ffffff" stroke-linecap="round"/>
+              </svg>
+              </Link></div>
+              {/* <Link
                 className="aboutbutton ml-1 mt-6 flex justify-center items-center rounded-full border p-3 text-center text-sm text-white lg:mt-10 lg:p-5 lg:text-xl"
                 href="https://docsend.com/v/cqj7c/facilpay"
                 target="_blank"
               >
                 {t('about:banner.buttons.pitchDeck')}
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className="mt-4 flex h-full w-full items-center justify-center overflow-hidden lg:mt-0 lg:w-1/2">
@@ -287,35 +313,37 @@ export default function Services() {
             </div>
           </div>
         </div>
+        </div>
         <div>{/* Additional content can go here */}</div>
 
+        <div className="lg:pl-0 lg:pr-0 pr-4 pl-4 overflow-hidden">
         <section>
           <div className="m-auto flex w-full max-w-[1400px] flex-col pt-10 lg:flex-row">
-            <div className="relative mb-4 w-full rounded-3xl bg-gray-100 pb-8 pl-6 pr-6 pt-8 lg:m-2 lg:w-1/3">
-              <h2 className="text-2xl font-semibold">$10 Billion</h2>
-              <p className="pt-2 text-sm lg:text-base">
+            <div className="relative text-center mb-4 w-full rounded-3xl bg-gray-100 pb-8 pl-6 pr-6 pt-8 lg:m-2 lg:w-1/3">
+              <h2 className="lg:text-4xl text-2xl font-semibold">$10 Billion</h2>
+              <p className="pt-2 text-sm fweight">
                 {t('about:stats.messagingMarketVolume.label')}
               </p>
             </div>
-            <div className="relative mb-4 w-full rounded-3xl bg-gray-100 pb-8 pl-6 pr-6 pt-8 lg:m-2 lg:w-1/3">
-              <h2 className="text-2xl font-semibold">
+            <div className="relative text-center mb-4 w-full rounded-3xl bg-gray-100 pb-8 pl-6 pr-6 pt-8 lg:m-2 lg:w-1/3">
+              <h2 className="lg:text-4xl text-2xl font-semibold">
                 ${Math.round(counter).toLocaleString()} Billion
               </h2>
-              <p className="pt-2 text-sm lg:text-base">
+              <p className="pt-2 text-sm fweight">
                 {t('about:stats.paymentsMarketVolume.label')}
               </p>
             </div>
-            <div className="relative mb-4 w-full rounded-3xl bg-gray-100 pb-8 pl-6 pr-6 pt-8 lg:m-2 lg:w-1/3">
-              <h2 className="counterUp text-2xl font-semibold">
+            <div className="relative text-center mb-4 w-full rounded-3xl bg-gray-100 pb-8 pl-6 pr-6 pt-8 lg:m-2 lg:w-1/3">
+              <h2 className="counterUp lg:text-4xl text-2xl font-semibold">
                 <CoinMarketCap />
               </h2>
-              <p className="pt-2 text-sm lg:text-base">
+              <p className="pt-2 text-sm fweight">
                 {t('about:stats.cryptoMarketCap.label')}
               </p>
             </div>
-            <div className="relative mb-4 w-full rounded-3xl bg-gray-100 pb-8 pl-6 pr-6 pt-8 lg:m-2 lg:w-1/3">
-              <h2 className="text-2xl font-semibold">$3 Billion</h2>
-              <p className="pt-2 text-sm lg:text-base">
+            <div className="relative text-center mb-4 w-full rounded-3xl bg-gray-100 pb-8 pl-6 pr-6 pt-8 lg:m-2 lg:w-1/3">
+              <h2 className="lg:text-4xl text-2xl font-semibold">$3 Billion</h2>
+              <p className="pt-2 text-sm fweight">
                 {t('about:stats.mobileMessagingUser.label')}
               </p>
             </div>
@@ -514,7 +542,7 @@ export default function Services() {
         <section className="relative flex items-center justify-center pt-40">
           <GetApp />
         </section>
-
+</div>
         <section className="m-auto max-w-[1080px]  pt-40">
           <Footer />
         </section>

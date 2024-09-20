@@ -60,7 +60,7 @@
 	},
 	"stats": {
 		"cryptoMarketCap": {
-			"label": "Cryptocurrency Market Cap"
+			"label": "Trending Cryptocurrency Market Cap"
 		},
 		"messagingMarketVolume": {
 			"label": "Global Messaging Market Volume"

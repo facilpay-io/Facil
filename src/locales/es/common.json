@@ -12,7 +12,15 @@
 			"aboutus": "Sobre nosotros",
 			"home": "Casa",
 			"services": "Servicios",
-			"title": "Campo de golf"
+			"learn": "Aprende",
+			"community": "Comunidad",
+			"title": "Enlaces",
+			"whitepaper": "Libro Blanco",
+			"pitchdeck": "Presentación",
+			"roadmap": "Hoja de Ruta",
+			"tokenomics": "Tokenomics",
+			"brandkit": "Kit de Marca",
+			"careers": "Carreras"
 		},
 		"newsletter": {
 			"emailInput": {
@@ -41,6 +49,14 @@
 		"aboutus": "Sobre nosotros",
 		"home": "Casa",
 		"services": "Servicios",
-		"tryDemo": "Probar demo"
+		"learn": "Aprende",
+		"community": "Comunidad",
+		"tryDemo": "Probar demo",
+		"whitepaper": "Libro Blanco",
+		"pitchdeck": "Presentación",
+		"roadmap": "Hoja de Ruta",
+		"tokenomics": "Tokenomics",
+		"brandkit": "Kit de Marca",
+		"careers": "Carreras"
 	}
 }

@@ -26,15 +26,24 @@ import {
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import 'swiper/css/autoplay';
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+import { EffectCoverflow, Pagination, Navigation, Autoplay } from "swiper/modules";
 import MainNavigation from "../components/Navigation";
 import { Trans, useTranslation } from "react-i18next";
 import Footer from "../components/Footer";
 import GetApp from "../components/GetApp";
 
 const currentYear = new Date().getFullYear();
+
+const logoImages = [
+  '/logoservices1.png', 
+  '/logoservices2.png',
+  '/logoservices3.png',
+  '/logoservices4.png',
+  '/logoservices5.png',
+];
 
 const items = [
   {
@@ -165,15 +174,34 @@ export default function Services() {
     };
   }, []);
 
+  useEffect(() => {
+    const element = document.querySelector('.wrapfillerTwo');
+    if (element) {
+      // Trigger the fade-in after a short delay
+      setTimeout(() => {
+        element.classList.add('fade-in');
+      }, 100); // Delay for the fade-in (optional)
+  
+      // Trigger the continuous movement after the fade-in completes
+      setTimeout(() => {
+        element.classList.add('move');
+      }, 1100); // Delay after the fade-in (transition time of 1s + small buffer)
+    }
+  }, []);
+  
+  
+
   return (
     <>
       <div className="stickyWrapper">
         <MainNavigation />
       </div>
       <main className={urbanistone.className}>
-        <div className="mt-4 flex h-1/4 bg-white lg:hidden"></div>
-        <div className="PageWrapper heroServices mt-3 flex h-[600px] w-full flex-col items-center justify-center bg-gray-100 md:mt-3 lg:mt-3 lg:h-[650px] lg:flex-col">
-          <div className="mt-10 pt-0 text-center text-2xl  font-semibold text-black md:pt-0 lg:w-full  lg:pt-0 lg:pt-0">
+        <div className="mt-0 flex h-1/4 bg-white lg:hidden"></div>
+        <div className="wrappageTwo mt-0 flex h-[600px] w-full flex-col items-center justify-center md:mt-3 lg:mt-0 lg:h-[600px] lg:flex-row">
+        <img className="wrapfillerTwo absolute" src="/clouds.png"/>
+        <div className="PageWrapper heroServices mt-3 flex h-[600px] w-full flex-col items-center justify-center  md:mt-3 lg:mt-3 lg:h-[650px] lg:flex-col">
+          <div className="mt-10 pt-0 text-center text-2xl  font-semibold drop-shadow text-white md:pt-0 lg:w-full  lg:pt-0 lg:pt-0">
             <p className="pb-2 pl-2 pr-2 pt-2 text-2xl md:pb-6 md:text-4xl lg:pb-6 lg:pl-12 lg:pt-10 lg:text-4xl xl:text-5xl">
               {t('services:banner.title')}
             </p>
@@ -198,8 +226,64 @@ export default function Services() {
             </div>
           </div>
         </div>
+        </div>
         <div>{/* Additional content can go here */}</div>
 
+        <div className="logo-slider-wrapper mt-12">
+  {/* <p className="m-auto w-full text-center font-semibold text-lg">Trusted by</p> */}
+  <div className="continuous-slider">
+    <div className="slider-content">
+      {[...logoImages, ...logoImages].map((logo, index) => (
+        <div className="logo-slide" key={index}>
+          <Image 
+            src={logo} 
+            alt={`Logo ${index + 1}`} 
+            layout="intrinsic" // Ensures the image maintains its aspect ratio
+            width={180} 
+            height={60} 
+           
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <style jsx>{`
+    .logo-slider-wrapper {
+      overflow: hidden;
+      width: 100%;
+    }
+    .continuous-slider {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    .slider-content {
+      display: flex;
+      width: max-content;
+      animation: scroll 35s linear infinite;
+    }
+    .logo-slide {
+      flex: 0 0 auto;
+      padding: 0 40px;
+    }
+    .logo-image {
+      height: auto;
+      max-height: 20px; 
+      width: 100%;
+     
+    }
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  `}</style>
+</div>
+
+<div className="lg:pl-0 lg:pr-0 pr-4 pl-4 overflow-hidden">
         <div className="componentWrapper flex flex-col pt-0 lg:flex-row lg:pt-16">
           <div className="textFadeRight w-full p-0 lg:hidden lg:w-1/2">
             <Image
@@ -210,6 +294,8 @@ export default function Services() {
               height={178}
             />
           </div>
+
+        
 
           <div className="textFade w-full pl-0 lg:w-1/2 lg:pl-20">
             <h2 className="pb-4 pt-8 text-2xl font-semibold lg:pt-24 lg:text-4xl">
@@ -751,7 +837,7 @@ export default function Services() {
         <section className="relative flex items-center justify-center pt-40">
           <GetApp />
         </section>
-
+</div>
         <section className="m-auto max-w-[1080px]  pt-40">
           <Footer />
         </section>

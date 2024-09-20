@@ -1,15 +1,56 @@
 import { faDiscord, faFacebook, faInstagram, faLinkedin, faMedium, faTelegram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from "react-i18next";
+import { useState, FormEvent } from 'react';
+import { supabase } from '../../../supabaseClient';
+import { toast, ToastContainer } from 'react-toastify'; // Import toast components
+import 'react-toastify/dist/ReactToastify.css'; // Import toast styles
 
 const currentYear = new Date().getFullYear();
 
-
 export default function Footer() {
   const { t } = useTranslation('footer');
+  const [email, setEmail] = useState<string>('');
+
+  const handleEmailSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    try {
+      // Insert the email into the 'newsletter_emails' table
+      const { error } = await supabase
+        .from('newsletter_emails')
+        .insert([{ email }]);
+
+      if (error) {
+        // Check if the error is related to unique constraint violation
+        if (error.message.includes("duplicate key")) {
+          toast.warn(t('This email is already subscribed!'), {
+            position: "bottom-right",
+            autoClose: 3000,
+          });
+        } else {
+          throw error;
+        }
+      } else {
+        // Success message on successful submission
+        toast.success(t('Thank you for subscribing!'), {
+          position: "top-right",
+          autoClose: 3000,
+        });
+        setEmail(''); // Clear the input field after submission
+      }
+    } catch (error: any) {
+      toast.error(t('Sorry, something went wrong. Please try again!'), {
+        position: "top-right",
+        autoClose: 3000,
+      });
+      console.error("Error adding email: ", error.message);
+    }
+  };
 
   return (
     <>
+     <ToastContainer />
       <div className="flex flex-wrap pb-16 border-b border-slate-200">
         {/* Create five columns */}
         <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
@@ -125,13 +166,18 @@ export default function Footer() {
         <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
           <div className=" p-0 pl-4 pr-4">
             <h1 className="pb-4 text-2xl font-semibold">{t('footer.newsletter.title')}</h1>
-            <p>{t('footer.newsletter.updates')}</p>
+            <p>{t('footer.newsletter.updates')}</p> 
           </div>
-          <div className="flex items-center pt-4">
+
+          {/* Newsletter form */}
+          <form onSubmit={handleEmailSubmit} className="flex items-center pt-4">
             <input
-              type="text"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className="newsInput flex-grow bg-slate-50 px-4 py-2 outline-none"
               placeholder={t('footer.newsletter.emailInput.placeholder')}
+              required
             />
             <button
               type="submit"
@@ -139,7 +185,7 @@ export default function Footer() {
             >
               {t('footer.newsletter.emailInput.submitText')}
             </button>
-          </div>
+          </form>
         </div>
       </div>
 

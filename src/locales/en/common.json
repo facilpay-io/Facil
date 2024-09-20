@@ -12,7 +12,15 @@
 			"aboutus": "About Us",
 			"home": "Home",
 			"services": "Services",
-			"title": "Links"
+			"learn": "Learn",
+			"community": "Community",
+			"title": "Links",
+			"whitepaper": "Whitepaper",
+			"pitchdeck": "PitchDeck",
+			"roadmap": "Roadmap",
+			"tokenomics": "Tokenomics",
+			"brandkit": "Brandkit",
+			"careers": "Careers"
 		},
 		"newsletter": {
 			"emailInput": {
@@ -41,6 +49,14 @@
 		"aboutus": "About Us",
 		"home": "Home",
 		"services": "Services",
-		"tryDemo": "Try Demo"
+		"learn": "Learn",
+		"community": "Community",
+		"tryDemo": "Try Demo",
+		"whitepaper": "Whitepaper",
+		"pitchdeck": "PitchDeck",
+		"roadmap": "Roadmap",
+		"tokenomics": "Tokenomics",
+		"brandkit": "Brandkit",
+		"careers": "Careers"
 	}
 }

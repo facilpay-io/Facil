@@ -10,15 +10,38 @@
 }
 
 .aboutbutton {
+  position: relative;
   background: linear-gradient(180deg, #19A1FC 0%, #046CF1 100%);
   overflow: hidden;
-  transition: box-shadow 0.3s ease;
-  /* Add transition for the box-shadow property */
+  transition: box-shadow 0.3s ease; /* Transition only for box-shadow */
+}
+
+.aboutbutton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, #3eaffa 0%, #1e7dfa 100%);
+  opacity: 0; /* Initially invisible */
+  transition: opacity 0.3s ease; /* Transition the opacity for smooth fade */
+  z-index: 1; /* Make sure it is above the button background */
+}
+
+.fweight {
+  font-weight: 200;
+}
+
+
+.aboutbutton:hover::before {
+  opacity: 1; /* Fade in the new gradient */
 }
 
 .aboutbutton:hover {
   box-shadow: 0px 4px 23px rgba(59, 158, 255, 0.34);
 }
+
 
 .bordercolor {
   transition: box-shadow 0.3s ease;
@@ -187,14 +210,86 @@
 }
 
 .NavBarWrapper {
-  max-width: 1408px;
+  width: 1408px;
   margin: auto;
-  border-radius: 40px;
 }
+.Navback {
+  width: 100%;
+  background: linear-gradient(360deg, #19A1FC 0%, #046CF1 100%);
+}
+
 
 .PageWrapper {
   max-width: 1408px;
   margin: auto;
+  overflow: hidden;
+  z-index: 4;
+}
+
+.wrapfiller {
+  overflow: hidden;
+  object-fit: cover;
+  z-index: 2;
+  opacity: 0; /* Set initial opacity to 0 for fade-in effect */
+  width: 100%;
+  height: 72%;
+  transition: opacity 1s ease-in-out; /* Add transition for the opacity */
+}
+
+.wrapfiller.fade-in {
+  opacity: 0.35; /* Target opacity after the fade-in */
+}
+
+
+.wrapfillerTwo {
+  overflow: hidden;
+  object-fit: cover;
+  z-index: 2;
+  opacity: 0; /* Initial opacity for fade-in */
+  width: 100%;
+  height: 72%;
+  transition: opacity 1s ease-in-out; /* Fade-in transition */
+}
+
+.wrapfillerTwo.fade-in {
+  opacity: 0.35; /* Target opacity after fade-in */
+}
+
+/* Continuous back-and-forth movement */
+@keyframes move {
+  0% {
+    transform: translateX(0); /* Start position */
+  }
+  50% {
+    transform: translateX(100px); /* Move to the right */
+  }
+  100% {
+    transform: translateX(0); /* Move back to the original position */
+  }
+}
+
+.wrapfillerTwo.move {
+  animation: move 60s ease-in-out infinite; /* Continuous smooth back-and-forth movement */
+}
+
+
+
+.wrappage {
+  background: linear-gradient(180deg, #19A1FC 0%, #0418f1 100%);
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrappageTwo {
+  background: linear-gradient(180deg, #19A1FC 0%, #00e5ff 100%);
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrappageThree {
+  background: linear-gradient(180deg, #19A1FC 0%, #5900ff 100%);
+  width: 100%;
+  overflow: hidden;
 }
 
 .componentWrapper {
@@ -202,6 +297,22 @@
   margin: auto;
   margin-top: 40px;
 }
+
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.group:hover .group-hover\:rotate-180 {
+  transform: rotate(180deg);
+}
+
+.group-hover\:opacity-100 {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
 
 .container {
   margin-top: 67px;
@@ -216,15 +327,9 @@
   width: 740px;
 }
 
-.hero {
-  background: linear-gradient(180deg, #19A1FC 0%, #046CF1 100%);
-  border-radius: 50px;
-  overflow: hidden;
-}
+
 
 .heroServices {
-
-  border-radius: 50px;
   overflow: hidden;
 }
 
@@ -251,8 +356,9 @@
   max-width: 1408px;
   margin: auto;
   width: 100%;
-  border-radius: 40px;
+  
   z-index: 20;
+  background: linear-gradient(360deg, #19A1FC 0%, #046CF1 100%);
 }
 
 .mobileNavDrawer {
@@ -261,8 +367,7 @@
   width: 100%;
   margin-top: -10px;
   z-index: -2;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
+  background: linear-gradient(360deg, #046CF1 0%, #24a7ff 100%);
 }
 
 .navText {
@@ -349,4 +454,8 @@
   }
 }
 
-body {}
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}

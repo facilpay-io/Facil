@@ -23,8 +23,9 @@ export default function LanguageSwitcher({ className }: { className?: string }) 
       setLanguages([...(languages.map((code) => {
         const nameGenerator = new Intl.DisplayNames(code, { type: 'language' });
         const displayName = nameGenerator.of(code) ?? `Language(${code.toUpperCase()})`
+        const abbreviatedName = code.toUpperCase();
         return {
-          name: displayName,
+          name: abbreviatedName,
           code: code
         }
       }))]);
@@ -78,7 +79,7 @@ export default function LanguageSwitcher({ className }: { className?: string }) 
       <button
         onClick={() => setIsOpen(!isOpen)}
         type="button"
-        className="inline-flex items-center justify-center gap-1 w-full rounded-full border-inherit shadow-sm p-3 lg:p-3 bg-transparent text-sm lg:text-base focus:outline-none capitalize"
+        className="inline-flex items-center justify-center gap-1 w-full rounded-full border-inherit  bg-[#0397ff] p-2 bg-transparent text-sm lg:text-sm focus:outline-none capitalize"
         id={LANGUAGE_SELECTOR_ID}
         aria-expanded={isOpen}
       >
