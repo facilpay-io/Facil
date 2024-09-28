@@ -102,8 +102,8 @@ export default function Navigation() {
   const menuItemClass = "whitespace-nowrap rounded-xl pl-4 pr-4 pt-2 pb-2 mr-4 flex justify-center items-center";
   const textClass = "text-white"; // Simplified as both conditions were "text-white"
   const textClassMobile = "text-white";
-  const linkClassMobile = `${textClassMobile} opacity-60`;
-  const activeLinkClassMobile = `${textClassMobile} font-semibold`;
+  const linkClassMobile = `${textClassMobile} opacity-60 text-left`;
+  const activeLinkClassMobile = `${textClassMobile} font-semibold text-left`;
 
   const selectedClass = "shadow-md text-white font-semibold"; // Simplified as both conditions were identical
   const borderedLinkClass = "text-white border border-white rounded-full"; // Simplified as both conditions were identical
