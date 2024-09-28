@@ -215,7 +215,7 @@ export default function Home() {
             </p>
             <div className="aboutbutton rounded-full mt-8 lg:ml-12 inline-flex items-center gap-2 mb-4 lg:mb-0 mb-20">
             <Link
-              className="z-10 inline-flex text-lg p-4"
+              className="z-10 inline-flex text-sm lg:text-lg p-3 lg:p-4"
               href="#"
             >
               {t('navigation.tryDemo')}
