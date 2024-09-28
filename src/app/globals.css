@@ -30,6 +30,14 @@
   z-index: 1; /* Make sure it is above the button background */
 }
 
+/* Tailwind CSS classes are being used, ensure these are correctly applied */
+
+.mobileNavDrawer {
+  @apply transition-transform duration-300 ease-in-out transform origin-top;
+  /* Additional classes as needed */
+}
+
+
 .fweight {
   font-weight: 200;
 }
