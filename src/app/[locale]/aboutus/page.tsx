@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Urbanist } from "@next/font/google";
+// import { Urbanist } from "@next/font/google";
+import { Libre_Franklin } from 'next/font/google';
 import gsap from "gsap";
 import { useState, useEffect, useRef } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -132,7 +133,7 @@ const interactivity: Interactivity = {
   ],
 };
 
-const urbanistone = Urbanist({
+const libreFranklin = Libre_Franklin({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
@@ -261,7 +262,7 @@ export default function Services() {
       <div className="stickyWrapper">
         <MainNavigation />
       </div>
-      <main className={urbanistone.className}>
+      <main className={libreFranklin.className}>
      
         <div className="wrappageThree mt-0 flex h-[600px] w-full flex-col items-center justify-center lg:h-[600px] lg:flex-row">
         <img className="wrapfiller absolute" src="/wave2.png"/>
@@ -320,13 +321,13 @@ export default function Services() {
         <section>
           <div className="m-auto flex w-full max-w-[1400px] flex-col pt-10 lg:flex-row">
             <div className="relative text-center mb-4 w-full rounded-3xl bg-gray-100 pb-8 pl-6 pr-6 pt-8 lg:m-2 lg:w-1/3">
-              <h2 className="lg:text-4xl text-2xl font-semibold">$10 Billion</h2>
+              <h2 className="lg:text-3xl text-2xl font-semibold">$10 Billion</h2>
               <p className="pt-2 text-sm fweight">
                 {t('about:stats.messagingMarketVolume.label')}
               </p>
             </div>
             <div className="relative text-center mb-4 w-full rounded-3xl bg-gray-100 pb-8 pl-6 pr-6 pt-8 lg:m-2 lg:w-1/3">
-              <h2 className="lg:text-4xl text-2xl font-semibold">
+              <h2 className="lg:text-3xl text-2xl font-semibold">
                 ${Math.round(counter).toLocaleString()} Billion
               </h2>
               <p className="pt-2 text-sm fweight">
@@ -334,7 +335,7 @@ export default function Services() {
               </p>
             </div>
             <div className="relative text-center mb-4 w-full rounded-3xl bg-gray-100 pb-8 pl-6 pr-6 pt-8 lg:m-2 lg:w-1/3">
-              <h2 className="counterUp lg:text-4xl text-2xl font-semibold">
+              <h2 className="counterUp lg:text-3xl text-2xl font-semibold">
                 <CoinMarketCap />
               </h2>
               <p className="pt-2 text-sm fweight">
@@ -342,7 +343,7 @@ export default function Services() {
               </p>
             </div>
             <div className="relative text-center mb-4 w-full rounded-3xl bg-gray-100 pb-8 pl-6 pr-6 pt-8 lg:m-2 lg:w-1/3">
-              <h2 className="lg:text-4xl text-2xl font-semibold">$3 Billion</h2>
+              <h2 className="lg:text-3xl text-2xl font-semibold">$3 Billion</h2>
               <p className="pt-2 text-sm fweight">
                 {t('about:stats.mobileMessagingUser.label')}
               </p>

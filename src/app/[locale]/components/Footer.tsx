@@ -67,8 +67,8 @@ export default function Footer() {
                 alt=""
                 src="/envelope.svg"
               />
-              <a href="mailto:info@facilpay.io" target="_blank">
-                info@facilpay.io
+              <a href="mailto:ai@facilpay.io" target="_blank">
+                ai@facilpay.io
               </a>
             </p>
             <p className="pt-4">
@@ -77,7 +77,7 @@ export default function Footer() {
                 alt=""
                 src="/phoneicon.svg"
               />
-              <a href="tel:7035947188">703.594.7188</a>
+              <a href="tel:7035947188">289.804.6855</a>
             </p>
             <p className="pt-4 text-blue-500">
               <a href="https://twitter.com/facil_pay" target="_blank">
@@ -119,13 +119,13 @@ export default function Footer() {
         <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
           <div className=" p-0 pl-4 pr-4">
             <h1 className="pb-4 text-2xl font-semibold">{t('footer.links.title')}</h1>
-            <p>
+            <p className="text-sm hover:underline">
               <a href="/">{t('footer.links.home')}</a>
             </p>
-            <p className="pt-2">
+            <p className="pt-2 text-sm hover:underline">
               <a href="/aboutus">{t('footer.links.aboutus')}</a>
             </p>
-            <p className="pt-2">
+            <p className="pt-2 text-sm hover:underline">
               <a href="/services">{t('footer.links.services')}</a>
             </p>
           </div>
@@ -133,37 +133,37 @@ export default function Footer() {
         <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
           <div className=" p-0 pl-4 pr-4">
             <h1 className="pb-4 text-2xl font-semibold">{t('footer.legal.title')}</h1>
-            <p>
+            <p className="whitespace-nowrap text-sm hover:underline">
               <a href="https://www.facilpay.io/terms">
                 {t('footer.legal.t&c')}
               </a>
             </p>
-            <p className="pt-2">
+            <p className="pt-2 text-sm hover:underline">
               <a href="https://www.facilpay.io/privacy"
               >
                 {t('footer.legal.privacyPolicy')}
               </a>
             </p>
-            <p className="pt-2">
+            <p className="pt-2 text-sm hover:underline">
               <a href="https://www.facilpay.io/cookies"
               >
                 {t('footer.legal.cookiePolicy')}
               </a></p>
-            <p className="pt-2">
+            <p className="pt-2 text-sm hover:underline">
               <a href="https://www.facilpay.io/disclaimer">
                 {t('footer.legal.disclaimer')}
               </a></p>
           </div>
         </div>
-        <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
+        {/* <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
           <div className=" p-0 pl-4 pr-4">
             <h1 className="pb-4 text-2xl font-semibold">{t('footer.product.title')}</h1>
             <p>{t('footer.product.tour')}</p>
             <p className="pt-2">{t('footer.product.liveChat')}</p>
             <p className="pt-2">{t('footer.product.reviews')}</p>
           </div>
-        </div>
-        <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-1/5">
+        </div> */}
+        <div className="w-full p-4 sm:w-1/2 md:w-1/3 lg:w-2/5">
           <div className=" p-0 pl-4 pr-4">
             <h1 className="pb-4 text-2xl font-semibold">{t('footer.newsletter.title')}</h1>
             <p>{t('footer.newsletter.updates')}</p> 
@@ -175,7 +175,7 @@ export default function Footer() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="newsInput flex-grow bg-slate-50 px-4 py-2 outline-none"
+              className="newsInput flex-grow bg-slate-50 px-4 py-2 outline-none border-blue-50 border"
               placeholder={t('footer.newsletter.emailInput.placeholder')}
               required
             />
@@ -189,7 +189,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="pt-8 text-center text-xs text-slate-500">
+      <div className="pt-8 pb-4 text-center text-xs text-slate-500">
         Ⓒ Copyright {currentYear} Facil Pay inc. {t('footer.allRightsReserved')}
       </div>
     </>

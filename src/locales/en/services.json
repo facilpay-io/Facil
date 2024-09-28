@@ -21,7 +21,7 @@
 			"defiVaults": "DeFi Vaults APY",
 			"exclusiveOffers": "Limited Exclusive Offers",
 			"platinum+": "Platinum +",
-			"title": "Black $9",
+			"title": "Black",
 			"tokenRewards": "Token-Backed Reward",
 			"transactionFeeDiscount": "40% Off fees"
 		},
@@ -36,7 +36,7 @@
 			"metalDesignedCard": "Metal or Designed Card",
 			"premium+": "Premium +",
 			"stakingYield": "Staking Yield",
-			"title": "Platinum $3",
+			"title": "Platinum",
 			"transactionFeeDiscount": "20% Off fees",
 			"webAppPOS": "Facil WebApp POS"
 		},
@@ -46,7 +46,7 @@
 			"premiumAIChatbot": "Premium AI Chatbot Tools",
 			"stakeAirdrop": "Staking Feature & Air drop",
 			"standardPlusFree": "Standard + Free Limited time",
-			"title": "Premium $1",
+			"title": "Premium",
 			"transactionFeeDiscount": "10% Off fees in-app transaction"
 		},
 		"standard": {

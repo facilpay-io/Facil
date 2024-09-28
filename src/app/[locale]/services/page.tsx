@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Urbanist } from "@next/font/google";
+// import { Urbanist } from "@next/font/google";
+import { Libre_Franklin } from 'next/font/google';
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -85,9 +86,9 @@ const interactivity: Interactivity = {
   ],
 };
 
-const urbanistone = Urbanist({
+const libreFranklin = Libre_Franklin({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
 
 gsap.registerPlugin(ScrollTrigger);
@@ -196,7 +197,7 @@ export default function Services() {
       <div className="stickyWrapper">
         <MainNavigation />
       </div>
-      <main className={urbanistone.className}>
+      <main className={libreFranklin.className}>
         <div className="mt-0 flex h-1/4 bg-white lg:hidden"></div>
         <div className="wrappageTwo mt-0 flex h-[600px] w-full flex-col items-center justify-center md:mt-3 lg:mt-0 lg:h-[600px] lg:flex-row">
         <img className="wrapfillerTwo absolute" src="/clouds.png"/>
@@ -350,7 +351,7 @@ export default function Services() {
           </div>
 
           <div className="textFadeRight w-full p-0 lg:w-1/2">
-            <h2 className="pb-0 pt-4 text-2xl font-semibold lg:pt-20 lg:text-4xl ">
+            <h2 className="pb-4 pt-4 text-2xl font-semibold lg:pt-20 lg:text-4xl ">
               {" "}
               {t('services:featureSection2.title')}
             </h2>

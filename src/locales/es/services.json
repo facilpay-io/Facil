@@ -21,7 +21,7 @@
 			"defiVaults": "APY de las bóvedas de DeFi",
 			"exclusiveOffers": "Ofertas exclusivas limitadas",
 			"platinum+": "Platino +",
-			"title": "Negro $9",
+			"title": "Negro",
 			"tokenRewards": "Recompensa respaldada por tokens",
 			"transactionFeeDiscount": "40% de descuento en tarifas"
 		},
@@ -36,7 +36,7 @@
 			"metalDesignedCard": "Tarjeta metálica o diseñada",
 			"premium+": "Premium +",
 			"stakingYield": "Rendimiento de apuesta",
-			"title": "Platino $3",
+			"title": "Platino",
 			"transactionFeeDiscount": "20% de descuento en tarifas",
 			"webAppPOS": "POS Fácil WebApp"
 		},
@@ -46,7 +46,7 @@
 			"premiumAIChatbot": "Herramientas premium de chatbot de IA",
 			"stakeAirdrop": "Función de replanteo y caída aérea",
 			"standardPlusFree": "Estándar + Gratis Por tiempo limitado",
-			"title": "Prima $1",
+			"title": "Prima",
 			"transactionFeeDiscount": "10% de descuento en tarifas de transacción dentro de la aplicación"
 		},
 		"standard": {

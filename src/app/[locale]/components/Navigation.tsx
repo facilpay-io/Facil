@@ -6,13 +6,32 @@ import { useTranslation } from 'next-i18next';
 import { usePathname } from 'next/navigation';
 import { faDiscord, faFacebook, faInstagram, faLinkedin, faMedium, faTelegram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Configuration, OpenAIApi } from 'openai';
 import LanguageSwitcher from './LanguageSwitcher';
 
-const configuration = new Configuration({
-  apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY, // Ensure this key is set in your .env.local file
-});
-const openai = new OpenAIApi(configuration);
+interface MediaVariant {
+  url: string;
+  content_type: string;
+  bitrate?: number;
+}
+
+interface Media {
+  type: string;
+  media_url_https: string;
+  video_info?: {
+    variants: MediaVariant[];
+  };
+}
+
+interface ExtendedEntities {
+  media: Media[];
+}
+
+interface TweetData {
+  full_text: string;
+  spanish_full_text?: string;
+  extended_entities?: ExtendedEntities;
+  [key: string]: any;
+}
 
 export default function Navigation() {
   const { t, i18n } = useTranslation();
@@ -27,7 +46,7 @@ export default function Navigation() {
   }
   const [selectedMenuItem, setSelectedMenuItem] = useState('Home');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [tweetData, setTweetData] = useState(null); 
+  const [tweetData, setTweetData] = useState<TweetData | null>(null); 
   const [translatedTweet, setTranslatedTweet] = useState('');
 
   useEffect(() => {
@@ -56,27 +75,24 @@ export default function Navigation() {
   }, []);
 
   
- // Translate tweet based on language change
- useEffect(() => {
+// Translate tweet based on language change
+useEffect(() => {
   if (tweetData) {
     if (currentLocale === 'es') {
-      // Replace this with an API call or a method to translate the tweet.
       const translatedText = translateTweet(tweetData.full_text, 'es');
       setTranslatedTweet(translatedText);
     } else {
-      // Use the original tweet for languages other than Spanish
       setTranslatedTweet(tweetData.full_text);
     }
   }
 }, [currentLocale, tweetData]);
 
-// Example translation function (replace with an actual API call)
-const translateTweet = (text, targetLanguage) => {
+// Example translation function
+const translateTweet = (text: string, targetLanguage: string): string => {
   if (targetLanguage === 'es') {
-    // For example, hardcoded translation for demonstration purposes
-    return tweetData.spanish_full_text; // Replace with real translation logic or API call
+    return tweetData?.spanish_full_text || text;
   }
-  return text; // Fallback to the original text
+  return text;
 };
 
   const isHomeSelected = currentPath?.endsWith('/es') || currentPath?.endsWith('/');
@@ -113,33 +129,37 @@ const translateTweet = (text, targetLanguage) => {
   
 
   // Extract video or image URL logic
-  const getMediaUrl = () => {
-    if (!tweetData) return '/placeholder.png'; // Fallback if data is not loaded
-  
-    const media = tweetData.extended_entities?.media[0];
-    let mediaUrl;
-  
-    if (media?.video_info) {
-      // Filter for the MP4 variants only
-      const mp4Variants = media.video_info.variants.filter(variant => variant.content_type === 'video/mp4');
-  
-      if (mp4Variants.length > 0) {
-        // Get the highest bitrate MP4 video URL
-        mediaUrl = mp4Variants.sort((a, b) => b.bitrate - a.bitrate)[0].url;
-      } else {
-        // If no MP4 is found, fallback to the first available variant
-        mediaUrl = media.video_info.variants[0].url;
-      }
+const getMediaUrl = (): string => {
+  if (!tweetData) return '/placeholder.png'; // Fallback if data is not loaded
+
+  const media = tweetData.extended_entities?.media[0];
+  let mediaUrl: string;
+
+  if (media?.video_info) {
+    // Filter for the MP4 variants only
+    const mp4Variants = media.video_info.variants.filter(
+      (variant) => variant.content_type === 'video/mp4'
+    );
+
+    if (mp4Variants.length > 0) {
+      // Get the highest bitrate MP4 video URL, providing a default bitrate of 0 if undefined
+      mp4Variants.sort((a, b) => (b.bitrate ?? 0) - (a.bitrate ?? 0));
+      mediaUrl = mp4Variants[0].url;
     } else {
-      // Fallback to image if video is not available
-      mediaUrl = media?.media_url_https || '/placeholder.png';
+      // If no MP4 is found, fallback to the first available variant
+      mediaUrl = media.video_info.variants[0].url;
     }
-  
-    // Log the media URL to the console
-    console.log('Media URL:', mediaUrl);
-  
-    return mediaUrl;
-  };
+  } else {
+    // Fallback to image if video is not available
+    mediaUrl = media?.media_url_https || '/placeholder.png';
+  }
+
+  // Log the media URL to the console
+  console.log('Media URL:', mediaUrl);
+
+  return mediaUrl;
+};
+
 
   // Render either a video or an image based on the media type
   const renderMedia = () => {
@@ -212,18 +232,18 @@ const translateTweet = (text, targetLanguage) => {
                   <Link href="https://docsend.com/v/cqj7c/facilpay" target="_blank" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
                   {t('navigation.pitchdeck')}
                   </Link>
-                  <Link href="https://www.facebook.com" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
+                  <Link href="https://docsend.com/view/dcsrtjbgkkd2dipf" target="_blank" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
                   {t('navigation.roadmap')}
                   </Link>
-                  <Link href="https://www.instagram.com" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
+                  <Link href="https://docsend.com/view/h8k9bhmr39e52hke" target="_blank" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
                   {t('navigation.tokenomics')}
                   </Link>
-                  <Link href="https://www.instagram.com" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
+                  {/* <Link href="https://www.instagram.com" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
                   {t('navigation.brandkit')}
                   </Link>
                   <Link href="https://www.instagram.com" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
                   {t('navigation.careers')}
-                  </Link>
+                  </Link> */}
     
                 </div>
               </div>
@@ -260,26 +280,26 @@ const translateTweet = (text, targetLanguage) => {
                 </div>
 
                 <div className="flex flex-col gap-1 pl-8 items-end text-xs">
-                  <Link href="https://www.twitter.com" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
-                    Twitter <FontAwesomeIcon icon={faTwitter} className="ml-2" />
+                  <Link href="https://x.com/facil_pay" target="_blank" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
+                  <FontAwesomeIcon icon={faTwitter} className="mr-2" /> Twitter 
                   </Link>
-                  <Link href="https://www.indeed.com" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
-                    Indeed <FontAwesomeIcon icon={faLinkedin} className="ml-2" />
+                  <Link href="https://mx.linkedin.com/company/facil-pay" target="_blank" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
+                  <FontAwesomeIcon icon={faLinkedin} className="mr-2" />  Indeed 
                   </Link>
-                  <Link href="https://www.facebook.com" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
-                    Facebook <FontAwesomeIcon icon={faFacebook} className="ml-2" />
+                  {/* <Link href="https://www.facebook.com" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
+                  <FontAwesomeIcon icon={faFacebook} className="mr-2" />  Facebook 
+                  </Link> */}
+                  <Link href="https://www.instagram.com/facilpay.io/?igsh=MzRlODBiNWFlZA%3D%3D" target="_blank" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
+                  <FontAwesomeIcon icon={faInstagram} className="mr-2" /> Instagram 
                   </Link>
-                  <Link href="https://www.instagram.com" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
-                    Instagram <FontAwesomeIcon icon={faInstagram} className="ml-2" />
+                  <Link href="https://discord.com/invite/A63GHnPzpj" target="_blank" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
+                  <FontAwesomeIcon icon={faDiscord} className="mr-2" />  Discord 
                   </Link>
-                  <Link href="https://www.instagram.com" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
-                    Discord <FontAwesomeIcon icon={faDiscord} className="ml-2" />
+                  <Link href="https://medium.com/@facilpay.io" target="_blank" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
+                  <FontAwesomeIcon icon={faMedium} className="mr-2" />  Medium 
                   </Link>
-                  <Link href="https://www.instagram.com" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
-                    Medium <FontAwesomeIcon icon={faMedium} className="ml-2" />
-                  </Link>
-                  <Link href="https://www.instagram.com" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
-                    Telegram <FontAwesomeIcon icon={faTelegram} className="ml-2" />
+                  <Link href="https://t.me/+A5BpRNiCsVA4MmY5" target="_blank" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
+                  <FontAwesomeIcon icon={faTelegram} className="mr-2" />  Telegram 
                   </Link>
                 </div>
               </div>
@@ -323,35 +343,26 @@ const translateTweet = (text, targetLanguage) => {
   </button>
   {selectedMenuItem === 'Learn' && (
     <div className="pl-4 pt-2 flex flex-col space-y-2">
-      <Link href="/learn/whitepaper" className={linkClassMobile}>
-        Whitepaper
-      </Link>
-      <Link href="/learn/pitchdeck" className={linkClassMobile}>
-        PitchDeck
-      </Link>
+      <Link href="https://facil-team.gitbook.io/facilpay" target="_blank" className={linkClassMobile}>
+                  {t('navigation.whitepaper')}
+                  </Link>
+                  <Link href="https://docsend.com/v/cqj7c/facilpay" target="_blank" className={linkClassMobile}>
+                  {t('navigation.pitchdeck')}
+                  </Link>
+                  <Link href="https://docsend.com/view/dcsrtjbgkkd2dipf" target="_blank" className={linkClassMobile}>
+                  {t('navigation.roadmap')}
+                  </Link>
+                  <Link href="https://docsend.com/view/h8k9bhmr39e52hke" target="_blank" className={linkClassMobile}>
+                  {t('navigation.tokenomics')}
+                  </Link>
       {/* Add other Learn links */}
     </div>
   )}
 </div>
 
 {/* Community Section */}
-<div className="pl-2 pt-6">
-  <button className={`w-full text-left ${selectedMenuItem === 'Community' ? activeLinkClassMobile : linkClassMobile}`} 
-    onClick={() => handleMenuItemClick('Community', true)}>  {/* Mark as expandable */}
-    {t('navigation.community')}
-  </button>
-  {selectedMenuItem === 'Community' && (
-    <div className="pl-4 pt-2 flex flex-col space-y-2">
-      <Link href="https://twitter.com" className={linkClassMobile}>
-        Twitter
-      </Link>
-      <Link href="https://linkedin.com" className={linkClassMobile}>
-        LinkedIn
-      </Link>
-      {/* Add other Community links */}
-    </div>
-  )}
-</div>
+
+
 
 
 

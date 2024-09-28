@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Urbanist } from "@next/font/google";
+// import { Urbanist } from "@next/font/google";
+import { Libre_Franklin } from 'next/font/google';
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -77,10 +78,16 @@ const interactivity: Interactivity = {
   ],
 };
 
-const urbanistone = Urbanist({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+// const urbanistone = Urbanist({
+//   subsets: ["latin"],
+//   weight: ["400", "500", "600", "700"],
+// });
+const libreFranklin = Libre_Franklin({
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700'], // Specify the weights you need
+  display: 'swap', // Improves loading performance
 });
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -186,7 +193,8 @@ export default function Home() {
       <div className="stickyWrapper">
         <MainNavigation />
       </div>
-      <main className={urbanistone.className}>
+      {/* <main className={urbanistone.className}> */}
+      <main className={libreFranklin.className}>
        
         <div className="wrappage mt-0 flex h-[600px] w-full flex-col items-center justify-center lg:h-[600px] lg:flex-row">
        <img className="wrapfiller absolute" src="/blocks.png"/>
@@ -270,6 +278,7 @@ export default function Home() {
           </div>
         </div> */}
 <div className="lg:pl-0 lg:pr-0 pr-4 pl-4 overflow-hidden">
+  
         <div className="componentWrapper flex flex-col pt-0 lg:flex-row lg:pt-16">
           <div className="textFade w-full pb-4 lg:w-1/2 lg:pb-0">
             <div className="lottieWrap h-auto w-[100%] ">
