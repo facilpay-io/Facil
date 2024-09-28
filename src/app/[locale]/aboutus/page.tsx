@@ -279,7 +279,7 @@ export default function Services() {
               {t('about:banner.subtitle')}
             </p>
             <div className="relative flex flex-row gap-1">
-              <div className="aboutbutton mt-6 flex justify-center items-center rounded-full p-3 text-center text-sm lg:mt-10 lg:p-4 lg:text-lg">
+              <div className="aboutbutton mt-6 flex justify-center items-center rounded-full p-3 text-center text-sm lg:mt-10 lg:p-4 lg:text-lg shadow">
               <Link
                 className="z-10 inline-flex"
                 href="https://facil-team.gitbook.io/facilpay"

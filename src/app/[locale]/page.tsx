@@ -213,7 +213,7 @@ export default function Home() {
             <p className="pl-4 text-base font-normal lg:pl-12 lg:text-xl">
               {t('home:banner.subtitle')}
             </p>
-            <div className="aboutbutton rounded-full mt-8  lg:ml-12 inline-flex items-center gap-2 ml-2 lg:mb-0 mb-32">
+            <div className="aboutbutton rounded-full mt-8  lg:ml-12 inline-flex items-center gap-2 ml-2 lg:mb-0 mb-32 shadow">
             <Link
               className="z-10 inline-flex text-sm lg:text-lg p-3 lg:p-4"
               href="#"
