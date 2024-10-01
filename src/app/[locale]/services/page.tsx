@@ -199,7 +199,7 @@ export default function Services() {
       </div>
       <main className={libreFranklin.className}>
         <div className="mt-0 flex h-1/4 bg-white lg:hidden"></div>
-        <div className="wrappageTwo mt-0 flex h-[600px] w-full flex-col items-center justify-center md:mt-3 lg:mt-0 lg:h-[600px] lg:flex-row">
+        <div className="wrappageTwo mt-0 flex h-[600px] w-full flex-col items-center justify-center md:mt-0 lg:mt-0 lg:h-[600px] lg:flex-row">
         <img className="wrapfillerTwo absolute" src="/clouds.png"/>
         <div className="PageWrapper heroServices mt-3 flex h-[600px] w-full flex-col items-center justify-center  md:mt-3 lg:mt-3 lg:h-[650px] lg:flex-col">
           <div className="mt-10 pt-0 text-center text-2xl  font-semibold drop-shadow text-white md:pt-0 lg:w-full  lg:pt-0 lg:pt-0">
