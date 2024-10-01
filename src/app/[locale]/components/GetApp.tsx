@@ -17,14 +17,14 @@ export default function GetApp() {
           </p>
         </div>
         <div className="appbuttons inline-block flex items-center justify-center pt-20 lg:pt-20">
-          <button className="m-2 rounded-full bg-white p-3 font-medium text-black">
+          {/* <button className="m-2 rounded-full bg-white p-3 font-medium text-black">
             <FontAwesomeIcon icon={faApple} className="mr-2" />
             {t('getApp.downloadNow')}
           </button>
           <button className="m-2 rounded-full bg-white p-3 font-medium text-black">
             <FontAwesomeIcon icon={faGooglePlay} className="mr-2" />
             {t('getApp.comingSoon')}
-          </button>
+          </button> */}
         </div>
         <div className="position-relative">
           <div

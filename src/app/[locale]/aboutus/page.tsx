@@ -525,7 +525,7 @@ export default function Services() {
           </div>
         </section>
 
-        <section className="mb-30 m-auto max-w-[780px] pt-20 lg:pt-32">
+        {/* <section className="mb-30 m-auto max-w-[780px] pt-20 lg:pt-32">
           <div className="text-center">
             <h1 className="mb-8 text-3xl font-semibold lg:text-4xl">
               {t('about:roadmapSection.title')}
@@ -538,7 +538,7 @@ export default function Services() {
                 content: formatRoadmapItems(t(`about:roadmapSection.roadmap${index + 1}.items`))
               }
             })} />
-        </section>
+        </section> */}
 
         <section className="relative flex items-center justify-center pt-40">
           <GetApp />

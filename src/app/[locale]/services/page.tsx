@@ -40,7 +40,7 @@ const currentYear = new Date().getFullYear();
 
 const logoImages = [
   '/logoservices1.png', 
-  '/logoservices2.png',
+  // '/logoservices2.png',
   '/logoservices3.png',
   '/logoservices4.png',
   '/logoservices5.png',

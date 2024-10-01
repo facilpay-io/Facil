@@ -731,7 +731,7 @@ export default function Home() {
           )} />
         </section>
 
-        <section className="relative flex items-center justify-center mt-20">
+        {/* <section className="relative flex items-center justify-center mt-20">
           <div className="AppContainer font-inter relative flex h-[480px] w-[1408px] flex-col justify-between overflow-hidden text-center text-white lg:h-[980px]">
             <div>
               <h1 className="pt-16 text-2xl font-semibold lg:pt-40 lg:text-6xl">
@@ -786,7 +786,7 @@ export default function Home() {
               />
             </div>
           </div>
-        </section>
+        </section> */}
         </div>
         <section className="m-auto max-w-[1080px]  mt-40">
           <Footer />
