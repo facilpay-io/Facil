@@ -77,7 +77,7 @@ export default function Footer() {
                 alt=""
                 src="/phoneicon.svg"
               />
-              <a href="tel:7035947188">289.804.6855</a>
+              <a href="tel:2898046855">289.804.6855</a>
             </p>
             <p className="pt-4 text-blue-500">
               <a href="https://twitter.com/facil_pay" target="_blank">
