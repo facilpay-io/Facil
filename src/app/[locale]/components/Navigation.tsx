@@ -268,21 +268,24 @@ export default function Navigation() {
                   <Link href="https://x.com/facil_pay" target="_blank" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
                     <FontAwesomeIcon icon={faTwitter} className="mr-2" /> Twitter 
                   </Link>
-                  <Link href="https://mx.linkedin.com/company/facil-pay" target="_blank" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
-                    <FontAwesomeIcon icon={faLinkedin} className="mr-2" /> Indeed 
-                  </Link>
-                  <Link href="https://www.instagram.com/facilpay.io/?igsh=MzRlODBiNWFlZA%3D%3D" target="_blank" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
-                    <FontAwesomeIcon icon={faInstagram} className="mr-2" /> Instagram 
-                  </Link>
-                  <Link href="https://discord.com/invite/A63GHnPzpj" target="_blank" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
-                    <FontAwesomeIcon icon={faDiscord} className="mr-2" /> Discord 
+                  <Link href="https://t.me/+A5BpRNiCsVA4MmY5" target="_blank" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
+                    <FontAwesomeIcon icon={faTelegram} className="mr-2" /> Telegram 
                   </Link>
                   <Link href="https://medium.com/@facilpay.io" target="_blank" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
                     <FontAwesomeIcon icon={faMedium} className="mr-2" /> Medium 
                   </Link>
-                  <Link href="https://t.me/+A5BpRNiCsVA4MmY5" target="_blank" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
-                    <FontAwesomeIcon icon={faTelegram} className="mr-2" /> Telegram 
+                  <Link href="https://discord.com/invite/A63GHnPzpj" target="_blank" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
+                    <FontAwesomeIcon icon={faDiscord} className="mr-2" /> Discord 
                   </Link>
+                  <Link href="https://mx.linkedin.com/company/facil-pay" target="_blank" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
+                    <FontAwesomeIcon icon={faLinkedin} className="mr-2" /> LinkedIn 
+                  </Link>
+                  <Link href="https://www.instagram.com/facilpay.io/?igsh=MzRlODBiNWFlZA%3D%3D" target="_blank" className="text-black hover:bg-blue-50 p-2 rounded-lg flex items-center w-full">
+                    <FontAwesomeIcon icon={faInstagram} className="mr-2" /> Instagram 
+                  </Link>
+                 
+                 
+                  
                 </div>
               </div>
             </div>
