@@ -2,7 +2,7 @@ import { faDiscord, faFacebook, faInstagram, faLinkedin, faMedium, faTelegram, f
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from "react-i18next";
 import { useState, FormEvent } from 'react';
-import { supabase } from '../../../supabaseClient';
+// import { supabase } from '../../../supabaseClient';
 import { toast, ToastContainer } from 'react-toastify'; // Import toast components
 import 'react-toastify/dist/ReactToastify.css'; // Import toast styles
 
@@ -10,43 +10,43 @@ const currentYear = new Date().getFullYear();
 
 export default function Footer() {
   const { t } = useTranslation('footer');
-  const [email, setEmail] = useState<string>('');
+  // const [email, setEmail] = useState<string>('');
 
-  const handleEmailSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  // const handleEmailSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
 
-    try {
-      // Insert the email into the 'newsletter_emails' table
-      const { error } = await supabase
-        .from('newsletter_emails')
-        .insert([{ email }]);
+  //   try {
+  //     // Insert the email into the 'newsletter_emails' table
+  //     const { error } = await supabase
+  //       .from('newsletter_emails')
+  //       .insert([{ email }]);
 
-      if (error) {
-        // Check if the error is related to unique constraint violation
-        if (error.message.includes("duplicate key")) {
-          toast.warn(t('This email is already subscribed!'), {
-            position: "bottom-right",
-            autoClose: 3000,
-          });
-        } else {
-          throw error;
-        }
-      } else {
-        // Success message on successful submission
-        toast.success(t('Thank you for subscribing!'), {
-          position: "top-right",
-          autoClose: 3000,
-        });
-        setEmail(''); // Clear the input field after submission
-      }
-    } catch (error: any) {
-      toast.error(t('Sorry, something went wrong. Please try again!'), {
-        position: "top-right",
-        autoClose: 3000,
-      });
-      console.error("Error adding email: ", error.message);
-    }
-  };
+  //     if (error) {
+  //       // Check if the error is related to unique constraint violation
+  //       if (error.message.includes("duplicate key")) {
+  //         toast.warn(t('This email is already subscribed!'), {
+  //           position: "bottom-right",
+  //           autoClose: 3000,
+  //         });
+  //       } else {
+  //         throw error;
+  //       }
+  //     } else {
+  //       // Success message on successful submission
+  //       toast.success(t('Thank you for subscribing!'), {
+  //         position: "top-right",
+  //         autoClose: 3000,
+  //       });
+  //       setEmail(''); // Clear the input field after submission
+  //     }
+  //   } catch (error: any) {
+  //     toast.error(t('Sorry, something went wrong. Please try again!'), {
+  //       position: "top-right",
+  //       autoClose: 3000,
+  //     });
+  //     console.error("Error adding email: ", error.message);
+  //   }
+  // };
 
   return (
     <>
@@ -170,22 +170,22 @@ export default function Footer() {
           </div>
 
           {/* Newsletter form */}
-          <form onSubmit={handleEmailSubmit} className="flex items-center pt-4">
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="newsInput flex-grow bg-slate-50 px-4 py-2 outline-none border-blue-50 border"
-              placeholder={t('footer.newsletter.emailInput.placeholder')}
-              required
-            />
-            <button
-              type="submit"
-              className="newsButton text-md bg-blue-500 px-4 py-2 text-white"
-            >
-              {t('footer.newsletter.emailInput.submitText')}
-            </button>
-          </form>
+{/*         <form onSubmit={handleEmailSubmit} className="flex items-center pt-4">
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="newsInput flex-grow bg-slate-50 px-4 py-2 outline-none border-blue-50 border"
+            placeholder={t('footer.newsletter.emailInput.placeholder')}
+            required
+          />
+          <button
+            type="submit"
+            className="newsButton text-md bg-blue-500 px-4 py-2 text-white"
+          >
+            {t('footer.newsletter.emailInput.submitText')}
+          </button>
+        </form> */}
         </div>
       </div>
 
