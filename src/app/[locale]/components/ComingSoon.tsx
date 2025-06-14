@@ -42,7 +42,7 @@ export default function ComingSoon() {
                             {
                                 socials.map((social, index) => {
                                     return (
-                                        <Link key={index} href={social.link} target="_" className="w-12 h-12 flex justify-center items-center p-1 md:p-3 rounded-xl bg-gray-800 hover:bg-grey-400 md:hover:p-2 transition-all duration-300">
+                                        <Link key={index} href={social.link} target="_blank" className="w-12 h-12 flex justify-center items-center p-1 md:p-3 rounded-xl bg-gray-800 hover:bg-grey-400 md:hover:p-2 transition-all duration-300">
                                             <FontAwesomeIcon className=" w-4 h-4 md:w-8 md:h-8 text-white text-lg" icon={social.icon} />
                                         </Link>
                                     )
