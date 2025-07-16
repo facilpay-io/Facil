@@ -1,0 +1,13 @@
+{
+  "headers": [
+    {
+      "source": "/public/.well-known/stellar.toml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain"
+        }
+      ]
+    }
+  ]
+}
