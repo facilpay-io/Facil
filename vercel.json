@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/public/.well-known/stellar.toml",
+      "source": "/.well-known/stellar.toml",
       "headers": [
         {
           "key": "Content-Type",
