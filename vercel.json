@@ -12,12 +12,24 @@
           "value": "*"
         },
         {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600"
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type, Accept"
         },
         {
           "key": "Content-Disposition",
           "value": "inline"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        },
+        {
+          "key": "Vary",
+          "value": "Origin"
         }
       ]
     }
